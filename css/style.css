@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #fff3e0;
@@ -107,37 +108,58 @@ body section .contenedor-slide .container .texto-personalizar a {
 }
 body main {
   width: 100%;
-  margin: 100px 0;
   padding-bottom: 0;
   padding: 50px;
 }
-body main .destacados .contenedor-destacados {
+body main .destacados .contenedor-destacados,
+body main .bordados .contenedor-bordados {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 0;
 }
-body main .destacados .contenedor-destacados:last-child {
-  margin-top: 60px;
+body main .destacados .contenedor-destacados .col .row,
+body main .bordados .contenedor-bordados .col .row {
+  margin: 0;
 }
-body main .destacados .contenedor-destacados .col .row .col .card-titulo {
-  text-align: center;
-  padding: 5px 0;
+body main .destacados .contenedor-destacados .col .row .col .card .card-image,
+body main .bordados .contenedor-bordados .col .row .col .card .card-image {
+  padding: 0.5rem;
+}
+body main .destacados .contenedor-destacados .col .row .col .card .card-image img,
+body main .bordados .contenedor-bordados .col .row .col .card .card-image img {
+  border-radius: 0;
+}
+body main .destacados .contenedor-destacados .col .row .col .card .card-action,
+body main .bordados .contenedor-bordados .col .row .col .card .card-action {
+  height: 3.15rem;
+}
+body main .destacados .contenedor-destacados .col .row .col .card .card-action h6,
+body main .bordados .contenedor-bordados .col .row .col .card .card-action h6 {
+  font-weight: 800;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body main .destacados .contenedor-destacados .col .row .col .card-titulo h6 {
-  font-weight: 600;
+body main .banner-opiniones, body main .banner-bordados {
+  padding-top: 6rem;
 }
-body main .destacados .contenedor-destacados .card h6 {
-  font-weight: 600;
+body main .banner-stock {
+  padding-top: 5rem;
 }
-body main .destacados .contenedor-destacados .card .card-action a {
-  width: 100%;
+body main .info-materiales {
+  -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 92%, 0 98%);
+          clip-path: polygon(0 5%, 100% 0%, 100% 92%, 0 98%);
+  background-position: 0% 85%, 100% 100%;
 }
-body main .banner-opiniones {
-  margin-top: 200px;
+body main .info-materiales .container .row .parent .child .contenedor {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4rem;
+}
+body main .info-materiales .container .row .parent .child .contenedor .contenedor-icon i {
+  font-size: 2.4rem;
 }
 body main .opiniones .row {
   display: flex;
@@ -167,27 +189,53 @@ body main .opiniones .row .col .puntuacion {
   text-align: center;
   padding: 2px 0;
 }
+body footer {
+  padding-bottom: 1rem;
+}
+body footer .container {
+  width: 90%;
+}
+body footer .container .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0;
+}
+body footer .container .row .redes-sociales,
+body footer .container .row .medios-pago {
+  display: flex;
+}
+body footer .container .row .redes-sociales .col a img,
+body footer .container .row .medios-pago .col a img {
+  width: 3rem;
+}
 body .banner {
   display: flex;
   justify-content: center;
   margin-bottom: 70px;
+  width: 100%;
 }
-body .banner .circulo-left {
-  width: 0;
+body .banner .triangulo-left {
+  margin-top: 0.5rem;
+  width: 2.8rem;
   height: 0;
   border-left: 2.5rem solid transparent;
   border-top: 1.563rem solid #f0ad4e;
   border-bottom: 1.563rem solid #f0ad4e;
 }
-body .banner .circulo-right {
-  width: 0;
+body .banner .triangulo-right {
+  margin-top: 0.5rem;
+  width: 2.8rem;
   height: 0;
   border-right: 2.5rem solid transparent;
   border-top: 1.563rem solid #f0ad4e;
   border-bottom: 1.563rem solid #f0ad4e;
 }
 body .banner .rectangulo {
-  width: 28.125rem;
+  width: 100%;
+  max-width: 28.125rem;
   height: 3.125rem;
   border: 0.188rem solid #f0ad4e;
   background: #f0ad4e;
@@ -215,4 +263,88 @@ body .banner .rectangulo h6 {
   body section .contenedor-slide .container {
     width: 100%;
   }
+
+  body footer .container {
+    width: 100%;
+  }
+  body footer .container .row {
+    justify-content: center;
+  }
+  body footer .container .row .redes-sociales,
+body footer .container .row .medios-pago {
+    display: column;
+  }
+  body footer .container .row .redes-sociales {
+    margin-bottom: 1.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .info-empezar-diseño {
+    background-size: 132%;
+  }
+}
+@media (max-width: 1200px) {
+  .info-empezar-diseño {
+    background-size: 132%;
+  }
+}
+@media (max-width: 1373px) {
+  .info-empezar-diseño {
+    margin-top: 0;
+  }
+}
+@media (max-width: 1500px) {
+  .info-empezar-diseño {
+    background-size: 117%;
+  }
+}
+.info-empezar-diseño,
+.info-materiales {
+  background-image: url(../img/onda1.png), url(../img/onda2.png);
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+  overflow: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: -9% 100%, 105% 100%;
+  margin-top: 0;
+  z-index: 10;
+  position: relative;
+  margin-top: 6rem;
+}
+.info-empezar-diseño .container .row,
+.info-materiales .container .row {
+  padding: 3rem;
+}
+.info-empezar-diseño .container .row .txt,
+.info-materiales .container .row .txt {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.info-empezar-diseño .container .row .txt h4,
+.info-materiales .container .row .txt h4 {
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+.info-empezar-diseño .container .row .parent .child,
+.info-materiales .container .row .parent .child {
+  text-align: center;
+}
+.info-empezar-diseño .container .row .parent .child .botones,
+.info-materiales .container .row .parent .child .botones {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.info-empezar-diseño .container .row .parent .child .botones a,
+.info-materiales .container .row .parent .child .botones a {
+  padding: 1.7rem 4.2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.1rem;
 }
