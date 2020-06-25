@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Creathink</title>
-    <script src="https://kit.fontawesome.com/222a3ac483.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/222a3ac483.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Open+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet"
@@ -20,152 +23,218 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    
+    <div class="preloader center section" id="preloader">
+      <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-amber lighten-1">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <header>
-      <nav class="amber lighten-1">
-
-        <ul id="slide-out" class="sidenav">
-          <li><div class="user-view"> 
-            <div class="background">
-              <img src="img/slide.jpg">
-            </div>
-            <a href="#logo"><img class="circle" src="img/iso.png"></a>
-            <a href="#name"><h2 class="white-text name">Creatink</h2></a>
-          </div></li>
-          <li><a href="#!"><i class="material-icons">mode_edit</i>Crear propio cuaderno</a></li>
-          <li><div class="divider"></div></li>
-          <li class="menu-movil arriba">
-            <img class="responsive-img" src="img/home.png" alt="">
-            <a class="waves-effect" href="#!">Inicio</a>
-          </li>
-          <li class="menu-movil">
-            <img class="responsive-img" src="img/personalizar.png" alt="">
-            <a class="waves-effect" href="#!">Personalizar</a>
-          </li>
-          <li class="menu-movil">
-            <img class="responsive-img" src="img/comprar.png" alt="">
-            <a class="waves-effect" href="#!">Comprar</a>
-          </li>
-          <li class="menu-movil">
-            <img class="responsive-img" src="img/contactar.png" alt="">
-            <a class="waves-effect" href="#!">Contactar</a>
-          </li>
-        </ul>
-        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-  
-        
-        <div class="nav-wrapper container">
-          <!-- <a href="" class="brand-logo">
-                  <img class="responsive-img" src="img/iso.png" alt="">
-              </a> -->
-          <ul class="right">
+    <div class="hide" id="contenido">
+      <header>
+        <nav class="amber lighten-1">
+          <ul id="slide-out" class="sidenav">
             <li>
-              <a href="#"><img src="img/home.png" alt="" /></a>
-              <div class="ribbon"></div>
+              <div class="user-view">
+                <div class="background">
+                  <img src="img/slide.jpg" />
+                </div>
+                <a href="#logo"><img class="circle" src="img/iso.png" /></a>
+                <a href="#name"><h2 class="white-text name">Creatink</h2></a>
+              </div>
             </li>
             <li>
-              <a href="#"><img src="img/personalizar.png" alt="" /></a>
-              <div class="ribbon"></div>
+              <a href="#!"
+                ><i class="material-icons">mode_edit</i>Crear propio cuaderno</a
+              >
             </li>
-            <li>
-              <a href="#"><img src="img/comprar.png" alt="" /></a>
-              <div class="ribbon"></div>
+            <li><div class="divider"></div></li>
+            <li class="menu-movil arriba">
+              <img class="responsive-img" src="img/home.png" alt="" />
+              <a class="waves-effect" href="#!">Inicio</a>
             </li>
-            <li>
-              <a href="#"><img src="img/contactar.png" alt="" /></a>
-              <div class="ribbon"></div>
+            <li class="menu-movil">
+              <img class="responsive-img" src="img/personalizar.png" alt="" />
+              <a class="waves-effect" href="#!">Personalizar</a>
+            </li>
+            <li class="menu-movil">
+              <img class="responsive-img" src="img/comprar.png" alt="" />
+              <a class="waves-effect" href="#!">Comprar</a>
+            </li>
+            <li class="menu-movil">
+              <img class="responsive-img" src="img/contactar.png" alt="" />
+              <a class="waves-effect" href="#!">Contactar</a>
             </li>
           </ul>
-        </div>
-      </nav>
-    </header>
+          <a href="#" data-target="slide-out" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
 
-    <!-- SLIDE -->
-    <section>
-      <div class="contenedor-slide">
-        <div class="container">
-          <div class="iso-grande">
-            <img class="responsive-img" src="img/iso.png" alt="" />
+          <div class="nav-wrapper container">
+            <!-- <a href="" class="brand-logo">
+                    <img class="responsive-img" src="img/iso.png" alt="">
+                </a> -->
+            <ul class="right">
+              <li>
+                <a href="#"><img src="img/home.png" alt="" /></a>
+                <div class="ribbon"></div>
+              </li>
+              <li>
+                <a href="#"><img src="img/personalizar.png" alt="" /></a>
+                <div class="ribbon"></div>
+              </li>
+              <li>
+                <a href="#"><img src="img/comprar.png" alt="" /></a>
+                <div class="ribbon"></div>
+              </li>
+              <li>
+                <a href="#"><img src="img/contactar.png" alt="" /></a>
+                <div class="ribbon"></div>
+              </li>
+            </ul>
           </div>
+        </nav>
+      </header>
 
-          <div class="texto-personalizar">
-            <h1 class="grey-text text-lighten-5">Creatink</h1>
-
-            <div class="subtitulo">
-              <p class="grey-text text-lighten-5">Personalizá</p>
-              <p class="grey-text text-lighten-5">Tus cuadernos</p>
+      <!-- SLIDE -->
+      <section>
+        <div class="contenedor-slide">
+          <div class="container">
+            <div class="iso-grande">
+              <img class="responsive-img" src="img/iso.png" alt="" />
             </div>
 
-            <div class="parrafo">
-              <p class="grey-text text-lighten-5">
-                Seguí 5 sencillos pasos, en los cúales
-              </p>
-              <p class="grey-text text-lighten-5">
-                podrás elegir el bordado, las hojas,
-              </p>
-              <p class="grey-text text-lighten-5">el color, la tapa y más!</p>
-            </div>
+            <div class="texto-personalizar">
+              <h1 class="grey-text text-lighten-5">Creatink</h1>
 
-            <a class="waves-effect waves-light btn">Personalizar</a>
+              <div class="subtitulo">
+                <p class="grey-text text-lighten-5">Personalizá</p>
+                <p class="grey-text text-lighten-5">Tus cuadernos</p>
+              </div>
+
+              <div class="parrafo">
+                <p class="grey-text text-lighten-5">
+                  Seguí 5 sencillos pasos, en los cúales
+                </p>
+                <p class="grey-text text-lighten-5">
+                  podrás elegir el bordado, las hojas,
+                </p>
+                <p class="grey-text text-lighten-5">el color, la tapa y más!</p>
+              </div>
+
+              <a class="waves-effect waves-light btn">Personalizar</a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-
-
-    <main>
-
-      <!-- EN STOCK -->
-      <section class="banner banner-stock">
-        <div class="triangulo-left"></div>
-        <div class="rectangulo">
-          <h6 class="grey-text text-darken-4">productos en stock</h6>
-        </div>
-        <div class="triangulo-right"></div>
       </section>
 
-      <div class="stock container section">
-        <div class="titulo-stock"></div>
+      <main>
+        <!-- EN STOCK -->
+        <section class="banner banner-stock">
+          <div class="triangulo-left"></div>
+          <div class="rectangulo">
+            <h6 class="grey-text text-darken-4">productos en stock</h6>
+          </div>
+          <div class="triangulo-right"></div>
+        </section>
 
-        <div class="row contenedor-stock ">
-          <div class="col s12 m4">
-            <div class="row">
-              <div class="col s12 ">
-                <div class="card hoverable">         
-                  <div class="card-image">
-                    <img src="img/zafiro.png" />
+        <div class="stock container section">
+          <div class="titulo-stock"></div>
+
+          <div class="row contenedor-stock">
+            <div class="col s12 m4">
+              <div class="row">
+                <div class="col s12">
+                  <div class="card hoverable">
+                    <div class="card-image">
+                      <img src="img/zafiro.png" />
+                    </div>
+                    <div class="card-action">
+                      <h6 class="teal-text text-lighten-2">ZAFIRO</h6>
+                    </div>
                   </div>
-                  <div class="card-action">
-                    <h6 class="teal-text text-lighten-2">ZAFIRO</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="row">
+                <div class="col s12">
+                  <div class="card hoverable">
+                    <div class="card-image">
+                      <img src="img/colision.png" />
+                    </div>
+                    <div class="card-action">
+                      <h6 class="teal-text text-lighten-2">COLISIÓN</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="row">
+                <div class="col s12">
+                  <div class="card hoverable">
+                    <div class="card-image">
+                      <img src="img/universo.png" />
+                    </div>
+                    <div class="card-action">
+                      <h6 class="teal-text text-lighten-2">UNIVERSO</h6>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col s12 m4">
-            <div class="row">
-              <div class="col s12 ">
-                <div class="card hoverable">         
-                  <div class="card-image">
-                    <img src="img/colision.png" />
-                  </div>
-                  <div class="card-action">
-                    <h6 class="teal-text text-lighten-2">COLISIÓN</h6>
+
+          <div class="row contenedor-stock section">
+            <div class="col s12 m4">
+              <div class="row section">
+                <div class="col s12">
+                  <div class="card hoverable">
+                    <div class="card-image">
+                      <img src="img/rosado.png" />
+                    </div>
+                    <div class="card-action">
+                      <h6 class="teal-text text-lighten-2">ROSADO</h6>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="row">
-              <div class="col s12 ">  
-                <div class="card hoverable">         
-                  <div class="card-image">
-                    <img src="img/universo.png" />
+            <div class="col s12 m4">
+              <div class="row section">
+                <div class="col s12">
+                  <div class="card hoverable">
+                    <div class="card-image">
+                      <img src="img/cometa.png" />
+                    </div>
+                    <div class="card-action">
+                      <h6 class="teal-text text-lighten-2">COMETA</h6>
+                    </div>
                   </div>
-                  <div class="card-action">
-                    <h6 class="teal-text text-lighten-2">UNIVERSO</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="row section">
+                <div class="col s12">
+                  <div class="card hoverable">
+                    <div class="card-image">
+                      <img src="img/destello.png" />
+                    </div>
+                    <div class="card-action">
+                      <h6 class="teal-text text-lighten-2">DESTELLO</h6>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -173,172 +242,129 @@
           </div>
         </div>
 
-        <div class="row contenedor-stock section">
-          <div class="col s12 m4">
-            <div class="row section">
-              <div class="col s12 ">
-                <div class="card hoverable">         
-                  <div class="card-image">
-                    <img src="img/rosado.png" />
+        <!-- NUESTROS FAVORITOS -->
+        <section class="banner section banner-bordados">
+          <div class="triangulo-left"></div>
+          <div class="rectangulo">
+            <h6 class="grey-text text-darken-4">nuestros bordados favoritos</h6>
+          </div>
+          <div class="triangulo-right"></div>
+        </section>
+
+        <div class="bordados container">
+          <div class="titulo-bordados"></div>
+
+          <div class="row contenedor-bordados">
+            <div class="col s12 m4">
+              <div class="row">
+                <div class="col s12">
+                  <div class="card hoverable">
+                    <div class="card-image">
+                      <img src="img/bordado1.png" />
+                    </div>
+                    <div class="card-action">
+                      <h6 class="teal-text text-lighten-2">ZAFIRO</h6>
+                    </div>
                   </div>
-                  <div class="card-action">
-                    <h6 class="teal-text text-lighten-2">ROSADO</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="row">
+                <div class="col s12">
+                  <div class="card hoverable">
+                    <div class="card-image">
+                      <img src="img/bordado2.png" />
+                    </div>
+                    <div class="card-action">
+                      <h6 class="teal-text text-lighten-2">COLISIÓN</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="row">
+                <div class="col s12">
+                  <div class="card hoverable">
+                    <div class="card-image">
+                      <img src="img/bordado3.png" />
+                    </div>
+                    <div class="card-action">
+                      <h6 class="teal-text text-lighten-2">UNIVERSO</h6>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col s12 m4">
-            <div class="row section">
-              <div class="col s12 ">
-                <div class="card hoverable">         
-                  <div class="card-image">
-                    <img src="img/cometa.png" />
-                  </div>
-                  <div class="card-action">
-                    <h6 class="teal-text text-lighten-2">COMETA</h6>
+
+          <div class="row contenedor-bordados section">
+            <div class="col s12 m4">
+              <div class="row section">
+                <div class="col s12">
+                  <div class="card hoverable">
+                    <div class="card-image">
+                      <img src="img/bordado4.png" />
+                    </div>
+                    <div class="card-action">
+                      <h6 class="teal-text text-lighten-2">ROSADO</h6>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="row section">
-              <div class="col s12 ">  
-                <div class="card hoverable">         
-                  <div class="card-image">
-                    <img src="img/destello.png" />
+            <div class="col s12 m4">
+              <div class="row section">
+                <div class="col s12">
+                  <div class="card hoverable">
+                    <div class="card-image">
+                      <img src="img/bordado5.png" />
+                    </div>
+                    <div class="card-action">
+                      <h6 class="teal-text text-lighten-2">COMETA</h6>
+                    </div>
                   </div>
-                  <div class="card-action">
-                    <h6 class="teal-text text-lighten-2">DESTELLO</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="row section">
+                <div class="col s12">
+                  <div class="card hoverable">
+                    <div class="card-image">
+                      <img src="img/bordado6.png" />
+                    </div>
+                    <div class="card-action">
+                      <h6 class="teal-text text-lighten-2">DESTELLO</h6>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- NUESTROS FAVORITOS -->
-      <section class="banner section banner-bordados">
-        <div class="triangulo-left"></div>
-        <div class="rectangulo">
-          <h6 class="grey-text text-darken-4">nuestros bordados favoritos</h6>
-        </div>
-        <div class="triangulo-right"></div>
-      </section>
-
-      <div class="bordados container">
-        <div class="titulo-bordados"></div>
-
-        <div class="row contenedor-bordados ">
-          <div class="col s12 m4">
+        <!-- INFO MATERIALES -->
+        <div class="info-materiales amber lighten-1 section">
+          <div class="container">
             <div class="row">
-              <div class="col s12 ">
-                <div class="card hoverable">         
-                  <div class="card-image">
-                    <img src="img/bordado1.png" />
-                  </div>
-                  <div class="card-action">
-                    <h6 class="teal-text text-lighten-2">ZAFIRO</h6>
-                  </div>
-                </div>
+              <div class="txt col-lg-12">
+                <h4>
+                  Cuadernos artesanales que ofrecen resistencia y durabilidad
+                </h4>
               </div>
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="row">
-              <div class="col s12 ">
-                <div class="card hoverable">         
-                  <div class="card-image">
-                    <img src="img/bordado2.png" />
-                  </div>
-                  <div class="card-action">
-                    <h6 class="teal-text text-lighten-2">COLISIÓN</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="row">
-              <div class="col s12 ">  
-                <div class="card hoverable">         
-                  <div class="card-image">
-                    <img src="img/bordado3.png" />
-                  </div>
-                  <div class="card-action">
-                    <h6 class="teal-text text-lighten-2">UNIVERSO</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row contenedor-bordados section">
-          <div class="col s12 m4">
-            <div class="row section">
-              <div class="col s12 ">
-                <div class="card hoverable">         
-                  <div class="card-image">
-                    <img src="img/bordado4.png" />
-                  </div>
-                  <div class="card-action">
-                    <h6 class="teal-text text-lighten-2">ROSADO</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="row section">
-              <div class="col s12 ">
-                <div class="card hoverable">         
-                  <div class="card-image">
-                    <img src="img/bordado5.png" />
-                  </div>
-                  <div class="card-action">
-                    <h6 class="teal-text text-lighten-2">COMETA</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="row section">
-              <div class="col s12 ">  
-                <div class="card hoverable">         
-                  <div class="card-image">
-                    <img src="img/bordado6.png" />
-                  </div>
-                  <div class="card-action">
-                    <h6 class="teal-text text-lighten-2">DESTELLO</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- INFO MATERIALES -->
-      <div class="info-materiales amber lighten-1 section">
-        <div class="container">
-          <div class="row">
-            <div class="txt col-lg-12">
-              <h4>Cuadernos artesanales que ofrecen resistencia y durabilidad</h4>
-            </div>
-            <div class="parent">
-              <div class="child">
-                  <h5 class="grey-text text-darken-3">Utilizamos materiales ecológicos</h5>
+              <div class="parent">
+                <div class="child">
+                  <h5 class="grey-text text-darken-3">
+                    Utilizamos materiales ecológicos
+                  </h5>
                   <div class="contenedor section">
-
                     <div class="contenedor-icon">
                       <i class="fas fa-seedling"></i>
                       <p>Fibra de caña de azúcar</p>
                     </div>
-                    
+
                     <div class="contenedor-icon">
                       <i class="fas fa-tint"></i>
                       <p>Pegamento ecológico</p>
@@ -354,117 +380,156 @@
                       <p>Origen vegetal</p>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OPINIONES DE CLIENTES -->
+        <section class="banner banner-opiniones section">
+          <div class="triangulo-left"></div>
+          <div class="rectangulo">
+            <h6 class="grey-text text-darken-4">opiniones de clientes</h6>
+          </div>
+          <div class="triangulo-right"></div>
+        </section>
+
+        <div class="opiniones container">
+          <div class="row">
+            <div class="col s3 z-depth-4">
+              <img
+                class="responsive-img circle z-depth-4"
+                src="img/cliente1.jpg"
+              />
+              <h6>Daniela</h6>
+              <p class="grey-text text-darken-1">Estudiante</p>
+              <div class="puntuacion white z-depth-2">
+                <i class="small material-icons yellow-text text-accent-4"
+                  >star</i
+                ><i class="small material-icons yellow-text text-accent-4"
+                  >star</i
+                ><i class="small material-icons yellow-text text-accent-4"
+                  >star</i
+                ><i class="small material-icons yellow-text text-accent-4"
+                  >star</i
+                ><i class="small material-icons yellow-text text-accent-4"
+                  >star</i
+                >
+              </div>
+              <p class="grey-text text-darken-1">"Buena calidad y bordado"</p>
+            </div>
+
+            <div class="col s3 z-depth-4">
+              <img
+                class="responsive-img circle z-depth-4"
+                src="img/cliente2.jpg"
+              />
+              <h6>Noah E.</h6>
+              <p class="grey-text text-darken-1">Desarrollador Web</p>
+              <div class="puntuacion white z-depth-2">
+                <i class="small material-icons yellow-text text-accent-4"
+                  >star</i
+                ><i class="small material-icons yellow-text text-accent-4"
+                  >star</i
+                ><i class="small material-icons yellow-text text-accent-4"
+                  >star</i
+                ><i class="small material-icons yellow-text text-accent-4"
+                  >star</i
+                ><i class="small material-icons yellow-text text-accent-4"
+                  >star</i
+                >
+              </div>
+              <p class="grey-text text-darken-1">
+                "Excelente, muy recomendable!"
+              </p>
+            </div>
+
+            <div class="col s3 z-depth-4">
+              <img
+                class="responsive-img circle z-depth-4"
+                src="img/cliente3.jpg"
+              />
+              <h6>Lara M.</h6>
+              <p class="grey-text text-darken-1">Diseñadora Gráfica</p>
+              <div class="puntuacion white z-depth-2">
+                <i class="small material-icons yellow-text text-accent-4"
+                  >star</i
+                ><i class="small material-icons yellow-text text-accent-4"
+                  >star</i
+                ><i class="small material-icons yellow-text text-accent-4"
+                  >star</i
+                ><i class="small material-icons yellow-text text-accent-4"
+                  >star</i
+                ><i class="small material-icons yellow-text text-accent-4"
+                  >star</i
+                >
+              </div>
+              <p class="grey-text text-darken-1">"Superó mis expectativas"</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="info-empezar-diseño teal lighten-2">
+        <div class="container">
+          <div class="row">
+            <div class="txt col-lg-12">
+              <h4>Empezar a personalizar tu cuaderno</h4>
+            </div>
+            <div class="parent">
+              <div class="child">
+                <h5 class="grey-text text-darken-3">
+                  Ideal si buscas crear bordados únicos, diferentes y especiales
+                  para tus cuadernos de manera sencilla y rápida
+                </h5>
+                <div class="botones">
+                  <a class="waves-effect btn amber lighten-1">Ver bordados</a>
+                  <a class="waves-effect amber lighten-1 btn">Personalizar</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- OPINIONES DE CLIENTES -->
-      <section class="banner banner-opiniones section">
-        <div class="triangulo-left"></div>
-        <div class="rectangulo">
-          <h6 class="grey-text text-darken-4">opiniones de clientes</h6>
-        </div>
-        <div class="triangulo-right"></div>
-      </section>
-
-      <div class="opiniones container">
-        <div class="row">
-          <div class="col s3 z-depth-4">
-            <img class="responsive-img circle z-depth-4" src="img/cliente1.jpg">
-            <h6>Daniela</h6>
-            <p class="grey-text text-darken-1">Estudiante</p>
-            <div class="puntuacion white z-depth-2">
-              <i class="small material-icons yellow-text text-accent-4">star</i><i class="small material-icons yellow-text text-accent-4">star</i><i class="small material-icons yellow-text text-accent-4">star</i><i class="small material-icons yellow-text text-accent-4">star</i><i class="small material-icons yellow-text text-accent-4">star</i>
+      <footer class="page-footer amber lighten-1">
+        <div class="container">
+          <div class="row">
+            <div class="redes-sociales">
+              <div class="col">
+                <a href=""><img clas src="img/Facebook.png" alt="" /></a>
+              </div>
+              <div class="col">
+                <a href=""><img clas src="img/Instagram.png" alt="" /></a>
+              </div>
+              <div class="col">
+                <a href=""><img clas src="img/Twitter.png" alt="" /></a>
+              </div>
+              <div class="col">
+                <a href=""><img clas src="img/Gmail.png" alt="" /></a>
+              </div>
             </div>
-            <p class="grey-text text-darken-1">"Buena calidad y bordado"</p>
-          </div>
 
-          <div class="col s3 z-depth-4">
-            <img class="responsive-img circle z-depth-4" src="img/cliente2.jpg">
-            <h6>Noah E.</h6>
-            <p class="grey-text text-darken-1">Desarrollador Web</p>
-            <div class="puntuacion white z-depth-2">
-              <i class="small material-icons yellow-text text-accent-4">star</i><i class="small material-icons yellow-text text-accent-4">star</i><i class="small material-icons yellow-text text-accent-4">star</i><i class="small material-icons yellow-text text-accent-4">star</i><i class="small material-icons yellow-text text-accent-4">star</i>
-            </div>
-            <p class="grey-text text-darken-1">"Excelente, muy recomendable!"</p>
-          </div>
-
-          <div class="col s3 z-depth-4">
-            <img class="responsive-img circle z-depth-4" src="img/cliente3.jpg">
-            <h6>Lara M.</h6>
-            <p class="grey-text text-darken-1">Diseñadora Gráfica</p>
-            <div class="puntuacion white z-depth-2">
-              <i class="small material-icons yellow-text text-accent-4">star</i><i class="small material-icons yellow-text text-accent-4">star</i><i class="small material-icons yellow-text text-accent-4">star</i><i class="small material-icons yellow-text text-accent-4">star</i><i class="small material-icons yellow-text text-accent-4">star</i>
-            </div>
-            <p class="grey-text text-darken-1">"Superó mis expectativas"</p>
-          </div>
-        </div>
-        
-        </div>
-
-        
-      </div>
-
-    </main>
-    <div class="info-empezar-diseño teal lighten-2">
-      <div class="container">
-        <div class="row">
-          <div class="txt col-lg-12">
-            <h4>Empezar a personalizar tu cuaderno</h4>
-          </div>
-          <div class="parent">
-            <div class="child">
-                <h5 class="grey-text text-darken-3">Ideal si buscas crear bordados únicos, diferentes y especiales para tus cuadernos de manera sencilla y rápida</h5>
-                <div class="botones">
-                  <a class="waves-effect btn amber lighten-1">Ver bordados</a>
-                  <a class="waves-effect amber lighten-1 btn">Personalizar</a>
-                </div>
+            <div class="medios-pago">
+              <div class="col">
+                <a href=""><img clas src="img/Mercado-Pago.png" alt="" /></a>
+              </div>
+              <div class="col">
+                <a href=""><img clas src="img/MasterCard.png" alt="" /></a>
+              </div>
+              <div class="col">
+                <a href=""><img clas src="img/PayPal.png" alt="" /></a>
+              </div>
+              <div class="col">
+                <a href=""><img clas src="img/Naranja.png" alt="" /></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
 
-    <footer class="page-footer amber lighten-1">
-      <div class="container">
-        <div class="row">
-          <div class="redes-sociales">
-            <div class="col">
-              <a href=""><img clas src="img/Facebook.png" alt=""></a>
-            </div>
-            <div class="col">
-              <a href=""><img clas src="img/Instagram.png" alt=""></a>
-            </div>
-            <div class="col">
-              <a href=""><img clas src="img/Twitter.png" alt=""></a>
-            </div>
-            <div class="col">
-              <a href=""><img clas src="img/Gmail.png" alt=""></a>
-            </div>
-          </div>
-
-          <div class="medios-pago">
-          <div class="col">
-            <a href=""><img clas src="img/Mercado-Pago.png" alt=""></a>
-          </div>
-          <div class="col">
-            <a href=""><img clas src="img/MasterCard.png" alt=""></a>
-          </div>
-          <div class="col">
-            <a href=""><img clas src="img/PayPal.png" alt=""></a>
-          </div>
-          <div class="col">
-            <a href=""><img clas src="img/Naranja.png" alt=""></a>
-          </div>
-          </div>
-
-        </div>
-      </div>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/main.js"></script>
   </body>

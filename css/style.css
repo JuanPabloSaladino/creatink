@@ -6,6 +6,14 @@ body {
   /* NAV */
   /* SLIDE */
 }
+body .preloader {
+  position: absolute;
+  margin: auto;
+  top: 50vh;
+  bottom: 50vh;
+  left: 0;
+  right: 0;
+}
 body nav .sidenav li .user-view a {
   display: flex;
   justify-content: center;
