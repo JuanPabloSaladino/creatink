@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #fff3e0;
+  background-color: #eaddc4;
   font-size: 16px;
   /* NAV */
   /* SLIDE */
@@ -68,7 +68,6 @@ body nav .nav-wrapper .right li .ribbon {
   border-bottom: 1.25rem solid transparent;
   margin-top: -2.375rem;
 }
-/*index*/
 body section .contenedor-slide {
   background-image: url(../img/slide.jpg);
   background-size: cover;
@@ -120,30 +119,30 @@ body main {
   padding-bottom: 0;
   padding: 50px;
 }
-body main .destacados .contenedor-destacados,
+body main .stock .contenedor-stock,
 body main .bordados .contenedor-bordados {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 0;
 }
-body main .destacados .contenedor-destacados .col .row,
+body main .stock .contenedor-stock .col .row,
 body main .bordados .contenedor-bordados .col .row {
   margin: 0;
 }
-body main .destacados .contenedor-destacados .col .row .col .card .card-image,
+body main .stock .contenedor-stock .col .row .col .card .card-image,
 body main .bordados .contenedor-bordados .col .row .col .card .card-image {
   padding: 0.5rem;
 }
-body main .destacados .contenedor-destacados .col .row .col .card .card-image img,
+body main .stock .contenedor-stock .col .row .col .card .card-image img,
 body main .bordados .contenedor-bordados .col .row .col .card .card-image img {
   border-radius: 0;
 }
-body main .destacados .contenedor-destacados .col .row .col .card .card-action,
+body main .stock .contenedor-stock .col .row .col .card .card-action,
 body main .bordados .contenedor-bordados .col .row .col .card .card-action {
   height: 3.15rem;
 }
-body main .destacados .contenedor-destacados .col .row .col .card .card-action h6,
+body main .stock .contenedor-stock .col .row .col .card .card-action h6,
 body main .bordados .contenedor-bordados .col .row .col .card .card-action h6 {
   font-weight: 800;
   margin: 0;
@@ -272,30 +271,6 @@ body .banner .rectangulo h6 {
   body section .contenedor-slide .container {
     width: 100%;
   }
-}
-/*comprar*/
-
-
-body section .contenedor-pasos .container {
-  margin: 0;
-  margin-left: 70px;
-  width: 30%;
-  height: 100%;
-  
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-body section .contenedor-pasos .container .iso-grande {
-  margin-top: -3.75rem;
-  width: 12.5rem;
-}
-body section .pasos{
-  
-  margin-top: 5%;
-  margin-left: 20%;
-  margin-bottom: -10%;
-
 
   body footer .container {
     width: 100%;
