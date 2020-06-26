@@ -1,160 +1,198 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Creathink</title>
-    <script
-      src="https://kit.fontawesome.com/222a3ac483.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Open+Sans:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    
-    <div class="preloader center section" id="preloader">
-      <div class="preloader-wrapper big active">
-        <div class="spinner-layer spinner-amber lighten-1">
-          <div class="circle-clipper left">
-            <div class="circle"></div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalizacion</title>
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <link rel="stylesheet" href="css/styles-personalizar.css">
+
+</head>
+
+<body>
+
+  <nav class="nav-extended amber lighten-1">
+
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <a href="#" data-target="hamburguer" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">Enlace</a></li>
+        <li><a href="#">Enlace</a></li>
+        <li><a href="#">Enlace</a></li>
+        <li><a href="#">Enlace</a></li>
+      </ul>
+    </div>
+
+    <ul class="sidenav" id="hamburguer">
+      <li><a href="#">Enlace</a></li>
+      <li><a href="#">Enlace</a></li>
+      <li><a href="#">Enlace</a></li>
+      <li><a href="#">Enlace</a></li>
+    </ul>
+
+  </nav>
+
+  <div class="container">
+    <div class="row cosas">
+      <div class="col s7 blue" id="personalizar-container-imagen">
+        <div class="personalizar-imagen"></div>
+      </div>
+      <div class="col s5 center-align personalizar-container-botones">
+        <div class="row">
+          <div class="col s4">
+            <div class="btn-floating waves-effect waves-light white boton"></div>
+            <h6 class="personalizar-descripcion">Blanco</h6>
           </div>
-          <div class="gap-patch">
-            <div class="circle"></div>
+          <div class="col s4">
+            <div class="btn-floating waves-effect waves-light black boton"></div>
+            <h6 class="personalizar-descripcion">Negro</h6>
           </div>
-          <div class="circle-clipper right">
-            <div class="circle"></div>
+          <div class="col s4">
+            <div class="btn-floating waves-effect waves-light brown boton"></div>
+            <h6 class="personalizar-descripcion">Marrón</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s4">
+            <div class="btn-floating waves-effect waves-light purple boton"></div>
+            <h6 class="personalizar-descripcion">Violeta</h6>
+          </div>
+          <div class="col s4">
+            <div class="btn-floating waves-effect waves-light pink boton"></div>
+            <h6 class="personalizar-descripcion">Magenta</h6>
+          </div>
+          <div class="col s4">
+            <div class="btn-floating waves-effect waves-light blue boton"></div>
+            <h6 class="personalizar-descripcion">Azul</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s4">
+            <div class="btn-floating waves-effect waves-light cyan boton"></div>
+            <h6 class="personalizar-descripcion">Turquesa</h6>
+          </div>
+          <div class="col s4">
+            <div class="btn-floating waves-effect waves-light green boton"></div>
+            <h6 class="personalizar-descripcion">Verde</h6>
+          </div>
+          <div class="col s4">
+            <div class="btn-floating waves-effect waves-light amber boton"></div>
+            <h6 class="personalizar-descripcion">Dorado</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s4">
+            <div class="btn-floating waves-effect waves-light yellow boton"></div>
+            <h6 class="personalizar-descripcion">Amarillo</h6>
+          </div>
+          <div class="col s4">
+            <div class="btn-floating waves-effect waves-light orange boton"></div>
+            <h6 class="personalizar-descripcion">Naranja</h6>
+          </div>
+          <div class="col s4">
+            <div class="btn-floating waves-effect waves-light red boton"></div>
+            <h6 class="personalizar-descripcion">Rojo</h6>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="hide" id="contenido">
-      <header>
-        <nav class="amber lighten-1">
-          <ul id="slide-out" class="sidenav">
-            <li>
-              <div class="user-view">
-                <div class="background">
-                  <img src="img/slide.jpg" />
-                </div>
-                <a href="#logo"><img class="circle" src="img/iso.png" /></a>
-                <a href="#name"><h2 class="white-text name">Creatink</h2></a>
-              </div>
-            </li>
-            <li>
-              <a href="#!"
-                ><i class="material-icons">mode_edit</i>Crear propio cuaderno</a
-              >
-            </li>
-            <li><div class="divider"></div></li>
-            <li class="menu-movil arriba">
-              <img class="responsive-img" src="img/home.png" alt="" />
-              <a class="waves-effect" href="#!">Inicio</a>
-            </li>
-            <li class="menu-movil">
-              <img class="responsive-img" src="img/personalizar.png" alt="" />
-              <a class="waves-effect" href="#!">Personalizar</a>
-            </li>
-            <li class="menu-movil">
-              <img class="responsive-img" src="img/comprar.png" alt="" />
-              <a class="waves-effect" href="#!">Comprar</a>
-            </li>
-            <li class="menu-movil">
-              <img class="responsive-img" src="img/contactar.png" alt="" />
-              <a class="waves-effect" href="#!">Contactar</a>
-            </li>
-          </ul>
-          <a href="#" data-target="slide-out" class="sidenav-trigger"
-            ><i class="material-icons">menu</i></a
-          >
-
-        </nav>
-      </header>
-
-      <!-- SLIDE -->
-      <section>
-        <div class="contenedor-slide">
-          <div class="container">
-            <div class="iso-grande">
-              <img class="responsive-img" src="img/iso.png" alt="" />
-            </div>
-
+    <div class="row">
+      <div class="col m7">
+        <div class="row">
+          <div class="col m3"></div>
+          <div class="col m3">
+            <i class="large material-icons">menu_book</i>
+          </div>
+          <div class="col m3">
+            <i class="large material-icons">book</i>
           </div>
         </div>
-      </section>
-
-      <main>
-
-        <!-- NUESTROS FAVORITOS -->
-        <section class="banner section banner-bordados">
-          <div class="triangulo-left"></div>
-          <div class="rectangulo">
-            <h6 class="grey-text text-darken-4">nuestros bordados favoritos</h6>
-          </div>
-          <div class="triangulo-right"></div>
-        </section>      
-
-        <!-- OPINIONES DE CLIENTES -->
-        <section class="banner banner-opiniones section">
-          <div class="triangulo-left"></div>
-          <div class="rectangulo">
-            <h6 class="grey-text text-darken-4">opiniones de clientes</h6>
-          </div>
-          <div class="triangulo-right"></div>
-        </section>
-
-      </main>
-
-      <footer class="page-footer amber lighten-1">
-        <div class="container">
-          <div class="row">
-            <div class="redes-sociales">
-              <div class="col">
-                <a href=""><img clas src="img/Facebook.png" alt="" /></a>
-              </div>
-              <div class="col">
-                <a href=""><img clas src="img/Instagram.png" alt="" /></a>
-              </div>
-              <div class="col">
-                <a href=""><img clas src="img/Twitter.png" alt="" /></a>
-              </div>
-              <div class="col">
-                <a href=""><img clas src="img/Gmail.png" alt="" /></a>
-              </div>
-            </div>
-
-            <div class="medios-pago">
-              <div class="col">
-                <a href=""><img clas src="img/Mercado-Pago.png" alt="" /></a>
-              </div>
-              <div class="col">
-                <a href=""><img clas src="img/MasterCard.png" alt="" /></a>
-              </div>
-              <div class="col">
-                <a href=""><img clas src="img/PayPal.png" alt="" /></a>
-              </div>
-              <div class="col">
-                <a href=""><img clas src="img/Naranja.png" alt="" /></a>
-              </div>
-            </div>
-          </div>
+      </div>
+      <div class="col s5 m5 l5 xl5">
+        <div class="col s4 m1 l1 xl1">
+          <i class="large material-icons">keyboard_arrow_left</i>
         </div>
-      </footer>
+        <div class="col s4 m7 l7 xl8"></div>
+        <div class="col s4 m1 l1 xl1">
+          <i class="large material-icons">keyboard_arrow_right</i>
+        </div>
+      </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  </div>
+
+  <div class="container video">
+    <div class="video-container" controls="true">
+      <iframe src="http://www.youtube.com/embed/cOWyJw_fBJo" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+      </div>
+  </div>
+
+  <footer class="page-footer amber lighten-1">
+    <div class="container">
+      <div class="row">
+        <div class="redes-sociales">
+          <div class="col m1">
+            <a href="#"><img clas src="img/Facebook.png" alt="" /></a>
+          </div>
+          <div class="col m1">
+            <a href="#"><img clas src="img/Instagram.png" alt="" /></a>
+          </div>
+          <div class="col m1">
+            <a href="#"><img clas src="img/Twitter.png" alt="" /></a>
+          </div>
+          <div class="col m1">
+            <a href="#"><img clas src="img/Gmail.png" alt="" /></a>
+          </div>
+        </div>
+
+        <div class="col m4"></div>
+
+        <div class="medios-pago">
+          <div class="col m1">
+            <a href="#"><img clas src="img/Mercado-Pago.png" alt="" /></a>
+          </div>
+          <div class="col m1">
+            <a href="#"><img clas src="img/MasterCard.png" alt="" /></a>
+          </div>
+          <div class="col m1">
+            <a href="#"><img clas src="img/PayPal.png" alt="" /></a>
+          </div>
+          <div class="col m1">
+            <a href="#"><img clas src="img/Naranja.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+
+    //Inicializa TODOS los scripts de JavaScript
+    document.addEventListener('DOMContentLoaded', function () {
+      M.AutoInit();
+    });
+
+    //Inicializa solamente el script correspondiente al navbar
+    /*document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });*/
+  </script>
+
+</body>
+
 </html>

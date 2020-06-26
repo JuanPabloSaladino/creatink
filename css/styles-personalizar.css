@@ -1,0 +1,37 @@
+body{
+    background-color: #fff3e0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+  }
+
+#personalizar-container-imagen{
+    height: 41em;
+}
+
+.personalizar-container-botones{
+    height: 41em;
+}
+
+.boton{
+    margin-top: 4em;
+    border: 0.1em solid #fff;
+}
+
+.personalizar-descripcion{
+    font-weight: 400;
+}
+
+.cosas{
+    height: 40em;
+}
+
+.video{
+    margin-bottom: 2em;
+}
+
+
