@@ -23,24 +23,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    
-    <div class="preloader center section" id="preloader">
-      <div class="preloader-wrapper big active">
-        <div class="spinner-layer spinner-amber lighten-1">
-          <div class="circle-clipper left">
-            <div class="circle"></div>
-          </div>
-          <div class="gap-patch">
-            <div class="circle"></div>
-          </div>
-          <div class="circle-clipper right">
-            <div class="circle"></div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="hide" id="contenido">
       <header>
         <nav class="amber lighten-1">
           <ul id="slide-out" class="sidenav">
@@ -49,7 +32,7 @@
                 <div class="background">
                   <img src="img/slide.jpg" />
                 </div>
-                <a href="#logo"><img class="circle" src="img/iso.png" /></a>
+                <a href="#logo"><img class="circle" src="img/iso.png" alt="Logo Creatink" /></a>
                 <a href="#name"><h2 class="white-text name">Creatink</h2></a>
               </div>
             </li>
@@ -61,7 +44,7 @@
             <li><div class="divider"></div></li>
             <li class="menu-movil arriba">
               <img class="responsive-img" src="img/home.png" alt="" />
-              <a class="waves-effect" href="#!">Inicio</a>
+              <a class="waves-effect" href="index.html">Inicio</a>
             </li>
             <li class="menu-movil">
               <img class="responsive-img" src="img/personalizar.png" alt="" />
@@ -81,24 +64,21 @@
           >
 
           <div class="nav-wrapper container">
-            <!-- <a href="" class="brand-logo">
-                    <img class="responsive-img" src="img/iso.png" alt="">
-                </a> -->
             <ul class="right">
               <li>
-                <a href="#"><img src="img/home.png" alt="" /></a>
+                <a href="index.html"><img src="img/home.png" alt="Home" /></a>
                 <div class="ribbon"></div>
               </li>
               <li>
-                <a href="#"><img src="img/personalizar.png" alt="" /></a>
+                <a href="#"><img src="img/personalizar.png" alt="Personalizar" /></a>
                 <div class="ribbon"></div>
               </li>
               <li>
-                <a href="#"><img src="img/comprar.png" alt="" /></a>
+                <a href="#"><img src="img/comprar.png" alt="Comprar" /></a>
                 <div class="ribbon"></div>
               </li>
               <li>
-                <a href="#"><img src="img/contactar.png" alt="" /></a>
+                <a href="#"><img src="img/contactar.png" alt="Contacto" /></a>
                 <div class="ribbon"></div>
               </li>
             </ul>
@@ -140,27 +120,45 @@
 
       <main>
         <!-- EN STOCK -->
-        <section class="banner banner-stock">
-          <div class="triangulo-left"></div>
-          <div class="rectangulo">
-            <h6 class="grey-text text-darken-4">productos en stock</h6>
-          </div>
-          <div class="triangulo-right"></div>
+        <section class="banner banner-stock center section">
+          <img class="responsive-img" src="img/banner-stock.png" alt="Productos en stock">
         </section>
 
         <div class="stock container section">
           <div class="titulo-stock"></div>
 
-          <div class="row contenedor-stock">
+          <div class="row contenedor-stock section">
             <div class="col s12 m4">
               <div class="row">
                 <div class="col s12">
                   <div class="card hoverable">
                     <div class="card-image">
-                      <img src="img/zafiro.png" />
+                      <a class="btn-floating halfway-fab waves-effect waves-light right">
+                        <i class="material-icons teal lighten-2 fav">favorite_border</i></a>
+                            <img src="img/zafiro.png" alt="Cuaderno Zafiro"/>
                     </div>
+                    <p class="right precio section">61</p>
                     <div class="card-action">
-                      <h6 class="teal-text text-lighten-2">ZAFIRO</h6>
+                      <h6>ZAFIRO</h6>
+                      <p>250 páginas</p>
+                      <div class="hilos">
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-amarillo.jpg" alt="Hilo amarillo">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-azul-marino.jpg" alt="Hilo azul marino">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-turquesa.jpg" alt="Hilo turquesa">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-beige.jpg" alt="Hilo beige">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-marron.jpg" alt="Hilo marrón">
+                        </div>
+
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -171,10 +169,29 @@
                 <div class="col s12">
                   <div class="card hoverable">
                     <div class="card-image">
-                      <img src="img/colision.png" />
+                      <a class="btn-floating halfway-fab waves-effect waves-light right">
+                        <i class="material-icons teal lighten-2 fav">favorite_border</i></a>
+                      <img src="img/colision.png" alt="Cuaderno colisión"/>
                     </div>
+                    <p class="right precio section">79
+                    </p>
                     <div class="card-action">
-                      <h6 class="teal-text text-lighten-2">COLISIÓN</h6>
+                      <h6>COLISIÓN</h6>
+                      <p>280 páginas</p>
+                      <div class="hilos">
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-verde-oscuro.jpg" alt="Hilo verde oscuro">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-verde.jpg" alt="Hilo verde claro">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-naranja.jpg" alt="Hilo naranja">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-negro.jpg" alt="Hilo negro">
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -185,10 +202,30 @@
                 <div class="col s12">
                   <div class="card hoverable">
                     <div class="card-image">
-                      <img src="img/universo.png" />
+                      <a class="btn-floating halfway-fab waves-effect waves-light right">
+                        <i class="material-icons teal lighten-2 fav">favorite_border</i></a>
+                      <img src="img/universo.png" alt="Cuaderno Universo"/>
                     </div>
+                    <p class="right precio section">70</p>
                     <div class="card-action">
-                      <h6 class="teal-text text-lighten-2">UNIVERSO</h6>
+                      
+                      <h6>UNIVERSO</h6>
+                      <p>190 páginas</p>
+                      <div class="hilos">
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-magenta.jpg" alt="Hilo magenta">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-violeta.jpg" alt="Hilo violeta">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-azul-marino.jpg" alt="Hilo azul marino">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-turquesa.jpg" alt="Hilo turquesa">
+                        </div>
+
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -198,42 +235,95 @@
 
           <div class="row contenedor-stock section">
             <div class="col s12 m4">
-              <div class="row section">
+              <div class="row">
                 <div class="col s12">
                   <div class="card hoverable">
                     <div class="card-image">
-                      <img src="img/rosado.png" />
+                      <a class="btn-floating halfway-fab waves-effect waves-light right">
+                        <i class="material-icons teal lighten-2 fav">favorite_border</i></a>
+                      <img src="img/rosado.png" alt="Cuaderno Rosado" />
                     </div>
+                    <p class="right precio section">98</p>
                     <div class="card-action">
-                      <h6 class="teal-text text-lighten-2">ROSADO</h6>
+                      
+                      <h6>ROSADO</h6>
+                      <p>200 páginas</p>
+                      <div class="hilos">
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-rojo.png" alt="Hilo rojo">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-verde-oscuro.jpg" alt="Hilo verde oscuro">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-blanco.jpg" alt="Hilo blanco">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-dorado.jpg" alt="">
+                        </div>
+
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col s12 m4">
-              <div class="row section">
+              <div class="row">
                 <div class="col s12">
                   <div class="card hoverable">
                     <div class="card-image">
-                      <img src="img/cometa.png" />
+                      <a class="btn-floating halfway-fab waves-effect waves-light right">
+                        <i class="material-icons teal lighten-2 fav">favorite_border</i></a>
+                      <img src="img/cometa.png" alt="Cuaderno Cometa" />
                     </div>
+                    <p class="right precio section">31</p>
                     <div class="card-action">
-                      <h6 class="teal-text text-lighten-2">COMETA</h6>
+                      
+                      <h6>COMETA</h6>
+                      <p>196 páginas</p>
+                      <div class="hilos">
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-naranja.jpg" alt="Hilo naranja">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-rojo.png" alt="Hilo rojo">
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col s12 m4">
-              <div class="row section">
+              <div class="row">
                 <div class="col s12">
                   <div class="card hoverable">
                     <div class="card-image">
-                      <img src="img/destello.png" />
+                      <a class="btn-floating halfway-fab waves-effect waves-light right">
+                        <i class="material-icons teal lighten-2 fav">favorite_border</i></a>
+                      <img src="img/destello.png" alt="Cuaderno Destello"/>
                     </div>
+                    <p class="right precio section">44</p>
                     <div class="card-action">
-                      <h6 class="teal-text text-lighten-2">DESTELLO</h6>
+                      
+                      <h6>DESTELLO</h6>
+                      <p>260 páginas</p>
+                      <div class="hilos">
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-azul-marino.jpg" alt="Hilo azul marino">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-turquesa.jpg" alt="Hilo turquesa">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-marron.jpg" alt="Hilo marrón">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-naranja.jpg" alt="Hilo naranja">
+                        </div>
+
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -243,27 +333,41 @@
         </div>
 
         <!-- NUESTROS FAVORITOS -->
-        <section class="banner section banner-bordados">
-          <div class="triangulo-left"></div>
-          <div class="rectangulo">
-            <h6 class="grey-text text-darken-4">nuestros bordados favoritos</h6>
-          </div>
-          <div class="triangulo-right"></div>
+        <section class="banner section banner-bordados center">
+          <img class="responsive-img" src="img/banner-bordados-favoritos.png" alt="Nuestros bordados favoritos">
         </section>
 
         <div class="bordados container">
           <div class="titulo-bordados"></div>
 
-          <div class="row contenedor-bordados">
+          <div class="row contenedor-bordados section">
             <div class="col s12 m4">
               <div class="row">
                 <div class="col s12">
                   <div class="card hoverable">
                     <div class="card-image">
-                      <img src="img/bordado1.png" />
+                      <a class="btn-floating halfway-fab waves-effect waves-light right">
+                        <i class="material-icons teal lighten-2 fav">favorite_border</i></a>
+                            <img src="img/bordado1.png" alt="Bordado Universo"/>
                     </div>
+                    <p class="right precio section">76</p>
                     <div class="card-action">
-                      <h6 class="teal-text text-lighten-2">ZAFIRO</h6>
+                      <h6>UNIVERSO</h6>
+                      <p>Bordado</p>
+                      <div class="hilos">
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-magenta.jpg" alt="Hilo magenta">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-violeta.jpg" alt="Hilo violeta">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-azul-marino.jpg" alt="Hilo azul marino">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-turquesa.jpg" alt="Hilo turquesa">
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -274,10 +378,28 @@
                 <div class="col s12">
                   <div class="card hoverable">
                     <div class="card-image">
-                      <img src="img/bordado2.png" />
+                      <a class="btn-floating halfway-fab waves-effect waves-light right">
+                        <i class="material-icons teal lighten-2 fav">favorite_border</i></a>
+                      <img src="img/bordado2.png" alt="Bordado colisión"/>
                     </div>
+                    <p class="right precio section">91</p>
                     <div class="card-action">
-                      <h6 class="teal-text text-lighten-2">COLISIÓN</h6>
+                      <h6>COLISIÓN</h6>
+                      <p>Bordado</p>
+                      <div class="hilos">
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-verde-oscuro.jpg" alt="Hilo verde oscuro">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-verde.jpg" alt="Hilo verde claro">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-naranja.jpg" alt="Hilo naranja">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-negro.jpg" alt="Hilo negro">
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -288,10 +410,30 @@
                 <div class="col s12">
                   <div class="card hoverable">
                     <div class="card-image">
-                      <img src="img/bordado3.png" />
+                      <a class="btn-floating halfway-fab waves-effect waves-light right">
+                        <i class="material-icons teal lighten-2 fav">favorite_border</i></a>
+                      <img src="img/bordado3.png" alt="Cuaderno Infinito"/>
                     </div>
+                    <p class="right precio section">88</p>
                     <div class="card-action">
-                      <h6 class="teal-text text-lighten-2">UNIVERSO</h6>
+                      
+                      <h6>INFINITO</h6>
+                      <p>Bordado</p>
+                      <div class="hilos">
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-violeta.jpg" alt="Hilo violeta">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-azul-marino.jpg" alt="Hilo azul marino">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-beige.jpg" alt="Hilo beige">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-turquesa.jpg" alt="Hilo turquesa">
+                        </div>
+
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -301,42 +443,94 @@
 
           <div class="row contenedor-bordados section">
             <div class="col s12 m4">
-              <div class="row section">
+              <div class="row">
                 <div class="col s12">
                   <div class="card hoverable">
                     <div class="card-image">
-                      <img src="img/bordado4.png" />
+                      <a class="btn-floating halfway-fab waves-effect waves-light right">
+                        <i class="material-icons teal lighten-2 fav">favorite_border</i></a>
+                      <img src="img/bordado4.png" alt="Cuaderno Cometa" />
                     </div>
+                    <p class="right precio section">43</p>
                     <div class="card-action">
-                      <h6 class="teal-text text-lighten-2">ROSADO</h6>
+                      
+                      <h6>COMETA</h6>
+                      <p>Bordado</p>
+                      <div class="hilos">
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-azul-marino.jpg" alt="Hilo azul marino">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-turquesa.jpg" alt="Hilo turquesa">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-marron.jpg" alt="Hilo marrón">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-naranja.jpg" alt="Hilo naranja">
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col s12 m4">
-              <div class="row section">
+              <div class="row">
                 <div class="col s12">
                   <div class="card hoverable">
                     <div class="card-image">
-                      <img src="img/bordado5.png" />
+                      <a class="btn-floating halfway-fab waves-effect waves-light right">
+                        <i class="material-icons teal lighten-2 fav">favorite_border</i></a>
+                      <img src="img/bordado5.png" alt="Bordado Cometa" />
                     </div>
+                    <p class="right precio section">22</p>
                     <div class="card-action">
-                      <h6 class="teal-text text-lighten-2">COMETA</h6>
+                      
+                      <h6>COMETA</h6>
+                      <p>Bordado</p>
+                      <div class="hilos">
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-naranja.jpg" alt="Hilo naranja">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-rojo.png" alt="Hilo rojo">
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col s12 m4">
-              <div class="row section">
+              <div class="row">
                 <div class="col s12">
                   <div class="card hoverable">
                     <div class="card-image">
-                      <img src="img/bordado6.png" />
+                      <a class="btn-floating halfway-fab waves-effect waves-light right">
+                        <i class="material-icons teal lighten-2 fav">favorite_border</i></a>
+                      <img src="img/bordado6.png" alt="Bordado Destello"/>
                     </div>
+                    <p class="right precio section">57</p>
                     <div class="card-action">
-                      <h6 class="teal-text text-lighten-2">DESTELLO</h6>
+                      
+                      <h6>DESTELLO</h6>
+                      <p>Bordado</p>
+                      <div class="hilos">
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-azul-marino.jpg" alt="Hilo azul marino">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-turquesa.jpg" alt="Hilo turquesa">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-marron.jpg" alt="Hilo marrón">
+                        </div>
+                        <div class="btn-floating waves-effect waves-light white boton">
+                          <img src="img/color-naranja.jpg" alt="Hilo naranja">
+                        </div>
+
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -346,7 +540,7 @@
         </div>
 
         <!-- INFO MATERIALES -->
-        <div class="info-materiales amber lighten-1 section">
+        <div class="info-materiales section">
           <div class="container">
             <div class="row">
               <div class="txt col-lg-12">
@@ -372,7 +566,7 @@
 
                     <div class="contenedor-icon">
                       <i class="fas fa-recycle"></i>
-                      <p>Reciclables</p>
+                      <p>Reciclable</p>
                     </div>
 
                     <div class="contenedor-icon">
@@ -387,106 +581,191 @@
         </div>
 
         <!-- OPINIONES DE CLIENTES -->
-        <section class="banner banner-opiniones section">
-          <div class="triangulo-left"></div>
-          <div class="rectangulo">
-            <h6 class="grey-text text-darken-4">opiniones de clientes</h6>
-          </div>
-          <div class="triangulo-right"></div>
+        <section class="banner banner-opiniones section center">
+          <img class="responsive-img" src="img/banner-opiniones.png" alt="Opiniones de clientes">
         </section>
 
         <div class="opiniones container">
-          <div class="row">
-            <div class="col s3 z-depth-4">
-              <img
-                class="responsive-img circle z-depth-4"
-                src="img/cliente1.jpg"
-              />
-              <h6>Daniela</h6>
-              <p class="grey-text text-darken-1">Estudiante</p>
-              <div class="puntuacion white z-depth-2">
-                <i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                >
+          <div class="carousel">
+            <a class="carousel-item" href="#one!">
+              <div class="col s4 z-depth-4">
+                <img
+                  class="responsive-img circle z-depth-4"
+                  src="img/cliente1.jpg"
+                />
+                <h6>Daniela Rodriguez</h6>
+                <p class="grey-text text-darken-1">Estudiante</p>
+                <div class="puntuacion">
+                  <i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  ><i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  ><i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  ><i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  ><i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  >
+                </div>
+                <p class="grey-text text-darken-1">"Buena calidad y bordado"</p>
+                <p class="texto-extra hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laudantium odio, iure magni itaque rerum inventore eos nemo consectetur repellendus cumque nesciunt ipsam, sapiente iste dolor. Sequi est eveniet ducimus.</p>
+                <p class="activar">Ver más</p>
               </div>
-              <p class="grey-text text-darken-1">"Buena calidad y bordado"</p>
-            </div>
+            </a>
+            <a class="carousel-item" href="#two!">
+              <div class="col s4 z-depth-4">
+                <img
+                  class="responsive-img circle z-depth-4"
+                  src="img/cliente2.jpg"
+                />
+                <h6>Noah Ferreira</h6>
+                <p class="grey-text text-darken-1">Desarrollador Web</p>
+                <div class="puntuacion">
+                  <i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  ><i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  ><i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  ><i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  ><i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  >
+                </div>
+                <p class="grey-text text-darken-1">
+                  "Excelente, muy recomendable!"
+                </p>
+                <p class="texto-extra hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laudantium odio, iure magni itaque rerum inventore eos nemo consectetur repellendus cumque nesciunt ipsam, sapiente iste dolor. Sequi est eveniet ducimus.</p>
+                <p class="activar">Ver más</p>
+              </div>
+            </a>
+            <a class="carousel-item" href="#three!">
 
-            <div class="col s3 z-depth-4">
-              <img
-                class="responsive-img circle z-depth-4"
-                src="img/cliente2.jpg"
-              />
-              <h6>Noah E.</h6>
-              <p class="grey-text text-darken-1">Desarrollador Web</p>
-              <div class="puntuacion white z-depth-2">
-                <i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                >
+              <div class="col s4 z-depth-4">
+                <img
+                  class="responsive-img circle z-depth-4"
+                  src="img/cliente3.jpg"
+                />
+                <h6>Lara Mercado</h6>
+                <p class="grey-text text-darken-1">Diseñadora Gráfica</p>
+                <div class="puntuacion">
+                  <i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  ><i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  ><i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  ><i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  ><i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  >
+                </div>
+                <p class="grey-text text-darken-1">"Superó mis expectativas"</p>
+                                <p class="texto-extra hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laudantium odio, iure magni itaque rerum inventore eos nemo consectetur repellendus cumque nesciunt ipsam, sapiente iste dolor. Sequi est eveniet ducimus.</p>
+                <p class="activar">Ver más</p>
               </div>
-              <p class="grey-text text-darken-1">
-                "Excelente, muy recomendable!"
-              </p>
-            </div>
+            </a>
+            <a class="carousel-item" href="#four!">
+              <div class="col s4 z-depth-4">
+                <img
+                  class="responsive-img circle z-depth-4"
+                  src="img/cliente4.jpg"
+                />
+                <h6>Luis Cardenas</h6>
+                <p class="grey-text text-darken-1">Profesor</p>
+                <div class="puntuacion">
+                  <i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  ><i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  ><i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  ><i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  >
+                </div>
+                <p class="grey-text text-darken-1">"Un regalo para dar"</p>
+                <p class="texto-extra hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laudantium odio, iure magni itaque rerum inventore eos nemo consectetur repellendus cumque nesciunt ipsam, sapiente iste dolor. Sequi est eveniet ducimus.</p>
+                <p class="activar">Ver más</p>
+              </div>
+            </a>
+            <a class="carousel-item" href="#five!">
+              <div class="col s4 z-depth-4">
+                <img
+                  class="responsive-img circle z-depth-4"
+                  src="img/cliente5.jpg"
+                />
+                <h6>Rocio Araujo</h6>
+                <p class="grey-text text-darken-1">Artesana</p>
+                <div class="puntuacion">
+                  <i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  ><i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  ><i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  ><i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  ><i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  >
+                </div>
+                <p class="grey-text text-darken-1">
+                  "El bordado es detallado y resistente, lo recomiendo !"
+                </p>
+                <p class="texto-extra hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laudantium odio, iure magni itaque rerum inventore eos nemo consectetur repellendus cumque nesciunt ipsam, sapiente iste dolor. Sequi est eveniet ducimus.</p>
+                <p class="activar">Ver más</p>
+              </div>
+            </a>
+            <a class="carousel-item" href="#six!">
 
-            <div class="col s3 z-depth-4">
-              <img
-                class="responsive-img circle z-depth-4"
-                src="img/cliente3.jpg"
-              />
-              <h6>Lara M.</h6>
-              <p class="grey-text text-darken-1">Diseñadora Gráfica</p>
-              <div class="puntuacion white z-depth-2">
-                <i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                >
+              <div class="col s4 z-depth-4">
+                <img
+                  class="responsive-img circle z-depth-4"
+                  src="img/cliente6.jpg"
+                />
+                <h6>Elisabeth Silva</h6>
+                <p class="grey-text text-darken-1">Ilustradora</p>
+                <div class="puntuacion">
+                  <i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  ><i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  ><i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  ><i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  ><i class="small material-icons yellow-text text-accent-4"
+                    >star</i
+                  >
+                </div>
+                <p class="grey-text text-darken-1">"Hace años compro mis cuadernos en esta página por su durabilidad"</p>
+                                <p class="texto-extra hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laudantium odio, iure magni itaque rerum inventore eos nemo consectetur repellendus cumque nesciunt ipsam, sapiente iste dolor. Sequi est eveniet ducimus.</p>
+                <p class="activar">Ver más</p>
               </div>
-              <p class="grey-text text-darken-1">"Superó mis expectativas"</p>
-            </div>
+            </a>
           </div>
         </div>
       </main>
 
-      <div class="info-empezar-diseño teal lighten-2">
-        <div class="container">
-          <div class="row">
-            <div class="txt col-lg-12">
-              <h4>Empezar a personalizar tu cuaderno</h4>
-            </div>
-            <div class="parent">
-              <div class="child">
-                <h5 class="grey-text text-darken-3">
-                  Ideal si buscas crear bordados únicos, diferentes y especiales
-                  para tus cuadernos de manera sencilla y rápida
-                </h5>
-                <div class="botones">
-                  <a class="waves-effect btn amber lighten-1">Ver bordados</a>
-                  <a class="waves-effect amber lighten-1 btn">Personalizar</a>
-                </div>
+      <!-- INFO EMPEZAR DISEÑO -->
+      <div class="info-empezar-diseño section">
+        <div class="row">
+          <div class="txt col-lg-12">
+            <h4>Empezar a personalizar tu cuaderno</h4>
+          </div>
+          <div class="parent">
+            <div class="child">
+              <h5 class="grey-text text-darken-3">
+                Ideal si buscas crear bordados únicos, diferentes y especiales
+                para tus cuadernos de manera sencilla y rápida
+              </h5>
+              <div class="botones">
+                <a class="waves-effect btn amber lighten-1">Ver bordados</a>
+                <a class="waves-effect amber lighten-1 btn">Personalizar</a>
               </div>
             </div>
           </div>
@@ -494,24 +773,24 @@
       </div>
 
       <footer class="page-footer amber lighten-1">
-        <div class="container">
-          <div class="row">
-            <div class="redes-sociales">
+        <div class="container center">
+          <div class="row ">
+            <div class="redes-sociales left">
               <div class="col">
-                <a href=""><img clas src="img/Facebook.png" alt="" /></a>
+                <a href=""><img clas src="img/Facebook.png" alt="Facebook" /></a>
               </div>
               <div class="col">
-                <a href=""><img clas src="img/Instagram.png" alt="" /></a>
+                <a href=""><img clas src="img/Instagram.png" alt="Instagram" /></a>
               </div>
               <div class="col">
-                <a href=""><img clas src="img/Twitter.png" alt="" /></a>
+                <a href=""><img clas src="img/Twitter.png" alt="Twitter" /></a>
               </div>
               <div class="col">
-                <a href=""><img clas src="img/Gmail.png" alt="" /></a>
+                <a href=""><img clas src="img/Youtube.png" alt="Youtube" /></a>
               </div>
             </div>
 
-            <div class="medios-pago">
+            <div class="medios-pago right">
               <div class="col">
                 <a href=""><img clas src="img/Mercado-Pago.png" alt="" /></a>
               </div>
