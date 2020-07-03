@@ -1,5 +1,6 @@
 body {
   background-color: #eaddc4;
+  /* NAV */
 }
 body nav .sidenav li .user-view a {
   display: flex;
@@ -31,8 +32,9 @@ body nav .sidenav .arriba {
 body nav .nav-wrapper {
   width: 100%;
 }
-body nav .nav-wrapper .left li a img {
-  width: 4rem;
+body nav .nav-wrapper .left li {
+  width: 6.9rem;
+  margin-top: 0.375rem;
 }
 body nav .nav-wrapper .right li {
   display: flex;
@@ -42,7 +44,7 @@ body nav .nav-wrapper .right li {
   margin: 0;
 }
 body nav .nav-wrapper .right li a {
-  width: 5.2rem;
+  width: 6.2rem;
   margin-top: 0.375rem;
 }
 body nav .nav-wrapper .right li a img {
@@ -53,21 +55,25 @@ body nav .nav-wrapper .right li a img {
 body nav .nav-wrapper .right li .ribbon {
   width: 0px;
   height: 3.125rem;
-  border-left: 1.25rem solid #4db6ac;
-  border-right: 1.25rem solid #4db6ac;
-  border-bottom: 1.25rem solid transparent;
+  border-left: 1.5rem solid #4db6ac;
+  border-right: 1.5rem solid #4db6ac;
+  border-bottom: 1.5rem solid transparent;
   margin-top: -2.375rem;
+}
+body nav .nav-wrapper .right li .ribbon:hover {
+  height: 4.25rem;
 }
 body .container .contenedor-info {
   display: flex;
   justify-content: center;
   flex-direction: row;
   width: 100%;
-  margin-top: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
 }
 body .container .contenedor-info .info .circulo-info {
-  width: 6rem;
-  height: 6rem;
+  width: 7rem;
+  height: 7rem;
   border-radius: 50%;
   border: 0.17rem solid #ffca28;
   display: flex;
@@ -75,107 +81,99 @@ body .container .contenedor-info .info .circulo-info {
   align-items: center;
 }
 body .container .contenedor-info .info .circulo-info i {
-  font-size: 1.8rem;
+  font-size: 3em;
 }
 body .container .contenedor-info h5 {
-  font-weight: 500;
-  font-size: 1.4rem;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 body .container .contenedor-info p {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 body .container .contenedor-info .linea-punteada {
   border-bottom-style: dashed;
   border-bottom-width: 2.188rem solid;
   color: #ffb300;
   width: 100%;
-  margin-bottom: 8.5rem;
+  margin-bottom: 10rem;
 }
-body .contenedor-catalogo {
-  background-color: #f7f0e6;
-  margin-top: 4rem;
-  padding-bottom: 1rem;
+body main {
+  width: 100%;
+  padding-bottom: 0;
 }
-body .contenedor-catalogo .catalogo .contenedor, body .contenedor-catalogo .todos .contenedor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 0;
+body main .contenedor-catalogo {
+  background-color: white;
 }
-body .contenedor-catalogo .catalogo .contenedor .col .row, body .contenedor-catalogo .todos .contenedor .col .row {
+body main .contenedor-catalogo .banner .responsive-img {
+  width: 50%;
+  padding-top: 6rem;
+}
+body main .contenedor-catalogo .banner-flores {
+  padding-top: 6rem;
+}
+body main .contenedor-catalogo .flores {
+  padding-bottom: 6rem;
+}
+body main .contenedor-catalogo .cuadernos .row .col .row {
   margin: 0;
 }
-body .contenedor-catalogo .catalogo .contenedor .col .row .col .card .card-image, body .contenedor-catalogo .todos .contenedor .col .row .col .card .card-image {
+body main .contenedor-catalogo .cuadernos .row .col .row .col .card .card-image {
   padding: 0.5rem;
 }
-body .contenedor-catalogo .catalogo .contenedor .col .row .col .card .card-image img, body .contenedor-catalogo .todos .contenedor .col .row .col .card .card-image img {
+body main .contenedor-catalogo .cuadernos .row .col .row .col .card .card-image img {
   border-radius: 0;
 }
-body .contenedor-catalogo .catalogo .contenedor .col .row .col .card .card-action, body .contenedor-catalogo .todos .contenedor .col .row .col .card .card-action {
-  height: 3.15rem;
+body main .contenedor-catalogo .cuadernos .row .col .row .col .card .like {
+  margin-right: 2.35rem;
+  font-size: 0.98rem;
 }
-body .contenedor-catalogo .catalogo .contenedor .col .row .col .card .card-action h6, body .contenedor-catalogo .todos .contenedor .col .row .col .card .card-action h6 {
+body main .contenedor-catalogo .cuadernos .row .col .row .col .card .card-content {
+  display: flex;
+  flex-direction: column;
+}
+body main .contenedor-catalogo .cuadernos .row .col .row .col .card .card-content h6 {
   font-weight: 800;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 0;
 }
-body .contenedor-catalogo .banner-catalogo {
-  padding-top: 5rem;
+body main .contenedor-catalogo .cuadernos .row .col .row .col .card .card-content .precio {
+  font-size: 1.3rem;
 }
-body .contenedor-catalogo .banner {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 70px;
-  width: 100%;
+body main .contenedor-catalogo .cuadernos .row .col .row .col .card .card-content p {
+  font-size: 1rem;
+  margin-top: 0.6rem;
 }
-body .contenedor-catalogo .banner .triangulo-left {
-  margin-top: 0.5rem;
-  width: 2.8rem;
-  height: 0;
-  border-left: 2.5rem solid transparent;
-  border-top: 1.563rem solid #f0ad4e;
-  border-bottom: 1.563rem solid #f0ad4e;
+body main .contenedor-catalogo .cuadernos .row .col .row .col .card .card-content .hilos .boton {
+  width: 1.5rem;
+  height: 1.5rem;
 }
-body .contenedor-catalogo .banner .triangulo-right {
-  margin-top: 0.5rem;
-  width: 2.8rem;
-  height: 0;
-  border-right: 2.5rem solid transparent;
-  border-top: 1.563rem solid #f0ad4e;
-  border-bottom: 1.563rem solid #f0ad4e;
-}
-body .contenedor-catalogo .banner .rectangulo {
-  width: 100%;
-  max-width: 28.125rem;
-  height: 3.125rem;
-  border: 0.188rem solid #f0ad4e;
-  background: #f0ad4e;
+body main .contenedor-catalogo .cuadernos .row .col .row .col .card .card-action {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-body .contenedor-catalogo .banner .rectangulo h6 {
-  text-transform: uppercase;
-  font-weight: 600;
+body main .contenedor-catalogo .cuadernos .row .col .row .col .card .card-action i {
+  margin-right: 1rem;
 }
-body .contenedor-datos .row .col {
+body main .contenedor-catalogo .cuadernos .row .col .row .col .card .card-action a {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+body main .contenedor-datos .row .col {
   margin-top: 3rem;
   padding-bottom: 3rem;
   padding-top: 2rem;
 }
-body .contenedor-datos .row .col .top {
+body main .contenedor-datos .row .col .top {
   padding: 0.1rem;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
-body .contenedor-datos .row .col .top h5 {
+body main .contenedor-datos .row .col .top h5 {
   text-transform: uppercase;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 700;
 }
-body .contenedor-datos .row .col .body {
+body main .contenedor-datos .row .col .body {
   background-color: #f7f0e6;
   padding: 0.1rem 1.9rem;
   padding-bottom: 0.3rem;
@@ -185,37 +183,30 @@ body .contenedor-datos .row .col .body {
   flex-direction: column;
   align-items: flex-start;
 }
-body .contenedor-datos .row .col .body .metodo-pago, body .contenedor-datos .row .col .body .feria {
+body main .contenedor-datos .row .col .body .metodo-pago,
+body main .contenedor-datos .row .col .body .feria {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
-body .contenedor-datos .row .col .body .metodo-pago i, body .contenedor-datos .row .col .body .feria i {
+body main .contenedor-datos .row .col .body .metodo-pago i,
+body main .contenedor-datos .row .col .body .feria i {
   font-size: 1.2rem;
   margin-right: 0.8rem;
 }
-body .contenedor-datos .row .col .body .arriba, body .contenedor-datos .row .col .body .feria i, body .contenedor-datos .row .col .body .feria p, body .contenedor-datos .row .col .body .metodo-pago p {
+body main .contenedor-datos .row .col .body .arriba,
+body main .contenedor-datos .row .col .body .feria i,
+body main .contenedor-datos .row .col .body .feria p,
+body main .contenedor-datos .row .col .body .metodo-pago p {
   margin-top: 0;
 }
-body footer {
-  padding-bottom: 1rem;
-}
 body footer .container {
-  width: 90%;
+  width: 80%;
 }
 body footer .container .row {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin: 0;
+  margin-bottom: 0;
+  padding-bottom: 0.5rem;
 }
-body footer .container .row .redes-sociales,
-body footer .container .row .medios-pago {
-  display: flex;
-}
-body footer .container .row .redes-sociales .col a img,
-body footer .container .row .medios-pago .col a img {
+body footer .container .row .redes-sociales img, body footer .container .row .medios-pago img {
   width: 3rem;
 }
