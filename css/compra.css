@@ -71,6 +71,14 @@ body .container .contenedor-info {
   padding-top: 3rem;
   padding-bottom: 5rem;
 }
+body .container .contenedor-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
 body .container .contenedor-info .info .circulo-info {
   width: 7rem;
   height: 7rem;
