@@ -66,11 +66,32 @@ body nav .sidenav li .user-view a {
      margin-bottom: 10%;
 
   }
-  body main .container .tabs {
+  body main #cuaderno .row .col h6{
+    font-size: 2rem;
+    
+  }
+  body main #cuaderno .row .col p{
+    font-size: 3rem;
+    margin-left: 6rem;
+    color:gray;
+  }
+  body main #cuaderno .row .col h5{
+    font-size: 1rem;
+    
+  }
+  body main #cuaderno .row .col a{
+   
+    font-size: 1.5rem;
+    height: 4rem;
+    width: 30rem;
+    
+  }
+  
+  body main #archivo .tabs {
       background-color: #eaddc4;
 
  }
- body main .container .tabs .tab {
+ body main #archivo .tabs .tab {
    
     width: 40%;
     border-top-left-radius: 1rem;
@@ -78,21 +99,21 @@ body nav .sidenav li .user-view a {
 
 }
 
-body main .container .tabs .tab a{
+body main #archivo .tabs .tab a{
     color:#000;
 } 
 
-body main .container .tabs .tab a.active {
+body main #archivo .tabs .tab a.active {
     background-color:#f7f0e6;
     color:#000;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 } 
-body main .container .tabs .indicator {
+body main #archivo .tabs .indicator {
     background-color:#000;
 } 
  
-body main .container  .col{
+body main #archivo  .col{
     background-color: #f7f0e6;
     height: 456px;
     border-top-right-radius: 1rem;
@@ -103,10 +124,10 @@ body main .container  .col{
 body footer {
     padding-bottom: 1rem;
   }
-  body footer .container {
+  body footer #archivo {
     width: 90%;
   }
-  body footer .container .row {
+  body footer #archivo .row {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -114,11 +135,11 @@ body footer {
     flex-direction: row;
     margin: 0;
   }
-  body footer .container .row .redes-sociales,
-  body footer .container .row .medios-pago {
+  body footer #archivo .row .redes-sociales,
+  body footer #archivo .row .medios-pago {
     display: flex;
   }
-  body footer .container .row .redes-sociales .col a img,
-  body footer .container .row .medios-pago .col a img {
+  body footer #archivo .row .redes-sociales .col a img,
+  body footer #archivo .row .medios-pago .col a img {
     width: 3rem;
   }
