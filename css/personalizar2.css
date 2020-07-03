@@ -121,25 +121,128 @@ body main #archivo  .col{
     border-bottom-right-radius: 1rem;
 }
 
-body footer {
-    padding-bottom: 1rem;
-  }
-  body footer #archivo {
-    width: 90%;
-  }
-  body footer #archivo .row {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+body footer .container {
+  width: 80%;
+}
+body footer .container .row {
+  margin-bottom: 0;
+  padding-bottom: 0.5rem;
+}
+body footer .container .row .redes-sociales img, body footer .container .row .medios-pago img {
+  width: 3rem;
+}
+
+.banner-opiniones,
+.banner-bordados {
+  padding-top: 6rem;
+}
+
+.banner-stock {
+  padding-top: 5rem;
+}
+
+.info-empezar-diseño,
+.info-materiales {
+  background-image: url(../img/naranja-papel-arrugado.png);
+  overflow: auto;
+  background-size: contain;
+  margin-top: 0;
+  z-index: 10;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+  background-color: #3f3b3b;
+}
+.info-empezar-diseño .row,
+.info-materiales .row {
+  padding: 3rem;
+}
+.info-empezar-diseño .row .txt,
+.info-materiales .row .txt {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.info-empezar-diseño .row .txt h4,
+.info-materiales .row .txt h4 {
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+.info-empezar-diseño .row .parent .child,
+.info-materiales .row .parent .child {
+  text-align: center;
+}
+.info-empezar-diseño .row .parent .child .botones,
+.info-materiales .row .parent .child .botones {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.info-empezar-diseño .row .parent .child .botones a,
+.info-materiales .row .parent .child .botones a {
+  padding: 1.7rem 4.2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.info-empezar-diseño {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 992px) {
+  body section .contenedor-slide .container {
     margin: 0;
+    margin-left: 0;
+    width: 50%;
   }
-  body footer #archivo .row .redes-sociales,
-  body footer #archivo .row .medios-pago {
-    display: flex;
+
+  body nav .nav-wrapper .right li {
+    display: none;
   }
-  body footer #archivo .row .redes-sociales .col a img,
-  body footer #archivo .row .medios-pago .col a img {
-    width: 3rem;
+}
+@media screen and (max-width: 600px) {
+  body section .contenedor-slide .container {
+    width: 100%;
   }
+
+  body footer .container {
+    width: 100%;
+  }
+  body footer .container .row {
+    justify-content: center;
+  }
+  body footer .container .row .redes-sociales,
+body footer .container .row .medios-pago {
+    display: column;
+  }
+  body footer .container .row .redes-sociales {
+    margin-bottom: 1.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .info-empezar-diseño {
+    background-size: 132%;
+  }
+}
+@media (max-width: 1200px) {
+  .info-empezar-diseño {
+    background-size: 132%;
+  }
+}
+@media (max-width: 1373px) {
+  .info-empezar-diseño {
+    margin-top: 0;
+  }
+}
+@media (max-width: 1500px) {
+  .info-empezar-diseño {
+    background-size: 117%;
+  }
+}
