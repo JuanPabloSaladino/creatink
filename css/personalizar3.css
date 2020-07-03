@@ -211,6 +211,32 @@ body footer .container .row .redes-sociales img, body footer .container .row .me
   width: 3rem;
 }
 
+.banner-opiniones,
+.banner-bordados {
+  padding-top: 6rem;
+}
+
+@media (max-width: 1200px) {
+.info-empezar-diseño {
+  background-size: 132%;
+}
+}
+@media (max-width: 1200px) {
+.info-empezar-diseño {
+  background-size: 132%;
+}
+}
+@media (max-width: 1373px) {
+.info-empezar-diseño {
+  margin-top: 0;
+}
+}
+@media (max-width: 1500px) {
+.info-empezar-diseño {
+  background-size: 117%;
+}
+}
+
   .contenedor-libro-colores{
       margin-top: 10em;
       margin-bottom: 5em;
