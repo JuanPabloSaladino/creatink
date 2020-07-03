@@ -145,3 +145,13 @@ body footer {
       width: 20em;      
   }
  
+  .personalizar-imagen{
+    margin-left: 8em;
+    background-image: url("../img/tapa.png");
+    height: 24em;
+    width: 22em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
