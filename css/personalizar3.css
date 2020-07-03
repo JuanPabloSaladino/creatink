@@ -140,16 +140,17 @@ body footer {
   }
 
   .boton-color{
+    margin-left: 2em;
       border-radius: 50%;
-      height: 20em;
-      width: 20em;      
+      height: 21em;
+      width: 21em;      
   }
  
   .personalizar-imagen{
-    margin-left: 10em;
-    background-image: url("../img/tapa.png");
-    height: 24em;
-    width: 22em;
+    margin-left: 8em;
+    background-image: url("../img/visualizacion-tapa.png");
+    height: 500px;
+    width: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
