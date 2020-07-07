@@ -1,8 +1,16 @@
 @charset "UTF-8";
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #eaddc4;
+  background-color: red;
   font-size: 16px;
+}
+body .preloader {
+  position: absolute;
+  margin: auto;
+  top: 50vh;
+  bottom: 50vh;
+  left: 0;
+  right: 0;
 }
 body nav .sidenav li .user-view a {
   display: flex;
@@ -51,7 +59,7 @@ body nav .nav-wrapper .right li a img {
   position: relative;
 }
 body nav .nav-wrapper .right li .ribbon {
-  width: 0rem;
+  width: 0px;
   height: 3.125rem;
   border-left: 1.5rem solid #4db6ac;
   border-right: 1.5rem solid #4db6ac;
@@ -61,11 +69,6 @@ body nav .nav-wrapper .right li .ribbon {
 body nav .nav-wrapper .right li .ribbon:hover {
   height: 4.25rem;
 }
-body nav .nav-wrapper .right li .active {
-  border-left: 1.5rem solid #00897b;
-  border-right: 1.5rem solid #00897b;
-  height: 4.25rem;
-}
 body section .contenedor-slide {
   background-image: url(../img/slide.jpg);
   background-size: cover;
@@ -73,7 +76,7 @@ body section .contenedor-slide {
 }
 body section .contenedor-slide .container {
   margin: 0;
-  margin-left: 4.375rem;
+  margin-left: 70px;
   width: 30%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
@@ -110,7 +113,7 @@ body section .contenedor-slide .container .texto-personalizar .subtitulo p {
 }
 body section .contenedor-slide .container .texto-personalizar .parrafo {
   font-weight: 400;
-  line-height: 0.5rem;
+  line-height: 8px;
   text-align: center;
   margin-top: 3.125rem;
 }
@@ -132,32 +135,47 @@ body main {
 body main .banner .responsive-img {
   width: 50%;
 }
-body main .tarjetas .contenedor .col .row .col .card .card-image {
+body main .stock .contenedor-stock,
+body main .bordados .contenedor-bordados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+body main .stock .contenedor-stock .col .row,
+body main .bordados .contenedor-bordados .col .row {
+  margin: 0;
+}
+body main .stock .contenedor-stock .col .row .col .card .card-image,
+body main .bordados .contenedor-bordados .col .row .col .card .card-image {
   padding: 0.5rem;
 }
-body main .tarjetas .contenedor .col .row .col .card .card-image img {
+body main .stock .contenedor-stock .col .row .col .card .card-image img,
+body main .bordados .contenedor-bordados .col .row .col .card .card-image img {
   border-radius: 0;
 }
-body main .tarjetas .contenedor .col .row .col .card .precio {
+body main .stock .contenedor-stock .col .row .col .card .precio,
+body main .bordados .contenedor-bordados .col .row .col .card .precio {
   margin-right: 2.35rem;
   font-size: 0.98rem;
 }
-body main .tarjetas .contenedor .col .row .col .card .card-action {
+body main .stock .contenedor-stock .col .row .col .card .card-action,
+body main .bordados .contenedor-bordados .col .row .col .card .card-action {
   display: flex;
   flex-direction: column;
 }
-body main .tarjetas .contenedor .col .row .col .card .card-action h6 {
+body main .stock .contenedor-stock .col .row .col .card .card-action h6,
+body main .bordados .contenedor-bordados .col .row .col .card .card-action h6 {
   font-weight: 800;
   margin-bottom: 0;
 }
-body main .tarjetas .contenedor .col .row .col .card .card-action p {
+body main .stock .contenedor-stock .col .row .col .card .card-action p,
+body main .bordados .contenedor-bordados .col .row .col .card .card-action p {
   font-size: 1rem;
   margin-top: 0.6rem;
 }
-body main .tarjetas .contenedor .col .row .col .card .card-action .hilos {
-  width: 100%;
-}
-body main .tarjetas .contenedor .col .row .col .card .card-action .hilos .boton {
+body main .stock .contenedor-stock .col .row .col .card .card-action .hilos .boton,
+body main .bordados .contenedor-bordados .col .row .col .card .card-action .hilos .boton {
   width: 1.5rem;
   height: 1.5rem;
 }
@@ -174,16 +192,11 @@ body main .info-materiales .container .row .parent .child .contenedor .contenedo
   font-size: 1.2rem;
 }
 body main .opiniones {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
+  margin-left: 6rem;
 }
 body main .opiniones .carousel {
   padding-bottom: 57rem;
   margin-top: -19rem;
-  display: flex;
-  justify-content: center;
 }
 body main .opiniones .carousel .carousel-item .col {
   display: flex;
@@ -193,36 +206,22 @@ body main .opiniones .carousel .carousel-item .col {
   background-color: #ebebeb;
   padding: 1.875rem 0.625rem;
   width: 29rem;
-  border-radius: 0.313rem;
+  border-radius: 5px;
 }
 body main .opiniones .carousel .carousel-item .col img {
-  width: 5.625rem;
+  width: 90px;
 }
 body main .opiniones .carousel .carousel-item .col h6 {
   font-weight: 800;
   font-size: 1.25rem;
 }
 body main .opiniones .carousel .carousel-item .col p {
-  margin-top: 0;
+  text-align: center;
 }
 body main .opiniones .carousel .carousel-item .col .puntuacion {
   width: 100%;
   text-align: center;
-  padding: 0.125rem 0;
-}
-body main .opiniones .carousel .carousel-item .col .collapsible {
-  box-shadow: none;
-  border: 0;
-}
-body main .opiniones .carousel .carousel-item .col .collapsible li .collapsible-header {
-  padding: 0;
-  background-color: transparent;
-  border: 0;
-  box-shadow: none;
-}
-body main .opiniones .carousel .carousel-item .col .collapsible .collapsible-body {
-  border-bottom: none;
-  padding-bottom: 0;
+  padding: 2px 0;
 }
 body footer .container {
   width: 80%;
@@ -236,17 +235,18 @@ body footer .container .row .medios-pago img {
   width: 3rem;
 }
 
-.banner {
+.banner-opiniones,
+.banner-bordados {
   padding-top: 6rem;
 }
 
-.banner-bordados,
-.banner-opiniones {
-  padding-top: 4rem;
+.banner-stock {
+  padding-top: 5rem;
 }
 
-.info {
-  background-image: url(../img/hoja-arrugada.png);
+.info-empezar-diseño,
+.info-materiales {
+  background-image: url(../img/naranja-papel-arrugado.png);
   overflow: auto;
   background-size: contain;
   margin-top: 0;
@@ -257,41 +257,52 @@ body footer .container .row .medios-pago img {
   margin-top: 6rem;
   margin-bottom: 5rem;
   background-color: #160b0b;
+}
+
+.info-empezar-diseño .row,
+.info-materiales .row {
   padding: 3rem;
 }
-.info .row .txt {
+
+.info-empezar-diseño .row .txt,
+.info-materiales .row .txt {
   display: flex;
   justify-content: center;
   text-align: center;
 }
-.info .row .txt h4 {
+
+.info-empezar-diseño .row .txt h4,
+.info-materiales .row .txt h4 {
   font-weight: 600;
   padding-bottom: 1rem;
 }
-.info .row .parent .child {
+
+.info-empezar-diseño .row .parent .child,
+.info-materiales .row .parent .child {
   text-align: center;
 }
-.info .row .parent .child h5 {
-  font-size: 1.5rem;
-}
-.info .row .parent .child .botones {
+
+.info-empezar-diseño .row .parent .child .botones,
+.info-materiales .row .parent .child .botones {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
-.info .row .parent .child .botones a {
-  padding: 2rem 4.2rem;
+
+.info-empezar-diseño .row .parent .child .botones a,
+.info-materiales .row .parent .child .botones a {
+  padding: 1.7rem 4.2rem;
   margin-top: 3rem;
   margin-bottom: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
-  font-size: 1.2rem;
+  font-weight: 700;
+  font-size: 1.1rem;
 }
 
 .info-empezar-diseño {
-  margin: 0;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -302,28 +313,6 @@ body footer .container .row .medios-pago img {
   }
   body nav .nav-wrapper .right li {
     display: none;
-  }
-
-  body main .banner .responsive-img {
-    width: 75%;
-  }
-
-  body main .opiniones {
-    margin: 0;
-    width: 100%;
-  }
-
-  .carousel .carousel-item {
-    left: -6.25rem;
-  }
-
-  .card {
-    padding-bottom: 2rem;
-  }
-  .card .card-action {
-    padding: 0;
-    padding-left: 1rem;
-    padding-top: 1rem;
   }
 }
 @media screen and (max-width: 600px) {
@@ -343,28 +332,27 @@ body footer .container .row .medios-pago {
   body footer .container .row .redes-sociales {
     margin-bottom: 1.5rem;
   }
-
-  body main .info-materiales .container .row .parent .child .contenedor {
-    flex-direction: column;
-  }
-  body main .info-materiales .container .row .parent .child .contenedor .contenedor-icon {
-    padding-bottom: 3rem;
-  }
-
-  body main .banner .responsive-img {
-    width: 100%;
+}
+@media (max-width: 1200px) {
+  .info-empezar-diseño {
+    background-size: 132%;
   }
 }
-@media screen and (max-width: 500px) {
-  footer .container {
-    display: flex;
-  }
-  footer .container .row .right {
-    float: none !important;
+@media (max-width: 1200px) {
+  .info-empezar-diseño {
+    background-size: 132%;
   }
 }
-@media screen and (max-width: 328px) {
-  .info .row .parent .child .botones a {
-    padding: 4rem;
+@media (max-width: 1373px) {
+  .info-empezar-diseño {
+    margin-top: 0;
   }
+}
+@media (max-width: 1500px) {
+  .info-empezar-diseño {
+    background-size: 117%;
+  }
+}
+.collapsible {
+  background-color: red;
 }

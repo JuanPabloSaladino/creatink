@@ -53,7 +53,7 @@ body nav .nav-wrapper .right li a img {
   position: relative;
 }
 body nav .nav-wrapper .right li .ribbon {
-  width: 0px;
+  width: 0rem;
   height: 3.125rem;
   border-left: 1.5rem solid #4db6ac;
   border-right: 1.5rem solid #4db6ac;
@@ -63,6 +63,11 @@ body nav .nav-wrapper .right li .ribbon {
 body nav .nav-wrapper .right li .ribbon:hover {
   height: 4.25rem;
 }
+body nav .nav-wrapper .right li .active {
+  border-left: 1.5rem solid #00897b;
+  border-right: 1.5rem solid #00897b;
+  height: 4.25rem;
+}
 body .container .contenedor-info {
   display: flex;
   justify-content: center;
@@ -70,8 +75,6 @@ body .container .contenedor-info {
   width: 100%;
   padding-top: 3rem;
   padding-bottom: 5rem;
-}
-body .container .contenedor-info {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -178,7 +181,7 @@ body main .contenedor-datos .row .col .top {
 }
 body main .contenedor-datos .row .col .top h5 {
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 body main .contenedor-datos .row .col .body {
@@ -186,10 +189,11 @@ body main .contenedor-datos .row .col .body {
   padding: 0.1rem 1.9rem;
   padding-bottom: 0.3rem;
   height: auto;
-  min-height: 17rem;
+  min-height: 20rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-size: 1.2rem;
 }
 body main .contenedor-datos .row .col .body .metodo-pago,
 body main .contenedor-datos .row .col .body .feria {
@@ -202,9 +206,13 @@ body main .contenedor-datos .row .col .body .feria i {
   font-size: 1.2rem;
   margin-right: 0.8rem;
 }
-body main .contenedor-datos .row .col .body .arriba,
+body main .contenedor-datos .row .col .body .arriba {
+  margin-top: 0;
+}
 body main .contenedor-datos .row .col .body .feria i,
-body main .contenedor-datos .row .col .body .feria p,
+body main .contenedor-datos .row .col .body .feria p {
+  margin-top: 0;
+}
 body main .contenedor-datos .row .col .body .metodo-pago p {
   margin-top: 0;
 }
@@ -215,6 +223,59 @@ body footer .container .row {
   margin-bottom: 0;
   padding-bottom: 0.5rem;
 }
-body footer .container .row .redes-sociales img, body footer .container .row .medios-pago img {
+body footer .container .row .redes-sociales img,
+body footer .container .row .medios-pago img {
   width: 3rem;
+}
+
+@media screen and (max-width: 992px) {
+  .contenedor-datos .row {
+    margin: auto;
+  }
+
+  nav .nav-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: -15rem;
+  }
+  nav .nav-wrapper .left {
+    text-align: center !important;
+  }
+  nav .nav-wrapper .left li img {
+    margin-top: -10rem;
+  }
+  nav .nav-wrapper .right {
+    display: none;
+  }
+
+  body main .contenedor-catalogo .banner .responsive-img {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container .contenedor-info {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .container .contenedor-info .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container .contenedor-info .linea-punteada {
+    display: none;
+  }
+
+  footer .container {
+    display: flex;
+  }
+  footer .container .row .right {
+    float: none !important;
+  }
+
+  body main .contenedor-catalogo .banner .responsive-img {
+    width: 100%;
+  }
 }

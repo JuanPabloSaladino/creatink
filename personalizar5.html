@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personalización - Paso 3</title>
+    <title>Personalización - Paso 5</title>
     <link rel="icon" type="image/png" href="img/iso.png" />
+    <script src="https://kit.fontawesome.com/222a3ac483.js" crossorigin="anonymous"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Open+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet"
@@ -17,7 +18,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-    <link rel="stylesheet" href="css/personalizar3.css" />
+    <link rel="stylesheet" href="css/personalizar5.css" />
   </head>
   <body>
     <header>
@@ -110,151 +111,86 @@
                 <a href="#paso1" class="breadcrumb">Hoja</a>
                 <a href="#paso2" class="breadcrumb">Tapa</a>
                 <a href="#paso3" class="breadcrumb">Color</a>
+                <a href="#paso4" class="breadcrumb">Diseño</a>
+                <a href="#paso5" class="breadcrumb">Aceptar</a>
               </div>
             </div>
           </nav>
           <div class="personalizar-imagen">
-            <button
-              class="btn waves-effect waves-light boton-color"
-              id="botoncito"
-              onclick="cambiarColor()"
-            ></button>
           </div>
         </div>
-        <div
-          class="col s5 m5 xl5 l5 center-align personalizar-container-botones"
-        >
-          <h5 class="teal-text text-lighten-1 colores">COLOR DE TAPA</h5>
+        <div class="col s5 m5 xl5 l5 center-align personalizar-container-botones">
+          <h5 class="teal-text text-lighten-1 colores">RESÚMEN</h5>
 
           <div class="row colores">
-            <div class="col s4">
-              <div
-                class="btn-floating waves-effect waves-light white boton"
-                onclick="cambiarColorBlanco()"
-              ></div>
-              <h6 class="personalizar-descripcion">Blanco</h6>
+            <div class="col s12">
+              <i class="far fa-file amber-text text-lighten-1 hoja-lisa"></i>
+              <h6 class="personalizar-descripcion">Hojas lisas</h6>
             </div>
-            <div class="col s4">
-              <div
-                class="btn-floating waves-effect waves-light black boton"
-                onclick="cambiarColorNegro()"
-              ></div>
-              <h6 class="personalizar-descripcion">Negro</h6>
+            <div class="col s12">
+              <a class="waves-effect waves-light amber lighten-1  btn-small">100</a>
+                <h6>100 hojas</h6>
             </div>
-            <div class="col s4">
-              <div
-                class="btn-floating waves-effect waves-light brown boton"
-                onclick="cambiarColorMarron()"
-              ></div>
-              <h6 class="personalizar-descripcion">Marrón</h6>
+            <div class="col s12">
+              <i class="far fa-circle amber-text text-lighten-1 "></i>
+              <h6 class="personalizar-descripcion">Encuadre circular</h6>  
             </div>
-          </div>
-          <div class="row colores">
-            <div class="col s4">
-              <div
-                class="btn-floating waves-effect waves-light purple boton"
-                onclick="cambiarColorVioleta()"
-              ></div>
-              <h6 class="personalizar-descripcion">Violeta</h6>
+            <div class="col s12">
+                <i class="far fa-bookmark amber-text text-lighten-1 separador"></i>
+                <h6 class="personalizar-descripcion">Sin separador</h6>
             </div>
-            <div class="col s4">
-              <div
-                class="btn-floating waves-effect waves-light pink boton"
-                onclick="cambiarColorMagenta()"
-              ></div>
-              <h6 class="personalizar-descripcion">Magenta</h6>
+            <div class="col s12">
+            <div class="btn-floating waves-effect waves-light indigo darken-4 boton"></div>
+            <h6 class="personalizar-descripcion">Tapa azúl marino</h6> 
             </div>
-            <div class="col s4">
-              <div
-                class="btn-floating waves-effect waves-light blue boton"
-                onclick="cambiarColorAzul()"
-              ></div>
-              <h6 class="personalizar-descripcion">Azul</h6>
+            <div class="col s12">
+                <img class="responsive-img circle active" alt="Imagen de zorro" src="img/animal3-circulo.png">
+                <h6>Bordado de zorro</h6>
+            </div>  
+            <div class="col 12">
+                <h4 class="center section">TOTAL: $900</h4>
+            </div>              
             </div>
-          </div>
-          <div class="row colores">
-            <div class="col s4">
-              <div
-                class="btn-floating waves-effect waves-light cyan boton"
-                onclick="cambiarColorTurquesa()"
-              ></div>
-              <h6 class="personalizar-descripcion">Turquesa</h6>
-            </div>
-            <div class="col s4">
-              <div
-                class="btn-floating waves-effect waves-light green boton"
-                onclick="cambiarColorVerde()"
-              ></div>
-              <h6 class="personalizar-descripcion">Verde</h6>
-            </div>
-            <div class="col s4">
-              <div
-                class="btn-floating waves-effect waves-light amber boton"
-                onclick="cambiarColorDorado()"
-              ></div>
-              <h6 class="personalizar-descripcion">Dorado</h6>
-            </div>
-          </div>
-          <div class="row colores">
-            <div class="col s4">
-              <div
-                class="btn-floating waves-effect waves-light yellow boton"
-                onclick="cambiarColorAmarillo()"
-              ></div>
-              <h6 class="personalizar-descripcion">Amarillo</h6>
-            </div>
-            <div class="col s4">
-              <div
-                class="btn-floating waves-effect waves-light orange boton"
-                onclick="cambiarColorNaranja()"
-              ></div>
-              <h6 class="personalizar-descripcion">Naranja</h6>
-            </div>
-            <div class="col s4">
-              <div
-                class="btn-floating waves-effect waves-light red boton"
-                onclick="cambiarColorRojo()"
-              ></div>
-              <h6 class="personalizar-descripcion">Rojo</h6>
-            </div>
-          </div>
+        <!-- ver si sacar el div de arriba -->
+
           <div class="col s5 m5 l5 xl5 flechas">
-            <div class="col s4 m1 l1 xl1 anterior left">
-              <i class="large material-icons">keyboard_arrow_left</i>
-              <h6>Anterior</h6>
-            </div>
-            <div class="col s4 m1 l1 xl1 siguiente right">
-              <h6>Siguiente</h6>
+            <div class="col s4 m1 l1 xl1 anterior">
+                <i class="large material-icons">keyboard_arrow_left</i>
+                <h6>Anterior</h6>
+              </div>
+            <div class="col s4 m1 l1 xl1 siguiente">
+              <h6>Confirmar</h6>
               <i class="large material-icons">keyboard_arrow_right</i>
             </div>
           </div>
         </div>
-
-        <div class="row descarga-botones">
-          <div class="col m7">
-            <div class="row">
-              <div class="col m3"></div>
-              <div class="col m3 center">
-                <i
-                  class="large material-icons tooltipped"
-                  data-position="bottom"
-                  data-tooltip="Subir diseño"
-                  >attach_file</i
-                >
-              </div>
-              <div class="col m3">
-                <i
-                  class="large material-icons tooltipped"
-                  data-position="bottom"
-                  data-tooltip="Guardar diseño"
-                  onclick="M.toast({html: 'Se guardó tu diseño'})"
-                  >cloud_download</i
-                >
-              </div>
+        
+      <div class="row descarga-botones">
+        <div class="col m7">
+          <div class="row">
+            <div class="col m3"></div>
+            <div class="col m3 center">
+              <i
+                class="large material-icons tooltipped"
+                data-position="bottom"
+                data-tooltip="Subir diseño"
+                >attach_file</i
+              >
+            </div>
+            <div class="col m3">
+              <i
+                class="large material-icons tooltipped"
+                data-position="bottom"
+                data-tooltip="Guardar diseño"
+                onclick="M.toast({html: 'Se guardó tu diseño'})"
+                >cloud_download</i
+              >
             </div>
           </div>
         </div>
       </div>
+      </div>
+
     </div>
 
     <div class="container descarga">

@@ -94,16 +94,6 @@ body .contenedor-libro-colores .row .col .personalizar-imagen {
   background-repeat: no-repeat;
   background-size: cover;
 }
-body .contenedor-libro-colores .row .col .row .col i {
-  font-size: 3.5rem;
-  cursor: pointer;
-}
-body .contenedor-libro-colores .row .col h5 {
-  font-weight: bold;
-  margin-bottom: 5.55rem;
-  margin-left: 3.5rem;
-  text-align: left;
-}
 body .contenedor-libro-colores .row .personalizar-container-botones {
   background-color: #f7f0e6;
   padding-bottom: 4rem;
@@ -116,14 +106,28 @@ body .contenedor-libro-colores .row .personalizar-container-botones h5 {
   margin-left: 3.5rem;
   text-align: left;
 }
-body .contenedor-libro-colores .row .personalizar-container-botones .colores .separador {
-  margin-left: 2.6rem;
-  width: 50%;
+body .contenedor-libro-colores .row .personalizar-container-botones .colores .row .col {
+  display: flex;
+  justify-content: space-around;
+}
+body .contenedor-libro-colores .row .personalizar-container-botones .colores .row .col .tabs li a {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+body .contenedor-libro-colores .row .personalizar-container-botones .colores .row .col .contenedor {
+  margin: auto 2rem;
+}
+body .contenedor-libro-colores .row .personalizar-container-botones .colores .row .col .contenedor .responsive-img {
+  width: 9rem;
+  margin-top: 2rem;
+}
+body .contenedor-libro-colores .row .personalizar-container-botones .colores .row .col .contenedor .responsive-img.active {
+  border: 0.4rem solid #ffc107;
 }
 body .contenedor-libro-colores .row .personalizar-container-botones .flechas {
   display: flex;
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 1rem;
   text-align: center;
 }
 body .contenedor-libro-colores .row .personalizar-container-botones .flechas .anterior {
@@ -143,15 +147,12 @@ body .contenedor-libro-colores .row .personalizar-container-botones .flechas .co
 body .contenedor-libro-colores .row .personalizar-container-botones .flechas .col h6 {
   cursor: pointer;
 }
-body .contenedor-libro-colores .boton-color {
-  margin-left: 2.2em;
-  margin-bottom: 0.9em;
-  border-radius: 50%;
-  height: 22.7em;
-  width: 23.2em;
+body .contenedor-libro-colores .row .col i {
+  font-size: 3.5rem;
+  cursor: pointer;
 }
 body .descarga-botones .row {
-  margin-top: -4.6rem;
+  margin-top: -11 rem;
 }
 body .video {
   margin: 3.8rem auto;
@@ -200,9 +201,8 @@ body footer .container .row .medios-pago img {
     margin-top: 5rem;
     margin-right: 1rem;
   }
-  .contenedor-libro-colores .cosas .colores .col div,
-.contenedor-libro-colores .cosas .colores .col h6 {
-    margin-left: 5rem;
+  .contenedor-libro-colores .cosas .colores .row .col img {
+    width: 30rem;
   }
   .contenedor-libro-colores .cosas .personalizar-container-botones,
 .contenedor-libro-colores .cosas .personalizar-container-imagen {

@@ -3,18 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personalizar</title>
+    <title>Personalización - Paso 2</title>
+    <link rel="icon" type="image/png" href="img/iso.png" />
+    <script src="https://kit.fontawesome.com/222a3ac483.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/materialize.min.css" />
-    <link rel="stylesheet" href="css/personalizar2.css">
-    <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="css/personalizar2.css" />
   </head>
   <body>
-
     <header>
       <nav class="amber lighten-1">
         <ul id="slide-out" class="sidenav">
@@ -23,7 +29,9 @@
               <div class="background">
                 <img src="img/slide.jpg" />
               </div>
-              <a href="#logo"><img class="circle" src="img/iso.png" /></a>
+              <a href="#logo"
+                ><img class="circle" src="img/iso.png" alt="Logo Creatink"
+              /></a>
               <a href="#name"><h2 class="white-text name">Creatink</h2></a>
             </div>
           </li>
@@ -35,7 +43,7 @@
           <li><div class="divider"></div></li>
           <li class="menu-movil arriba">
             <img class="responsive-img" src="img/home.png" alt="" />
-            <a class="waves-effect" href="#!">Inicio</a>
+            <a class="waves-effect" href="index.html">Inicio</a>
           </li>
           <li class="menu-movil">
             <img class="responsive-img" src="img/personalizar.png" alt="" />
@@ -57,26 +65,30 @@
         <div class="nav-wrapper container">
           <ul class="left">
             <li>
-              <a href="" class="brand-logo">
-                <img class="responsive-img" src="img/iso.png" alt="" />
-              </a>
+              <img
+                class="responsive-img"
+                src="img/iso.png"
+                alt="Isologo Creatink"
+              />
             </li>
           </ul>
           <ul class="right">
             <li>
-              <a href="#"><img src="img/home.png" alt="" /></a>
+              <a href="index.html"><img src="img/home.png" alt="Home" /></a>
               <div class="ribbon"></div>
             </li>
             <li>
-              <a href="#"><img src="img/personalizar.png" alt="" /></a>
+              <a href="#"
+                ><img src="img/personalizar.png" alt="Personalizar"
+              /></a>
+              <div class="ribbon active"></div>
+            </li>
+            <li>
+              <a href="#"><img src="img/comprar.png" alt="Comprar" /></a>
               <div class="ribbon"></div>
             </li>
             <li>
-              <a href="#"><img src="img/comprar.png" alt="" /></a>
-              <div class="ribbon"></div>
-            </li>
-            <li>
-              <a href="#"><img src="img/contactar.png" alt="" /></a>
+              <a href="#"><img src="img/contactar.png" alt="Contacto" /></a>
               <div class="ribbon"></div>
             </li>
           </ul>
@@ -84,131 +96,150 @@
       </nav>
     </header>
 
-    <main>
-      <div class="container cuaderno" id="cuaderno">
-        <div class="row">
-          <div class="col s6">
-            <img src="img\tapa.png" height= "500px" width="400px">
-          </div>
-          <div class="col s6">
-            <h6>CUADERNO ARTESANAL</h6> 
-            <h6>PERSONALIZADO</h6>
-            <p>$300</p>
-            <h5>SELECCIONAR MÉTODO DE PAGO</h5>
-            <div class="row pagos">
-              <div class="col s3">
-                
-                <img src="img\MasterCard.png">
-              </div>
-              <div class="col s3">
-                <img src="img\Mercado-Pago.png">
-              </div>
-              <div class="col s3">
-                <img src="img\Naranja.png">
-              </div>
-              <div class="col s3">
-                <img src="img\PayPal.png">
+    <div class="container contenedor-libro-colores">
+      <div class="row cosas">
+        <h1 class="center titulo-personalizar grey-text text-darken-3">
+          Personalizá tu cuaderno
+        </h1>
+        <div
+          class="col s7 m7 xl7 l7 personalizar-container-imagen"
+          id="personalizar-container-imagen"
+        >
+          <nav>
+            <div class="nav-wrapper">
+              <div class="col s12 teal lighten-2">
+                <a href="#paso1" class="breadcrumb">Hoja</a>
+                <a href="#paso2" class="breadcrumb">Tapa</a>
               </div>
             </div>
-            <a class="waves-effect waves-light btn">COMPRAR</a>
+          </nav>
+          <div class="personalizar-imagen">
+            <button
+              class="btn waves-effect waves-light boton-color"></button>
+          </div>
+        </div>
+        <div class="col s5 m5 xl5 l5 center-align personalizar-container-botones">
+          <h5 class="teal-text text-lighten-1 colores">ENCUADRE DEL BORDADO</h5>
+
+          <div class="row colores">
+            <div class="col s4">
+              <div><i class="far fa-square"></i></div>
+              <h6 class="personalizar-descripcion">Cuadrado</h6>
+            </div>
+            <div class="col s4">
+              <div><i class="far fa-circle"></i></div>
+              <h6 class="personalizar-descripcion">Círculo</h6>
+            </div>
+          </div>
+
+          <h5 class="teal-text text-lighten-1 colores">SEPARADOR</h5>
+
+          <div class="row colores">
+            <div class="col s4">
+                <div><i class="fas fa-bookmark"></i></div>
+                <h6 class="personalizar-descripcion separador">Con separador</h6>
+              </div>
+              <div class="col s4">
+                <div><i class="far fa-bookmark"></i></div>
+                <h6 class="personalizar-descripcion separador">Sin separador</h6>
+              </div>
+          </div>
+          
+          <div class="col s5 m5 l5 xl5 flechas">
+            <div class="col s4 m1 l1 xl1 anterior">
+                <i class="large material-icons">keyboard_arrow_left</i>
+                <h6>Anterior</h6>
+              </div>
+            <div class="col s4 m1 l1 xl1 siguiente">
+              <h6>Siguiente</h6>
+              <i class="large material-icons">keyboard_arrow_right</i>
+            </div>
+          </div>
+        </div>
+        
+      <div class="row descarga-botones">
+        <div class="col m7">
+          <div class="row">
+            <div class="col m3"></div>
+            <div class="col m3 center">
+              <i
+                class="large material-icons tooltipped"
+                data-position="bottom"
+                data-tooltip="Subir diseño"
+                >attach_file</i
+              >
+            </div>
+            <div class="col m3">
+              <i
+                class="large material-icons tooltipped"
+                data-position="bottom"
+                data-tooltip="Guardar diseño"
+                onclick="M.toast({html: 'Se guardó tu diseño'})"
+                >cloud_download</i
+              >
             </div>
           </div>
         </div>
       </div>
-      <div class="container archivo" id="archivo">
-        <ul id="tabs-swipe-demo" class="tabs">
-            <li class="tab col s3 amber lighten-1" ><a class= "active" href="#detalle"><i class="material-icons">add_circle</i>Detalle</a></li>
-            <li class="tab col s3 amber lighten-1" ><a href="#retiro"> <i class="material-icons">person_pin_circle</i>Retiro</a></li>
-          </ul>
-          <div id="detalle" class="col s12">
-            <table class="highlight">
-                <tbody>
-                  <tr>
-                    <td>Tipo de encuadernación</td>
-                    <td>Bordado con cintillas</td>
-                  </tr>
-
-                  <tr>
-                    <td>Diseño de la tapa</td>
-                    <td>Personalizado</td>
-                  </tr>
-
-                  <tr>
-                    <td>Composición</td>
-                    <td>
-                      <b>Papel:</b> A base de fibra de azúcar de 80gr.
-                      <br />
-                      <b>Hilo y tela:</b> Algodón
-                      <br />
-                      <b>Tapa:</b> Cartón duro de 2mm de espesor
-                      <br />
-                      <b>Guarda</b> Papel reciclado de color negro
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>Color de la tapa</td>
-                    <td>Azul marino</td>
-                  </tr>
-
-                  <tr>
-                    <td>Hojas</td>
-                    <td>
-                      80 hojas de 80grs lisas en color beige (160 páginas)
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>Tamaño</td>
-                    <td>A5 (21cm x 12,8cm)</td>
-                  </tr>
-
-                  <tr>
-                    <td>Origen</td>
-                    <td>Argentina</td>
-                  </tr>
-                </tbody>
-              </table>
-          </div>
-          <div id="retiro" class="col s12">
-            <table class="highlight">
-                <tbody>
-                  <tr>
-                    <td>Tallwe de Creatink</td>
-                    <td>Paraguay 5099, Palermo. CABA</td>
-                  </tr>
-
-                  <tr>
-                    <td>Composición</td>
-                    <td>
-                      San Martín - San Martín 3861, Belgrano. Viernes de 9 a
-                      15hs
-                      <br />
-                      Alemania - Scalabrini Ortíz 2602, CABA. Sábados de 8 a
-                      14hs
-                      <br />
-                      Italia - Av. Santa Fe 4000, Palermo. Domingos de 13 a 19hs
-                      <br />
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-          </div>
       </div>
-      
-      
-    </main>
 
-    
+    </div>
+
+    <div class="container descarga">
+      <div class="row">
+        <div class="col s4 m4 l4 xl4">
+          <img src="img/guarda.png" alt="" />
+        </div>
+        <div class="col s4 m4 l4 xl4">
+          <img src="img/descarga.png" alt="" />
+        </div>
+        <div class="col s4 m4 l4 xl4">
+          <img src="img/continua.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="fixed-action-btn hide-on-med-and-up">
+      <a class="btn-floating btn-large teal lighten-1">
+        <i class="large material-icons">mode_edit</i>
+      </a>
+      <ul>
+        <li>
+          <a class="btn-floating amber"
+            ><i class="material-icons">cloud_download</i></a
+          >
+        </li>
+        <li>
+          <a
+            class="btn-floating amber"
+            onclick="M.toast({html: 'Se guardó tu diseño'})"
+            ><i class="material-icons">attach_file</i></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="container video section">
+      <div class="video-container responsive-video">
+        <iframe
+          src="http://www.youtube.com/embed/cOWyJw_fBJo"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
     <footer class="page-footer amber lighten-1">
       <div class="container center">
-        <div class="row ">
+        <div class="row">
           <div class="redes-sociales left">
             <div class="col">
               <a href=""><img clas src="img/Facebook.png" alt="Facebook" /></a>
             </div>
             <div class="col">
-              <a href=""><img clas src="img/Instagram.png" alt="Instagram" /></a>
+              <a href=""
+                ><img clas src="img/Instagram.png" alt="Instagram"
+              /></a>
             </div>
             <div class="col">
               <a href=""><img clas src="img/Twitter.png" alt="Twitter" /></a>
