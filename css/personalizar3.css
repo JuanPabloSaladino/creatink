@@ -270,3 +270,8 @@ body footer .container .row .redes-sociales img, body footer .container .row .me
     background-size: cover;
 
   }
+
+  .titulo-personalizacion{
+    color: #4db6ac;
+    font-weight: bolder;
+  }
