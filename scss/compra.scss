@@ -1,0 +1,328 @@
+body {
+  background-color: #eaddc4;
+
+  /* NAV */
+  nav {
+    .sidenav {
+      li .user-view a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Caveat Brush", cursive;
+        font-size: 20rem;
+
+        .name {
+          font-family: "Caveat Brush", cursive;
+          font-size: 2rem;
+        }
+      }
+      .menu-movil {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 0 1rem;
+        img {
+          width: 2rem;
+          height: 2rem;
+        }
+        a {
+          padding-left: 1rem;
+        }
+      }
+      .arriba {
+        padding-top: 2rem;
+      }
+    }
+    .nav-wrapper {
+      width: 100%;
+      .left li {
+        width: 6.9rem;
+        margin-top: 0.375rem;
+      }
+      .right li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        a {
+          width: 6.2rem;
+          margin-top: 0.375rem;
+          img {
+            width: 100%;
+            height: auto;
+            position: relative;
+          }
+        }
+        .ribbon {
+          width: 0rem;
+          height: 3.125rem;
+          border-left: 1.5rem solid #4db6ac;
+          border-right: 1.5rem solid #4db6ac;
+          border-bottom: 1.5rem solid transparent;
+          margin-top: -2.375rem;
+          &:hover {
+            height: 4.25rem;
+          }
+        }
+        .active {
+          border-left: 1.5rem solid #00897b;
+          border-right: 1.5rem solid #00897b;
+          height: 4.25rem;
+        }
+      }
+    }
+  }
+
+  .container .contenedor-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+
+    .info .circulo-info {
+      width: 7rem;
+      height: 7rem;
+      border-radius: 50%;
+      border: 0.17rem solid #ffca28;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        font-size: 3em;
+      }
+    }
+
+    h5 {
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    .linea-punteada {
+      border-bottom-style: dashed;
+      border-bottom-width: 2.188rem solid;
+      color: #ffb300;
+      width: 100%;
+      margin-bottom: 10rem;
+    }
+  }
+
+  main {
+    width: 100%;
+    padding-bottom: 0;
+
+    .contenedor-catalogo {
+      background-color: #f7f0e6;
+
+      .banner .responsive-img {
+        width: 50%;
+        padding-top: 6rem;
+      }
+
+      .banner-flores {
+        padding-top: 6rem;
+      }
+
+      .flores {
+        padding-bottom: 6rem;
+      }
+
+      .cuadernos .row .col .row {
+        margin: 0;
+
+        .col .card {
+          .card-image {
+            padding: 0.5rem;
+
+            img {
+              border-radius: 0;
+            }
+          }
+
+          .like {
+            margin-right: 2.35rem;
+            font-size: 0.98rem;
+          }
+
+          .card-content {
+            display: flex;
+            flex-direction: column;
+
+            h6 {
+              font-weight: 800;
+              margin-bottom: 0;
+            }
+
+            .precio {
+              font-size: 1.3rem;
+            }
+
+            p {
+              font-size: 1rem;
+              margin-top: 0.6rem;
+            }
+
+            .hilos .boton {
+              width: 1.5rem;
+              height: 1.5rem;
+            }
+          }
+
+          .card-action {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+              margin-right: 1rem;
+            }
+
+            a {
+              font-size: 1.3rem;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+
+    .contenedor-datos .row .col {
+      margin-top: 3rem;
+      padding-bottom: 3rem;
+      padding-top: 2rem;
+
+      .top {
+        padding: 0.1rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+
+        h5 {
+          text-transform: uppercase;
+          font-size: 1.5rem;
+          font-weight: 700;
+        }
+      }
+
+      .body {
+        background-color: #f7f0e6;
+        padding: 0.1rem 1.9rem;
+        padding-bottom: 0.3rem;
+        height: auto;
+        min-height: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.2rem;
+
+        .metodo-pago,
+        .feria {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+        }
+
+        .metodo-pago i,
+        .feria i {
+          font-size: 1.2rem;
+          margin-right: 0.8rem;
+        }
+
+        .arriba {
+          margin-top: 0;
+        }
+        .feria {
+          i,
+          p {
+            margin-top: 0;
+          }
+        }
+
+        .metodo-pago p {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  footer .container {
+    width: 80%;
+
+    .row {
+      margin-bottom: 0;
+      padding-bottom: 0.5rem;
+
+      .redes-sociales img,
+      .medios-pago img {
+        width: 3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contenedor-datos {
+    .row {
+      margin: auto;
+    }
+  }
+
+  nav .nav-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: -15rem;
+    .left {
+      text-align: center !important;
+      li img {
+        margin-top: -10rem;
+      }
+    }
+    .right {
+      display: none;
+    }
+  }
+
+  body main .contenedor-catalogo .banner .responsive-img {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container .contenedor-info {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+
+    .info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .linea-punteada {
+      display: none;
+    }
+  }
+  footer .container {
+    display: flex;
+    .row .right {
+      float: none !important;
+    }
+  }
+
+  body main .contenedor-catalogo .banner .responsive-img {
+    width: 100%;
+  }
+}

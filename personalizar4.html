@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personalización - Paso 3</title>
+    <title>Personalización - Paso 4</title>
     <link rel="icon" type="image/png" href="img/iso.png" />
+    <script
+      src="https://kit.fontawesome.com/222a3ac483.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Open+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet"
@@ -17,7 +21,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-    <link rel="stylesheet" href="css/personalizar3.css" />
+    <link rel="stylesheet" href="css/personalizar4.css" />
   </head>
   <body>
     <header>
@@ -110,120 +114,104 @@
                 <a href="#paso1" class="breadcrumb">Hoja</a>
                 <a href="#paso2" class="breadcrumb">Tapa</a>
                 <a href="#paso3" class="breadcrumb">Color</a>
+                <a href="#paso4" class="breadcrumb">Diseño</a>
               </div>
             </div>
           </nav>
           <div class="personalizar-imagen">
-            <button
-              class="btn waves-effect waves-light boton-color"
-              id="botoncito"
-              onclick="cambiarColor()"
-            ></button>
+            <!-- <button class="btn waves-effect waves-light boton-color"></button> -->
           </div>
         </div>
         <div
           class="col s5 m5 xl5 l5 center-align personalizar-container-botones"
         >
-          <h5 class="teal-text text-lighten-1 colores">COLOR DE TAPA</h5>
+          <h5 class="teal-text text-lighten-1 colores">DISEÑO DEL BORDADO</h5>
 
           <div class="row colores">
-            <div class="col s4">
-              <div
-                class="btn-floating waves-effect waves-light white boton"
-                onclick="cambiarColorBlanco()"
-              ></div>
-              <h6 class="personalizar-descripcion">Blanco</h6>
-            </div>
-            <div class="col s4">
-              <div
-                class="btn-floating waves-effect waves-light black boton"
-                onclick="cambiarColorNegro()"
-              ></div>
-              <h6 class="personalizar-descripcion">Negro</h6>
-            </div>
-            <div class="col s4">
-              <div
-                class="btn-floating waves-effect waves-light brown boton"
-                onclick="cambiarColorMarron()"
-              ></div>
-              <h6 class="personalizar-descripcion">Marrón</h6>
-            </div>
+            <div class="row">
+                <div class="col s12">
+                  <ul class="tabs">
+                    <li class="tab col s4"><a class="active amber-text text-lighten-1" href="#test1">Animales</a></li>
+                    <li class="tab col s4"><a class="amber-text text-lighten-1" href="#test2">Flores</a></li>
+                    <li class="tab col s4"><a class="amber-text text-lighten-1" href="#test3">Geométricos</a></li>
+                  </ul>
+                </div>
+                <div id="test1" class="col s12">
+                    <div class="superior section">
+                        <div class="contenedor">
+                            <img class="responsive-img circle" alt="Imagen de loro" src="img/animal1-circulo.png">
+                            <h6>Loro</h6>
+                        </div>
+                        <div class="contenedor">
+                            <img class="responsive-img circle" alt="Imagen de ardilla" src="img/animal2-circulo.png">
+                            <h6>Ardilla</h6>
+                        </div>
+                    </div>
+                    <div class="inferior section">
+                        <div class="contenedor">
+                            <img class="responsive-img circle active" alt="Imagen de zorro" src="img/animal3-circulo.png">
+                            <h6>Zorro</h6>
+                        </div>
+                        <div class="contenedor">
+                            <img class="responsive-img circle" alt="Imagen de castor" src="img/animal4-circulo.png">
+                            <h6>Castor</h6>
+                        </div>
+                    </div>
+                </div>
+                <div id="test2" class="col s12">
+                    <div class="superior section">
+                        <div class="contenedor">
+                            <img class="responsive-img circle" alt="Imagen de Girasol" src="img/flor1-circulo.png">
+                            <h6>Girasol</h6>
+                        </div>
+                        <div class="contenedor">
+                            <img class="responsive-img circle" alt="Imagen de Flores" src="img/flor2-circulo.png">
+                            <h6>Flores</h6>
+                        </div>
+                    </div>
+                    <div class="inferior section">
+                        <div class="contenedor">
+                            <img class="responsive-img circle" alt="Imagen de Corona" src="img/flor3-circulo.png">
+                            <h6>Corona</h6>
+                        </div>
+                        <div class="contenedor">
+                            <img class="responsive-img circle" alt="Imagen de Unicornio" src="img/flor4-circulo.png">
+                            <h6>Unicornio</h6>
+                        </div>
+                    </div>
+                </div>
+                <div id="test3" class="col s12">
+                    <div class="superior section">
+                        <div class="contenedor">
+                            <img class="responsive-img circle" alt="Imagen de Montañas" src="img/geometrico1-circulo.png">
+                            <h6>Montañas</h6>
+                        </div>
+                        <div class="contenedor">
+                            <img class="responsive-img circle" alt="Imagen de Personas" src="img/geometrico2-circulo.png">
+                            <h6>Personas</h6>
+                        </div>
+                    </div>
+                    <div class="inferior section">
+                        <div class="contenedor">
+                            <img class="responsive-img circle" alt="Imagen de Colisión" src="img/geometrico3-circulo.png">
+                            <h6>Colisión</h6>
+                        </div>
+                        <div class="contenedor">
+                            <img class="responsive-img circle" alt="Imagen de Universo" src="img/geometrico4-circulo.png">
+                            <h6>Universo</h6>
+                        </div>
+                    </div>
+                </div>
+              </div>
           </div>
-          <div class="row colores">
-            <div class="col s4">
-              <div
-                class="btn-floating waves-effect waves-light purple boton"
-                onclick="cambiarColorVioleta()"
-              ></div>
-              <h6 class="personalizar-descripcion">Violeta</h6>
-            </div>
-            <div class="col s4">
-              <div
-                class="btn-floating waves-effect waves-light pink boton"
-                onclick="cambiarColorMagenta()"
-              ></div>
-              <h6 class="personalizar-descripcion">Magenta</h6>
-            </div>
-            <div class="col s4">
-              <div
-                class="btn-floating waves-effect waves-light blue boton"
-                onclick="cambiarColorAzul()"
-              ></div>
-              <h6 class="personalizar-descripcion">Azul</h6>
-            </div>
-          </div>
-          <div class="row colores">
-            <div class="col s4">
-              <div
-                class="btn-floating waves-effect waves-light cyan boton"
-                onclick="cambiarColorTurquesa()"
-              ></div>
-              <h6 class="personalizar-descripcion">Turquesa</h6>
-            </div>
-            <div class="col s4">
-              <div
-                class="btn-floating waves-effect waves-light green boton"
-                onclick="cambiarColorVerde()"
-              ></div>
-              <h6 class="personalizar-descripcion">Verde</h6>
-            </div>
-            <div class="col s4">
-              <div
-                class="btn-floating waves-effect waves-light amber boton"
-                onclick="cambiarColorDorado()"
-              ></div>
-              <h6 class="personalizar-descripcion">Dorado</h6>
-            </div>
-          </div>
-          <div class="row colores">
-            <div class="col s4">
-              <div
-                class="btn-floating waves-effect waves-light yellow boton"
-                onclick="cambiarColorAmarillo()"
-              ></div>
-              <h6 class="personalizar-descripcion">Amarillo</h6>
-            </div>
-            <div class="col s4">
-              <div
-                class="btn-floating waves-effect waves-light orange boton"
-                onclick="cambiarColorNaranja()"
-              ></div>
-              <h6 class="personalizar-descripcion">Naranja</h6>
-            </div>
-            <div class="col s4">
-              <div
-                class="btn-floating waves-effect waves-light red boton"
-                onclick="cambiarColorRojo()"
-              ></div>
-              <h6 class="personalizar-descripcion">Rojo</h6>
-            </div>
-          </div>
+
+
           <div class="col s5 m5 l5 xl5 flechas">
-            <div class="col s4 m1 l1 xl1 anterior left">
+            <div class="col s4 m1 l1 xl1 anterior">
               <i class="large material-icons">keyboard_arrow_left</i>
               <h6>Anterior</h6>
             </div>
-            <div class="col s4 m1 l1 xl1 siguiente right">
+            <div class="col s4 m1 l1 xl1 siguiente">
               <h6>Siguiente</h6>
               <i class="large material-icons">keyboard_arrow_right</i>
             </div>

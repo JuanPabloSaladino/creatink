@@ -94,15 +94,12 @@ body .contenedor-libro-colores .row .col .personalizar-imagen {
   background-repeat: no-repeat;
   background-size: cover;
 }
-body .contenedor-libro-colores .row .col .row .col i {
-  font-size: 3.5rem;
-  cursor: pointer;
-}
-body .contenedor-libro-colores .row .col h5 {
-  font-weight: bold;
-  margin-bottom: 5.55rem;
-  margin-left: 3.5rem;
-  text-align: left;
+body .contenedor-libro-colores .row .col .boton-color {
+  margin-left: 2.2em;
+  margin-bottom: 0.9em;
+  border-radius: 50%;
+  height: 22.7em;
+  width: 23.2em;
 }
 body .contenedor-libro-colores .row .personalizar-container-botones {
   background-color: #f7f0e6;
@@ -116,25 +113,23 @@ body .contenedor-libro-colores .row .personalizar-container-botones h5 {
   margin-left: 3.5rem;
   text-align: left;
 }
-body .contenedor-libro-colores .row .personalizar-container-botones .colores .separador {
-  margin-left: 2.6rem;
-  width: 50%;
+body .contenedor-libro-colores .row .personalizar-container-botones .colores .botones {
+  margin-left: 1rem;
+}
+body .contenedor-libro-colores .row .personalizar-container-botones .colores .botones a {
+  margin-right: 1.4rem;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 body .contenedor-libro-colores .row .personalizar-container-botones .flechas {
   display: flex;
-  width: 100%;
+  width: 85%;
   margin-top: 5rem;
-  text-align: center;
-}
-body .contenedor-libro-colores .row .personalizar-container-botones .flechas .anterior {
-  margin: 0;
-}
-body .contenedor-libro-colores .row .personalizar-container-botones .flechas .siguiente {
-  margin-right: 7rem;
 }
 body .contenedor-libro-colores .row .personalizar-container-botones .flechas .col {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 body .contenedor-libro-colores .row .personalizar-container-botones .flechas .col i {
   font-size: 3.5rem;
@@ -143,15 +138,12 @@ body .contenedor-libro-colores .row .personalizar-container-botones .flechas .co
 body .contenedor-libro-colores .row .personalizar-container-botones .flechas .col h6 {
   cursor: pointer;
 }
-body .contenedor-libro-colores .boton-color {
-  margin-left: 2.2em;
-  margin-bottom: 0.9em;
-  border-radius: 50%;
-  height: 22.7em;
-  width: 23.2em;
+body .contenedor-libro-colores .row .col i {
+  font-size: 3.5rem;
+  cursor: pointer;
 }
 body .descarga-botones .row {
-  margin-top: -4.6rem;
+  margin-top: -3rem;
 }
 body .video {
   margin: 3.8rem auto;
