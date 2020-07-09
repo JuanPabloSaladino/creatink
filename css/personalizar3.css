@@ -72,10 +72,9 @@ body .contenedor-libro-colores {
   margin-top: 8em;
   margin-bottom: 5em;
 }
-body .contenedor-libro-colores .row .titulo-personalizar {
-  font-family: "Caveat Brush", cursive;
-  margin-bottom: 6rem;
-  margin-top: 0;
+body .contenedor-libro-colores .row .banner .responsive-img {
+  width: 55%;
+  margin-bottom: 4rem;
 }
 body .contenedor-libro-colores .row .col nav {
   width: 30.2rem;

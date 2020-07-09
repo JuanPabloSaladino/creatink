@@ -38,6 +38,24 @@ document.addEventListener('DOMContentLoaded', function() {
     M.AutoInit();
 });
 
+function cambiarCorazon(){
+  var corazon =document.getElementById("corazon");
+   corazon.innerHTML="favorite";
+   
+  
+}
+//personalizar 1
+function cambiarHojaRayada(){
+  document.getElementById("hoja").style.backgroundImage= "url('../img/hoja-rayada.jpg')";
+  
+}
+function cambiarHojaCuadriculada(){
+  document.getElementById("hoja").style.backgroundImage= "url('../img/hoja-cuadriculada.jpg')";
+}
+function cambiarHojaLisa(){
+  document.getElementById("hoja").style.backgroundImage = "url('../img/hoja-lisa.jpg')";
+  
+}
 function cambiarColorBlanco() {
     document.getElementById("botoncito").style.backgroundColor = "white";
 }

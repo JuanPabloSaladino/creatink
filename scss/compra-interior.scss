@@ -79,10 +79,9 @@ body {
     margin-bottom: 5em;
 
     .row {
-      .titulo-personalizar {
-        font-family: "Caveat Brush", cursive;
-        margin-bottom: 6rem;
-        margin-top: 0;
+      .banner .responsive-img {
+        width: 55%;
+        margin-bottom: 4rem;
       }
 
       .col {
@@ -168,6 +167,11 @@ body {
                 font-size: 1.15rem;
               }
             }
+
+            .col h4{
+              font-weight: bold;
+              margin-left: 2.6rem;
+            }
           }
         }
 
@@ -180,7 +184,7 @@ body {
           justify-content: center;
 
           .btn-large {
-            margin-top: 3.5rem;
+            margin-top: 1rem;
             padding: 2rem 6rem;
             font-weight: bold;
             font-size: 1.5rem;
