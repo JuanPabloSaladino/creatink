@@ -1,750 +1,215 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Creatink</title>
-    <link rel="icon" type="image/png" href="img/iso.png" />
-    <script
-      src="https://kit.fontawesome.com/222a3ac483.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Open+Sans:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="amber lighten-1">
-        <ul id="slide-out" class="sidenav">
-          <li>
-            <div class="user-view">
-              <div class="background">
-                <img src="img/slide.jpg" />
-              </div>
-              <a href="#logo"
-                ><img class="circle" src="img/iso.png" alt="Logo Creatink"
-              /></a>
-              <a href="#name"><h2 class="white-text name">Creatink</h2></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creatink</title>
+  <link rel="icon" type="image/png" href="img/iso.png" />
+  <script src="https://kit.fontawesome.com/222a3ac483.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Open+Sans:wght@300;400;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="amber lighten-1">
+      <ul id="slide-out" class="sidenav">
+        <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="img/slide.jpg" />
             </div>
+            <a href="#logo"><img class="circle" src="img/iso.png" alt="Logo Creatink" /></a>
+            <a href="#name">
+              <h2 class="white-text name">Creatink</h2>
+            </a>
+          </div>
+        </li>
+        <li>
+          <a href="#!"><i class="material-icons">mode_edit</i>Crear propio cuaderno</a>
+        </li>
+        <li>
+          <div class="divider"></div>
+        </li>
+        <li class="menu-movil arriba">
+          <img class="responsive-img" src="img/home.png" alt="" />
+          <a class="waves-effect" href="index.html">Inicio</a>
+        </li>
+        <li class="menu-movil">
+          <img class="responsive-img" src="img/personalizar.png" alt="" />
+          <a class="waves-effect" href="#!">Personalizar</a>
+        </li>
+        <li class="menu-movil">
+          <img class="responsive-img" src="img/comprar.png" alt="" />
+          <a class="waves-effect" href="#!">Comprar</a>
+        </li>
+        <li class="menu-movil">
+          <img class="responsive-img" src="img/contactar.png" alt="" />
+          <a class="waves-effect" href="#!">Contactar</a>
+        </li>
+      </ul>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+      <div class="nav-wrapper container">
+        <ul class="right">
+          <li class="seccion">
+            <a href="index.html"><img src="img/home.png" alt="Home" /></a>
+            <div class="ribbon active"></div>
           </li>
-          <li>
-            <a href="#!"
-              ><i class="material-icons">mode_edit</i>Crear propio cuaderno</a
-            >
+          <li class="seccion">
+            <a href="#"><img src="img/personalizar.png" alt="Personalizar" /></a>
+            <div class="ribbon"></div>
           </li>
-          <li><div class="divider"></div></li>
-          <li class="menu-movil arriba">
-            <img class="responsive-img" src="img/home.png" alt="" />
-            <a class="waves-effect" href="index.html">Inicio</a>
+          <li class="seccion">
+            <a href="#"><img src="img/comprar.png" alt="Comprar" /></a>
+            <div class="ribbon"></div>
           </li>
-          <li class="menu-movil">
-            <img class="responsive-img" src="img/personalizar.png" alt="" />
-            <a class="waves-effect" href="#!">Personalizar</a>
-          </li>
-          <li class="menu-movil">
-            <img class="responsive-img" src="img/comprar.png" alt="" />
-            <a class="waves-effect" href="#!">Comprar</a>
-          </li>
-          <li class="menu-movil">
-            <img class="responsive-img" src="img/contactar.png" alt="" />
-            <a class="waves-effect" href="#!">Contactar</a>
+          <li class="seccion">
+            <a href="#"><img src="img/contactar.png" alt="Contacto" /></a>
+            <div class="ribbon"></div>
           </li>
         </ul>
-        <a href="#" data-target="slide-out" class="sidenav-trigger"
-          ><i class="material-icons">menu</i></a
-        >
+      </div>
+    </nav>
+  </header>
 
-        <div class="nav-wrapper container">
-          <ul class="right">
-            <li class="seccion">
-              <a href="index.html"><img src="img/home.png" alt="Home" /></a>
-              <div class="ribbon active"></div>
-            </li>
-            <li class="seccion">
-              <a href="#"
-                ><img src="img/personalizar.png" alt="Personalizar"
-              /></a>
-              <div class="ribbon"></div>
-            </li>
-            <li class="seccion">
-              <a href="#"><img src="img/comprar.png" alt="Comprar" /></a>
-              <div class="ribbon"></div>
-            </li>
-            <li class="seccion">
-              <a href="#"><img src="img/contactar.png" alt="Contacto" /></a>
-              <div class="ribbon"></div>
-            </li>
-          </ul>
+  <!-- SLIDE -->
+  <section>
+    <div class="contenedor-slide">
+      <div class="container">
+        <div class="iso-grande">
+          <img class="responsive-img" src="img/iso.png" alt="" />
         </div>
-      </nav>
-    </header>
 
-    <!-- SLIDE -->
-    <section>
-      <div class="contenedor-slide">
-        <div class="container">
-          <div class="iso-grande">
-            <img class="responsive-img" src="img/iso.png" alt="" />
+        <div class="texto-personalizar">
+          <h1 class="grey-text text-lighten-5">Creatink</h1>
+
+          <div class="subtitulo">
+            <p class="grey-text text-lighten-5">Personalizá</p>
+            <p class="grey-text text-lighten-5">Tus cuadernos</p>
           </div>
 
-          <div class="texto-personalizar">
-            <h1 class="grey-text text-lighten-5">Creatink</h1>
-
-            <div class="subtitulo">
-              <p class="grey-text text-lighten-5">Personalizá</p>
-              <p class="grey-text text-lighten-5">Tus cuadernos</p>
-            </div>
-
-            <div class="parrafo">
-              <p class="grey-text text-lighten-5">
-                Seguí 5 sencillos pasos, en los cúales
-              </p>
-              <p class="grey-text text-lighten-5">
-                podrás elegir el bordado, las hojas,
-              </p>
-              <p class="grey-text text-lighten-5">el color, la tapa y más!</p>
-            </div>
-
-            <a class="waves-effect waves-light btn">Personalizar</a>
+          <div class="parrafo">
+            <p class="grey-text text-lighten-5">
+              Seguí 5 sencillos pasos, en los cúales
+            </p>
+            <p class="grey-text text-lighten-5">
+              podrás elegir el bordado, las hojas,
+            </p>
+            <p class="grey-text text-lighten-5">el color, la tapa y más!</p>
           </div>
+
+          <a class="waves-effect waves-light btn">Personalizar</a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- EN STOCK -->
+    <section class="banner banner-stock center section">
+      <img class="responsive-img" src="img/banner-stock.png" alt="Productos en stock" />
     </section>
 
-    <main>
-      <!-- EN STOCK -->
-      <section class="banner banner-stock center section">
-        <img
-          class="responsive-img"
-          src="img/banner-stock.png"
-          alt="Productos en stock"
-        />
-      </section>
-
-      <div class="stock tarjetas container section">
-        <div class="row contenedor section">
-          <div class="col s12 m4">
-            <div class="row">
-              <div class="col s12">
-                <div class="card hoverable">
-                  <div class="card-image">
-                    <a
-                      class="btn-floating halfway-fab waves-effect waves-light right"
-                    >
-                      <i class="material-icons teal lighten-2 fav"
-                        >favorite_border</i
-                      ></a
-                    >
-                    <img src="img/zafiro.png" alt="Cuaderno Zafiro" />
-                  </div>
-                  <p class="right precio section">61</p>
-                  <div class="card-action">
-                    <h6>ZAFIRO</h6>
-                    <p>80 hojas</p>
-                    <div class="hilos">
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-amarillo.jpg" alt="Hilo amarillo" />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img
-                          src="img/color-azul-marino.jpg"
-                          alt="Hilo azul marino"
-                        />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-turquesa.jpg" alt="Hilo turquesa" />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-beige.jpg" alt="Hilo beige" />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-marron.jpg" alt="Hilo marrón" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="row">
-              <div class="col s12">
-                <div class="card hoverable">
-                  <div class="card-image">
-                    <a
-                      class="btn-floating halfway-fab waves-effect waves-light right"
-                    >
-                      <i class="material-icons teal lighten-2 fav"
-                        >favorite_border</i
-                      ></a
-                    >
-                    <img src="img/colision.png" alt="Cuaderno colisión" />
-                  </div>
-                  <p class="right precio section">79</p>
-                  <div class="card-action">
-                    <h6>COLISIÓN</h6>
-                    <p>96 hojas</p>
-                    <div class="hilos">
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img
-                          src="img/color-verde-oscuro.jpg"
-                          alt="Hilo verde oscuro"
-                        />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-verde.jpg" alt="Hilo verde claro" />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-naranja.jpg" alt="Hilo naranja" />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-negro.jpg" alt="Hilo negro" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="row">
-              <div class="col s12">
-                <div class="card hoverable">
-                  <div class="card-image">
-                    <a
-                      class="btn-floating halfway-fab waves-effect waves-light right"
-                    >
-                      <i class="material-icons teal lighten-2 fav"
-                        >favorite_border</i
-                      ></a
-                    >
-                    <img src="img/universo.png" alt="Cuaderno Universo" />
-                  </div>
-                  <p class="right precio section">70</p>
-                  <div class="card-action">
-                    <h6>UNIVERSO</h6>
-                    <p>88 hojas</p>
-                    <div class="hilos">
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-magenta.jpg" alt="Hilo magenta" />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-violeta.jpg" alt="Hilo violeta" />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img
-                          src="img/color-azul-marino.jpg"
-                          alt="Hilo azul marino"
-                        />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-turquesa.jpg" alt="Hilo turquesa" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row contenedor section">
-          <div class="col s12 m4">
-            <div class="row">
-              <div class="col s12">
-                <div class="card hoverable">
-                  <div class="card-image">
-                    <a
-                      class="btn-floating halfway-fab waves-effect waves-light right"
-                    >
-                      <i class="material-icons teal lighten-2 fav"
-                        >favorite_border</i
-                      ></a
-                    >
-                    <img src="img/rosado.png" alt="Cuaderno Rosado" />
-                  </div>
-                  <p class="right precio section">98</p>
-                  <div class="card-action">
-                    <h6>ROSADO</h6>
-                    <p>100 hojas</p>
-                    <div class="hilos">
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-rojo.png" alt="Hilo rojo" />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img
-                          src="img/color-verde-oscuro.jpg"
-                          alt="Hilo verde oscuro"
-                        />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-blanco.jpg" alt="Hilo blanco" />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-dorado.jpg" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="row">
-              <div class="col s12">
-                <div class="card hoverable">
-                  <div class="card-image">
-                    <a
-                      class="btn-floating halfway-fab waves-effect waves-light right"
-                    >
-                      <i class="material-icons teal lighten-2 fav"
-                        >favorite_border</i
-                      ></a
-                    >
-                    <img src="img/cometa.png" alt="Cuaderno Cometa" />
-                  </div>
-                  <p class="right precio section">31</p>
-                  <div class="card-action">
-                    <h6>COMETA</h6>
-                    <p>92 hojas</p>
-                    <div class="hilos">
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-naranja.jpg" alt="Hilo naranja" />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-rojo.png" alt="Hilo rojo" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="row">
-              <div class="col s12">
-                <div class="card hoverable">
-                  <div class="card-image">
-                    <a
-                      class="btn-floating halfway-fab waves-effect waves-light right"
-                    >
-                      <i class="material-icons teal lighten-2 fav"
-                        >favorite_border</i
-                      ></a
-                    >
-                    <img src="img/destello.png" alt="Cuaderno Destello" />
-                  </div>
-                  <p class="right precio section">44</p>
-                  <div class="card-action">
-                    <h6>DESTELLO</h6>
-                    <p>88 hojas</p>
-                    <div class="hilos">
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img
-                          src="img/color-azul-marino.jpg"
-                          alt="Hilo azul marino"
-                        />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-turquesa.jpg" alt="Hilo turquesa" />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-marron.jpg" alt="Hilo marrón" />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-naranja.jpg" alt="Hilo naranja" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- NUESTROS FAVORITOS -->
-      <section class="banner section banner-bordados center">
-        <img
-          class="responsive-img"
-          src="img/banner-bordados-favoritos.png"
-          alt="Nuestros bordados favoritos"
-        />
-      </section>
-
-      <div class="bordados tarjetas container">
-        <div class="row contenedor section">
-          <div class="col s12 m4">
-            <div class="row">
-              <div class="col s12">
-                <div class="card hoverable">
-                  <div class="card-image">
-                    <a
-                      class="btn-floating halfway-fab waves-effect waves-light right"
-                    >
-                      <i class="material-icons teal lighten-2 fav"
-                        >favorite_border</i
-                      ></a
-                    >
-                    <img src="img/bordado1.png" alt="Bordado Universo" />
-                  </div>
-                  <p class="right precio section">76</p>
-                  <div class="card-action">
-                    <h6>UNIVERSO</h6>
-                    <p>Bordado</p>
-                    <div class="hilos">
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-magenta.jpg" alt="Hilo magenta" />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-violeta.jpg" alt="Hilo violeta" />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img
-                          src="img/color-azul-marino.jpg"
-                          alt="Hilo azul marino"
-                        />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-turquesa.jpg" alt="Hilo turquesa" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="row">
-              <div class="col s12">
-                <div class="card hoverable">
-                  <div class="card-image">
-                    <a
-                      class="btn-floating halfway-fab waves-effect waves-light right"
-                    >
-                      <i class="material-icons teal lighten-2 fav"
-                        >favorite_border</i
-                      ></a
-                    >
-                    <img src="img/bordado2.png" alt="Bordado colisión" />
-                  </div>
-                  <p class="right precio section">91</p>
-                  <div class="card-action">
-                    <h6>COLISIÓN</h6>
-                    <p>Bordado</p>
-                    <div class="hilos">
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img
-                          src="img/color-verde-oscuro.jpg"
-                          alt="Hilo verde oscuro"
-                        />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-verde.jpg" alt="Hilo verde claro" />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-naranja.jpg" alt="Hilo naranja" />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-negro.jpg" alt="Hilo negro" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="row">
-              <div class="col s12">
-                <div class="card hoverable">
-                  <div class="card-image">
-                    <a
-                      class="btn-floating halfway-fab waves-effect waves-light right"
-                    >
-                      <i class="material-icons teal lighten-2 fav"
-                        >favorite_border</i
-                      ></a
-                    >
-                    <img src="img/bordado3.png" alt="Cuaderno Infinito" />
-                  </div>
-                  <p class="right precio section">88</p>
-                  <div class="card-action">
-                    <h6>INFINITO</h6>
-                    <p>Bordado</p>
-                    <div class="hilos">
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-violeta.jpg" alt="Hilo violeta" />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img
-                          src="img/color-azul-marino.jpg"
-                          alt="Hilo azul marino"
-                        />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-beige.jpg" alt="Hilo beige" />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-turquesa.jpg" alt="Hilo turquesa" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row contenedor section">
-          <div class="col s12 m4">
-            <div class="row">
-              <div class="col s12">
-                <div class="card hoverable">
-                  <div class="card-image">
-                    <a
-                      class="btn-floating halfway-fab waves-effect waves-light right"
-                    >
-                      <i class="material-icons teal lighten-2 fav"
-                        >favorite_border</i
-                      ></a
-                    >
-                    <img src="img/bordado4.png" alt="Cuaderno Cometa" />
-                  </div>
-                  <p class="right precio section">43</p>
-                  <div class="card-action">
-                    <h6>COMETA</h6>
-                    <p>Bordado</p>
-                    <div class="hilos">
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img
-                          src="img/color-azul-marino.jpg"
-                          alt="Hilo azul marino"
-                        />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-turquesa.jpg" alt="Hilo turquesa" />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-marron.jpg" alt="Hilo marrón" />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-naranja.jpg" alt="Hilo naranja" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="row">
-              <div class="col s12">
-                <div class="card hoverable">
-                  <div class="card-image">
-                    <a
-                      class="btn-floating halfway-fab waves-effect waves-light right"
-                    >
-                      <i class="material-icons teal lighten-2 fav"
-                        >favorite_border</i
-                      ></a
-                    >
-                    <img src="img/bordado5.png" alt="Bordado Cometa" />
-                  </div>
-                  <p class="right precio section">22</p>
-                  <div class="card-action">
-                    <h6>COMETA</h6>
-                    <p>Bordado</p>
-                    <div class="hilos">
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-naranja.jpg" alt="Hilo naranja" />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-rojo.png" alt="Hilo rojo" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="row">
-              <div class="col s12">
-                <div class="card hoverable">
-                  <div class="card-image">
-                    <a
-                      class="btn-floating halfway-fab waves-effect waves-light right"
-                    >
-                      <i class="material-icons teal lighten-2 fav"
-                        >favorite_border</i
-                      ></a
-                    >
-                    <img src="img/bordado6.png" alt="Bordado Destello" />
-                  </div>
-                  <p class="right precio section">57</p>
-                  <div class="card-action">
-                    <h6>DESTELLO</h6>
-                    <p>Bordado</p>
-                    <div class="hilos">
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img
-                          src="img/color-azul-marino.jpg"
-                          alt="Hilo azul marino"
-                        />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-turquesa.jpg" alt="Hilo turquesa" />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-marron.jpg" alt="Hilo marrón" />
-                      </div>
-                      <div
-                        class="btn-floating waves-effect waves-light white boton"
-                      >
-                        <img src="img/color-naranja.jpg" alt="Hilo naranja" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- INFO MATERIALES -->
-      <div class="info-materiales info section">
-        <div class="container">
+    <div class="stock tarjetas container section">
+      <div class="row contenedor section">
+        <div class="col s12 m4">
           <div class="row">
-            <div class="txt col-lg-12">
-              <h4>
-                Cuadernos artesanales que ofrecen resistencia y durabilidad
-              </h4>
+            <div class="col s12">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <a class="btn-floating halfway-fab waves-effect waves-light right">
+                    <i class="material-icons teal lighten-2 fav" id="boton-like1">favorite_border</i></a>
+                  <img src="img/zafiro.png" alt="Cuaderno Zafiro" />
+                </div>
+                <p class="right precio section" id="cantidad-likes1">28</p>
+                <div class="card-action">
+                  <h6>ZAFIRO</h6>
+                  <p>80 hojas</p>
+                  <div class="hilos">
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-amarillo.jpg" alt="Hilo amarillo" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-azul-marino.jpg" alt="Hilo azul marino" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-turquesa.jpg" alt="Hilo turquesa" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-beige.jpg" alt="Hilo beige" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-marron.jpg" alt="Hilo marrón" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="parent">
-              <div class="child">
-                <h5 class="grey-text text-darken-3">
-                  Utilizamos materiales ecológicos
-                </h5>
-                <div class="contenedor section">
-                  <div class="contenedor-icon">
-                    <i class="fas fa-seedling"></i>
-                    <p>Fibra de caña de azúcar</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="row">
+            <div class="col s12">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <a class="btn-floating halfway-fab waves-effect waves-light right">
+                    <i class="material-icons teal lighten-2 fav" id="boton-like2">favorite_border</i></a>
+                  <img src="img/colision.png" alt="Cuaderno colisión" />
+                </div>
+                <p class="right precio section" id="cantidad-likes2">79</p>
+                <div class="card-action">
+                  <h6>COLISIÓN</h6>
+                  <p>96 hojas</p>
+                  <div class="hilos">
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-verde-oscuro.jpg" alt="Hilo verde oscuro" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-verde.jpg" alt="Hilo verde claro" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-naranja.jpg" alt="Hilo naranja" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-negro.jpg" alt="Hilo negro" />
+                    </div>
                   </div>
-
-                  <div class="contenedor-icon">
-                    <i class="fas fa-tint"></i>
-                    <p>Pegamento ecológico</p>
-                  </div>
-
-                  <div class="contenedor-icon">
-                    <i class="fas fa-recycle"></i>
-                    <p>Reciclable</p>
-                  </div>
-
-                  <div class="contenedor-icon">
-                    <i class="fas fa-leaf"></i>
-                    <p>Origen vegetal</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="row">
+            <div class="col s12">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <a class="btn-floating halfway-fab waves-effect waves-light right">
+                    <i class="material-icons teal lighten-2 fav" id="boton-like3">favorite_border</i></a>
+                  <img src="img/universo.png" alt="Cuaderno Universo" />
+                </div>
+                <p class="right precio section" id="cantidad-likes3">70</p>
+                <div class="card-action">
+                  <h6>UNIVERSO</h6>
+                  <p>88 hojas</p>
+                  <div class="hilos">
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-magenta.jpg" alt="Hilo magenta" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-violeta.jpg" alt="Hilo violeta" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-azul-marino.jpg" alt="Hilo azul marino" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-turquesa.jpg" alt="Hilo turquesa" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -753,324 +218,703 @@
         </div>
       </div>
 
-      <!-- OPINIONES DE CLIENTES -->
-      <section class="banner banner-opiniones section center">
-        <img
-          class="responsive-img"
-          src="img/banner-opiniones.png"
-          alt="Opiniones de clientes"
-        />
-      </section>
-
-      <div class="opiniones container">
-        <div class="carousel">
-          <a class="carousel-item" href="#one!">
-            <div class="col s4 z-depth-4">
-              <img
-                class="responsive-img circle z-depth-4"
-                src="img/cliente1.jpg"
-              />
-              <h6 class="teal-text text-lighten-2">Daniela Rodriguez</h6>
-              <p class="grey-text text-darken-1">Estudiante</p>
-              <div class="puntuacion">
-                <i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                >
-              </div>
-              <p class="grey-text text-darken-1">"Buena calidad y bordado"</p>
-              <ul class="collapsible">
-                <li>
-                  <div class="collapsible-header teal-text text-lighten-2">
-                    <i class="material-icons">add</i>
-                    Ver más
-                    <span class="new badge hide">4</span>
-                  </div>
-                  <div class="collapsible-body">
-                    <p class="grey-text text-darken-1">
-                      Lo uso para tomar apuntes de mis clases por lo que gasto
-                      muchas hojas y siempre lo estoy llevando de un lado a otro
-                      pero sigue en el mismo estado en que lo compré
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </a>
-          <a class="carousel-item" href="#two!">
-            <div class="col s4 z-depth-4">
-              <img
-                class="responsive-img circle z-depth-4"
-                src="img/cliente2.jpg"
-              />
-              <h6>Noah Ferreira</h6>
-              <p class="grey-text text-darken-1">Desarrollador Web</p>
-              <div class="puntuacion">
-                <i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                >
-              </div>
-              <p class="grey-text text-darken-1">
-                "Excelente, muy recomendable!"
-              </p>
-              <ul class="collapsible">
-                <li>
-                  <div class="collapsible-header teal-text text-lighten-2">
-                    <i class="material-icons">add</i>
-                    Ver más
-                    <span class="new badge hide"></span>
-                  </div>
-                  <div class="collapsible-body">
-                    <p class="grey-text text-darken-1">
-                      Me interesó la opción de personalizar y decidí hacerlo por
-                      diversión, resultó ser de muy buena calidad. Ya estoy
-                      diseñando el siguiente
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </a>
-          <a class="carousel-item" href="#three!">
-            <div class="col s4 z-depth-4">
-              <img
-                class="responsive-img circle z-depth-4"
-                src="img/cliente3.jpg"
-              />
-              <h6>Lara Mercado</h6>
-              <p class="grey-text text-darken-1">Diseñadora Gráfica</p>
-              <div class="puntuacion">
-                <i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                >
-              </div>
-              <p class="activar">Ver más</p>
-              <ul class="collapsible">
-                <li>
-                  <div class="collapsible-header teal-text text-lighten-2">
-                    <i class="material-icons">add</i>
-                    Ver más
-                    <span class="new badge hide"></span>
-                  </div>
-                  <div class="collapsible-body">
-                    <p class="grey-text text-darken-1">
-                      Lo uso principalmente para hacer bocetos, me impresionó el
-                      grosor de las hojas y ahora también lo empleo para hacer
-                      pinturas con acuarela
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </a>
-          <a class="carousel-item" href="#four!">
-            <div class="col s4 z-depth-4">
-              <img
-                class="responsive-img circle z-depth-4"
-                src="img/cliente4.jpg"
-              />
-              <h6>Luis Cardenas</h6>
-              <p class="grey-text text-darken-1">Profesor</p>
-              <div class="puntuacion">
-                <i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                >
-              </div>
-              <p class="activar">Ver más</p>
-              <ul class="collapsible">
-                <li>
-                  <div class="collapsible-header teal-text text-lighten-2">
-                    <i class="material-icons">add</i>
-                    Ver más
-                    <span class="new badge hide"></span>
-                  </div>
-                  <div class="collapsible-body">
-                    <p class="grey-text text-darken-1">
-                      No se mucho sobre encuadernación pero mi mejor amiga si.
-                      Lo compré como regalo para su cumpleaños y le encantó!
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </a>
-          <a class="carousel-item" href="#five!">
-            <div class="col s4 z-depth-4">
-              <img
-                class="responsive-img circle z-depth-4"
-                src="img/cliente5.jpg"
-              />
-              <h6>Rocio Araujo</h6>
-              <p class="grey-text text-darken-1">Artesana</p>
-              <div class="puntuacion">
-                <i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                >
-              </div>
-              <p class="grey-text text-darken-1">
-                "El bordado es detallado y resistente, lo recomiendo !"
-              </p>
-              <ul class="collapsible">
-                <li>
-                  <div class="collapsible-header teal-text text-lighten-2">
-                    <i class="material-icons">add</i>
-                    Ver más
-                    <span class="new badge hide"></span>
-                  </div>
-                  <div class="collapsible-body">
-                    <p class="grey-text text-darken-1">
-                      Realizo el bordado de prendas de mis clientes, descubrí
-                      esta página de casualidad y me asombró la combinación de
-                      cuadernos y bordados. Fui a una feria y terminé comprando
-                      3 cuadernos
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </a>
-          <a class="carousel-item" href="#six!">
-            <div class="col s4 z-depth-4">
-              <img
-                class="responsive-img circle z-depth-4"
-                src="img/cliente6.jpg"
-              />
-              <h6>Elisabeth Silva</h6>
-              <p class="grey-text text-darken-1">Ilustradora</p>
-              <div class="puntuacion">
-                <i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                ><i class="small material-icons yellow-text text-accent-4"
-                  >star</i
-                >
-                <ul class="collapsible">
-                  <li>
-                    <div class="collapsible-header teal-text text-lighten-2">
-                      <i class="material-icons">add</i>
-                      Ver más
-                      <span class="new badge hide"></span>
+      <div class="row contenedor section">
+        <div class="col s12 m4">
+          <div class="row">
+            <div class="col s12">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <a class="btn-floating halfway-fab waves-effect waves-light right">
+                    <i class="material-icons teal lighten-2 fav" id="boton-like4">favorite_border</i></a>
+                  <img src="img/rosado.png" alt="Cuaderno Rosado" />
+                </div>
+                <p class="right precio section" id="cantidad-likes4">98</p>
+                <div class="card-action">
+                  <h6>ROSADO</h6>
+                  <p>100 hojas</p>
+                  <div class="hilos">
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-rojo.png" alt="Hilo rojo" />
                     </div>
-                    <div class="collapsible-body">
-                      <p class="grey-text text-darken-1">
-                        Hace años que compro mis cuadernos acá por su detalle y
-                        durabilidad, además de que están hechos de materiales
-                        reciclables y ecológicos. Acostumbro a usar todo tipo de
-                        materiales en mis dibujos por lo que aprecio la calidad
-                        de sus hojas
-                      </p>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-verde-oscuro.jpg" alt="Hilo verde oscuro" />
                     </div>
-                  </li>
-                </ul>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-blanco.jpg" alt="Hilo blanco" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-dorado.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </a>
+          </div>
         </div>
-      </div>
-    </main>
-
-    <!-- INFO EMPEZAR DISEÑO -->
-    <div class="info-empezar-diseño info section">
-      <div class="row">
-        <div class="txt col-lg-12">
-          <h4>Empezar a personalizar tu cuaderno</h4>
+        <div class="col s12 m4">
+          <div class="row">
+            <div class="col s12">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <a class="btn-floating halfway-fab waves-effect waves-light right">
+                    <i class="material-icons teal lighten-2 fav" id="boton-like5">favorite_border</i></a>
+                  <img src="img/cometa.png" alt="Cuaderno Cometa" />
+                </div>
+                <p class="right precio section" id="cantidad-likes5">31</p>
+                <div class="card-action">
+                  <h6>COMETA</h6>
+                  <p>92 hojas</p>
+                  <div class="hilos">
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-naranja.jpg" alt="Hilo naranja" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-rojo.png" alt="Hilo rojo" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="parent">
-          <div class="child">
-            <h5 class="grey-text text-darken-3">
-              Ideal si buscas crear bordados únicos, diferentes y especiales
-              para tus cuadernos de manera sencilla y rápida
-            </h5>
-            <div class="botones">
-              <a class="waves-effect btn amber lighten-1">Ver bordados</a>
-              <a class="waves-effect amber lighten-1 btn">Personalizar</a>
+        <div class="col s12 m4">
+          <div class="row">
+            <div class="col s12">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <a class="btn-floating halfway-fab waves-effect waves-light right">
+                    <i class="material-icons teal lighten-2 fav" id="boton-like6">favorite_border</i></a>
+                  <img src="img/destello.png" alt="Cuaderno Destello" />
+                </div>
+                <p class="right precio section" id="cantidad-likes6">44</p>
+                <div class="card-action">
+                  <h6>DESTELLO</h6>
+                  <p>88 hojas</p>
+                  <div class="hilos">
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-azul-marino.jpg" alt="Hilo azul marino" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-turquesa.jpg" alt="Hilo turquesa" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-marron.jpg" alt="Hilo marrón" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-naranja.jpg" alt="Hilo naranja" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <footer class="page-footer amber lighten-1">
-      <div class="container center">
-        <div class="row">
-          <div class="redes-sociales left">
-            <div class="col">
-              <a href=""><img clas src="img/Facebook.png" alt="Facebook" /></a>
-            </div>
-            <div class="col">
-              <a href=""
-                ><img clas src="img/Instagram.png" alt="Instagram"
-              /></a>
-            </div>
-            <div class="col">
-              <a href=""><img clas src="img/Twitter.png" alt="Twitter" /></a>
-            </div>
-            <div class="col">
-              <a href=""><img clas src="img/Youtube.png" alt="Youtube" /></a>
+    <!-- NUESTROS FAVORITOS -->
+    <section class="banner section banner-bordados center">
+      <img class="responsive-img" src="img/banner-bordados-favoritos.png" alt="Nuestros bordados favoritos" />
+    </section>
+
+    <div class="bordados tarjetas container">
+      <div class="row contenedor section">
+        <div class="col s12 m4">
+          <div class="row">
+            <div class="col s12">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <a class="btn-floating halfway-fab waves-effect waves-light right">
+                    <i class="material-icons teal lighten-2 fav" id="boton-like7">favorite_border</i></a>
+                  <img src="img/bordado1.png" alt="Bordado Universo" />
+                </div>
+                <p class="right precio section" id="cantidad-likes7">76</p>
+                <div class="card-action">
+                  <h6>UNIVERSO</h6>
+                  <p>Bordado</p>
+                  <div class="hilos">
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-magenta.jpg" alt="Hilo magenta" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-violeta.jpg" alt="Hilo violeta" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-azul-marino.jpg" alt="Hilo azul marino" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-turquesa.jpg" alt="Hilo turquesa" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="medios-pago right">
-            <div class="col">
-              <a href=""><img clas src="img/Mercado-Pago.png" alt="" /></a>
+        </div>
+        <div class="col s12 m4">
+          <div class="row">
+            <div class="col s12">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <a class="btn-floating halfway-fab waves-effect waves-light right">
+                    <i class="material-icons teal lighten-2 fav" id="boton-like8">favorite_border</i></a>
+                  <img src="img/bordado2.png" alt="Bordado colisión" />
+                </div>
+                <p class="right precio section" id="cantidad-likes8">91</p>
+                <div class="card-action">
+                  <h6>COLISIÓN</h6>
+                  <p>Bordado</p>
+                  <div class="hilos">
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-verde-oscuro.jpg" alt="Hilo verde oscuro" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-verde.jpg" alt="Hilo verde claro" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-naranja.jpg" alt="Hilo naranja" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-negro.jpg" alt="Hilo negro" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col">
-              <a href=""><img clas src="img/MasterCard.png" alt="" /></a>
-            </div>
-            <div class="col">
-              <a href=""><img clas src="img/PayPal.png" alt="" /></a>
-            </div>
-            <div class="col">
-              <a href=""><img clas src="img/Naranja.png" alt="" /></a>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="row">
+            <div class="col s12">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <a class="btn-floating halfway-fab waves-effect waves-light right">
+                    <i class="material-icons teal lighten-2 fav" id="boton-like9">favorite_border</i></a>
+                  <img src="img/bordado3.png" alt="Cuaderno Infinito" />
+                </div>
+                <p class="right precio section" id="cantidad-likes9">88</p>
+                <div class="card-action">
+                  <h6>INFINITO</h6>
+                  <p>Bordado</p>
+                  <div class="hilos">
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-violeta.jpg" alt="Hilo violeta" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-azul-marino.jpg" alt="Hilo azul marino" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-beige.jpg" alt="Hilo beige" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-turquesa.jpg" alt="Hilo turquesa" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+      <div class="row contenedor section">
+        <div class="col s12 m4">
+          <div class="row">
+            <div class="col s12">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <a class="btn-floating halfway-fab waves-effect waves-light right">
+                    <i class="material-icons teal lighten-2 fav" id="boton-like10">favorite_border</i></a>
+                  <img src="img/bordado4.png" alt="Cuaderno Cometa" />
+                </div>
+                <p class="right precio section" id="cantidad-likes10">43</p>
+                <div class="card-action">
+                  <h6>COMETA</h6>
+                  <p>Bordado</p>
+                  <div class="hilos">
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-azul-marino.jpg" alt="Hilo azul marino" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-turquesa.jpg" alt="Hilo turquesa" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-marron.jpg" alt="Hilo marrón" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-naranja.jpg" alt="Hilo naranja" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="row">
+            <div class="col s12">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <a class="btn-floating halfway-fab waves-effect waves-light right">
+                    <i class="material-icons teal lighten-2 fav" id="boton-like11">favorite_border</i></a>
+                  <img src="img/bordado5.png" alt="Bordado Cometa" />
+                </div>
+                <p class="right precio section" id="cantidad-likes11">22</p>
+                <div class="card-action">
+                  <h6>COMETA</h6>
+                  <p>Bordado</p>
+                  <div class="hilos">
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-naranja.jpg" alt="Hilo naranja" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-rojo.png" alt="Hilo rojo" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="row">
+            <div class="col s12">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <a class="btn-floating halfway-fab waves-effect waves-light right">
+                    <i class="material-icons teal lighten-2 fav" id="boton-like12">favorite_border</i></a>
+                  <img src="img/bordado6.png" alt="Bordado Destello" />
+                </div>
+                <p class="right precio section" id="cantidad-likes12">57</p>
+                <div class="card-action">
+                  <h6>DESTELLO</h6>
+                  <p>Bordado</p>
+                  <div class="hilos">
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-azul-marino.jpg" alt="Hilo azul marino" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-turquesa.jpg" alt="Hilo turquesa" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-marron.jpg" alt="Hilo marrón" />
+                    </div>
+                    <div class="btn-floating waves-effect waves-light white boton">
+                      <img src="img/color-naranja.jpg" alt="Hilo naranja" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO MATERIALES -->
+    <div class="info-materiales info section">
+      <div class="container">
+        <div class="row">
+          <div class="txt col-lg-12">
+            <h4>
+              Cuadernos artesanales que ofrecen resistencia y durabilidad
+            </h4>
+          </div>
+          <div class="parent">
+            <div class="child">
+              <h5 class="grey-text text-darken-3">
+                Utilizamos materiales ecológicos
+              </h5>
+              <div class="contenedor section">
+                <div class="contenedor-icon">
+                  <i class="fas fa-seedling"></i>
+                  <p>Fibra de caña de azúcar</p>
+                </div>
+
+                <div class="contenedor-icon">
+                  <i class="fas fa-tint"></i>
+                  <p>Pegamento ecológico</p>
+                </div>
+
+                <div class="contenedor-icon">
+                  <i class="fas fa-recycle"></i>
+                  <p>Reciclable</p>
+                </div>
+
+                <div class="contenedor-icon">
+                  <i class="fas fa-leaf"></i>
+                  <p>Origen vegetal</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPINIONES DE CLIENTES -->
+    <section class="banner banner-opiniones section center">
+      <img class="responsive-img" src="img/banner-opiniones.png" alt="Opiniones de clientes" />
+    </section>
+
+    <div class="opiniones container">
+      <div class="carousel">
+        <a class="carousel-item" href="#one!">
+          <div class="col s4 z-depth-4">
+            <img class="responsive-img circle z-depth-4" src="img/cliente1.jpg" />
+            <h6 class="teal-text text-lighten-2">Daniela Rodriguez</h6>
+            <p class="grey-text text-darken-1">Estudiante</p>
+            <div class="puntuacion">
+              <i class="small material-icons yellow-text text-accent-4">star</i><i
+                class="small material-icons yellow-text text-accent-4">star</i><i
+                class="small material-icons yellow-text text-accent-4">star</i><i
+                class="small material-icons yellow-text text-accent-4">star</i><i
+                class="small material-icons yellow-text text-accent-4">star</i>
+            </div>
+            <p class="grey-text text-darken-1">"Buena calidad y bordado"</p>
+            <ul class="collapsible">
+              <li>
+                <div class="collapsible-header teal-text text-lighten-2">
+                  <i class="material-icons">add</i>
+                  Ver más
+                  <span class="new badge hide">4</span>
+                </div>
+                <div class="collapsible-body">
+                  <p class="grey-text text-darken-1">
+                    Lo uso para tomar apuntes de mis clases por lo que gasto
+                    muchas hojas y siempre lo estoy llevando de un lado a otro
+                    pero sigue en el mismo estado en que lo compré
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </a>
+        <a class="carousel-item" href="#two!">
+          <div class="col s4 z-depth-4">
+            <img class="responsive-img circle z-depth-4" src="img/cliente2.jpg" />
+            <h6>Noah Ferreira</h6>
+            <p class="grey-text text-darken-1">Desarrollador Web</p>
+            <div class="puntuacion">
+              <i class="small material-icons yellow-text text-accent-4">star</i><i
+                class="small material-icons yellow-text text-accent-4">star</i><i
+                class="small material-icons yellow-text text-accent-4">star</i><i
+                class="small material-icons yellow-text text-accent-4">star</i><i
+                class="small material-icons yellow-text text-accent-4">star</i>
+            </div>
+            <p class="grey-text text-darken-1">
+              "Excelente, muy recomendable!"
+            </p>
+            <ul class="collapsible">
+              <li>
+                <div class="collapsible-header teal-text text-lighten-2">
+                  <i class="material-icons">add</i>
+                  Ver más
+                  <span class="new badge hide"></span>
+                </div>
+                <div class="collapsible-body">
+                  <p class="grey-text text-darken-1">
+                    Me interesó la opción de personalizar y decidí hacerlo por
+                    diversión, resultó ser de muy buena calidad. Ya estoy
+                    diseñando el siguiente
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </a>
+        <a class="carousel-item" href="#three!">
+          <div class="col s4 z-depth-4">
+            <img class="responsive-img circle z-depth-4" src="img/cliente3.jpg" />
+            <h6>Lara Mercado</h6>
+            <p class="grey-text text-darken-1">Diseñadora Gráfica</p>
+            <div class="puntuacion">
+              <i class="small material-icons yellow-text text-accent-4">star</i><i
+                class="small material-icons yellow-text text-accent-4">star</i><i
+                class="small material-icons yellow-text text-accent-4">star</i><i
+                class="small material-icons yellow-text text-accent-4">star</i><i
+                class="small material-icons yellow-text text-accent-4">star</i>
+            </div>
+            <p class="activar">Ver más</p>
+            <ul class="collapsible">
+              <li>
+                <div class="collapsible-header teal-text text-lighten-2">
+                  <i class="material-icons">add</i>
+                  Ver más
+                  <span class="new badge hide"></span>
+                </div>
+                <div class="collapsible-body">
+                  <p class="grey-text text-darken-1">
+                    Lo uso principalmente para hacer bocetos, me impresionó el
+                    grosor de las hojas y ahora también lo empleo para hacer
+                    pinturas con acuarela
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </a>
+        <a class="carousel-item" href="#four!">
+          <div class="col s4 z-depth-4">
+            <img class="responsive-img circle z-depth-4" src="img/cliente4.jpg" />
+            <h6>Luis Cardenas</h6>
+            <p class="grey-text text-darken-1">Profesor</p>
+            <div class="puntuacion">
+              <i class="small material-icons yellow-text text-accent-4">star</i><i
+                class="small material-icons yellow-text text-accent-4">star</i><i
+                class="small material-icons yellow-text text-accent-4">star</i><i
+                class="small material-icons yellow-text text-accent-4">star</i>
+            </div>
+            <p class="activar">Ver más</p>
+            <ul class="collapsible">
+              <li>
+                <div class="collapsible-header teal-text text-lighten-2">
+                  <i class="material-icons">add</i>
+                  Ver más
+                  <span class="new badge hide"></span>
+                </div>
+                <div class="collapsible-body">
+                  <p class="grey-text text-darken-1">
+                    No se mucho sobre encuadernación pero mi mejor amiga si.
+                    Lo compré como regalo para su cumpleaños y le encantó!
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </a>
+        <a class="carousel-item" href="#five!">
+          <div class="col s4 z-depth-4">
+            <img class="responsive-img circle z-depth-4" src="img/cliente5.jpg" />
+            <h6>Rocio Araujo</h6>
+            <p class="grey-text text-darken-1">Artesana</p>
+            <div class="puntuacion">
+              <i class="small material-icons yellow-text text-accent-4">star</i><i
+                class="small material-icons yellow-text text-accent-4">star</i><i
+                class="small material-icons yellow-text text-accent-4">star</i><i
+                class="small material-icons yellow-text text-accent-4">star</i><i
+                class="small material-icons yellow-text text-accent-4">star</i>
+            </div>
+            <p class="grey-text text-darken-1">
+              "El bordado es detallado y resistente, lo recomiendo !"
+            </p>
+            <ul class="collapsible">
+              <li>
+                <div class="collapsible-header teal-text text-lighten-2">
+                  <i class="material-icons">add</i>
+                  Ver más
+                  <span class="new badge hide"></span>
+                </div>
+                <div class="collapsible-body">
+                  <p class="grey-text text-darken-1">
+                    Realizo el bordado de prendas de mis clientes, descubrí
+                    esta página de casualidad y me asombró la combinación de
+                    cuadernos y bordados. Fui a una feria y terminé comprando
+                    3 cuadernos
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </a>
+        <a class="carousel-item" href="#six!">
+          <div class="col s4 z-depth-4">
+            <img class="responsive-img circle z-depth-4" src="img/cliente6.jpg" />
+            <h6>Elisabeth Silva</h6>
+            <p class="grey-text text-darken-1">Ilustradora</p>
+            <div class="puntuacion">
+              <i class="small material-icons yellow-text text-accent-4">star</i><i
+                class="small material-icons yellow-text text-accent-4">star</i><i
+                class="small material-icons yellow-text text-accent-4">star</i><i
+                class="small material-icons yellow-text text-accent-4">star</i><i
+                class="small material-icons yellow-text text-accent-4">star</i>
+              <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header teal-text text-lighten-2">
+                    <i class="material-icons">add</i>
+                    Ver más
+                    <span class="new badge hide"></span>
+                  </div>
+                  <div class="collapsible-body">
+                    <p class="grey-text text-darken-1">
+                      Hace años que compro mis cuadernos acá por su detalle y
+                      durabilidad, además de que están hechos de materiales
+                      reciclables y ecológicos. Acostumbro a usar todo tipo de
+                      materiales en mis dibujos por lo que aprecio la calidad
+                      de sus hojas
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- INFO EMPEZAR DISEÑO -->
+  <div class="info-empezar-diseño info section">
+    <div class="row">
+      <div class="txt col-lg-12">
+        <h4>Empezar a personalizar tu cuaderno</h4>
+      </div>
+      <div class="parent">
+        <div class="child">
+          <h5 class="grey-text text-darken-3">
+            Ideal si buscas crear bordados únicos, diferentes y especiales
+            para tus cuadernos de manera sencilla y rápida
+          </h5>
+          <div class="botones">
+            <a class="waves-effect btn amber lighten-1">Ver bordados</a>
+            <a class="waves-effect amber lighten-1 btn">Personalizar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer amber lighten-1">
+    <div class="container center">
+      <div class="row">
+        <div class="redes-sociales left">
+          <div class="col">
+            <a href=""><img clas src="img/Facebook.png" alt="Facebook" /></a>
+          </div>
+          <div class="col">
+            <a href=""><img clas src="img/Instagram.png" alt="Instagram" /></a>
+          </div>
+          <div class="col">
+            <a href=""><img clas src="img/Twitter.png" alt="Twitter" /></a>
+          </div>
+          <div class="col">
+            <a href=""><img clas src="img/Youtube.png" alt="Youtube" /></a>
+          </div>
+        </div>
+
+        <div class="medios-pago right">
+          <div class="col">
+            <a href=""><img clas src="img/Mercado-Pago.png" alt="" /></a>
+          </div>
+          <div class="col">
+            <a href=""><img clas src="img/MasterCard.png" alt="" /></a>
+          </div>
+          <div class="col">
+            <a href=""><img clas src="img/PayPal.png" alt="" /></a>
+          </div>
+          <div class="col">
+            <a href=""><img clas src="img/Naranja.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+
+    botonLike1 = document.getElementById('boton-like1');
+    botonLike2 = document.getElementById('boton-like2');
+    botonLike3 = document.getElementById('boton-like3');
+    botonLike4 = document.getElementById('boton-like4');
+    botonLike5 = document.getElementById('boton-like5');
+    botonLike6 = document.getElementById('boton-like6');
+    botonLike7 = document.getElementById('boton-like7');
+    botonLike8 = document.getElementById('boton-like8');
+    botonLike9 = document.getElementById('boton-like9');
+    botonLike10 = document.getElementById('boton-like10');
+    botonLike11 = document.getElementById('boton-like11');
+    botonLike12 = document.getElementById('boton-like12');
+
+    botonLike1.addEventListener('click', subirCantidadLikes1);
+    botonLike2.addEventListener('click', subirCantidadLikes2);
+    botonLike3.addEventListener('click', subirCantidadLikes3);
+    botonLike4.addEventListener('click', subirCantidadLikes4);
+    botonLike5.addEventListener('click', subirCantidadLikes5);
+    botonLike6.addEventListener('click', subirCantidadLikes6);
+    botonLike7.addEventListener('click', subirCantidadLikes7);
+    botonLike8.addEventListener('click', subirCantidadLikes8);
+    botonLike9.addEventListener('click', subirCantidadLikes9);
+    botonLike10.addEventListener('click', subirCantidadLikes10);
+    botonLike11.addEventListener('click', subirCantidadLikes11);
+    botonLike12.addEventListener('click', subirCantidadLikes12);
+
+    var contador1 = 28;
+    var contador2 = 79;
+    var contador3 = 70;
+    var contador4 = 98;
+    var contador5 = 31;
+    var contador6 = 44;
+    var contador7 = 76;
+    var contador8 = 91;
+    var contador9 = 88;
+    var contador10 = 43;
+    var contador11 = 22;
+    var contador12 = 57;
+
+    function subirCantidadLikes1() {      
+      contador1 = 29;
+      document.getElementById('cantidad-likes1').textContent = contador1;        
+    }
+
+    function subirCantidadLikes2() {      
+      contador2 = 80;
+      document.getElementById('cantidad-likes2').textContent = contador2;        
+    }
+
+    function subirCantidadLikes3() {      
+      contador3 = 71;
+      document.getElementById('cantidad-likes3').textContent = contador3;        
+    }
+
+    function subirCantidadLikes4() {      
+      contador4 = 99;
+      document.getElementById('cantidad-likes4').textContent = contador4;        
+    }
+
+    function subirCantidadLikes5() {      
+      contador5 = 32;
+      document.getElementById('cantidad-likes5').textContent = contador5;        
+    }
+
+    function subirCantidadLikes6() {      
+      contador6 = 45;
+      document.getElementById('cantidad-likes6').textContent = contador6;        
+    }
+
+    function subirCantidadLikes7() {      
+      contador7 = 77;
+      document.getElementById('cantidad-likes7').textContent = contador7;        
+    }
+
+    function subirCantidadLikes8() {      
+      contador8 = 92;
+      document.getElementById('cantidad-likes8').textContent = contador8;        
+    }
+
+    function subirCantidadLikes9() {      
+      contador9 = 89;
+      document.getElementById('cantidad-likes9').textContent = contador9;        
+    }
+
+    function subirCantidadLikes10() {      
+      contador10 = 44;
+      document.getElementById('cantidad-likes10').textContent = contador10;        
+    }
+
+    function subirCantidadLikes11() {      
+      contador11 = 23;
+      document.getElementById('cantidad-likes11').textContent = contador11;        
+    }
+
+    function subirCantidadLikes12() {      
+      contador12 = 58;
+      document.getElementById('cantidad-likes12').textContent = contador12;        
+    }
+
+
+  </script>
+</body>
+
 </html>
