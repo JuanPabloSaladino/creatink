@@ -1,502 +1,241 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Comprar</title>
-    <link rel="icon" type="image/png" href="img/iso.png" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/222a3ac483.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/materialize.min.css" />
-    <link rel="stylesheet" href="css/compra.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="amber lighten-1">
-        <ul id="slide-out" class="sidenav">
-          <li>
-            <div class="user-view">
-              <div class="background">
-                <img src="img/slide.jpg" />
-              </div>
-              <a href="#logo"
-                ><img class="circle" src="img/iso.png" alt="Logo Creatink"
-              /></a>
-              <a href="#name"><h2 class="white-text name">Creatink</h2></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comprar</title>
+  <link rel="icon" type="image/png" href="img/iso.png" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/222a3ac483.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/materialize.min.css" />
+  <link rel="stylesheet" href="css/compra.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="amber lighten-1">
+      <ul id="slide-out" class="sidenav">
+        <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="img/slide.jpg" />
             </div>
-          </li>
+            <a href="#logo"><img class="circle" src="img/iso.png" alt="Logo Creatink" /></a>
+            <a href="#name">
+              <h2 class="white-text name">Creatink</h2>
+            </a>
+          </div>
+        </li>
+        <li>
+          <a href="#!"><i class="material-icons">mode_edit</i>Crear propio cuaderno</a>
+        </li>
+        <li>
+          <div class="divider"></div>
+        </li>
+        <li class="menu-movil arriba">
+          <img class="responsive-img" src="img/home.png" alt="" />
+          <a class="waves-effect" href="index.html">Inicio</a>
+        </li>
+        <li class="menu-movil">
+          <img class="responsive-img" src="img/personalizar.png" alt="" />
+          <a class="waves-effect" href="#!">Personalizar</a>
+        </li>
+        <li class="menu-movil">
+          <img class="responsive-img" src="img/comprar.png" alt="" />
+          <a class="waves-effect" href="#!">Comprar</a>
+        </li>
+        <li class="menu-movil">
+          <img class="responsive-img" src="img/contactar.png" alt="" />
+          <a class="waves-effect" href="#!">Contactar</a>
+        </li>
+      </ul>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+      <div class="nav-wrapper container">
+        <ul class="left">
           <li>
-            <a href="#!"
-              ><i class="material-icons">mode_edit</i>Crear propio cuaderno</a
-            >
-          </li>
-          <li><div class="divider"></div></li>
-          <li class="menu-movil arriba">
-            <img class="responsive-img" src="img/home.png" alt="" />
-            <a class="waves-effect" href="index.html">Inicio</a>
-          </li>
-          <li class="menu-movil">
-            <img class="responsive-img" src="img/personalizar.png" alt="" />
-            <a class="waves-effect" href="#!">Personalizar</a>
-          </li>
-          <li class="menu-movil">
-            <img class="responsive-img" src="img/comprar.png" alt="" />
-            <a class="waves-effect" href="#!">Comprar</a>
-          </li>
-          <li class="menu-movil">
-            <img class="responsive-img" src="img/contactar.png" alt="" />
-            <a class="waves-effect" href="#!">Contactar</a>
+            <img class="responsive-img" src="img/iso.png" alt="Isologo Creatink" />
           </li>
         </ul>
-        <a href="#" data-target="slide-out" class="sidenav-trigger"
-          ><i class="material-icons">menu</i></a
-        >
+        <ul class="right">
+          <li>
+            <a href="index.html"><img src="img/home.png" alt="Home" /></a>
+            <div class="ribbon"></div>
+          </li>
+          <li>
+            <a href="#"><img src="img/personalizar.png" alt="Personalizar" /></a>
+            <div class="ribbon"></div>
+          </li>
+          <li>
+            <a href="#"><img src="img/comprar.png" alt="Comprar" /></a>
+            <div class="ribbon active"></div>
+          </li>
+          <li>
+            <a href="#"><img src="img/contactar.png" alt="Contacto" /></a>
+            <div class="ribbon"></div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-        <div class="nav-wrapper container">
-          <ul class="left">
-            <li>
-              <img
-                class="responsive-img"
-                src="img/iso.png"
-                alt="Isologo Creatink"
-              />
-            </li>
-          </ul>
-          <ul class="right">
-            <li>
-              <a href="index.html"><img src="img/home.png" alt="Home" /></a>
-              <div class="ribbon"></div>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="img/personalizar.png" alt="Personalizar"
-              /></a>
-              <div class="ribbon"></div>
-            </li>
-            <li>
-              <a href="#"><img src="img/comprar.png" alt="Comprar" /></a>
-              <div class="ribbon active"></div>
-            </li>
-            <li>
-              <a href="#"><img src="img/contactar.png" alt="Contacto" /></a>
-              <div class="ribbon"></div>
-            </li>
-          </ul>
+  <main>
+    <!-- INFO DE PASOS A SEGUIR -->
+    <section class="container">
+      <div class="contenedor-info section">
+        <div class="info">
+          <h5 class="center section">Diseño</h5>
+          <div class="circulo-info">
+            <i class="material-icons">create</i>
+          </div>
+          <p class="center">Personalizá tu cuaderno</p>
         </div>
-      </nav>
-    </header>
+        <div class="linea-punteada"></div>
+        <div class="info">
+          <h5 class="center section">Descarga</h5>
+          <div class="circulo-info">
+            <i class="material-icons">cloud_download</i>
+          </div>
+          <p class="center">Continúa cuando quieras</p>
+        </div>
+        <div class="linea-punteada"></div>
+        <div class="info">
+          <h5 class="center section">Pago</h5>
+          <div class="circulo-info">
+            <i class="material-icons">credit_card</i>
+          </div>
+          <p class="center">Elegí un medio de pago</p>
+        </div>
+        <div class="linea-punteada"></div>
+        <div class="info">
+          <h5 class="center section">Envío</h5>
+          <div class="circulo-info">
+            <i class="material-icons">shopping_cart</i>
+          </div>
+          <p class="center">Obtené tu cuaderno</p>
+        </div>
+      </div>
+    </section>
 
-    <main>
-      <!-- INFO DE PASOS A SEGUIR -->
-      <section class="container">
-        <div class="contenedor-info section">
-          <div class="info">
-            <h5 class="center section">Diseño</h5>
-            <div class="circulo-info">
-              <i class="material-icons">create</i>
-            </div>
-            <p class="center">Personalizá tu cuaderno</p>
-          </div>
-          <div class="linea-punteada"></div>
-          <div class="info">
-            <h5 class="center section">Descarga</h5>
-            <div class="circulo-info">
-              <i class="material-icons">cloud_download</i>
-            </div>
-            <p class="center">Continúa cuando quieras</p>
-          </div>
-          <div class="linea-punteada"></div>
-          <div class="info">
-            <h5 class="center section">Pago</h5>
-            <div class="circulo-info">
-              <i class="material-icons">credit_card</i>
-            </div>
-            <p class="center">Elegí un medio de pago</p>
-          </div>
-          <div class="linea-punteada"></div>
-          <div class="info">
-            <h5 class="center section">Envío</h5>
-            <div class="circulo-info">
-              <i class="material-icons">shopping_cart</i>
-            </div>
-            <p class="center">Obtené tu cuaderno</p>
-          </div>
-        </div>
+    <!-- CATÁLOGO -->
+    <section class="contenedor-catalogo">
+      <!-- GEOMÉTRICOS -->
+      <section class="banner banner-geometricos center section">
+        <img class="responsive-img" src="img/banner-geometricos.png" alt="Cuadernos geométricos" />
       </section>
 
-      <!-- CATÁLOGO -->
-      <section class="contenedor-catalogo">
-        <!-- GEOMÉTRICOS -->
-        <section class="banner banner-geometricos center section">
-          <img
-            class="responsive-img"
-            src="img/banner-geometricos.png"
-            alt="Cuadernos geométricos"
-          />
-        </section>
-
-        <div class="geometricos cuadernos container section">
-          <div class="row contenedor-geometricos section">
-            <div class="col s12 m4">
-              <div class="row">
-                <div class="col s12">
-                  <div class="card hoverable">
-                    <div class="card-image">
-                      <a
-                        class="btn-floating halfway-fab waves-effect waves-light right"
-                      >
-                        <i class="material-icons teal lighten-2 fav"
-                          >favorite_border</i
-                        ></a
-                      >
-                      <img src="img/geometrico1.png" alt="Cuaderno Zorro" />
-                    </div>
-                    <p class="right like section">11</p>
-                    <div class="card-content">
-                      <h6>ZORRO</h6>
-                      <h6 class="precio amber-text text-lighten-1">$205</h6>
-                      <p>250 páginas</p>
-                      <div class="hilos section">
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-amarillo.jpg"
-                            alt="Hilo amarillo"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-naranja.jpg" alt="Hilo naranja" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-turquesa.jpg"
-                            alt="Hilo turquesa"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-beige.jpg" alt="Hilo beige" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-marron.jpg" alt="Hilo marrón" />
-                        </div>
+      <div class="geometricos cuadernos container section">
+        <div class="row contenedor-geometricos section">
+          <div class="col s12 m4">
+            <div class="row">
+              <div class="col s12">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <a class="btn-floating halfway-fab waves-effect waves-light right">
+                      <i class="material-icons teal lighten-2 fav" id="boton-like1">favorite_border</i></a>
+                    <img src="img/geometrico1.png" alt="Cuaderno Zorro" />
+                  </div>
+                  <p class="right like section" id="cantidad-likes1">28</p>
+                  <div class="card-content">
+                    <h6>ZORRO</h6>
+                    <h6 class="precio amber-text text-lighten-1">$205</h6>
+                    <p>250 páginas</p>
+                    <div class="hilos section">
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-amarillo.jpg" alt="Hilo amarillo" />
                       </div>
-                    </div>
-                    <div class="card-action center teal lighten-2">
-                      <i class="material-icons white-text small"
-                        >shopping_cart</i
-                      >
-                      <a class="white-text" href="#">Comprar</a>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-naranja.jpg" alt="Hilo naranja" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-turquesa.jpg" alt="Hilo turquesa" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-beige.jpg" alt="Hilo beige" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-marron.jpg" alt="Hilo marrón" />
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m4">
-              <div class="row">
-                <div class="col s12">
-                  <div class="card hoverable">
-                    <div class="card-image">
-                      <a
-                        class="btn-floating halfway-fab waves-effect waves-light right"
-                      >
-                        <i class="material-icons teal lighten-2 fav"
-                          >favorite_border</i
-                        ></a
-                      >
-                      <img src="img/geometrico2.png" alt="Cuaderno Gato" />
-                    </div>
-                    <p class="right like section">53</p>
-                    <div class="card-content">
-                      <h6>GATO</h6>
-                      <h6 class="precio amber-text text-lighten-1">$299</h6>
-                      <p>280 páginas</p>
-                      <div class="hilos section">
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-verde-oscuro.jpg"
-                            alt="Hilo verde oscuro"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-verde.jpg"
-                            alt="Hilo verde claro"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-marron.jpg" alt="Hilo marron" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-negro.jpg" alt="Hilo negro" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-action center teal lighten-2">
-                      <i class="material-icons white-text">shopping_cart</i>
-                      <a class="white-text" href="#">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m4">
-              <div class="row">
-                <div class="col s12">
-                  <div class="card hoverable">
-                    <div class="card-image">
-                      <a
-                        class="btn-floating halfway-fab waves-effect waves-light right"
-                      >
-                        <i class="material-icons teal lighten-2 fav"
-                          >favorite_border</i
-                        ></a
-                      >
-                      <img src="img/geometrico3.png" alt="Cuaderno Erizo" />
-                    </div>
-                    <p class="right like section">18</p>
-                    <div class="card-content">
-                      <h6>ERIZO</h6>
-                      <h6 class="precio amber-text text-lighten-1">$238</h6>
-                      <p>190 páginas</p>
-                      <div class="hilos section">
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-magenta.jpg" alt="Hilo magenta" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-violeta.jpg" alt="Hilo violeta" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-azul-marino.jpg"
-                            alt="Hilo azul marino"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-turquesa.jpg"
-                            alt="Hilo turquesa"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-action center teal lighten-2">
-                      <i class="material-icons white-text">shopping_cart</i>
-                      <a class="white-text" href="#">Comprar</a>
-                    </div>
+                  <div class="card-action center teal lighten-2">
+                    <i class="material-icons white-text small">shopping_cart</i>
+                    <a class="white-text" href="#">Comprar</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="row contenedor-geometricos section">
-            <div class="col s12 m4">
-              <div class="row">
-                <div class="col s12">
-                  <div class="card hoverable">
-                    <div class="card-image">
-                      <a
-                        class="btn-floating halfway-fab waves-effect waves-light right"
-                      >
-                        <i class="material-icons teal lighten-2 fav"
-                          >favorite_border</i
-                        ></a
-                      >
-                      <img src="img/geometrico4.png" alt="Cuaderno Jirafa" />
-                    </div>
-                    <p class="right like section">83</p>
-                    <div class="card-content">
-                      <h6>JIRAFA</h6>
-                      <h6 class="precio amber-text text-lighten-1">$347</h6>
-                      <p>200 páginas</p>
-                      <div class="hilos section">
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-amarillo.jpg"
-                            alt="Hilo amarillo"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-verde-oscuro.jpg"
-                            alt="Hilo verde oscuro"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-turquesa.jpg"
-                            alt="Hilo turquesa"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-dorado.jpg" alt="" />
-                        </div>
+          <div class="col s12 m4">
+            <div class="row">
+              <div class="col s12">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <a class="btn-floating halfway-fab waves-effect waves-light right">
+                      <i class="material-icons teal lighten-2 fav" id="boton-like2">favorite_border</i></a>
+                    <img src="img/geometrico2.png" alt="Cuaderno Gato" />
+                  </div>
+                  <p class="right like section" id="cantidad-likes2">79</p>
+                  <div class="card-content">
+                    <h6>GATO</h6>
+                    <h6 class="precio amber-text text-lighten-1">$299</h6>
+                    <p>280 páginas</p>
+                    <div class="hilos section">
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-verde-oscuro.jpg" alt="Hilo verde oscuro" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-verde.jpg" alt="Hilo verde claro" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-marron.jpg" alt="Hilo marron" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-negro.jpg" alt="Hilo negro" />
                       </div>
                     </div>
-                    <div class="card-action center teal lighten-2">
-                      <i class="material-icons white-text small"
-                        >shopping_cart</i
-                      >
-                      <a class="white-text" href="#">Comprar</a>
-                    </div>
+                  </div>
+                  <div class="card-action center teal lighten-2">
+                    <i class="material-icons white-text">shopping_cart</i>
+                    <a class="white-text" href="#">Comprar</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col s12 m4">
-              <div class="row">
-                <div class="col s12">
-                  <div class="card hoverable">
-                    <div class="card-image">
-                      <a
-                        class="btn-floating halfway-fab waves-effect waves-light right"
-                      >
-                        <i class="material-icons teal lighten-2 fav"
-                          >favorite_border</i
-                        ></a
-                      >
-                      <img src="img/geometrico5.png" alt="Cuaderno Koala" />
-                    </div>
-                    <p class="right like section">87</p>
-                    <div class="card-content">
-                      <h6>KOALA</h6>
-                      <h6 class="precio amber-text text-lighten-1">$566</h6>
-                      <p>196 páginas</p>
-                      <div class="hilos section">
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-beige.jpg" alt="Hilo beige" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-azul-marino.jpg"
-                            alt="Hilo azul marino"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-blanco.jpg" alt="Hilo blanco" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-turquesa.jpg"
-                            alt="Hilo azul turquesa"
-                          />
-                        </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="row">
+              <div class="col s12">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <a class="btn-floating halfway-fab waves-effect waves-light right">
+                      <i class="material-icons teal lighten-2 fav" id="boton-like3">favorite_border</i></a>
+                    <img src="img/geometrico3.png" alt="Cuaderno Erizo" />
+                  </div>
+                  <p class="right like section" id="cantidad-likes3">70</p>
+                  <div class="card-content">
+                    <h6>ERIZO</h6>
+                    <h6 class="precio amber-text text-lighten-1">$238</h6>
+                    <p>190 páginas</p>
+                    <div class="hilos section">
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-magenta.jpg" alt="Hilo magenta" />
                       </div>
-                    </div>
-                    <div class="card-action center teal lighten-2">
-                      <i class="material-icons white-text small"
-                        >shopping_cart</i
-                      >
-                      <a class="white-text" href="#">Comprar</a>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-violeta.jpg" alt="Hilo violeta" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-azul-marino.jpg" alt="Hilo azul marino" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-turquesa.jpg" alt="Hilo turquesa" />
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m4">
-              <div class="row">
-                <div class="col s12">
-                  <div class="card hoverable">
-                    <div class="card-image">
-                      <a
-                        class="btn-floating halfway-fab waves-effect waves-light right"
-                      >
-                        <i class="material-icons teal lighten-2 fav"
-                          >favorite_border</i
-                        ></a
-                      >
-                      <img src="img/geometrico6.png" alt="Cuaderno Montañas" />
-                    </div>
-                    <p class="right like section">70</p>
-                    <div class="card-content">
-                      <h6>MONTAÑAS</h6>
-                      <h6 class="precio amber-text text-lighten-1">$603</h6>
-                      <p>260 páginas</p>
-                      <div class="hilos section">
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-azul-marino.jpg"
-                            alt="Hilo azul marino"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-turquesa.jpg"
-                            alt="Hilo turquesa"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-amarillo.jpg"
-                            alt="Hilo amarillo"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-naranja.jpg" alt="Hilo naranja" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-action center teal lighten-2">
-                      <i class="material-icons white-text small"
-                        >shopping_cart</i
-                      >
-                      <a class="white-text" href="#">Comprar</a>
-                    </div>
+                  <div class="card-action center teal lighten-2">
+                    <i class="material-icons white-text">shopping_cart</i>
+                    <a class="white-text" href="#">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -504,814 +243,851 @@
           </div>
         </div>
 
-        <!-- FLORES -->
-        <section class="banner banner-flores center section">
-          <img
-            class="responsive-img"
-            src="img/banner-flores.png"
-            alt="Cuadernos flores"
-          />
-        </section>
-
-        <div class="flores cuadernos container section">
-          <div class="row contenedor-flores section">
-            <div class="col s12 m4">
-              <div class="row">
-                <div class="col s12">
-                  <div class="card hoverable">
-                    <div class="card-image">
-                      <a
-                        class="btn-floating halfway-fab waves-effect waves-light right"
-                      >
-                        <i class="material-icons teal lighten-2 fav"
-                          >favorite_border</i
-                        ></a
-                      >
-                      <img src="img/flor1.png" alt="Cuaderno Ramo" />
-                    </div>
-                    <p class="right like section">72</p>
-                    <div class="card-content">
-                      <h6>RAMO</h6>
-                      <h6 class="precio amber-text text-lighten-1">$400</h6>
-                      <p>44 hojas</p>
-                      <div class="hilos section">
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-amarillo.jpg"
-                            alt="Hilo amarillo"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-naranja.jpg" alt="Hilo naranja" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-rosa.jpg" alt="Hilo Rosa" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-beige.jpg" alt="Hilo beige" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-marron.jpg" alt="Hilo marrón" />
-                        </div>
+        <div class="row contenedor-geometricos section">
+          <div class="col s12 m4">
+            <div class="row">
+              <div class="col s12">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <a class="btn-floating halfway-fab waves-effect waves-light right">
+                      <i class="material-icons teal lighten-2 fav" id="boton-like4">favorite_border</i></a>
+                    <img src="img/geometrico4.png" alt="Cuaderno Jirafa" />
+                  </div>
+                  <p class="right like section" id="cantidad-likes4">98</p>
+                  <div class="card-content">
+                    <h6>JIRAFA</h6>
+                    <h6 class="precio amber-text text-lighten-1">$347</h6>
+                    <p>200 páginas</p>
+                    <div class="hilos section">
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-amarillo.jpg" alt="Hilo amarillo" />
                       </div>
-                    </div>
-                    <div class="card-action center teal lighten-2">
-                      <i class="material-icons white-text small"
-                        >shopping_cart</i
-                      >
-                      <a class="white-text" href="#">Comprar</a>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-verde-oscuro.jpg" alt="Hilo verde oscuro" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-turquesa.jpg" alt="Hilo turquesa" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-dorado.jpg" alt="" />
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m4">
-              <div class="row">
-                <div class="col s12">
-                  <div class="card hoverable">
-                    <div class="card-image">
-                      <a
-                        class="btn-floating halfway-fab waves-effect waves-light right"
-                      >
-                        <i class="material-icons teal lighten-2 fav"
-                          >favorite_border</i
-                        ></a
-                      >
-                      <img src="img/flor2.png" alt="Cuaderno Unicornio" />
-                    </div>
-                    <p class="right like section">93</p>
-                    <div class="card-content">
-                      <h6>UNICORNIO</h6>
-                      <h6 class="precio amber-text text-lighten-1">$436</h6>
-                      <p>60 hojas</p>
-                      <div class="hilos section">
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-amarillo.jpg"
-                            alt="Hilo amarillo"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-verde.jpg"
-                            alt="Hilo verde claro"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-naranja.jpg" alt="Hilo naranja" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-negro.jpg" alt="Hilo negro" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-action center teal lighten-2">
-                      <i class="material-icons white-text">shopping_cart</i>
-                      <a class="white-text" href="#">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m4">
-              <div class="row">
-                <div class="col s12">
-                  <div class="card hoverable">
-                    <div class="card-image">
-                      <a
-                        class="btn-floating halfway-fab waves-effect waves-light right"
-                      >
-                        <i class="material-icons teal lighten-2 fav"
-                          >favorite_border</i
-                        ></a
-                      >
-                      <img src="img/flor3.png" alt="Cuaderno Verdes" />
-                    </div>
-                    <p class="right like section">88</p>
-                    <div class="card-content">
-                      <h6>VERDES</h6>
-                      <h6 class="precio amber-text text-lighten-1">$311</h6>
-                      <p>76 hojas</p>
-                      <div class="hilos section">
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-magenta.jpg" alt="Hilo magenta" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-verde-oscuro.jpg"
-                            alt="Hilo verde oscuro"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-verde.jpg"
-                            alt="Hilo verde claro"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-beige.jpg" alt="Hilo beige" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-action center teal lighten-2">
-                      <i class="material-icons white-text">shopping_cart</i>
-                      <a class="white-text" href="#">Comprar</a>
-                    </div>
+                  <div class="card-action center teal lighten-2">
+                    <i class="material-icons white-text small">shopping_cart</i>
+                    <a class="white-text" href="#">Comprar</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="row contenedor-geometricos section">
-            <div class="col s12 m4">
-              <div class="row">
-                <div class="col s12">
-                  <div class="card hoverable">
-                    <div class="card-image">
-                      <a
-                        class="btn-floating halfway-fab waves-effect waves-light right"
-                      >
-                        <i class="material-icons teal lighten-2 fav"
-                          >favorite_border</i
-                        ></a
-                      >
-                      <img src="img/flor4.png" alt="Cuaderno Corona" />
-                    </div>
-                    <p class="right like section">23</p>
-                    <div class="card-content">
-                      <h6>CORONA</h6>
-                      <h6 class="precio amber-text text-lighten-1">$785</h6>
-                      <p>64 hojas</p>
-                      <div class="hilos section">
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-verde-oscuro.jpg"
-                            alt="Hilo verde oscuro"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-blanco.jpg" alt="Hilo blanco" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-turquesa.jpg"
-                            alt="Hilo turquesa"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-dorado.jpg" alt="" />
-                        </div>
+          <div class="col s12 m4">
+            <div class="row">
+              <div class="col s12">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <a class="btn-floating halfway-fab waves-effect waves-light right">
+                      <i class="material-icons teal lighten-2 fav" id="boton-like5">favorite_border</i></a>
+                    <img src="img/geometrico5.png" alt="Cuaderno Koala" />
+                  </div>
+                  <p class="right like section" id="cantidad-likes5">31</p>
+                  <div class="card-content">
+                    <h6>KOALA</h6>
+                    <h6 class="precio amber-text text-lighten-1">$566</h6>
+                    <p>196 páginas</p>
+                    <div class="hilos section">
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-beige.jpg" alt="Hilo beige" />
                       </div>
-                    </div>
-                    <div class="card-action center teal lighten-2">
-                      <i class="material-icons white-text small"
-                        >shopping_cart</i
-                      >
-                      <a class="white-text" href="#">Comprar</a>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-azul-marino.jpg" alt="Hilo azul marino" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-blanco.jpg" alt="Hilo blanco" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-turquesa.jpg" alt="Hilo azul turquesa" />
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m4">
-              <div class="row">
-                <div class="col s12">
-                  <div class="card hoverable">
-                    <div class="card-image">
-                      <a
-                        class="btn-floating halfway-fab waves-effect waves-light right"
-                      >
-                        <i class="material-icons teal lighten-2 fav"
-                          >favorite_border</i
-                        ></a
-                      >
-                      <img src="img/flor5.png" alt="Cuaderno Girasol" />
-                    </div>
-                    <p class="right like section">31</p>
-                    <div class="card-content">
-                      <h6>GIRASOL</h6>
-                      <h6 class="precio amber-text text-lighten-1">$721</h6>
-                      <p>48 hojas</p>
-                      <div class="hilos section">
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-amarillo.jpg"
-                            alt="Hilo amarillo"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-marron.jpg" alt="Hilo marron" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-action center teal lighten-2">
-                      <i class="material-icons white-text small"
-                        >shopping_cart</i
-                      >
-                      <a class="white-text" href="#">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m4">
-              <div class="row">
-                <div class="col s12">
-                  <div class="card hoverable">
-                    <div class="card-image">
-                      <a
-                        class="btn-floating halfway-fab waves-effect waves-light right"
-                      >
-                        <i class="material-icons teal lighten-2 fav"
-                          >favorite_border</i
-                        ></a
-                      >
-                      <img src="img/flor6.png" alt="Cuaderno Flores" />
-                    </div>
-                    <p class="right like section">40</p>
-                    <div class="card-content">
-                      <h6>FLORES</h6>
-                      <h6 class="precio amber-text text-lighten-1">$351</h6>
-                      <p>76 hojas</p>
-                      <div class="hilos section">
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-rosa.jpg" alt="Hilo rosa" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-blanco.jpg" alt="Hilo blanco" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-amarillo.jpg"
-                            alt="Hilo amarillo"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-naranja.jpg" alt="Hilo naranja" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-action center teal lighten-2">
-                      <i class="material-icons white-text small"
-                        >shopping_cart</i
-                      >
-                      <a class="white-text" href="#">Comprar</a>
-                    </div>
+                  <div class="card-action center teal lighten-2">
+                    <i class="material-icons white-text small">shopping_cart</i>
+                    <a class="white-text" href="#">Comprar</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <!-- ANIMALES -->
-        <section class="banner banner-animales center section">
-          <img
-            class="responsive-img"
-            src="img/banner-animales.png"
-            alt="Cuadernos animales"
-          />
-        </section>
-
-        <div class="animales cuadernos container section">
-          <div class="row contenedor-animales section">
-            <div class="col s12 m4">
-              <div class="row">
-                <div class="col s12">
-                  <div class="card hoverable">
-                    <div class="card-image">
-                      <a
-                        class="btn-floating halfway-fab waves-effect waves-light right"
-                      >
-                        <i class="material-icons teal lighten-2 fav"
-                          >favorite_border</i
-                        ></a
-                      >
-                      <img src="img/animal1.png" alt="Cuaderno Carraca lila" />
-                    </div>
-                    <p class="right like section">25</p>
-                    <div class="card-content">
-                      <h6>CARRACA LILA</h6>
-                      <h6 class="precio amber-text text-lighten-1">$497</h6>
-                      <p>52 hojas</p>
-                      <div class="hilos section">
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-amarillo.jpg"
-                            alt="Hilo amarillo"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-naranja.jpg" alt="Hilo naranja" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-rosa.jpg" alt="Hilo Rosa" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-turquesa.jpg"
-                            alt="Hilo turquesa"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-marron.jpg" alt="Hilo marrón" />
-                        </div>
+          <div class="col s12 m4">
+            <div class="row">
+              <div class="col s12">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <a class="btn-floating halfway-fab waves-effect waves-light right">
+                      <i class="material-icons teal lighten-2 fav" id="boton-like6">favorite_border</i></a>
+                    <img src="img/geometrico6.png" alt="Cuaderno Montañas" />
+                  </div>
+                  <p class="right like section" id="cantidad-likes6">44</p>
+                  <div class="card-content">
+                    <h6>MONTAÑAS</h6>
+                    <h6 class="precio amber-text text-lighten-1">$603</h6>
+                    <p>260 páginas</p>
+                    <div class="hilos section">
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-azul-marino.jpg" alt="Hilo azul marino" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-turquesa.jpg" alt="Hilo turquesa" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-amarillo.jpg" alt="Hilo amarillo" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-naranja.jpg" alt="Hilo naranja" />
                       </div>
                     </div>
-                    <div class="card-action center teal lighten-2">
-                      <i class="material-icons white-text small"
-                        >shopping_cart</i
-                      >
-                      <a class="white-text" href="#">Comprar</a>
-                    </div>
+                  </div>
+                  <div class="card-action center teal lighten-2">
+                    <i class="material-icons white-text small">shopping_cart</i>
+                    <a class="white-text" href="#">Comprar</a>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col s12 m4">
-              <div class="row">
-                <div class="col s12">
-                  <div class="card hoverable">
-                    <div class="card-image">
-                      <a
-                        class="btn-floating halfway-fab waves-effect waves-light right"
-                      >
-                        <i class="material-icons teal lighten-2 fav"
-                          >favorite_border</i
-                        ></a
-                      >
-                      <img src="img/animal2.png" alt="Cuaderno Abeja" />
-                    </div>
-                    <p class="right like section">58</p>
-                    <div class="card-content">
-                      <h6>ABEJA</h6>
-                      <h6 class="precio amber-text text-lighten-1">$644</h6>
-                      <p>40 hojas</p>
-                      <div class="hilos section">
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-amarillo.jpg"
-                            alt="Hilo amarillo"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-marron.jpg" alt="Hilo marron" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-naranja.jpg" alt="Hilo naranja" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-negro.jpg" alt="Hilo negro" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-action center teal lighten-2">
-                      <i class="material-icons white-text">shopping_cart</i>
-                      <a class="white-text" href="#">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m4">
-              <div class="row">
-                <div class="col s12">
-                  <div class="card hoverable">
-                    <div class="card-image">
-                      <a
-                        class="btn-floating halfway-fab waves-effect waves-light right"
-                      >
-                        <i class="material-icons teal lighten-2 fav"
-                          >favorite_border</i
-                        ></a
-                      >
-                      <img src="img/animal3.png" alt="Cuaderno Conejo" />
-                    </div>
-                    <p class="right like section">43</p>
-                    <div class="card-content">
-                      <h6>CONEJO</h6>
-                      <h6 class="precio amber-text text-lighten-1">$544</h6>
-                      <p>92 hojas</p>
-                      <div class="hilos section">
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-rojo.png" alt="Hilo rojo" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-turquesa.jpg"
-                            alt="Hilo turquesa"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-verde.jpg"
-                            alt="Hilo verde claro"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-marron.jpg" alt="Hilo marron" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-action center teal lighten-2">
-                      <i class="material-icons white-text">shopping_cart</i>
-                      <a class="white-text" href="#">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row contenedor-animales section">
-            <div class="col s12 m4">
-              <div class="row">
-                <div class="col s12">
-                  <div class="card hoverable">
-                    <div class="card-image">
-                      <a
-                        class="btn-floating halfway-fab waves-effect waves-light right"
-                      >
-                        <i class="material-icons teal lighten-2 fav"
-                          >favorite_border</i
-                        ></a
-                      >
-                      <img src="img/animal4.png" alt="Cuaderno Zorro rojo" />
-                    </div>
-                    <p class="right like section">42</p>
-                    <div class="card-content">
-                      <h6>ZORRO ROJO</h6>
-                      <h6 class="precio amber-text text-lighten-1">$179</h6>
-                      <p>84 hojas</p>
-                      <div class="hilos section">
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-verde-oscuro.jpg"
-                            alt="Hilo verde oscuro"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-blanco.jpg" alt="Hilo blanco" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-rojo.png" alt="Hilo rojo" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-naranja.jpg" alt="Hilo naranja" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-action center teal lighten-2">
-                      <i class="material-icons white-text small"
-                        >shopping_cart</i
-                      >
-                      <a class="white-text" href="#">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m4">
-              <div class="row">
-                <div class="col s12">
-                  <div class="card hoverable">
-                    <div class="card-image">
-                      <a
-                        class="btn-floating halfway-fab waves-effect waves-light right"
-                      >
-                        <i class="material-icons teal lighten-2 fav"
-                          >favorite_border</i
-                        ></a
-                      >
-                      <img src="img/animal5.png" alt="Cuaderno Erizo egipcio" />
-                    </div>
-                    <p class="right like section">15</p>
-                    <div class="card-content">
-                      <h6>ERIZO EGIPCIO</h6>
-                      <h6 class="precio amber-text text-lighten-1">$403</h6>
-                      <p>80 hojas</p>
-                      <div class="hilos section">
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-beige.jpg" alt="Hilo beige" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-marron.jpg" alt="Hilo marron" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-blanco.jpg" alt="Hilo blanco" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-violeta.jpg" alt="Hilo violeta" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-action center teal lighten-2">
-                      <i class="material-icons white-text small"
-                        >shopping_cart</i
-                      >
-                      <a class="white-text" href="#">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m4">
-              <div class="row">
-                <div class="col s12">
-                  <div class="card hoverable">
-                    <div class="card-image">
-                      <a
-                        class="btn-floating halfway-fab waves-effect waves-light right"
-                      >
-                        <i class="material-icons teal lighten-2 fav"
-                          >favorite_border</i
-                        ></a
-                      >
-                      <img src="img/animal6.png" alt="Cuaderno Bambi" />
-                    </div>
-                    <p class="right like section">34</p>
-                    <div class="card-content">
-                      <h6>BAMBI</h6>
-                      <h6 class="precio amber-text text-lighten-1">$765</h6>
-                      <p>68 hojas</p>
-                      <div class="hilos section">
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-marron.jpg" alt="Hilo marron" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-rojo.png" alt="Hilo rojo" />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img
-                            src="img/color-amarillo.jpg"
-                            alt="Hilo amarillo"
-                          />
-                        </div>
-                        <div
-                          class="btn-floating waves-effect waves-light white boton"
-                        >
-                          <img src="img/color-naranja.jpg" alt="Hilo naranja" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-action center teal lighten-2">
-                      <i class="material-icons white-text small"
-                        >shopping_cart</i
-                      >
-                      <a class="white-text" href="#">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="contenedor-datos container section">
-        <div class="row">
-          <div class="col s12 l4">
-            <div class="top lighten-1 amber lighten-1 center">
-              <h5>producción</h5>
-            </div>
-            <div class="body">
-              <p>
-                El lapso de producción para pedidos pequeños es de máximo
-                <b>15 días</b>
-              </p>
-              <p>
-                Mientras que para encargos mayores a los <b>30</b> cuadernos, el
-                lapso mínimo es de <b>20 días</b>
-              </p>
-            </div>
-          </div>
-          <div class="col s12 l4">
-            <div class="top amber lighten-1 center">
-              <h5>pago</h5>
-            </div>
-            <div class="body">
-              <p><b>Métodos de pago:</b></p>
-              <div class="metodo-pago">
-                <i class="fab fa-paypal"></i>
-                <p>PayPal</p>
-              </div>
-              <div class="metodo-pago">
-                <i class="fas fa-money-check-alt"></i>
-                <p>Mercado Pago</p>
-              </div>
-              <div class="metodo-pago">
-                <i class="fas fa-credit-card"></i>
-                <p>Tarjeta de crédito</p>
-              </div>
-              <div class="metodo-pago">
-                <i class="far fa-credit-card"></i>
-                <p>Tarjeta de débito</p>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 l4">
-            <div class="top amber lighten-1 center">
-              <h5>entrega</h5>
-            </div>
-            <div class="body">
-              <p class="abajo"><b>Taller de Creatink:</b></p>
-              <div class="feria">
-                <i class="material-icons">home</i>
-                <p class="arriba">Paraguay 5099, Palermo</p>
-              </div>
-              <p class="arriba"><b>Ferial del centro de BA:</b></p>
-              <div class="feria">
-                <i class="material-icons">location_on</i>
-                <p>Plaza San Martín</p>
-              </div>
-              <div class="feria">
-                <i class="material-icons">location_on</i>
-                <p>Plaza Alemania</p>
-              </div>
-              <div class="feria">
-                <i class="material-icons">location_on</i>
-                <p>Plaza Italia</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </main>
 
-    <footer class="page-footer amber lighten-1">
-      <div class="container center">
-        <div class="row">
-          <div class="redes-sociales left">
-            <div class="col">
-              <a href=""><img clas src="img/Facebook.png" alt="Facebook" /></a>
-            </div>
-            <div class="col">
-              <a href=""
-                ><img clas src="img/Instagram.png" alt="Instagram"
-              /></a>
-            </div>
-            <div class="col">
-              <a href=""><img clas src="img/Twitter.png" alt="Twitter" /></a>
-            </div>
-            <div class="col">
-              <a href=""><img clas src="img/Youtube.png" alt="Youtube" /></a>
+      <!-- FLORES -->
+      <section class="banner banner-flores center section">
+        <img class="responsive-img" src="img/banner-flores.png" alt="Cuadernos flores" />
+      </section>
+
+      <div class="flores cuadernos container section">
+        <div class="row contenedor-flores section">
+          <div class="col s12 m4">
+            <div class="row">
+              <div class="col s12">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <a class="btn-floating halfway-fab waves-effect waves-light right">
+                      <i class="material-icons teal lighten-2 fav" id="boton-like7">favorite_border</i></a>
+                    <img src="img/flor1.png" alt="Cuaderno Ramo" />
+                  </div>
+                  <p class="right like section" id="cantidad-likes7">76</p>
+                  <div class="card-content">
+                    <h6>RAMO</h6>
+                    <h6 class="precio amber-text text-lighten-1">$400</h6>
+                    <p>44 hojas</p>
+                    <div class="hilos section">
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-amarillo.jpg" alt="Hilo amarillo" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-naranja.jpg" alt="Hilo naranja" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-rosa.jpg" alt="Hilo Rosa" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-beige.jpg" alt="Hilo beige" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-marron.jpg" alt="Hilo marrón" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-action center teal lighten-2">
+                    <i class="material-icons white-text small">shopping_cart</i>
+                    <a class="white-text" href="#">Comprar</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          <div class="col s12 m4">
+            <div class="row">
+              <div class="col s12">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <a class="btn-floating halfway-fab waves-effect waves-light right">
+                      <i class="material-icons teal lighten-2 fav" id="boton-like8">favorite_border</i></a>
+                    <img src="img/flor2.png" alt="Cuaderno Unicornio" />
+                  </div>
+                  <p class="right like section" id="cantidad-likes8">91</p>
+                  <div class="card-content">
+                    <h6>UNICORNIO</h6>
+                    <h6 class="precio amber-text text-lighten-1">$436</h6>
+                    <p>60 hojas</p>
+                    <div class="hilos section">
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-amarillo.jpg" alt="Hilo amarillo" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-verde.jpg" alt="Hilo verde claro" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-naranja.jpg" alt="Hilo naranja" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-negro.jpg" alt="Hilo negro" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-action center teal lighten-2">
+                    <i class="material-icons white-text">shopping_cart</i>
+                    <a class="white-text" href="#">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="row">
+              <div class="col s12">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <a class="btn-floating halfway-fab waves-effect waves-light right">
+                      <i class="material-icons teal lighten-2 fav" id="boton-like9">favorite_border</i></a>
+                    <img src="img/flor3.png" alt="Cuaderno Verdes" />
+                  </div>
+                  <p class="right like section" id="cantidad-likes9">88</p>
+                  <div class="card-content">
+                    <h6>VERDES</h6>
+                    <h6 class="precio amber-text text-lighten-1">$311</h6>
+                    <p>76 hojas</p>
+                    <div class="hilos section">
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-magenta.jpg" alt="Hilo magenta" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-verde-oscuro.jpg" alt="Hilo verde oscuro" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-verde.jpg" alt="Hilo verde claro" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-beige.jpg" alt="Hilo beige" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-action center teal lighten-2">
+                    <i class="material-icons white-text">shopping_cart</i>
+                    <a class="white-text" href="#">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <div class="medios-pago right">
-            <div class="col">
-              <a href=""><img clas src="img/Mercado-Pago.png" alt="" /></a>
+        <div class="row contenedor-geometricos section">
+          <div class="col s12 m4">
+            <div class="row">
+              <div class="col s12">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <a class="btn-floating halfway-fab waves-effect waves-light right">
+                      <i class="material-icons teal lighten-2 fav" id="boton-like10">favorite_border</i></a>
+                    <img src="img/flor4.png" alt="Cuaderno Corona" />
+                  </div>
+                  <p class="right like section" id="cantidad-likes10">43</p>
+                  <div class="card-content">
+                    <h6>CORONA</h6>
+                    <h6 class="precio amber-text text-lighten-1">$785</h6>
+                    <p>64 hojas</p>
+                    <div class="hilos section">
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-verde-oscuro.jpg" alt="Hilo verde oscuro" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-blanco.jpg" alt="Hilo blanco" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-turquesa.jpg" alt="Hilo turquesa" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-dorado.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-action center teal lighten-2">
+                    <i class="material-icons white-text small">shopping_cart</i>
+                    <a class="white-text" href="#">Comprar</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col">
-              <a href=""><img clas src="img/MasterCard.png" alt="" /></a>
+          </div>
+          <div class="col s12 m4">
+            <div class="row">
+              <div class="col s12">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <a class="btn-floating halfway-fab waves-effect waves-light right">
+                      <i class="material-icons teal lighten-2 fav" id="boton-like11">favorite_border</i></a>
+                    <img src="img/flor5.png" alt="Cuaderno Girasol" />
+                  </div>
+                  <p class="right like section" id="cantidad-likes11">22</p>
+                  <div class="card-content">
+                    <h6>GIRASOL</h6>
+                    <h6 class="precio amber-text text-lighten-1">$721</h6>
+                    <p>48 hojas</p>
+                    <div class="hilos section">
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-amarillo.jpg" alt="Hilo amarillo" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-marron.jpg" alt="Hilo marron" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-action center teal lighten-2">
+                    <i class="material-icons white-text small">shopping_cart</i>
+                    <a class="white-text" href="#">Comprar</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col">
-              <a href=""><img clas src="img/PayPal.png" alt="" /></a>
-            </div>
-            <div class="col">
-              <a href=""><img clas src="img/Naranja.png" alt="" /></a>
+          </div>
+          <div class="col s12 m4">
+            <div class="row">
+              <div class="col s12">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <a class="btn-floating halfway-fab waves-effect waves-light right">
+                      <i class="material-icons teal lighten-2 fav" id="boton-like12">favorite_border</i></a>
+                    <img src="img/flor6.png" alt="Cuaderno Flores" />
+                  </div>
+                  <p class="right like section" id="cantidad-likes12">57</p>
+                  <div class="card-content">
+                    <h6>FLORES</h6>
+                    <h6 class="precio amber-text text-lighten-1">$351</h6>
+                    <p>76 hojas</p>
+                    <div class="hilos section">
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-rosa.jpg" alt="Hilo rosa" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-blanco.jpg" alt="Hilo blanco" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-amarillo.jpg" alt="Hilo amarillo" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-naranja.jpg" alt="Hilo naranja" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-action center teal lighten-2">
+                    <i class="material-icons white-text small">shopping_cart</i>
+                    <a class="white-text" href="#">Comprar</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
 
-    <script src="js/materialize.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+      <!-- ANIMALES -->
+      <section class="banner banner-animales center section">
+        <img class="responsive-img" src="img/banner-animales.png" alt="Cuadernos animales" />
+      </section>
+
+      <div class="animales cuadernos container section">
+        <div class="row contenedor-animales section">
+          <div class="col s12 m4">
+            <div class="row">
+              <div class="col s12">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <a class="btn-floating halfway-fab waves-effect waves-light right">
+                      <i class="material-icons teal lighten-2 fav" id="boton-like13">favorite_border</i></a>
+                    <img src="img/animal1.png" alt="Cuaderno Carraca lila" />
+                  </div>
+                  <p class="right like section" id="cantidad-likes13">25</p>
+                  <div class="card-content">
+                    <h6>CARRACA LILA</h6>
+                    <h6 class="precio amber-text text-lighten-1">$497</h6>
+                    <p>52 hojas</p>
+                    <div class="hilos section">
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-amarillo.jpg" alt="Hilo amarillo" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-naranja.jpg" alt="Hilo naranja" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-rosa.jpg" alt="Hilo Rosa" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-turquesa.jpg" alt="Hilo turquesa" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-marron.jpg" alt="Hilo marrón" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-action center teal lighten-2">
+                    <i class="material-icons white-text small">shopping_cart</i>
+                    <a class="white-text" href="#">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="row">
+              <div class="col s12">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <a class="btn-floating halfway-fab waves-effect waves-light right">
+                      <i class="material-icons teal lighten-2 fav" id="boton-like14">favorite_border</i></a>
+                    <img src="img/animal2.png" alt="Cuaderno Abeja" />
+                  </div>
+                  <p class="right like section" id="cantidad-likes14">58</p>
+                  <div class="card-content">
+                    <h6>ABEJA</h6>
+                    <h6 class="precio amber-text text-lighten-1">$644</h6>
+                    <p>40 hojas</p>
+                    <div class="hilos section">
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-amarillo.jpg" alt="Hilo amarillo" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-marron.jpg" alt="Hilo marron" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-naranja.jpg" alt="Hilo naranja" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-negro.jpg" alt="Hilo negro" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-action center teal lighten-2">
+                    <i class="material-icons white-text">shopping_cart</i>
+                    <a class="white-text" href="#">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="row">
+              <div class="col s12">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <a class="btn-floating halfway-fab waves-effect waves-light right">
+                      <i class="material-icons teal lighten-2 fav" id="boton-like15">favorite_border</i></a>
+                    <img src="img/animal3.png" alt="Cuaderno Conejo" />
+                  </div>
+                  <p class="right like section" id="cantidad-likes15">43</p>
+                  <div class="card-content">
+                    <h6>CONEJO</h6>
+                    <h6 class="precio amber-text text-lighten-1">$544</h6>
+                    <p>92 hojas</p>
+                    <div class="hilos section">
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-rojo.png" alt="Hilo rojo" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-turquesa.jpg" alt="Hilo turquesa" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-verde.jpg" alt="Hilo verde claro" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-marron.jpg" alt="Hilo marron" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-action center teal lighten-2">
+                    <i class="material-icons white-text">shopping_cart</i>
+                    <a class="white-text" href="#">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row contenedor-animales section">
+          <div class="col s12 m4">
+            <div class="row">
+              <div class="col s12">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <a class="btn-floating halfway-fab waves-effect waves-light right">
+                      <i class="material-icons teal lighten-2 fav" id="boton-like16">favorite_border</i></a>
+                    <img src="img/animal4.png" alt="Cuaderno Zorro rojo" />
+                  </div>
+                  <p class="right like section" id="cantidad-likes16">42</p>
+                  <div class="card-content">
+                    <h6>ZORRO ROJO</h6>
+                    <h6 class="precio amber-text text-lighten-1">$179</h6>
+                    <p>84 hojas</p>
+                    <div class="hilos section">
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-verde-oscuro.jpg" alt="Hilo verde oscuro" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-blanco.jpg" alt="Hilo blanco" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-rojo.png" alt="Hilo rojo" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-naranja.jpg" alt="Hilo naranja" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-action center teal lighten-2">
+                    <i class="material-icons white-text small">shopping_cart</i>
+                    <a class="white-text" href="#">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="row">
+              <div class="col s12">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <a class="btn-floating halfway-fab waves-effect waves-light right">
+                      <i class="material-icons teal lighten-2 fav" id="boton-like17">favorite_border</i></a>
+                    <img src="img/animal5.png" alt="Cuaderno Erizo egipcio" />
+                  </div>
+                  <p class="right like section" id="cantidad-likes17">15</p>
+                  <div class="card-content">
+                    <h6>ERIZO EGIPCIO</h6>
+                    <h6 class="precio amber-text text-lighten-1">$403</h6>
+                    <p>80 hojas</p>
+                    <div class="hilos section">
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-beige.jpg" alt="Hilo beige" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-marron.jpg" alt="Hilo marron" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-blanco.jpg" alt="Hilo blanco" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-violeta.jpg" alt="Hilo violeta" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-action center teal lighten-2">
+                    <i class="material-icons white-text small">shopping_cart</i>
+                    <a class="white-text" href="#">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="row">
+              <div class="col s12">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <a class="btn-floating halfway-fab waves-effect waves-light right">
+                      <i class="material-icons teal lighten-2 fav" id="boton-like18">favorite_border</i></a>
+                    <img src="img/animal6.png" alt="Cuaderno Bambi" />
+                  </div>
+                  <p class="right like section" id="cantidad-likes18">34</p>
+                  <div class="card-content">
+                    <h6>BAMBI</h6>
+                    <h6 class="precio amber-text text-lighten-1">$765</h6>
+                    <p>68 hojas</p>
+                    <div class="hilos section">
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-marron.jpg" alt="Hilo marron" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-rojo.png" alt="Hilo rojo" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-amarillo.jpg" alt="Hilo amarillo" />
+                      </div>
+                      <div class="btn-floating waves-effect waves-light white boton">
+                        <img src="img/color-naranja.jpg" alt="Hilo naranja" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-action center teal lighten-2">
+                    <i class="material-icons white-text small">shopping_cart</i>
+                    <a class="white-text" href="#">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="contenedor-datos container section">
+      <div class="row">
+        <div class="col s12 l4">
+          <div class="top lighten-1 amber lighten-1 center">
+            <h5>producción</h5>
+          </div>
+          <div class="body">
+            <p>
+              El lapso de producción para pedidos pequeños es de máximo
+              <b>15 días</b>
+            </p>
+            <p>
+              Mientras que para encargos mayores a los <b>30</b> cuadernos, el
+              lapso mínimo es de <b>20 días</b>
+            </p>
+          </div>
+        </div>
+        <div class="col s12 l4">
+          <div class="top amber lighten-1 center">
+            <h5>pago</h5>
+          </div>
+          <div class="body">
+            <p><b>Métodos de pago:</b></p>
+            <div class="metodo-pago">
+              <i class="fab fa-paypal"></i>
+              <p>PayPal</p>
+            </div>
+            <div class="metodo-pago">
+              <i class="fas fa-money-check-alt"></i>
+              <p>Mercado Pago</p>
+            </div>
+            <div class="metodo-pago">
+              <i class="fas fa-credit-card"></i>
+              <p>Tarjeta de crédito</p>
+            </div>
+            <div class="metodo-pago">
+              <i class="far fa-credit-card"></i>
+              <p>Tarjeta de débito</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 l4">
+          <div class="top amber lighten-1 center">
+            <h5>entrega</h5>
+          </div>
+          <div class="body">
+            <p class="abajo"><b>Taller de Creatink:</b></p>
+            <div class="feria">
+              <i class="material-icons">home</i>
+              <p class="arriba">Paraguay 5099, Palermo</p>
+            </div>
+            <p class="arriba"><b>Ferial del centro de BA:</b></p>
+            <div class="feria">
+              <i class="material-icons">location_on</i>
+              <p>Plaza San Martín</p>
+            </div>
+            <div class="feria">
+              <i class="material-icons">location_on</i>
+              <p>Plaza Alemania</p>
+            </div>
+            <div class="feria">
+              <i class="material-icons">location_on</i>
+              <p>Plaza Italia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer amber lighten-1">
+    <div class="container center">
+      <div class="row">
+        <div class="redes-sociales left">
+          <div class="col">
+            <a href=""><img clas src="img/Facebook.png" alt="Facebook" /></a>
+          </div>
+          <div class="col">
+            <a href=""><img clas src="img/Instagram.png" alt="Instagram" /></a>
+          </div>
+          <div class="col">
+            <a href=""><img clas src="img/Twitter.png" alt="Twitter" /></a>
+          </div>
+          <div class="col">
+            <a href=""><img clas src="img/Youtube.png" alt="Youtube" /></a>
+          </div>
+        </div>
+
+        <div class="medios-pago right">
+          <div class="col">
+            <a href=""><img clas src="img/Mercado-Pago.png" alt="" /></a>
+          </div>
+          <div class="col">
+            <a href=""><img clas src="img/MasterCard.png" alt="" /></a>
+          </div>
+          <div class="col">
+            <a href=""><img clas src="img/PayPal.png" alt="" /></a>
+          </div>
+          <div class="col">
+            <a href=""><img clas src="img/Naranja.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/materialize.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+
+    botonLike1 = document.getElementById('boton-like1');
+    botonLike2 = document.getElementById('boton-like2');
+    botonLike3 = document.getElementById('boton-like3');
+    botonLike4 = document.getElementById('boton-like4');
+    botonLike5 = document.getElementById('boton-like5');
+    botonLike6 = document.getElementById('boton-like6');
+    botonLike7 = document.getElementById('boton-like7');
+    botonLike8 = document.getElementById('boton-like8');
+    botonLike9 = document.getElementById('boton-like9');
+    botonLike10 = document.getElementById('boton-like10');
+    botonLike11 = document.getElementById('boton-like11');
+    botonLike12 = document.getElementById('boton-like12');
+    botonLike13 = document.getElementById('boton-like13');
+    botonLike14 = document.getElementById('boton-like14');
+    botonLike15 = document.getElementById('boton-like15');
+    botonLike16 = document.getElementById('boton-like16');
+    botonLike17 = document.getElementById('boton-like17');
+    botonLike18 = document.getElementById('boton-like18');
+
+    botonLike1.addEventListener('click', subirCantidadLikes1);
+    botonLike2.addEventListener('click', subirCantidadLikes2);
+    botonLike3.addEventListener('click', subirCantidadLikes3);
+    botonLike4.addEventListener('click', subirCantidadLikes4);
+    botonLike5.addEventListener('click', subirCantidadLikes5);
+    botonLike6.addEventListener('click', subirCantidadLikes6);
+    botonLike7.addEventListener('click', subirCantidadLikes7);
+    botonLike8.addEventListener('click', subirCantidadLikes8);
+    botonLike9.addEventListener('click', subirCantidadLikes9);
+    botonLike10.addEventListener('click', subirCantidadLikes10);
+    botonLike11.addEventListener('click', subirCantidadLikes11);
+    botonLike12.addEventListener('click', subirCantidadLikes12);
+    botonLike13.addEventListener('click', subirCantidadLikes13);
+    botonLike14.addEventListener('click', subirCantidadLikes14);
+    botonLike15.addEventListener('click', subirCantidadLikes15);
+    botonLike16.addEventListener('click', subirCantidadLikes16);
+    botonLike17.addEventListener('click', subirCantidadLikes17);
+    botonLike18.addEventListener('click', subirCantidadLikes18);
+
+    var contador1 = 28;
+    var contador2 = 79;
+    var contador3 = 70;
+    var contador4 = 98;
+    var contador5 = 31;
+    var contador6 = 44;
+    var contador7 = 76;
+    var contador8 = 91;
+    var contador9 = 88;
+    var contador10 = 43;
+    var contador11 = 22;
+    var contador12 = 57;
+    var contador13 = 25;
+    var contador14 = 58;
+    var contador15 = 43;
+    var contador16 = 42;
+    var contador17 = 15;
+    var contador18 = 34;
+
+    function subirCantidadLikes1() {
+      contador1 = 29;
+      document.getElementById('cantidad-likes1').textContent = contador1;
+    }
+
+    function subirCantidadLikes2() {
+      contador2 = 80;
+      document.getElementById('cantidad-likes2').textContent = contador2;
+    }
+
+    function subirCantidadLikes3() {
+      contador3 = 71;
+      document.getElementById('cantidad-likes3').textContent = contador3;
+    }
+
+    function subirCantidadLikes4() {
+      contador4 = 99;
+      document.getElementById('cantidad-likes4').textContent = contador4;
+    }
+
+    function subirCantidadLikes5() {
+      contador5 = 32;
+      document.getElementById('cantidad-likes5').textContent = contador5;
+    }
+
+    function subirCantidadLikes6() {
+      contador6 = 45;
+      document.getElementById('cantidad-likes6').textContent = contador6;
+    }
+
+    function subirCantidadLikes7() {
+      contador7 = 77;
+      document.getElementById('cantidad-likes7').textContent = contador7;
+    }
+
+    function subirCantidadLikes8() {
+      contador8 = 92;
+      document.getElementById('cantidad-likes8').textContent = contador8;
+    }
+
+    function subirCantidadLikes9() {
+      contador9 = 89;
+      document.getElementById('cantidad-likes9').textContent = contador9;
+    }
+
+    function subirCantidadLikes10() {
+      contador10 = 44;
+      document.getElementById('cantidad-likes10').textContent = contador10;
+    }
+
+    function subirCantidadLikes11() {
+      contador11 = 23;
+      document.getElementById('cantidad-likes11').textContent = contador11;
+    }
+
+    function subirCantidadLikes12() {
+      contador12 = 58;
+      document.getElementById('cantidad-likes12').textContent = contador12;
+    }
+
+    function subirCantidadLikes13() {
+      contador13 = 26;
+      document.getElementById('cantidad-likes13').textContent = contador13;
+    }
+
+    function subirCantidadLikes14() {
+      contador14 = 59;
+      document.getElementById('cantidad-likes14').textContent = contador14;
+    }
+
+    function subirCantidadLikes15() {
+      contador15 = 44;
+      document.getElementById('cantidad-likes15').textContent = contador15;
+    }
+
+    function subirCantidadLikes16() {
+      contador16 = 43;
+      document.getElementById('cantidad-likes16').textContent = contador16;
+    }
+
+    function subirCantidadLikes17() {
+      contador17 = 16;
+      document.getElementById('cantidad-likes17').textContent = contador17;
+    }
+
+    function subirCantidadLikes18() {
+      contador18 = 35;
+      document.getElementById('cantidad-likes18').textContent = contador18;
+    }
+
+
+  </script>
+</body>
+
 </html>
