@@ -140,6 +140,9 @@ body .contenedor-libro-colores .row .personalizar-container-botones .flechas .co
 body .contenedor-libro-colores .row .personalizar-container-botones .flechas .col h6 {
   cursor: pointer;
 }
+body .contenedor-libro-colores .row .personalizar-container-botones .row .col .far:active{
+  background-color: #ffca28;
+}
 body .contenedor-libro-colores .row .col i {
   font-size: 3.5rem;
   cursor: pointer;

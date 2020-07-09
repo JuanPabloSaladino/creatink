@@ -60,7 +60,15 @@ function cambiarColorBlanco() {
     document.getElementById("botoncito").style.backgroundColor = "white";
 }
 
-
+//personalizar 2
+function cambiarTapaCuadrada(){
+  document.getElementById("cuaderno").style.backgroundImage="url('../img/tapa2.jpg')";
+  document.getElementById("borde").style.borderRadius="0%";
+}
+function cambiarTapaCirculo(){
+  document.getElementById("cuaderno").style.backgroundImage="url('../img/visualizacion-tapa.png')";
+  document.getElementById("borde").style.borderRadius="50%";
+}
 function cambiarColorNegro() {
     document.getElementById("botoncito").style.backgroundColor = "black";
 }

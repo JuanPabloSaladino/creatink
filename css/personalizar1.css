@@ -163,7 +163,7 @@ body .contenedor-libro-colores .row .personalizar-container-botones .flechas .co
   cursor: pointer;
 }
 body .contenedor-libro-colores .row .personalizar-container-botones .flechas .col h6 {
-  cursor: pointer;
+  cursor:"personalizar2.html";
 }
 body .contenedor-libro-colores .row .col i {
   font-size: 3.5rem;

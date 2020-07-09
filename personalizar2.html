@@ -117,21 +117,21 @@
               </div>
             </div>
           </nav>
-          <div class="personalizar-imagen">
+          <div class="personalizar-imagen" id="cuaderno">
             <button
-              class="btn waves-effect waves-light boton-color"></button>
+              class="btn waves-effect waves-light boton-color" id="borde"></button>
           </div>
         </div>
         <div class="col s5 m5 xl5 l5 center-align personalizar-container-botones">
           <h5 class="teal-text text-lighten-1 colores">ENCUADRE DEL BORDADO</h5>
 
           <div class="row colores">
-            <div class="col s4">
+            <div class="col s4" onclick="cambiarTapaCuadrada()">
               <div><i class="far fa-square"></i></div>
               <h6 class="personalizar-descripcion">Cuadrado</h6>
             </div>
             <div class="col s4">
-              <div><i class="far fa-circle"></i></div>
+              <div><i class="far fa-circle" onclick="cambiarTapaCirculo()"></i></div>
               <h6 class="personalizar-descripcion">Círculo</h6>
             </div>
           </div>
