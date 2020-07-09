@@ -63,7 +63,7 @@ function cambiarColorBlanco() {
 //personalizar 2
 function cambiarTapaCuadrada(){
   document.getElementById("cuaderno").style.backgroundImage="url('../img/tapa2.jpg')";
-  document.getElementById("borde").style.borderRadius="0%";
+  document.getElementById("borde").style.borderRadius="3%";
 }
 function cambiarTapaCirculo(){
   document.getElementById("cuaderno").style.backgroundImage="url('../img/visualizacion-tapa.png')";

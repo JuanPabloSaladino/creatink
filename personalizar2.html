@@ -112,8 +112,8 @@
           <nav>
             <div class="nav-wrapper">
               <div class="col s12 teal lighten-2">
-                <a href="#paso1" class="breadcrumb">Hoja</a>
-                <a href="#paso2" class="breadcrumb">Tapa</a>
+                <a href="personalizar1.html" class="breadcrumb">Hoja</a>
+                <a href="personalizar2.html" class="breadcrumb">Tapa</a>
               </div>
             </div>
           </nav>
@@ -126,13 +126,17 @@
           <h5 class="teal-text text-lighten-1 colores">ENCUADRE DEL BORDADO</h5>
 
           <div class="row colores">
-            <div class="col s4" onclick="cambiarTapaCuadrada()">
-              <div><i class="far fa-square"></i></div>
-              <h6 class="personalizar-descripcion">Cuadrado</h6>
-            </div>
             <div class="col s4">
-              <div><i class="far fa-circle" onclick="cambiarTapaCirculo()"></i></div>
+              <a onclick="cambiarTapaCuadrada()">  
+                <div><i class="far fa-square"></i></div>
+                <h6 class="personalizar-descripcion">Cuadrado</h6>
+              </a>
+            </div>
+            <div class="col s4" >
+              <a onclick="cambiarTapaCirculo()">
+              <div><i class="far fa-circle" ></i></div>
               <h6 class="personalizar-descripcion">Círculo</h6>
+              </a>
             </div>
           </div>
 
