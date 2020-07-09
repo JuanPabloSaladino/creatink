@@ -184,8 +184,9 @@ body footer .container .row {
 }
 body footer .container .row .redes-sociales img,
 body footer .container .row .medios-pago img {
-  width: 3.8rem;
+  width: 3rem;
 }
+
 
 @media screen and (max-width: 1400px) {
   .container {
