@@ -112,36 +112,49 @@
               </div>
             </div>
           </nav>
-          <div class="personalizar-imagen">
-            <button
-              class="btn waves-effect waves-light boton-color"></button>
+          <div class="personalizar-imagen"  >
+            
+              <div class="personalizar-hoja" id="hoja"></div>
           </div>
         </div>
-        <div class="col s5 m5 xl5 l5 center-align personalizar-container-botones">
-          <h5 class="teal-text text-lighten-1 colores">TIPO DE HOJA</h5>
+        <div class="col s5 m5 xl5 l5 personalizar-container-botones">
+          <h5 class="teal-text text-lighten-1 hojas">TIPO DE HOJA</h5>
 
-          <div class="row colores">
+          <div class="row hojas">
             <div class="col s4">
-              <div><i class="far fa-file"></i></div>
-              <h6 class="personalizar-descripcion">Lisa</h6>
+              <div
+                class="btn-floating waves-effect waves-light boton botonl"
+                onclick="cambiarHojaLisa()"
+              ></div>
+              <h6 class="personalizar-descripcion" id="lisa">Lisa</h6>
             </div>
             <div class="col s4">
-              <div><i class="far fa-file-alt"></i></div>
+              <div
+                class="btn-floating waves-effect waves-light botonr"
+                onclick="cambiarHojaRayada()"
+              ></div>
               <h6 class="personalizar-descripcion">Rayada</h6>
             </div>
-          </div>
+            <div class="col s4">
+              <div
+                class="btn-floating waves-effect waves-light botonc"
+                onclick="cambiarHojaCuadriculada()"
+              ></div>
+              <h6 class="personalizar-descripcion">Cuadriculada</h6>
+            </div>
 
           <h5 class="teal-text text-lighten-1 colores">CANTIDAD DE HOJAS</h5>
-
-          <div class="row colores">
-            <div class="col s12 botones">
-              <a class="waves-effect waves-light btn-large">80</a>
-              <a class="waves-effect waves-light btn-large">100</a>
-              <a class="waves-effect waves-light btn-large">160</a>
-              <a class="waves-effect waves-light btn-large ">220</a>
-            </div>
+          <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>opciones</option>
+              <option value="1">80</option>
+              <option value="2">100</option>
+              <option value="3">160</option>
+              <option value="4">220</option>
+            </select>
+            <label class="teal-text text-lighten-1 colores">Seleccione</label>
           </div>
-          <div class="col s5 m5 l5 xl5 flechas">
+            <div class="col s5 m5 l5 xl5 flechas">
             <div class="col s4 m1 l1 xl1 siguiente">
               <h6>Siguiente</h6>
               <i class="large material-icons">keyboard_arrow_right</i>

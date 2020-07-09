@@ -94,6 +94,19 @@ body .contenedor-libro-colores .row .col .personalizar-imagen {
   background-repeat: no-repeat;
   background-size: cover;
 }
+body .contenedor-libro-colores .row .col .personalizar-imagen #hoja {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1em;
+  background-image: url("../img/hoja-rayada.jpg");
+  height: 33rem;
+  width: 26rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 body .contenedor-libro-colores .row .col .boton-color {
   margin-left: 2.2em;
   margin-bottom: 0.9em;
@@ -104,7 +117,7 @@ body .contenedor-libro-colores .row .col .boton-color {
 body .contenedor-libro-colores .row .personalizar-container-botones {
   background-color: #f7f0e6;
   padding-bottom: 4rem;
-  border-radius: 0.5rem;
+  
 }
 body .contenedor-libro-colores .row .personalizar-container-botones h5 {
   font-weight: bold;
@@ -113,7 +126,21 @@ body .contenedor-libro-colores .row .personalizar-container-botones h5 {
   margin-left: 3.5rem;
   text-align: left;
 }
-body .contenedor-libro-colores .row .personalizar-container-botones .colores .botones {
+body .contenedor-libro-colores .row .personalizar-container-botones .row .col .botonl {
+  background-image: url("../img/hoja-lisa.jpg");
+  
+}
+body .contenedor-libro-colores .row .personalizar-container-botones .row .col .botonc {
+  background-image: url("../img/hoja-cuadriculada.jpg");
+  
+}
+body .contenedor-libro-colores .row .personalizar-container-botones .row .col .botonr {
+  background-image: url("../img/hoja-rayada-icono.jpg");
+  
+}
+
+}
+body .contenedor-libro-colores .row .personalizar-container-botones .colores .boton {
   margin-left: 1rem;
 }
 body .contenedor-libro-colores .row .personalizar-container-botones .colores .botones a {
