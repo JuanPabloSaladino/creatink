@@ -123,3 +123,51 @@ var instance = M.Tabs.init(el, {
         
     });
   });
+
+  function cambiarBordado1(){
+    document.getElementById("botoncito").style.backgroundImage = "url('img/animal1-circulo.png')";
+  }
+
+  function cambiarBordado2(){
+    document.getElementById("botoncito").style.backgroundImage = "url('img/animal2-circulo.png')";
+  }
+
+  function cambiarBordado3(){
+    document.getElementById("botoncito").style.backgroundImage = "url('img/animal3-circulo.png')";
+  }
+
+  function cambiarBordado4(){
+    document.getElementById("botoncito").style.backgroundImage = "url('img/animal4-circulo.png')";
+  }
+
+  function cambiarBordado5(){
+    document.getElementById("botoncito").style.backgroundImage = "url('img/flor1-circulo.png')";
+  }
+
+  function cambiarBordado6(){
+    document.getElementById("botoncito").style.backgroundImage = "url('img/flor2-circulo.png')";
+  }
+
+  function cambiarBordado7(){
+    document.getElementById("botoncito").style.backgroundImage = "url('img/flor3-circulo.png')";
+  }
+
+  function cambiarBordado8(){
+    document.getElementById("botoncito").style.backgroundImage = "url('img/flor4-circulo.png')";
+  }
+
+  function cambiarBordado9(){
+    document.getElementById("botoncito").style.backgroundImage = "url('img/geometrico1-circulo.png')"; 
+  }
+
+  function cambiarBordado10(){
+    document.getElementById("botoncito").style.backgroundImage = "url('img/geometrico2-circulo.png')";
+  }
+
+  function cambiarBordado11(){
+    document.getElementById("botoncito").style.backgroundImage = "url('img/geometrico3-circulo.png')";
+  }
+
+  function cambiarBordado12(){
+    document.getElementById("botoncito").style.backgroundImage = "url('img/geometrico4-circulo.png')"; 
+  }   

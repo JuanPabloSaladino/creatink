@@ -223,3 +223,15 @@ body footer .container .row .medios-pago img {
     display: none;
   }
 }
+
+body .contenedor-libro-colores .boton-color {
+  margin-left: 2.2em;
+  margin-bottom: 1em;
+  border-radius: 50%;
+  height: 23.1em;
+  width: 23.1em;
+  background-image: url("../img/animal1-circulo.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
