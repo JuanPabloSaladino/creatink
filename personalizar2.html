@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personalización - Paso 2</title>
     <link rel="icon" type="image/png" href="img/iso.png" />
-    <script src="https://kit.fontawesome.com/222a3ac483.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/222a3ac483.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Open+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet"
@@ -46,7 +49,11 @@
             <a class="waves-effect" href="index.html">Inicio</a>
           </li>
           <li class="menu-movil">
-            <img class="responsive-img" src="img/personalizar.png" alt="Personalizar" />
+            <img
+              class="responsive-img"
+              src="img/personalizar.png"
+              alt="Personalizar"
+            />
             <a class="waves-effect" href="personalizar1.html">Personalizar</a>
           </li>
           <li class="menu-movil">
@@ -54,7 +61,11 @@
             <a class="waves-effect" href="compra-interior.html">Comprar</a>
           </li>
           <li class="menu-movil">
-            <img class="responsive-img" src="img/contactar.png" alt="Contactar" />
+            <img
+              class="responsive-img"
+              src="img/contactar.png"
+              alt="Contactar"
+            />
             <a class="waves-effect" href="contactar.html">Contactar</a>
           </li>
         </ul>
@@ -65,7 +76,7 @@
         <div class="nav-wrapper container">
           <ul class="left">
             <li>
-              <img 
+              <img
                 class="responsive-img"
                 src="img/iso.png"
                 alt="Isologo Creatink"
@@ -84,11 +95,15 @@
               <div class="ribbon active"></div>
             </li>
             <li>
-              <a href="compra.html"><img src="img/comprar.png" alt="Comprar" /></a>
+              <a href="compra.html"
+                ><img src="img/comprar.png" alt="Comprar"
+              /></a>
               <div class="ribbon"></div>
             </li>
             <li>
-              <a href="contactar.html"><img src="img/contactar.png" alt="Contacto" /></a>
+              <a href="contactar.html"
+                ><img src="img/contactar.png" alt="Contacto"
+              /></a>
               <div class="ribbon"></div>
             </li>
           </ul>
@@ -119,23 +134,31 @@
           </nav>
           <div class="personalizar-imagen" id="cuaderno">
             <button
-              class="btn waves-effect waves-light boton-color" id="borde"></button>
+              class="btn waves-effect waves-light boton-color"
+              id="borde"
+            ></button>
           </div>
+          <div class="ribbon" id="ribbon"></div>
         </div>
-        <div class="col s5 m5 xl5 l5 center-align personalizar-container-botones">
+        <div
+          class="col s5 m5 xl5 l5 center-align personalizar-container-botones"
+        >
           <h5 class="teal-text text-lighten-1 colores">ENCUADRE DEL BORDADO</h5>
 
           <div class="row colores">
             <div class="col s4">
-              <a onclick="cambiarTapaCuadrada()">  
-                <div><i class="far fa-square"></i></div>
+              <a
+                onclick="cambiarTapaCuadrada()"
+                class="grey-text text-darken-4"
+              >
+                <div><i id="cuadrado" class="far fa-square"></i></div>
                 <h6 class="personalizar-descripcion">Cuadrado</h6>
               </a>
             </div>
-            <div class="col s4" >
-              <a onclick="cambiarTapaCirculo()">
-              <div><i class="far fa-circle" ></i></div>
-              <h6 class="personalizar-descripcion">Círculo</h6>
+            <div class="col s4">
+              <a onclick="cambiarTapaCirculo()" class="grey-text text-darken-4">
+                <div><i id="circulo" class="far fa-circle"></i></div>
+                <h6 class="personalizar-descripcion">Círculo</h6>
               </a>
             </div>
           </div>
@@ -144,53 +167,70 @@
 
           <div class="row colores">
             <div class="col s4">
-                <div><i class="fas fa-bookmark"></i></div>
-                <h6 class="personalizar-descripcion separador">Con separador</h6>
+              <div>
+                <i
+                  id="conSeparador"
+                  class="fas fa-bookmark"
+                  onclick="seleccionarConSeparador()"
+                ></i>
               </div>
-              <div class="col s4">
-                <div><i class="far fa-bookmark"></i></div>
-                <h6 class="personalizar-descripcion separador">Sin separador</h6>
+              <h6 class="personalizar-descripcion separador">Con separador</h6>
+            </div>
+            <div class="col s4">
+              <div>
+                <i
+                  id="sinSeparador"
+                  class="far fa-bookmark"
+                  onclick="seleccionarSinSeparador()"
+                ></i>
               </div>
+              <h6 class="personalizar-descripcion separador">Sin separador</h6>
+            </div>
           </div>
-          
+
           <div class="col s5 m5 l5 xl5 flechas">
-            <a href="personalizar1.html" class="col s4 m1 l1 xl1 anterior grey-text text-darken-4">
-                <i class="large material-icons">keyboard_arrow_left</i>
-                <h6>Anterior</h6>
-              </a>
-            <a href="personalizar3.html" class="col s4 m1 l1 xl1 siguiente grey-text text-darken-4">
+            <a
+              href="personalizar1.html"
+              class="col s4 m1 l1 xl1 anterior grey-text text-darken-4"
+            >
+              <i class="large material-icons">keyboard_arrow_left</i>
+              <h6>Anterior</h6>
+            </a>
+            <a
+              href="personalizar3.html"
+              class="col s4 m1 l1 xl1 siguiente grey-text text-darken-4"
+            >
               <h6>Siguiente</h6>
               <i class="large material-icons">keyboard_arrow_right</i>
             </a>
           </div>
         </div>
-        
-      <div class="row descarga-botones">
-        <div class="col m7">
-          <div class="row">
-            <div class="col m3"></div>
-            <div class="col m3 center">
-              <i
-                class="large material-icons tooltipped"
-                data-position="bottom"
-                data-tooltip="Subir diseño"
-                >attach_file</i
-              >
-            </div>
-            <div class="col m3">
-              <i
-                class="large material-icons tooltipped"
-                data-position="bottom"
-                data-tooltip="Guardar diseño"
-                onclick="M.toast({html: 'Se guardó tu diseño'})"
-                >cloud_download</i
-              >
+
+        <div class="row descarga-botones">
+          <div class="col m7">
+            <div class="row">
+              <div class="col m3"></div>
+              <div class="col m3 center">
+                <i
+                  class="large material-icons tooltipped"
+                  data-position="bottom"
+                  data-tooltip="Subir diseño"
+                  >attach_file</i
+                >
+              </div>
+              <div class="col m3">
+                <i
+                  class="large material-icons tooltipped"
+                  data-position="bottom"
+                  data-tooltip="Guardar diseño"
+                  onclick="M.toast({html: 'Se guardó tu diseño'})"
+                  >cloud_download</i
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
-      </div>
-
     </div>
 
     <div class="container descarga">
@@ -242,7 +282,9 @@
         <div class="row">
           <div class="redes-sociales left">
             <div class="col">
-              <a href="https://www.facebook.com"><img clas src="img/Facebook.png" alt="Facebook" /></a>
+              <a href="https://www.facebook.com"
+                ><img clas src="img/Facebook.png" alt="Facebook"
+              /></a>
             </div>
             <div class="col">
               <a href="https://www.instagram.com"
@@ -250,25 +292,37 @@
               /></a>
             </div>
             <div class="col">
-              <a href="https://www.twitter.com"><img clas src="img/Twitter.png" alt="Twitter" /></a>
+              <a href="https://www.twitter.com"
+                ><img clas src="img/Twitter.png" alt="Twitter"
+              /></a>
             </div>
             <div class="col">
-              <a href="https://www.youtube.com"><img clas src="img/Youtube.png" alt="Youtube" /></a>
+              <a href="https://www.youtube.com"
+                ><img clas src="img/Youtube.png" alt="Youtube"
+              /></a>
             </div>
           </div>
 
           <div class="medios-pago right">
             <div class="col">
-              <a href="https://www.mercadopago.com.ar"><img clas src="img/Mercado-Pago.png" alt="Mercado Pago" /></a>
+              <a href="https://www.mercadopago.com.ar"
+                ><img clas src="img/Mercado-Pago.png" alt="Mercado Pago"
+              /></a>
             </div>
             <div class="col">
-              <a href="https://www.mastercard.com.ar"><img clas src="img/MasterCard.png" alt="Mastercard" /></a>
+              <a href="https://www.mastercard.com.ar"
+                ><img clas src="img/MasterCard.png" alt="Mastercard"
+              /></a>
             </div>
             <div class="col">
-              <a href="https://www.paypal.com"><img clas src="img/PayPal.png" alt="Paypal" /></a>
+              <a href="https://www.paypal.com"
+                ><img clas src="img/PayPal.png" alt="Paypal"
+              /></a>
             </div>
             <div class="col">
-              <a href="https://www.naranja.com"><img clas src="img/Naranja.png" alt="Tarjeta Naranja" /></a>
+              <a href="https://www.naranja.com"
+                ><img clas src="img/Naranja.png" alt="Tarjeta Naranja"
+              /></a>
             </div>
           </div>
         </div>
@@ -276,6 +330,56 @@
     </footer>
 
     <script src="js/materialize.min.js"></script>
-    <script src="js/main.js"></script>
+    <script>
+      //personalizar 2
+      function cambiarTapaCuadrada() {
+        document.getElementById("borde").style.borderRadius = "3%";
+        document.getElementById("borde").style.marginLeft = "1.8em";
+        document.getElementById("borde").style.marginBottom = "0em";
+        document.getElementById("borde").style.height = "18.7em";
+        document.getElementById("borde").style.width = "19em";
+        document.getElementById("cuaderno").style.backgroundImage =
+          "url('img/tapa2.jpg')";
+        document.getElementById("cuadrado").style.color = "#ffc107";
+        document.getElementById("circulo").style.color = "#212121 ";
+      }
+      function cambiarTapaCirculo() {
+        document.getElementById("cuaderno").style.backgroundImage =
+          "url('img/visualizacion-tapa.png')";
+        document.getElementById("borde").style.borderRadius = "50%";
+        document.getElementById("borde").style.marginLeft = "2.2em";
+        document.getElementById("borde").style.marginBottom = "0.9em";
+        document.getElementById("borde").style.height = "22.7em";
+        document.getElementById("borde").style.width = "23.2em";
+        document.getElementById("circulo").style.color = "#ffc107";
+        document.getElementById("cuadrado").style.color = "#212121 ";
+      }
+
+      function seleccionarConSeparador() {
+        document.getElementById("conSeparador").style.color = "#ffc107";
+        document.getElementById("sinSeparador").style.color = "#212121 ";
+        document.getElementById("ribbon").style.transition = "all 0.1s linear";
+        document.getElementById("ribbon").style.height = "5rem";
+        document.getElementById("ribbon").style.borderLeft =
+          "1.5rem solid #212121";
+        document.getElementById("ribbon").style.borderRight =
+          "1.5rem solid #212121";
+        document.getElementById("ribbon").style.borderBottom =
+          "1.5rem solid transparent";
+      }
+
+      function seleccionarSinSeparador() {
+        document.getElementById("conSeparador").style.color = "#212121 ";
+        document.getElementById("sinSeparador").style.color = "#ffc107";
+        document.getElementById("ribbon").style.transition = "all 0.1s linear";
+        document.getElementById("ribbon").style.height = "0rem";
+        document.getElementById("ribbon").style.borderLeft =
+          "0rem solid #212121";
+        document.getElementById("ribbon").style.borderRight =
+          "0rem solid #212121";
+        document.getElementById("ribbon").style.borderBottom =
+          "0rem solid transparent";
+      }
+    </script>
   </body>
 </html>
