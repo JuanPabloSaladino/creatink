@@ -237,20 +237,6 @@ body {
       }
     }
   }
-
-  footer .container {
-    width: 80%;
-
-    .row {
-      margin-bottom: 0;
-      padding-bottom: 0.5rem;
-
-      .redes-sociales img,
-      .medios-pago img {
-        width: 3rem;
-      }
-    }
-  }
 }
 
 // BANNERS
@@ -345,6 +331,20 @@ body {
       padding: 0;
       padding-left: 1rem;
       padding-top: 1rem;
+    }
+  }
+}
+
+footer .container {
+  width: 80%;
+
+  .row {
+    margin-bottom: 0;
+    padding-bottom: 0.5rem;
+
+    .redes-sociales img,
+    .medios-pago img {
+      width: 3.8rem;
     }
   }
 }
