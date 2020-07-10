@@ -139,14 +139,17 @@ body .contenedor-libro-colores .row .personalizar-container-botones .flechas .co
   font-size: 3.5rem;
   cursor: pointer;
 }
+body .contenedor-libro-colores .row .personalizar-container-botones .flechas .col i:hover {
+  color: #ffc107;
+}
 body .contenedor-libro-colores .row .personalizar-container-botones .flechas .col h6 {
   cursor: pointer;
 }
 body .contenedor-libro-colores .boton-color {
   margin-left: 2.2em;
-  margin-bottom: 0.9em;
+  margin-bottom: 0.8em;
   border-radius: 50%;
-  height: 22.7em;
+  height: 22.8em;
   width: 23.2em;
 }
 body .descarga-botones .row {

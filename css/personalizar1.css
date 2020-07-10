@@ -72,10 +72,9 @@ body .contenedor-libro-colores {
   margin-top: 8em;
   margin-bottom: 5em;
 }
-body .contenedor-libro-colores .row .titulo-personalizar {
-  font-family: "Caveat Brush", cursive;
-  margin-bottom: 6rem;
-  margin-top: 0;
+body .contenedor-libro-colores .row .banner .responsive-img {
+  width: 55%;
+  margin-bottom: 4rem;
 }
 body .contenedor-libro-colores .row .col nav {
   width: 30.2rem;
@@ -106,7 +105,6 @@ body .contenedor-libro-colores .row .col .personalizar-imagen #hoja {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 body .contenedor-libro-colores .row .col .boton-color {
   margin-left: 2.2em;
   margin-bottom: 0.9em;
@@ -117,7 +115,7 @@ body .contenedor-libro-colores .row .col .boton-color {
 body .contenedor-libro-colores .row .personalizar-container-botones {
   background-color: #f7f0e6;
   padding-bottom: 4rem;
-  
+  border-radius: 0.5rem;
 }
 body .contenedor-libro-colores .row .personalizar-container-botones h5 {
   font-weight: bold;
@@ -126,27 +124,21 @@ body .contenedor-libro-colores .row .personalizar-container-botones h5 {
   margin-left: 3.5rem;
   text-align: left;
 }
-body .contenedor-libro-colores .row .personalizar-container-botones .row .col .botonl {
-  background-image: url("../img/hoja-lisa.jpg");
-  
-}
-body .contenedor-libro-colores .row .personalizar-container-botones .row .col .botonc {
-  background-image: url("../img/hoja-cuadriculada-icono.jpg");
-  
-}
-body .contenedor-libro-colores .row .personalizar-container-botones .row .col .botonr {
-  background-image: url("../img/hoja-rayada-icono.jpg");
-  
-}
-
-
-body .contenedor-libro-colores .row .personalizar-container-botones .colores .boton {
+body .contenedor-libro-colores .row .personalizar-container-botones .colores .col {
   margin-left: 1rem;
 }
-body .contenedor-libro-colores .row .personalizar-container-botones .colores .botones a {
-  margin-right: 1.4rem;
-  font-weight: bold;
-  font-size: 1.2rem;
+body .contenedor-libro-colores .row .personalizar-container-botones .colores .col .botonl {
+  background-image: url("../img/hoja-lisa.jpg");
+}
+body .contenedor-libro-colores .row .personalizar-container-botones .colores .col .botonc {
+  background-image: url("../img/hoja-cuadriculada-icono.jpg");
+}
+body .contenedor-libro-colores .row .personalizar-container-botones .colores .col .botonr {
+  background-image: url("../img/hoja-rayada-icono.jpg");
+}
+body .contenedor-libro-colores .row .personalizar-container-botones .input-field {
+  width: 76%;
+  margin-left: 2.3rem;
 }
 body .contenedor-libro-colores .row .personalizar-container-botones .flechas {
   display: flex;
@@ -162,8 +154,11 @@ body .contenedor-libro-colores .row .personalizar-container-botones .flechas .co
   font-size: 3.5rem;
   cursor: pointer;
 }
+body .contenedor-libro-colores .row .personalizar-container-botones .flechas .col i:hover {
+  color: #ffc107;
+}
 body .contenedor-libro-colores .row .personalizar-container-botones .flechas .col h6 {
-  cursor:"personalizar2.html";
+  cursor: pointer;
 }
 body .contenedor-libro-colores .row .col i {
   font-size: 3.5rem;
@@ -184,9 +179,8 @@ body footer .container .row {
 }
 body footer .container .row .redes-sociales img,
 body footer .container .row .medios-pago img {
-  width: 3rem;
+  width: 3.8rem;
 }
-
 
 @media screen and (max-width: 1400px) {
   .container {

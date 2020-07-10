@@ -117,6 +117,14 @@ body .contenedor-libro-colores .row .personalizar-container-botones h5 {
   margin-left: 3.5rem;
   text-align: left;
 }
+body .contenedor-libro-colores .row .personalizar-container-botones .cantidad form p {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+body .contenedor-libro-colores .row .personalizar-container-botones .cantidad form p #cantidad {
+  margin-left: 2rem;
+}
 body .contenedor-libro-colores .row .personalizar-container-botones .row {
   display: flex;
   flex-direction: column;
@@ -131,11 +139,15 @@ body .contenedor-libro-colores .row .personalizar-container-botones .row .col {
 body .contenedor-libro-colores .row .personalizar-container-botones .row .col .row {
   margin-left: 2rem;
 }
+body .contenedor-libro-colores .row .personalizar-container-botones .row .col .row .col {
+  margin-top: 1rem;
+  width: 100%;
+}
 body .contenedor-libro-colores .row .personalizar-container-botones .row .col .row .input-field input,
 body .contenedor-libro-colores .row .personalizar-container-botones .row .col .row .input-field label,
 body .contenedor-libro-colores .row .personalizar-container-botones .row .col .row .input-field span {
-  padding-left: 1rem;
   font-size: 1.15rem;
+  width: 100%;
 }
 body .contenedor-libro-colores .row .personalizar-container-botones .row form {
   display: flex;
@@ -161,6 +173,19 @@ body .contenedor-libro-colores .row .personalizar-container-botones .btn-comprar
   justify-content: center;
 }
 body .contenedor-libro-colores .row .personalizar-container-botones .btn-comprar .btn-large {
+  margin-top: 1rem;
+  padding: 2rem 6rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .contenedor-libro-colores .contenedor-comprar {
+  display: flex;
+  justify-content: center;
+}
+body .contenedor-libro-colores .contenedor-comprar .btn-large {
   margin-top: 1rem;
   padding: 2rem 6rem;
   font-weight: bold;

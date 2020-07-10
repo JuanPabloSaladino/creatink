@@ -72,10 +72,9 @@ body .contenedor-libro-colores {
   margin-top: 8em;
   margin-bottom: 5em;
 }
-body .contenedor-libro-colores .row .titulo-personalizar {
-  font-family: "Caveat Brush", cursive;
-  margin-bottom: 6rem;
-  margin-top: 0;
+body .contenedor-libro-colores .row .banner .responsive-img {
+  width: 55%;
+  margin-bottom: 4rem;
 }
 body .contenedor-libro-colores .row .col nav {
   width: 30.2rem;
@@ -140,15 +139,12 @@ body .contenedor-libro-colores .row .personalizar-container-botones .flechas .co
 body .contenedor-libro-colores .row .personalizar-container-botones .flechas .col h6 {
   cursor: pointer;
 }
-body .contenedor-libro-colores .row .personalizar-container-botones .row .col a:hover{
-  color: #ffca28;
-}
-body .contenedor-libro-colores .row .personalizar-container-botones .row .col a{
-  color: black;
-}
 body .contenedor-libro-colores .row .col i {
   font-size: 3.5rem;
   cursor: pointer;
+}
+body .contenedor-libro-colores .row .col i:hover {
+  color: #ffc107;
 }
 body .descarga-botones .row {
   margin-top: -6.6rem;
@@ -166,6 +162,16 @@ body footer .container .row {
 body footer .container .row .redes-sociales img,
 body footer .container .row .medios-pago img {
   width: 3.8rem;
+}
+
+#ribbon {
+  width: 0rem;
+  height: 5rem;
+  border-left: 1.5rem solid transparent;
+  border-right: 1.5rem solid transparent;
+  border-bottom: 1.5rem solid transparent;
+  margin-left: 9rem;
+  margin-top: -0.3rem;
 }
 
 @media screen and (max-width: 1400px) {

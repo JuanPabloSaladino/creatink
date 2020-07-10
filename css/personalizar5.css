@@ -130,6 +130,7 @@ body .contenedor-libro-colores .row .personalizar-container-botones .colores .co
 }
 body .contenedor-libro-colores .row .personalizar-container-botones .colores .col img {
   height: auto;
+  width: 3.5rem;
 }
 body .contenedor-libro-colores .row .personalizar-container-botones .colores .col a {
   width: 3.4rem;
@@ -159,6 +160,9 @@ body .contenedor-libro-colores .row .personalizar-container-botones .flechas .co
 body .contenedor-libro-colores .row .personalizar-container-botones .flechas .col i {
   font-size: 3.5rem;
   cursor: pointer;
+}
+body .contenedor-libro-colores .row .personalizar-container-botones .flechas .col i:hover {
+  color: #ffc107;
 }
 body .contenedor-libro-colores .row .personalizar-container-botones .flechas .col h6 {
   cursor: pointer;
