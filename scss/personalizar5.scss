@@ -129,6 +129,8 @@ body {
             margin-right: 1.7rem;
            }
 
+           
+
            .hoja-lisa{
             font-size: 3.9rem;
            }
@@ -147,6 +149,7 @@ body {
 
            img{
              height: auto;
+             width: 3.5rem;
            }
 
            a{
@@ -181,6 +184,9 @@ body {
               i {
                 font-size: 3.5rem;
                 cursor: pointer;
+                &:hover{
+                  color: #ffc107 ;
+                }
               }
               h6 {
                 cursor: pointer;

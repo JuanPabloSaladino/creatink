@@ -130,6 +130,17 @@ body {
           text-align: left;
         }
 
+        .cantidad {
+          form p {
+            display: flex;
+            align-items: center;
+            width: 80%;
+
+            #cantidad {
+              margin-left: 2rem;
+            }
+          }
+        }
         .row {
           display: flex;
           flex-direction: column;
@@ -144,12 +155,16 @@ body {
             .row {
               margin-left: 2rem;
 
+              .col {
+                margin-top: 1rem;
+                width: 100%;
+              }
               .input-field {
                 input,
                 label,
                 span {
-                  padding-left: 1rem;
                   font-size: 1.15rem;
+                  width: 100%;
                 }
               }
             }
@@ -168,7 +183,7 @@ body {
               }
             }
 
-            .col h4{
+            .col h4 {
               font-weight: bold;
               margin-left: 2.6rem;
             }
@@ -193,6 +208,21 @@ body {
             align-items: center;
           }
         }
+      }
+    }
+
+    .contenedor-comprar {
+      display: flex;
+      justify-content: center;
+
+      .btn-large {
+        margin-top: 1rem;
+        padding: 2rem 6rem;
+        font-weight: bold;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   }
