@@ -97,9 +97,9 @@ body .contenedor .row .col {
 body .contenedor .row .col .taller {
   width: 100%;
 }
-body .contenedor .row .col .taller h5 {
+body .contenedor .row .col .taller h4 {
   font-weight: bold;
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   margin-bottom: 2rem;
 }
 body .contenedor .row .col .taller .border {
