@@ -130,7 +130,7 @@ body main {
   padding: 1.125rem;
 }
 body main .banner .responsive-img {
-  width: 50%;
+  width: 50em;
 }
 body main .tarjetas .contenedor .col .row .col .card .card-image {
   padding: 0.5rem;

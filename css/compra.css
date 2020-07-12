@@ -116,7 +116,7 @@ body main .contenedor-catalogo {
   background-color: #f7f0e6;
 }
 body main .contenedor-catalogo .banner .responsive-img {
-  width: 50%;
+  width: 50em;
   padding-top: 6rem;
 }
 body main .contenedor-catalogo .banner-flores {
