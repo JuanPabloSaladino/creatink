@@ -21,18 +21,18 @@
             <div class="background">
               <img src="img/slide.jpg" />
             </div>
-            <a href="index.html"
-              ><img class="circle" src="img/iso.png" alt="Logo Creatink"
-            /></a>
-            <a href="#name"><h2 class="white-text name">Creatink</h2></a>
+            <a href="index.html"><img class="circle" src="img/iso.png" alt="Logo Creatink" /></a>
+            <a href="#name">
+              <h2 class="white-text name">Creatink</h2>
+            </a>
           </div>
         </li>
         <li>
-          <a href="personalizar1.html"
-            ><i class="material-icons">mode_edit</i>Crear propio cuaderno</a
-          >
+          <a href="personalizar1.html"><i class="material-icons">mode_edit</i>Crear propio cuaderno</a>
         </li>
-        <li><div class="divider"></div></li>
+        <li>
+          <div class="divider"></div>
+        </li>
         <li class="menu-movil arriba">
           <img class="responsive-img" src="img/home.png" alt="Home" />
           <a class="waves-effect" href="index.html">Inicio</a>
@@ -50,39 +50,37 @@
           <a class="waves-effect" href="contactar.html">Contactar</a>
         </li>
       </ul>
-      <a href="#" data-target="slide-out" class="sidenav-trigger"
-        ><i class="material-icons">menu</i></a
-      >
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
       <div class="nav-wrapper container">
         <ul class="left">
           <li>
-            <img 
-              class="responsive-img"
-              src="img/iso.png"
-              alt="Isologo Creatink"
-            />
+            <img class="responsive-img" src="img/iso.png" alt="Isologo Creatink" />
           </li>
         </ul>
         <ul class="right">
-          <li>
+          <li class="seccion" id="inicio">
             <a href="index.html"><img src="img/home.png" alt="Home" /></a>
-            <div class="ribbon"></div>
+            <div class="ribbon" id="ribbonInicio"></div>
           </li>
-          <li>
-            <a href="personalizar1.html"
-              ><img src="img/personalizar.png" alt="Personalizar"
-            /></a>
-            <div class="ribbon "></div>
+          <a href="index.html" class="nombre-seccion grey-text text-darken-3 hide" id="txtInicio">Inicio</a>
+          <li class="seccion" id="personalizar">
+            <a href="personalizar1.html"><img src="img/personalizar.png" alt="Personalizar" /></a>
+            <div class="ribbon" id="ribbonPersonalizar"></div>
           </li>
-          <li>
-            <a href="compra.html"><img src="img/comprar.png" alt="Comprar" /></a>
-            <div class="ribbon active"></div>
+          <a href="personalizar1.html" class="nombre-seccion grey-text text-darken-3 hide"
+            id="txtPersonalizar">Personalizar</a>
+          <li class="seccion" id="comprar">
+            <a href="compra.html" id="comprar"><img src="img/comprar.png" alt="Comprar" /></a>
+            <div class="ribbon active" id="ribbonComprar"></div>
           </li>
-          <li>
-            <a href="contactar.html"><img src="img/contactar.png" alt="Contacto" /></a>
-            <div class="ribbon"></div>
+          <a href="compra.html" class="nombre-seccion grey-text text-darken-3 hide-on-med-and-down"
+            id="txtComprar">Comprar</a>
+          <li class="seccion" id="contactar">
+            <a href="contactar.html" id="contactar"><img src="img/contactar.png" alt="Contacto" /></a>
+            <div class="ribbon" id="ribbonContactar"></div>
           </li>
+          <a href="contactar.html" class="nombre-seccion grey-text text-darken-3 hide" id="txtContactar">Contactar</a>
         </ul>
       </div>
     </nav>
@@ -142,11 +140,13 @@
                   <div class="card-image">
                     <a class="btn-floating halfway-fab waves-effect waves-light right">
                       <i class="material-icons teal lighten-2 fav" id="boton-like1">favorite_border</i></a>
-                      <a href="compra-interior.html"><img src="img/geometrico1.png" alt="Cuaderno Zorro" /></a>
+                    <a href="compra-interior.html"><img src="img/geometrico1.png" alt="Cuaderno Zorro" /></a>
                   </div>
-                  <p class="right like section" id="cantidad-likes1">28</p>
+                  <p class="right like section true" id="cantidad-likes1">28</p>
                   <div class="card-content">
-                    <a href="compra-interior.html"><h6 class="grey-text text-darken-4">ZORRO</h6></a>
+                    <a href="compra-interior.html">
+                      <h6 class="grey-text text-darken-4">ZORRO</h6>
+                    </a>
                     <h6 class="precio amber-text text-lighten-1">$205</h6>
                     <p>250 páginas</p>
                     <div class="hilos section">
@@ -169,7 +169,7 @@
                   </div>
                   <div class="card-action center teal lighten-2">
                     <i class="material-icons white-text small">shopping_cart</i>
-                    <a class="white-text" href="#">Comprar</a>
+                    <a class="white-text" href="compra-interior.html">Agregar al carrito</a>
                   </div>
                 </div>
               </div>
@@ -182,11 +182,13 @@
                   <div class="card-image">
                     <a class="btn-floating halfway-fab waves-effect waves-light right">
                       <i class="material-icons teal lighten-2 fav" id="boton-like2">favorite_border</i></a>
-                      <a href="compra-interior.html"><img src="img/geometrico2.png" alt="Cuaderno Gato" /></a>
+                    <a href="compra-interior.html"><img src="img/geometrico2.png" alt="Cuaderno Gato" /></a>
                   </div>
-                  <p class="right like section" id="cantidad-likes2">79</p>
+                  <p class="right like section true" id="cantidad-likes2">79</p>
                   <div class="card-content">
-                    <a href="compra-interior.html"><h6 class="grey-text text-darken-4">GATO</h6></a>
+                    <a href="compra-interior.html">
+                      <h6 class="grey-text text-darken-4">GATO</h6>
+                    </a>
                     <h6 class="precio amber-text text-lighten-1">$299</h6>
                     <p>280 páginas</p>
                     <div class="hilos section">
@@ -205,8 +207,8 @@
                     </div>
                   </div>
                   <div class="card-action center teal lighten-2">
-                    <i class="material-icons white-text">shopping_cart</i>
-                    <a class="white-text" href="#">Comprar</a>
+                    <i class="material-icons white-text small">shopping_cart</i>
+                    <a class="white-text" href="compra-interior.html">Agregar al carrito</a>
                   </div>
                 </div>
               </div>
@@ -219,11 +221,13 @@
                   <div class="card-image">
                     <a class="btn-floating halfway-fab waves-effect waves-light right">
                       <i class="material-icons teal lighten-2 fav" id="boton-like3">favorite_border</i></a>
-                      <a href="compra-interior.html"><img src="img/geometrico3.png" alt="Cuaderno Erizo" /></a>
+                    <a href="compra-interior.html"><img src="img/geometrico3.png" alt="Cuaderno Erizo" /></a>
                   </div>
-                  <p class="right like section" id="cantidad-likes3">70</p>
+                  <p class="right like section true" id="cantidad-likes3">70</p>
                   <div class="card-content">
-                    <a href="compra-interior.html"><h6 class="grey-text text-darken-4">ERIZO</h6></a>
+                    <a href="compra-interior.html">
+                      <h6 class="grey-text text-darken-4">ERIZO</h6>
+                    </a>
                     <h6 class="precio amber-text text-lighten-1">$238</h6>
                     <p>190 páginas</p>
                     <div class="hilos section">
@@ -242,8 +246,8 @@
                     </div>
                   </div>
                   <div class="card-action center teal lighten-2">
-                    <i class="material-icons white-text">shopping_cart</i>
-                    <a class="white-text" href="#">Comprar</a>
+                    <i class="material-icons white-text small">shopping_cart</i>
+                    <a class="white-text" href="compra-interior.html">Agregar al carrito</a>
                   </div>
                 </div>
               </div>
@@ -259,11 +263,13 @@
                   <div class="card-image">
                     <a class="btn-floating halfway-fab waves-effect waves-light right">
                       <i class="material-icons teal lighten-2 fav" id="boton-like4">favorite_border</i></a>
-                      <a href="compra-interior.html"><img src="img/geometrico4.png" alt="Cuaderno Jirafa" /></a>
+                    <a href="compra-interior.html"><img src="img/geometrico4.png" alt="Cuaderno Jirafa" /></a>
                   </div>
-                  <p class="right like section" id="cantidad-likes4">98</p>
+                  <p class="right like section true" id="cantidad-likes4">98</p>
                   <div class="card-content">
-                    <a href="compra-interior.html"><h6 class="grey-text text-darken-4">JIRAFA</h6></a>
+                    <a href="compra-interior.html">
+                      <h6 class="grey-text text-darken-4">JIRAFA</h6>
+                    </a>
                     <h6 class="precio amber-text text-lighten-1">$347</h6>
                     <p>200 páginas</p>
                     <div class="hilos section">
@@ -283,7 +289,7 @@
                   </div>
                   <div class="card-action center teal lighten-2">
                     <i class="material-icons white-text small">shopping_cart</i>
-                    <a class="white-text" href="#">Comprar</a>
+                    <a class="white-text" href="compra-interior.html">Agregar al carrito</a>
                   </div>
                 </div>
               </div>
@@ -296,11 +302,13 @@
                   <div class="card-image">
                     <a class="btn-floating halfway-fab waves-effect waves-light right">
                       <i class="material-icons teal lighten-2 fav" id="boton-like5">favorite_border</i></a>
-                      <a href="compra-interior.html"><img src="img/geometrico5.png" alt="Cuaderno Koala" /></a>
+                    <a href="compra-interior.html"><img src="img/geometrico5.png" alt="Cuaderno Koala" /></a>
                   </div>
-                  <p class="right like section" id="cantidad-likes5">31</p>
+                  <p class="right like section true" id="cantidad-likes5">31</p>
                   <div class="card-content">
-                    <a href="compra-interior.html"><h6 class="grey-text text-darken-4">KOALA</h6></a>
+                    <a href="compra-interior.html">
+                      <h6 class="grey-text text-darken-4">KOALA</h6>
+                    </a>
                     <h6 class="precio amber-text text-lighten-1">$566</h6>
                     <p>196 páginas</p>
                     <div class="hilos section">
@@ -320,7 +328,7 @@
                   </div>
                   <div class="card-action center teal lighten-2">
                     <i class="material-icons white-text small">shopping_cart</i>
-                    <a class="white-text" href="#">Comprar</a>
+                    <a class="white-text" href="compra-interior.html">Agregar al carrito</a>
                   </div>
                 </div>
               </div>
@@ -333,11 +341,13 @@
                   <div class="card-image">
                     <a class="btn-floating halfway-fab waves-effect waves-light right">
                       <i class="material-icons teal lighten-2 fav" id="boton-like6">favorite_border</i></a>
-                      <a href="compra-interior.html"><img src="img/geometrico6.png" alt="Cuaderno Montañas" /></a>
+                    <a href="compra-interior.html"><img src="img/geometrico6.png" alt="Cuaderno Montañas" /></a>
                   </div>
-                  <p class="right like section" id="cantidad-likes6">44</p>
+                  <p class="right like section true" id="cantidad-likes6">44</p>
                   <div class="card-content">
-                    <a href="compra-interior.html"><h6 class="grey-text text-darken-4">MONTAÑAS</h6></a>
+                    <a href="compra-interior.html">
+                      <h6 class="grey-text text-darken-4">MONTAÑAS</h6>
+                    </a>
                     <h6 class="precio amber-text text-lighten-1">$603</h6>
                     <p>260 páginas</p>
                     <div class="hilos section">
@@ -357,7 +367,7 @@
                   </div>
                   <div class="card-action center teal lighten-2">
                     <i class="material-icons white-text small">shopping_cart</i>
-                    <a class="white-text" href="#">Comprar</a>
+                    <a class="white-text" href="compra-interior.html">Agregar al carrito</a>
                   </div>
                 </div>
               </div>
@@ -380,11 +390,13 @@
                   <div class="card-image">
                     <a class="btn-floating halfway-fab waves-effect waves-light right">
                       <i class="material-icons teal lighten-2 fav" id="boton-like7">favorite_border</i></a>
-                      <a href="compra-interior.html"><img src="img/flor1.png" alt="Cuaderno Ramo" /></a>
+                    <a href="compra-interior.html"><img src="img/flor1.png" alt="Cuaderno Ramo" /></a>
                   </div>
-                  <p class="right like section" id="cantidad-likes7">76</p>
+                  <p class="right like section true" id="cantidad-likes7">76</p>
                   <div class="card-content">
-                    <a href="compra-interior.html"><h6 class="grey-text text-darken-4">RAMO</h6></a>
+                    <a href="compra-interior.html">
+                      <h6 class="grey-text text-darken-4">RAMO</h6>
+                    </a>
                     <h6 class="precio amber-text text-lighten-1">$400</h6>
                     <p>44 hojas</p>
                     <div class="hilos section">
@@ -407,7 +419,7 @@
                   </div>
                   <div class="card-action center teal lighten-2">
                     <i class="material-icons white-text small">shopping_cart</i>
-                    <a class="white-text" href="#">Comprar</a>
+                    <a class="white-text" href="compra-interior.html">Agregar al carrito</a>
                   </div>
                 </div>
               </div>
@@ -420,11 +432,13 @@
                   <div class="card-image">
                     <a class="btn-floating halfway-fab waves-effect waves-light right">
                       <i class="material-icons teal lighten-2 fav" id="boton-like8">favorite_border</i></a>
-                      <a href="compra-interior.html"><img src="img/flor2.png" alt="Cuaderno Unicornio" /></a>
+                    <a href="compra-interior.html"><img src="img/flor2.png" alt="Cuaderno Unicornio" /></a>
                   </div>
-                  <p class="right like section" id="cantidad-likes8">91</p>
+                  <p class="right like section true" id="cantidad-likes8">91</p>
                   <div class="card-content">
-                    <a href="compra-interior.html"><h6 class="grey-text text-darken-4">UNICORNIO</h6></a>
+                    <a href="compra-interior.html">
+                      <h6 class="grey-text text-darken-4">UNICORNIO</h6>
+                    </a>
                     <h6 class="precio amber-text text-lighten-1">$436</h6>
                     <p>60 hojas</p>
                     <div class="hilos section">
@@ -443,8 +457,8 @@
                     </div>
                   </div>
                   <div class="card-action center teal lighten-2">
-                    <i class="material-icons white-text">shopping_cart</i>
-                    <a class="white-text" href="#">Comprar</a>
+                    <i class="material-icons white-text small">shopping_cart</i>
+                    <a class="white-text" href="compra-interior.html">Agregar al carrito</a>
                   </div>
                 </div>
               </div>
@@ -457,11 +471,13 @@
                   <div class="card-image">
                     <a class="btn-floating halfway-fab waves-effect waves-light right">
                       <i class="material-icons teal lighten-2 fav" id="boton-like9">favorite_border</i></a>
-                      <a href="compra-interior.html"><img src="img/flor3.png" alt="Cuaderno Verdes" /></a>
+                    <a href="compra-interior.html"><img src="img/flor3.png" alt="Cuaderno Verdes" /></a>
                   </div>
-                  <p class="right like section" id="cantidad-likes9">88</p>
+                  <p class="right like section true" id="cantidad-likes9">88</p>
                   <div class="card-content">
-                    <a href="compra-interior.html"><h6 class="grey-text text-darken-4">VERDES</h6></a>
+                    <a href="compra-interior.html">
+                      <h6 class="grey-text text-darken-4">VERDES</h6>
+                    </a>
                     <h6 class="precio amber-text text-lighten-1">$311</h6>
                     <p>76 hojas</p>
                     <div class="hilos section">
@@ -480,8 +496,8 @@
                     </div>
                   </div>
                   <div class="card-action center teal lighten-2">
-                    <i class="material-icons white-text">shopping_cart</i>
-                    <a class="white-text" href="#">Comprar</a>
+                    <i class="material-icons white-text small">shopping_cart</i>
+                    <a class="white-text" href="compra-interior.html">Agregar al carrito</a>
                   </div>
                 </div>
               </div>
@@ -497,11 +513,13 @@
                   <div class="card-image">
                     <a class="btn-floating halfway-fab waves-effect waves-light right">
                       <i class="material-icons teal lighten-2 fav" id="boton-like10">favorite_border</i></a>
-                      <a href="compra-interior.html"><img src="img/flor4.png" alt="Cuaderno Corona" /></a>
+                    <a href="compra-interior.html"><img src="img/flor4.png" alt="Cuaderno Corona" /></a>
                   </div>
-                  <p class="right like section" id="cantidad-likes10">43</p>
+                  <p class="right like section true" id="cantidad-likes10">43</p>
                   <div class="card-content">
-                    <a href="compra-interior.html"><h6 class="grey-text text-darken-4">CORONA</h6></a>
+                    <a href="compra-interior.html">
+                      <h6 class="grey-text text-darken-4">CORONA</h6>
+                    </a>
                     <h6 class="precio amber-text text-lighten-1">$785</h6>
                     <p>64 hojas</p>
                     <div class="hilos section">
@@ -521,7 +539,7 @@
                   </div>
                   <div class="card-action center teal lighten-2">
                     <i class="material-icons white-text small">shopping_cart</i>
-                    <a class="white-text" href="#">Comprar</a>
+                    <a class="white-text" href="compra-interior.html">Agregar al carrito</a>
                   </div>
                 </div>
               </div>
@@ -534,11 +552,13 @@
                   <div class="card-image">
                     <a class="btn-floating halfway-fab waves-effect waves-light right">
                       <i class="material-icons teal lighten-2 fav" id="boton-like11">favorite_border</i></a>
-                      <a href="compra-interior.html"><img src="img/flor5.png" alt="Cuaderno Girasol" /></a>
+                    <a href="compra-interior.html"><img src="img/flor5.png" alt="Cuaderno Girasol" /></a>
                   </div>
-                  <p class="right like section" id="cantidad-likes11">22</p>
+                  <p class="right like section true" id="cantidad-likes11">22</p>
                   <div class="card-content">
-                    <a href="compra-interior.html"><h6 class="grey-text text-darken-4">GIRASOL</h6></a>
+                    <a href="compra-interior.html">
+                      <h6 class="grey-text text-darken-4">GIRASOL</h6>
+                    </a>
                     <h6 class="precio amber-text text-lighten-1">$721</h6>
                     <p>48 hojas</p>
                     <div class="hilos section">
@@ -552,7 +572,7 @@
                   </div>
                   <div class="card-action center teal lighten-2">
                     <i class="material-icons white-text small">shopping_cart</i>
-                    <a class="white-text" href="#">Comprar</a>
+                    <a class="white-text" href="compra-interior.html">Agregar al carrito</a>
                   </div>
                 </div>
               </div>
@@ -565,11 +585,13 @@
                   <div class="card-image">
                     <a class="btn-floating halfway-fab waves-effect waves-light right">
                       <i class="material-icons teal lighten-2 fav" id="boton-like12">favorite_border</i></a>
-                      <a href="compra-interior.html"><img src="img/flor6.png" alt="Cuaderno Flores" /></a>
+                    <a href="compra-interior.html"><img src="img/flor6.png" alt="Cuaderno Flores" /></a>
                   </div>
-                  <p class="right like section" id="cantidad-likes12">57</p>
+                  <p class="right like section true" id="cantidad-likes12">57</p>
                   <div class="card-content">
-                    <a href="compra-interior.html"><h6 class="grey-text text-darken-4">FLORES</h6></a>
+                    <a href="compra-interior.html">
+                      <h6 class="grey-text text-darken-4">FLORES</h6>
+                    </a>
                     <h6 class="precio amber-text text-lighten-1">$351</h6>
                     <p>76 hojas</p>
                     <div class="hilos section">
@@ -589,7 +611,7 @@
                   </div>
                   <div class="card-action center teal lighten-2">
                     <i class="material-icons white-text small">shopping_cart</i>
-                    <a class="white-text" href="#">Comprar</a>
+                    <a class="white-text" href="compra-interior.html">Agregar al carrito</a>
                   </div>
                 </div>
               </div>
@@ -612,11 +634,13 @@
                   <div class="card-image">
                     <a class="btn-floating halfway-fab waves-effect waves-light right">
                       <i class="material-icons teal lighten-2 fav" id="boton-like13">favorite_border</i></a>
-                      <a href="compra-interior.html"><img src="img/animal1.png" alt="Cuaderno Carraca lila" /></a>
+                    <a href="compra-interior.html"><img src="img/animal1.png" alt="Cuaderno Carraca lila" /></a>
                   </div>
-                  <p class="right like section" id="cantidad-likes13">25</p>
+                  <p class="right like section true" id="cantidad-likes13">25</p>
                   <div class="card-content">
-                    <a href="compra-interior.html"><h6 class="grey-text text-darken-4">CARRACA LILA</h6></a>
+                    <a href="compra-interior.html">
+                      <h6 class="grey-text text-darken-4">CARRACA LILA</h6>
+                    </a>
                     <h6 class="precio amber-text text-lighten-1">$497</h6>
                     <p>52 hojas</p>
                     <div class="hilos section">
@@ -639,7 +663,7 @@
                   </div>
                   <div class="card-action center teal lighten-2">
                     <i class="material-icons white-text small">shopping_cart</i>
-                    <a class="white-text" href="#">Comprar</a>
+                    <a class="white-text" href="compra-interior.html">Agregar al carrito</a>
                   </div>
                 </div>
               </div>
@@ -652,11 +676,13 @@
                   <div class="card-image">
                     <a class="btn-floating halfway-fab waves-effect waves-light right">
                       <i class="material-icons teal lighten-2 fav" id="boton-like14">favorite_border</i></a>
-                      <a href="compra-interior.html"><img src="img/animal2.png" alt="Cuaderno Abeja" /></a>
+                    <a href="compra-interior.html"><img src="img/animal2.png" alt="Cuaderno Abeja" /></a>
                   </div>
-                  <p class="right like section" id="cantidad-likes14">58</p>
+                  <p class="right like section true" id="cantidad-likes14">58</p>
                   <div class="card-content">
-                    <a href="compra-interior.html"><h6 class="grey-text text-darken-4">ABEJA</h6></a>
+                    <a href="compra-interior.html">
+                      <h6 class="grey-text text-darken-4">ABEJA</h6>
+                    </a>
                     <h6 class="precio amber-text text-lighten-1">$644</h6>
                     <p>40 hojas</p>
                     <div class="hilos section">
@@ -675,8 +701,8 @@
                     </div>
                   </div>
                   <div class="card-action center teal lighten-2">
-                    <i class="material-icons white-text">shopping_cart</i>
-                    <a class="white-text" href="#">Comprar</a>
+                    <i class="material-icons white-text small">shopping_cart</i>
+                    <a class="white-text" href="compra-interior.html">Agregar al carrito</a>
                   </div>
                 </div>
               </div>
@@ -689,11 +715,13 @@
                   <div class="card-image">
                     <a class="btn-floating halfway-fab waves-effect waves-light right">
                       <i class="material-icons teal lighten-2 fav" id="boton-like15">favorite_border</i></a>
-                      <a href="compra-interior.html"><img src="img/animal3.png" alt="Cuaderno Conejo" /></a>
+                    <a href="compra-interior.html"><img src="img/animal3.png" alt="Cuaderno Conejo" /></a>
                   </div>
-                  <p class="right like section" id="cantidad-likes15">43</p>
+                  <p class="right like section true" id="cantidad-likes15">43</p>
                   <div class="card-content">
-                    <a href="compra-interior.html"><h6 class="grey-text text-darken-4">CONEJO</h6></a>
+                    <a href="compra-interior.html">
+                      <h6 class="grey-text text-darken-4">CONEJO</h6>
+                    </a>
                     <h6 class="precio amber-text text-lighten-1">$544</h6>
                     <p>92 hojas</p>
                     <div class="hilos section">
@@ -712,8 +740,8 @@
                     </div>
                   </div>
                   <div class="card-action center teal lighten-2">
-                    <i class="material-icons white-text">shopping_cart</i>
-                    <a class="white-text" href="#">Comprar</a>
+                    <i class="material-icons white-text small">shopping_cart</i>
+                    <a class="white-text" href="compra-interior.html">Agregar al carrito</a>
                   </div>
                 </div>
               </div>
@@ -729,11 +757,13 @@
                   <div class="card-image">
                     <a class="btn-floating halfway-fab waves-effect waves-light right">
                       <i class="material-icons teal lighten-2 fav" id="boton-like16">favorite_border</i></a>
-                      <a href="compra-interior.html"><img src="img/animal4.png" alt="Cuaderno Zorro rojo" /></a>
+                    <a href="compra-interior.html"><img src="img/animal4.png" alt="Cuaderno Zorro rojo" /></a>
                   </div>
-                  <p class="right like section" id="cantidad-likes16">42</p>
+                  <p class="right like section true" id="cantidad-likes16">42</p>
                   <div class="card-content">
-                    <a href="compra-interior.html"><h6 class="grey-text text-darken-4">ZORRO ROJO</h6></a>
+                    <a href="compra-interior.html">
+                      <h6 class="grey-text text-darken-4">ZORRO ROJO</h6>
+                    </a>
                     <h6 class="precio amber-text text-lighten-1">$179</h6>
                     <p>84 hojas</p>
                     <div class="hilos section">
@@ -753,7 +783,7 @@
                   </div>
                   <div class="card-action center teal lighten-2">
                     <i class="material-icons white-text small">shopping_cart</i>
-                    <a class="white-text" href="#">Comprar</a>
+                    <a class="white-text" href="compra-interior.html">Agregar al carrito</a>
                   </div>
                 </div>
               </div>
@@ -766,11 +796,13 @@
                   <div class="card-image">
                     <a class="btn-floating halfway-fab waves-effect waves-light right">
                       <i class="material-icons teal lighten-2 fav" id="boton-like17">favorite_border</i></a>
-                      <a href="compra-interior.html"><img src="img/animal5.png" alt="Cuaderno Erizo egipcio" /></a>
+                    <a href="compra-interior.html"><img src="img/animal5.png" alt="Cuaderno Erizo egipcio" /></a>
                   </div>
-                  <p class="right like section" id="cantidad-likes17">15</p>
+                  <p class="right like section true" id="cantidad-likes17">15</p>
                   <div class="card-content">
-                    <a href="compra-interior.html"><h6 class="grey-text text-darken-4">ERIZO EGIPCIO</h6></a>
+                    <a href="compra-interior.html">
+                      <h6 class="grey-text text-darken-4">ERIZO EGIPCIO</h6>
+                    </a>
                     <h6 class="precio amber-text text-lighten-1">$403</h6>
                     <p>80 hojas</p>
                     <div class="hilos section">
@@ -790,7 +822,7 @@
                   </div>
                   <div class="card-action center teal lighten-2">
                     <i class="material-icons white-text small">shopping_cart</i>
-                    <a class="white-text" href="#">Comprar</a>
+                    <a class="white-text" href="compra-interior.html">Agregar al carrito</a>
                   </div>
                 </div>
               </div>
@@ -803,11 +835,13 @@
                   <div class="card-image">
                     <a class="btn-floating halfway-fab waves-effect waves-light right">
                       <i class="material-icons teal lighten-2 fav" id="boton-like18">favorite_border</i></a>
-                      <a href="compra-interior.html"><img src="img/animal6.png" alt="Cuaderno Bambi" /></a>
+                    <a href="compra-interior.html"><img src="img/animal6.png" alt="Cuaderno Bambi" /></a>
                   </div>
-                  <p class="right like section" id="cantidad-likes18">34</p>
+                  <p class="right like section true" id="cantidad-likes18">34</p>
                   <div class="card-content">
-                    <a href="compra-interior.html"><h6 class="grey-text text-darken-4">BAMBI</h6></a>
+                    <a href="compra-interior.html">
+                      <h6 class="grey-text text-darken-4">BAMBI</h6>
+                    </a>
                     <h6 class="precio amber-text text-lighten-1">$765</h6>
                     <p>68 hojas</p>
                     <div class="hilos section">
@@ -827,7 +861,7 @@
                   </div>
                   <div class="card-action center teal lighten-2">
                     <i class="material-icons white-text small">shopping_cart</i>
-                    <a class="white-text" href="#">Comprar</a>
+                    <a class="white-text" href="compra-interior.html">Agregar al carrito</a>
                   </div>
                 </div>
               </div>
@@ -915,9 +949,7 @@
             <a href="https://www.facebook.com"><img clas src="img/Facebook.png" alt="Facebook" /></a>
           </div>
           <div class="col">
-            <a href="https://www.instagram.com"
-              ><img clas src="img/Instagram.png" alt="Instagram"
-            /></a>
+            <a href="https://www.instagram.com"><img clas src="img/Instagram.png" alt="Instagram" /></a>
           </div>
           <div class="col">
             <a href="https://www.twitter.com"><img clas src="img/Twitter.png" alt="Twitter" /></a>
@@ -987,116 +1019,415 @@
     botonLike17.addEventListener('click', subirCantidadLikes17);
     botonLike18.addEventListener('click', subirCantidadLikes18);
 
-    var contador1 = 28;
-    var contador2 = 79;
-    var contador3 = 70;
-    var contador4 = 98;
-    var contador5 = 31;
-    var contador6 = 44;
-    var contador7 = 76;
-    var contador8 = 91;
-    var contador9 = 88;
-    var contador10 = 43;
-    var contador11 = 22;
-    var contador12 = 57;
-    var contador13 = 25;
-    var contador14 = 58;
-    var contador15 = 43;
-    var contador16 = 42;
-    var contador17 = 15;
-    var contador18 = 34;
+
 
     function subirCantidadLikes1() {
-      contador1 = 29;
-      document.getElementById('cantidad-likes1').textContent = contador1;
+      var contador = parseInt(document.getElementById('cantidad-likes1').innerHTML);
+      var likes = document.getElementById('cantidad-likes1');
+      var corazon = document.getElementById('boton-like1');
+
+      if (likes.classList.contains('true')) {
+        corazon.innerHTML = 'favorite';
+        likes.textContent = contador + 1;
+        likes.classList.remove('true');
+        likes.classList.add('false');
+      }
+
+      else {
+        corazon.innerHTML = 'favorite_border';
+        likes.textContent = contador - 1;
+        likes.classList.remove('false');
+        likes.classList.add('true');
+      }
     }
 
     function subirCantidadLikes2() {
-      contador2 = 80;
-      document.getElementById('cantidad-likes2').textContent = contador2;
+      var contador = parseInt(document.getElementById('cantidad-likes2').innerHTML);
+      var likes = document.getElementById('cantidad-likes2');
+      var corazon = document.getElementById('boton-like2');
+
+      if (likes.classList.contains('true')) {
+        corazon.innerHTML = 'favorite';
+        likes.textContent = contador + 1;
+        likes.classList.remove('true');
+        likes.classList.add('false');
+      }
+
+      else {
+        corazon.innerHTML = 'favorite_border';
+        likes.textContent = contador - 1;
+        likes.classList.remove('false');
+        likes.classList.add('true');
+      }
     }
 
     function subirCantidadLikes3() {
-      contador3 = 71;
-      document.getElementById('cantidad-likes3').textContent = contador3;
+      var contador = parseInt(document.getElementById('cantidad-likes3').innerHTML);
+      var likes = document.getElementById('cantidad-likes3');
+      var corazon = document.getElementById('boton-like3');
+
+      if (likes.classList.contains('true')) {
+        corazon.innerHTML = 'favorite';
+        likes.textContent = contador + 1;
+        likes.classList.remove('true');
+        likes.classList.add('false');
+      }
+
+      else {
+        corazon.innerHTML = 'favorite_border';
+        likes.textContent = contador - 1;
+        likes.classList.remove('false');
+        likes.classList.add('true');
+      }
     }
 
     function subirCantidadLikes4() {
-      contador4 = 99;
-      document.getElementById('cantidad-likes4').textContent = contador4;
+      var contador = parseInt(document.getElementById('cantidad-likes4').innerHTML);
+      var likes = document.getElementById('cantidad-likes4');
+      var corazon = document.getElementById('boton-like4');
+
+      if (likes.classList.contains('true')) {
+        corazon.innerHTML = 'favorite';
+        likes.textContent = contador + 1;
+        likes.classList.remove('true');
+        likes.classList.add('false');
+      }
+
+      else {
+        corazon.innerHTML = 'favorite_border';
+        likes.textContent = contador - 1;
+        likes.classList.remove('false');
+        likes.classList.add('true');
+      }
     }
 
     function subirCantidadLikes5() {
-      contador5 = 32;
-      document.getElementById('cantidad-likes5').textContent = contador5;
+      var contador = parseInt(document.getElementById('cantidad-likes5').innerHTML);
+      var likes = document.getElementById('cantidad-likes5');
+      var corazon = document.getElementById('boton-like5');
+
+      if (likes.classList.contains('true')) {
+        corazon.innerHTML = 'favorite';
+        likes.textContent = contador + 1;
+        likes.classList.remove('true');
+        likes.classList.add('false');
+      }
+
+      else {
+        corazon.innerHTML = 'favorite_border';
+        likes.textContent = contador - 1;
+        likes.classList.remove('false');
+        likes.classList.add('true');
+      }
     }
 
     function subirCantidadLikes6() {
-      contador6 = 45;
-      document.getElementById('cantidad-likes6').textContent = contador6;
+      var contador = parseInt(document.getElementById('cantidad-likes6').innerHTML);
+      var likes = document.getElementById('cantidad-likes6');
+      var corazon = document.getElementById('boton-like6');
+
+      if (likes.classList.contains('true')) {
+        corazon.innerHTML = 'favorite';
+        likes.textContent = contador + 1;
+        likes.classList.remove('true');
+        likes.classList.add('false');
+      }
+
+      else {
+        corazon.innerHTML = 'favorite_border';
+        likes.textContent = contador - 1;
+        likes.classList.remove('false');
+        likes.classList.add('true');
+      }
     }
 
     function subirCantidadLikes7() {
-      contador7 = 77;
-      document.getElementById('cantidad-likes7').textContent = contador7;
+      var contador = parseInt(document.getElementById('cantidad-likes7').innerHTML);
+      var likes = document.getElementById('cantidad-likes7');
+      var corazon = document.getElementById('boton-like7');
+
+      if (likes.classList.contains('true')) {
+        corazon.innerHTML = 'favorite';
+        likes.textContent = contador + 1;
+        likes.classList.remove('true');
+        likes.classList.add('false');
+      }
+
+      else {
+        corazon.innerHTML = 'favorite_border';
+        likes.textContent = contador - 1;
+        likes.classList.remove('false');
+        likes.classList.add('true');
+      }
     }
 
     function subirCantidadLikes8() {
-      contador8 = 92;
-      document.getElementById('cantidad-likes8').textContent = contador8;
+      var contador = parseInt(document.getElementById('cantidad-likes8').innerHTML);
+      var likes = document.getElementById('cantidad-likes8');
+      var corazon = document.getElementById('boton-like8');
+
+      if (likes.classList.contains('true')) {
+        corazon.innerHTML = 'favorite';
+        likes.textContent = contador + 1;
+        likes.classList.remove('true');
+        likes.classList.add('false');
+      }
+
+      else {
+        corazon.innerHTML = 'favorite_border';
+        likes.textContent = contador - 1;
+        likes.classList.remove('false');
+        likes.classList.add('true');
+      }
     }
 
     function subirCantidadLikes9() {
-      contador9 = 89;
-      document.getElementById('cantidad-likes9').textContent = contador9;
+      var contador = parseInt(document.getElementById('cantidad-likes9').innerHTML);
+      var likes = document.getElementById('cantidad-likes9');
+      var corazon = document.getElementById('boton-like9');
+
+      if (likes.classList.contains('true')) {
+        corazon.innerHTML = 'favorite';
+        likes.textContent = contador + 1;
+        likes.classList.remove('true');
+        likes.classList.add('false');
+      }
+
+      else {
+        corazon.innerHTML = 'favorite_border';
+        likes.textContent = contador - 1;
+        likes.classList.remove('false');
+        likes.classList.add('true');
+      }
     }
 
     function subirCantidadLikes10() {
-      contador10 = 44;
-      document.getElementById('cantidad-likes10').textContent = contador10;
+      var contador = parseInt(document.getElementById('cantidad-likes10').innerHTML);
+      var likes = document.getElementById('cantidad-likes10');
+      var corazon = document.getElementById('boton-like10');
+
+      if (likes.classList.contains('true')) {
+        corazon.innerHTML = 'favorite';
+        likes.textContent = contador + 1;
+        likes.classList.remove('true');
+        likes.classList.add('false');
+      }
+
+      else {
+        corazon.innerHTML = 'favorite_border';
+        likes.textContent = contador - 1;
+        likes.classList.remove('false');
+        likes.classList.add('true');
+      }
     }
 
     function subirCantidadLikes11() {
-      contador11 = 23;
-      document.getElementById('cantidad-likes11').textContent = contador11;
+      var contador = parseInt(document.getElementById('cantidad-likes11').innerHTML);
+      var likes = document.getElementById('cantidad-likes11');
+      var corazon = document.getElementById('boton-like11');
+
+      if (likes.classList.contains('true')) {
+        corazon.innerHTML = 'favorite';
+        likes.textContent = contador + 1;
+        likes.classList.remove('true');
+        likes.classList.add('false');
+      }
+
+      else {
+        corazon.innerHTML = 'favorite_border';
+        likes.textContent = contador - 1;
+        likes.classList.remove('false');
+        likes.classList.add('true');
+      }
     }
 
     function subirCantidadLikes12() {
-      contador12 = 58;
-      document.getElementById('cantidad-likes12').textContent = contador12;
+      var contador = parseInt(document.getElementById('cantidad-likes12').innerHTML);
+      var likes = document.getElementById('cantidad-likes12');
+      var corazon = document.getElementById('boton-like12');
+
+      if (likes.classList.contains('true')) {
+        corazon.innerHTML = 'favorite';
+        likes.textContent = contador + 1;
+        likes.classList.remove('true');
+        likes.classList.add('false');
+      }
+
+      else {
+        corazon.innerHTML = 'favorite_border';
+        likes.textContent = contador - 1;
+        likes.classList.remove('false');
+        likes.classList.add('true');
+      }
     }
 
     function subirCantidadLikes13() {
-      contador13 = 26;
-      document.getElementById('cantidad-likes13').textContent = contador13;
+      var contador = parseInt(document.getElementById('cantidad-likes13').innerHTML);
+      var likes = document.getElementById('cantidad-likes13');
+      var corazon = document.getElementById('boton-like13');
+
+      if (likes.classList.contains('true')) {
+        corazon.innerHTML = 'favorite';
+        likes.textContent = contador + 1;
+        likes.classList.remove('true');
+        likes.classList.add('false');
+      }
+
+      else {
+        corazon.innerHTML = 'favorite_border';
+        likes.textContent = contador - 1;
+        likes.classList.remove('false');
+        likes.classList.add('true');
+      }
     }
 
     function subirCantidadLikes14() {
-      contador14 = 59;
-      document.getElementById('cantidad-likes14').textContent = contador14;
+      var contador = parseInt(document.getElementById('cantidad-likes14').innerHTML);
+      var likes = document.getElementById('cantidad-likes14');
+      var corazon = document.getElementById('boton-like14');
+
+      if (likes.classList.contains('true')) {
+        corazon.innerHTML = 'favorite';
+        likes.textContent = contador + 1;
+        likes.classList.remove('true');
+        likes.classList.add('false');
+      }
+
+      else {
+        corazon.innerHTML = 'favorite_border';
+        likes.textContent = contador - 1;
+        likes.classList.remove('false');
+        likes.classList.add('true');
+      }
     }
 
     function subirCantidadLikes15() {
-      contador15 = 44;
-      document.getElementById('cantidad-likes15').textContent = contador15;
+      var contador = parseInt(document.getElementById('cantidad-likes15').innerHTML);
+      var likes = document.getElementById('cantidad-likes15');
+      var corazon = document.getElementById('boton-like15');
+
+      if (likes.classList.contains('true')) {
+        corazon.innerHTML = 'favorite';
+        likes.textContent = contador + 1;
+        likes.classList.remove('true');
+        likes.classList.add('false');
+      }
+
+      else {
+        corazon.innerHTML = 'favorite_border';
+        likes.textContent = contador - 1;
+        likes.classList.remove('false');
+        likes.classList.add('true');
+      }
     }
 
     function subirCantidadLikes16() {
-      contador16 = 43;
-      document.getElementById('cantidad-likes16').textContent = contador16;
+      var contador = parseInt(document.getElementById('cantidad-likes16').innerHTML);
+      var likes = document.getElementById('cantidad-likes16');
+      var corazon = document.getElementById('boton-like16');
+
+      if (likes.classList.contains('true')) {
+        corazon.innerHTML = 'favorite';
+        likes.textContent = contador + 1;
+        likes.classList.remove('true');
+        likes.classList.add('false');
+      }
+
+      else {
+        corazon.innerHTML = 'favorite_border';
+        likes.textContent = contador - 1;
+        likes.classList.remove('false');
+        likes.classList.add('true');
+      }
     }
 
     function subirCantidadLikes17() {
-      contador17 = 16;
-      document.getElementById('cantidad-likes17').textContent = contador17;
+      var contador = parseInt(document.getElementById('cantidad-likes17').innerHTML);
+      var likes = document.getElementById('cantidad-likes17');
+      var corazon = document.getElementById('boton-like17');
+
+      if (likes.classList.contains('true')) {
+        corazon.innerHTML = 'favorite';
+        likes.textContent = contador + 1;
+        likes.classList.remove('true');
+        likes.classList.add('false');
+      }
+
+      else {
+        corazon.innerHTML = 'favorite_border';
+        likes.textContent = contador - 1;
+        likes.classList.remove('false');
+        likes.classList.add('true');
+      }
     }
 
     function subirCantidadLikes18() {
-      contador18 = 35;
-      document.getElementById('cantidad-likes18').textContent = contador18;
+      var contador = parseInt(document.getElementById('cantidad-likes18').innerHTML);
+      var likes = document.getElementById('cantidad-likes18');
+      var corazon = document.getElementById('boton-like18');
+
+      if (likes.classList.contains('true')) {
+        corazon.innerHTML = 'favorite';
+        likes.textContent = contador + 1;
+        likes.classList.remove('true');
+        likes.classList.add('false');
+      }
+
+      else {
+        corazon.innerHTML = 'favorite_border';
+        likes.textContent = contador - 1;
+        likes.classList.remove('false');
+        likes.classList.add('true');
+      }
     }
 
+    // HEADER
 
+    document.getElementById('inicio').addEventListener('mouseover', function () {
+      document.getElementById('ribbonInicio').style.borderLeft = '1.5rem solid #00897b';
+      document.getElementById('ribbonInicio').style.borderRight = '1.5rem solid #00897b';
+      document.getElementById('txtInicio').classList.remove('hide');
+
+    });
+
+    document.getElementById('inicio').addEventListener('mouseout', function () {
+      document.getElementById('ribbonInicio').style.borderLeft = '1.5rem solid #4db6ac';
+      document.getElementById('ribbonInicio').style.borderRight = '1.5rem solid #4db6ac';
+      setTimeout(function () { document.getElementById('txtInicio').classList.add('hide'); }, 2000);
+    });
+
+    document.getElementById('personalizar').addEventListener('mouseover', function () {
+      document.getElementById('ribbonPersonalizar').style.borderLeft = '1.5rem solid #00897b';
+      document.getElementById('ribbonPersonalizar').style.borderRight = '1.5rem solid #00897b';
+      document.getElementById('txtPersonalizar').classList.remove('hide');
+    });
+
+    document.getElementById('personalizar').addEventListener('mouseout', function () {
+      document.getElementById('ribbonPersonalizar').style.borderLeft = '1.5rem solid #4db6ac';
+      document.getElementById('ribbonPersonalizar').style.borderRight = '1.5rem solid #4db6ac';
+      setTimeout(function () { document.getElementById('txtPersonalizar').classList.add('hide'); }, 2000);
+    });
+
+    document.getElementById('comprar').addEventListener('mouseover', function () {
+      document.getElementById('ribbonComprar').style.borderLeft = '1.5rem solid #00897b';
+      document.getElementById('ribbonComprar').style.borderRight = '1.5rem solid #00897b';
+    });
+
+    document.getElementById('contactar').addEventListener('mouseover', function () {
+      document.getElementById('ribbonContactar').style.borderLeft = '1.5rem solid #00897b';
+      document.getElementById('ribbonContactar').style.borderRight = '1.5rem solid #00897b';
+      document.getElementById('txtContactar').classList.remove('hide');
+    });
+
+    document.getElementById('contactar').addEventListener('mouseout', function () {
+      document.getElementById('ribbonContactar').style.borderLeft = '1.5rem solid #4db6ac';
+      document.getElementById('ribbonContactar').style.borderRight = '1.5rem solid #4db6ac';
+      setTimeout(function () { document.getElementById('txtContactar').classList.add('hide'); }, 2000);
+    });
+
+    function agregarCarro(e) {
+      e.classList.toggle("")
+    }
   </script>
 </body>
 

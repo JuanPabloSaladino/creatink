@@ -37,38 +37,58 @@ body {
       width: 100%;
       .left li {
         width: 6.9rem;
-        margin-top: 0.375rem;
-      }
-      .right li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
         margin: 0;
-        a {
-          width: 6.2rem;
-          margin-top: 0.375rem;
-          img {
+      }
+      .right {
+        display: flex;
+        flex-direction: row;
+
+        li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin: 0;
+          &.seccion {
             width: 100%;
-            height: auto;
-            position: relative;
+            height: 100%;
+          }
+          a {
+            width: 6.2rem;
+            margin-top: 0.375rem;
+            img {
+              width: 100%;
+              height: auto;
+              position: relative;
+            }
+          }
+          .ribbon {
+            width: 0rem;
+            height: 3.125rem;
+            border-left: 1.5rem solid #4db6ac;
+            border-right: 1.5rem solid #4db6ac;
+            border-bottom: 1.5rem solid transparent;
+            margin-top: -2.375rem;
+            &:hover {
+              border-left: 1.5rem solid #00897b;
+              border-right: 1.5rem solid #00897b;
+            }
+          }
+          .active {
+            border-left: 1.5rem solid #00897b;
+            border-right: 1.5rem solid #00897b;
           }
         }
-        .ribbon {
-          width: 0rem;
-          height: 3.125rem;
-          border-left: 1.5rem solid #4db6ac;
-          border-right: 1.5rem solid #4db6ac;
-          border-bottom: 1.5rem solid transparent;
-          margin-top: -2.375rem;
-          &:hover {
-            height: 4.25rem;
-          }
-        }
-        .active {
-          border-left: 1.5rem solid #00897b;
-          border-right: 1.5rem solid #00897b;
-          height: 4.25rem;
+
+        .nombre-seccion {
+          font-size: 1.2rem;
+          font-weight: 600;
+          padding: 0;
+          margin: 0;
+          margin-top: 0.3rem;
+          margin-left: -0.6rem;
+          margin-right: 0.6rem;
+          height: 0rem;
         }
       }
     }
@@ -266,10 +286,10 @@ body {
 
       .redes-sociales img,
       .medios-pago img {
-        width: 3rem;
+        width: 3.8rem;
       }
     }
-  }
+  } 
 }
 
 @media screen and (max-width: 992px) {

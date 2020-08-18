@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comprar cuaderno</title>
+  <link rel="icon" type="image/png" href="img/iso.png" />
+  <script src="https://kit.fontawesome.com/222a3ac483.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Open+Sans:wght@300;400;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link rel="stylesheet" href="css/compra-interior2.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="amber lighten-1">
+      <ul id="slide-out" class="sidenav">
+        <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="img/slide.jpg" />
+            </div>
+            <a href="index.html"><img class="circle" src="img/iso.png" alt="Logo Creatink" /></a>
+            <a href="#name">
+              <h2 class="white-text name">Creatink</h2>
+            </a>
+          </div>
+        </li>
+        <li>
+          <a href="personalizar1.html"><i class="material-icons">mode_edit</i>Crear propio cuaderno</a>
+        </li>
+        <li>
+          <div class="divider"></div>
+        </li>
+        <li class="menu-movil arriba">
+          <img class="responsive-img" src="img/home.png" alt="Home" />
+          <a class="waves-effect" href="index.html">Inicio</a>
+        </li>
+        <li class="menu-movil">
+          <img class="responsive-img" src="img/personalizar.png" alt="Personalizar" />
+          <a class="waves-effect" href="personalizar1.html">Personalizar</a>
+        </li>
+        <li class="menu-movil">
+          <img class="responsive-img" src="img/comprar.png" alt="Comprar" />
+          <a class="waves-effect" href="compra-interior.html">Comprar</a>
+        </li>
+        <li class="menu-movil">
+          <img class="responsive-img" src="img/contactar.png" alt="Contactar" />
+          <a class="waves-effect" href="contactar.html">Contactar</a>
+        </li>
+      </ul>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+      <div class="nav-wrapper container">
+        <ul class="left">
+          <li>
+            <img class="responsive-img" src="img/iso.png" alt="Isologo Creatink" />
+          </li>
+        </ul>
+        <ul class="right">
+          <li class="seccion" id="inicio">
+            <a href="index.html"><img src="img/home.png" alt="Home" /></a>
+            <div class="ribbon" id="ribbonInicio"></div>
+          </li>
+          <a href="index.html" class="nombre-seccion grey-text text-darken-3 hide" id="txtInicio">Inicio</a>
+          <li class="seccion" id="personalizar">
+            <a href="personalizar1.html"><img src="img/personalizar.png" alt="Personalizar" /></a>
+            <div class="ribbon" id="ribbonPersonalizar"></div>
+          </li>
+          <a href="personalizar1.html" class="nombre-seccion grey-text text-darken-3 hide"
+            id="txtPersonalizar">Personalizar</a>
+          <li class="seccion" id="comprar">
+            <a href="compra.html" id="comprar"><img src="img/comprar.png" alt="Comprar" /></a>
+            <div class="ribbon active" id="ribbonComprar"></div>
+          </li>
+          <a href="compra.html" class="nombre-seccion grey-text text-darken-3 hide-on-med-and-down"
+            id="txtComprar">Comprar</a>
+          <li class="seccion" id="contactar">
+            <a href="contactar.html" id="contactar"><img src="img/contactar.png" alt="Contacto" /></a>
+            <div class="ribbon" id="ribbonContactar"></div>
+          </li>
+          <a href="contactar.html" class="nombre-seccion grey-text text-darken-3 hide" id="txtContactar">Contactar</a>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container contenedor-libro-colores">
+    <div class="row cosas">
+      <div class="col s7 m7 xl7 l7 personalizar-container-imagen" id="personalizar-container-imagen">
+        <!-- BANNER -->
+        <section class="banner section">
+          <img class="responsive-img" src="img/banner-carrito.png" alt="Cuadernos en tu carro" />
+        </section>
+
+        <!-- IZQUIERDA - CARRITO -->
+        <div class="col s12">
+          <div class="card horizontal">
+            <div class="card-image">
+              <a href="compra-interior.html"><img src="img/compra.png"></a>
+            </div>
+            <div class="card-stacked">
+              <div class="card-content" i>
+                <div class="eliminar" id="eliminar">
+                  <p class="grey-text text-darken-1">Eliminar</p>
+                  <i class="material-icons grey-text text-darken-1">delete</i>
+                </div>
+                <p><b>Diseño:</b> Personalizado</p>
+                <p><b>Color:</b> Azul marino</p>
+                <p><b>Hojas:</b> 80</p>
+                <p><b>Tamaño:</b> A5</p>
+              </div>
+              <div class="card-action">
+                <p>Cantidad:</p>
+                <input type="text" value="1" id="cantidad" onkeypress="return solonumeros(event)"
+                  onpaste="return false" />
+                <h6 class="center section" id="total">$900</h6>
+              </div>
+            </div>
+          </div>
+          <p class="red-text error center hide" id="errorCantidad">*Mínimo 1 y máximo 50</p>
+
+          <table>
+            <tbody class="datosContainer">
+              <tr>
+                <td class="container"><i class="material-icons">location_on</i>Ubicación de retiro</td>
+                <td id="txtRetiro">Paraguay 5099, Palermo</td>
+              </tr>
+              <tr>
+                <td class="container"><i class="material-icons">account_balance_wallet</i>Precio total</td>
+                <td id="precioTotal">ARS $900</td>
+              </tr>
+              <tr>
+                <td class="container"><i class="material-icons">contact_mail</i>Contacto</td>
+                <td id="correo"></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+
+      <!-- DERECHA - SEPARADORES -->
+      <div class="col s5 contenedor-separadores">
+        <div class="separadores row">
+          <div class="separador amber col s3">
+            <a class="grey-text text-darken-4" id="retiroSeparador" onclick="return retiro()">Retiro</a>
+          </div>
+          <div class="separador col s3">
+            <a class="grey-text text-darken-4" id="pagoSeparador" onclick="return pago()">Pago</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEPARADORES - CONTENIDO -->
+      <div class="col s5 m5 xl5 l5 center-align personalizar-container-botones" onmouseover="habilitar()">
+
+        <!-- RETIRO - SEPARADOR -->
+        <div class="row" id="retiroContent">
+          <div class="col s12" id="retiro">
+            <h5 class="titulo teal-text text-lighten-1 colores" id="paso1Elm1">ELEGÍ LA UBICACIÓN DE RETIRO</h5>
+            <form action="#">
+              <p>
+                <label>
+                  <input class="with-gap" name="group1" type="radio" checked />
+                  <span id="inputUno">Paraguay 5099, Palermo. Lunes a viernes de 8 a 20hs</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input class="with-gap" name="group1" type="radio" />
+                  <span id="inputDos">San Martín 3861, Belgrano. Viernes de 9 a 15hs</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input class="with-gap" name="group1" type="radio" />
+                  <span id="inputTres">Scalabrini Ortíz 2602, CABA. Sábados de 8 a 14hs</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input class="with-gap" name="group1" type="radio" />
+                  <span id="inputCuatro">Av. Santa Fe 4000, Palermo. Domingos de 13 a 19hs</span>
+                </label>
+              </p>
+
+            </form>
+            <p class="aclaracion teal-text text-lighten-2">*Modificaciones sobre el día u horario te serán notificados
+            </p>
+          </div>
+        </div>
+
+        <!-- PAGO - SEPARADOR -->
+        <div class="row hide" id="pagoContent">
+          <div class="col s12">
+            <h5 class="titulo teal-text text-lighten-1 colores">ELEGÍ UN MEDIO DE PAGO</h5>
+
+            <form class="col s12">
+              <div class="row">
+
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">credit_card</i>
+                  <input id="numeroTarjeta" type="text" class="validate" required onkeypress="return solonumeros(event)"
+                    onpaste="return false" />
+                  <label for="icon_telephone">Número de tarjeta</label>
+                  <span class="helper-text" data-error="Número incorrecto, debe ingresar 16 dígitos"></span>
+                </div>
+
+                <div class="separar">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">date_range</i>
+                    <input id="fechaVencimiento" type="text" class="validate" required
+                      onkeypress="return solonumeros(event)" onpaste="return false" />
+                    <label for="icon_telephone">Fecha de vencimiento</label>
+                    <span class="helper-text" data-error="Tarjeta vencida"></span>
+                  </div>
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">security</i>
+                    <input id="codigoSeguridad" type="text" class="validate" required
+                      onkeypress="return solonumeros(event)" onpaste="return false" />
+                    <label for="icon_telephone">Código de seguridad</label>
+                    <span class="helper-text" data-error="Número de seguridad incorrecto"></span>
+                  </div>
+                </div>
+
+                <div class="separar">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="nombreApellido" type="text" class="validate" required
+                      onkeypress="return sololetras(event)" onpaste="return false" />
+                    <label for="icon_prefix">Nombre y apellido</label>
+                    <span class="helper-text" data-error="Debe ser igual al que figura en la tarjeta"></span>
+                  </div>
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">account_box</i>
+                    <input id="dni" type="text" class="validate" required onkeypress=" return solonumeros(event)"
+                      onpaste="return false" />
+                    <label for="icon_telephone">DNI/LC/LE</label>
+                    <span class="helper-text" data-error="Número incorrecto"></span>
+                  </div>
+                </div>
+
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">email</i>
+                  <input id="email1" type="email" class="validate" required />
+                  <label for="email1">Correo electrónico</label>
+                  <span class="helper-text" data-error="Email inválido">ejemplo@gmail.com</span>
+                </div>
+
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">email</i>
+                  <input id="email2" type="email" class="validate" required onpaste="return false" />
+                  <label for="email2">Repetir correo</label>
+                  <span class="helper-text hide" data-error="No coinciden los correos" id="errorEmail">No coinciden los
+                    correos</span>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+        <!-- FLECHAS -->
+        <div class="flechas" id="flechas">
+          <div class="anterior hide" id="anterior" onclick="return retiro()">
+            <i class="material-icons">keyboard_arrow_left</i>
+            <p>Anterior</p>
+          </div>
+          <div class="continuar" id="continuar" onclick="return pago()">
+            <p class="right">Continuar</p>
+            <i class="material-icons right">keyboard_arrow_right</i>
+
+          </div>
+        </div>
+
+        <!-- MODAL -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4 class="section">¡Felicidades!</h4>
+            <h4>Tu compra se ha realizado con éxito</h4>
+            <p class="section">
+              Envíamos el comprobante de pago al correo <b id="correoIngresado"></b>. Si no lo has recibido dirígite a
+              "Spam" o "Promociones"
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">ACEPTAR</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- COMPRAR - BOTÓN -->
+      <div class="btn-comprar">
+        <button data-target="modal1" class="btn-large modal-trigger disabled" id="confirmar"
+          onclick="return prevent(event)">
+          <i class="material-icons left">shopping_cart</i>COMPRAR
+        </button>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+
+
+  <footer class="page-footer amber lighten-1">
+    <div class="container center">
+      <div class="row">
+        <div class="redes-sociales left">
+          <div class="col">
+            <a href="https://www.facebook.com"><img clas src="img/Facebook.png" alt="Facebook" /></a>
+          </div>
+          <div class="col">
+            <a href="https://www.instagram.com"><img clas src="img/Instagram.png" alt="Instagram" /></a>
+          </div>
+          <div class="col">
+            <a href="https://www.twitter.com"><img clas src="img/Twitter.png" alt="Twitter" /></a>
+          </div>
+          <div class="col">
+            <a href="https://www.youtube.com"><img clas src="img/Youtube.png" alt="Youtube" /></a>
+          </div>
+        </div>
+
+        <div class="medios-pago right">
+          <div class="col">
+            <a href="https://www.mercadopago.com.ar"><img clas src="img/Mercado-Pago.png" alt="Mercado Pago" /></a>
+          </div>
+          <div class="col">
+            <a href="https://www.mastercard.com.ar"><img clas src="img/MasterCard.png" alt="Mastercard" /></a>
+          </div>
+          <div class="col">
+            <a href="https://www.paypal.com"><img clas src="img/PayPal.png" alt="PayPal" /></a>
+          </div>
+          <div class="col">
+            <a href="https://www.naranja.com"><img clas src="img/Naranja.png" alt="Tarjeta Naranja" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/materialize.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+
+    var numeroTarjeta = document.getElementById("numeroTarjeta");
+    var fechaVencimiento = document.getElementById("fechaVencimiento");
+    var codigoSeguridad = document.getElementById("codigoSeguridad");
+    var dni = document.getElementById('dni');
+    var cantidad = document.getElementById("cantidad");
+    var errorCantidad = document.getElementById("errorCantidad");
+    var comprar = document.getElementById("confirmar");
+    var total = document.getElementById("total");
+    var email1 = document.getElementById("email1");
+    var email2 = document.getElementById("email2");
+    var errorEmail = document.getElementById("errorEmail");
+    var soloLetras = document.getElementById("soloLetras");
+    var confirmar = document.getElementById("confirmar");
+    var precioTotal = document.getElementById("precioTotal");
+    var correo = document.getElementById('correo');
+
+    // VALIDACIÓN - PAGO
+    numeroTarjeta.addEventListener('keyup', function () {
+      if (numeroTarjeta.value.length > 16) {
+        numeroTarjeta.value = numeroTarjeta.value.substring(0, numeroTarjeta.value.length - 1);
+      }
+    });
+
+    function solonumeros(e) {
+      key = e.keyCode || e.which;
+      teclado = String.fromCharCode(key);
+      numeros = '0123456789';
+      especiales = '8-37-38-46';
+      tecladoEspecial = false;
+
+      for (var i in especiales) {
+        if (key == especiales[i]) {
+          tecladoEspecial = true;
+        }
+      }
+      if (numeros.indexOf(teclado) == -1 && !tecladoEspecial) {
+        return false;
+      }
+    }
+
+    function sololetras(e) {
+      key = e.keyCode || e.which;
+      teclado = String.fromCharCode(key);
+      letras = ' abcdefghijklmñopqrstuvwxyz';
+      especiales = '8-37-38-46-164';
+      tecladoEspecial = false;
+
+      for (var i in especiales) {
+        if (key == especiales[i]) {
+          tecladoEspecial = true;
+        }
+      }
+      if (letras.indexOf(teclado) == -1 && !tecladoEspecial) {
+        return false;
+      }
+    }
+
+    fechaVencimiento.addEventListener('keyup', function () {
+      if (fechaVencimiento.value.length >= 2 && fechaVencimiento.value.length <= 3) {
+        fechaVencimiento.value = fechaVencimiento.value + "/";
+      }
+      else if (fechaVencimiento.value.length >= 6) {
+        fechaVencimiento.value = fechaVencimiento.value.substring(0, fechaVencimiento.value.length - 1);
+      }
+    });
+
+    codigoSeguridad.addEventListener("keyup", function () {
+      if (codigoSeguridad.value.length >= 4) {
+        codigoSeguridad.value = codigoSeguridad.value.substring(0, codigoSeguridad.value.length - 1);
+      }
+    });
+
+    dni.addEventListener('keyup', function () {
+      if (dni.value.length >= 9) {
+        dni.value = dni.value.substring(0, dni.value.length - 1);
+      }
+    });
+
+    email2.addEventListener('keyup', function () {
+      if (!email2.value == email1.value) {
+        errorEmail.className = 'show';
+        errorEmail.style.color = 'red';
+        errorEmail.style.marginLeft = '3rem';
+      }
+    });
+
+
+    // CARRITO - 
+    cantidad.addEventListener('keyup', function (e) {
+      if (cantidad.value < 1 || cantidad.value.length > 2) {
+        cantidad.value = cantidad.value.substring(0, cantidad.value.length - 1);
+      }
+      else if (cantidad.value > 50) {
+        var restar = cantidad.value - 50;
+        cantidad.value = cantidad.value - restar;
+        errorCantidad.classList.remove('hide');
+        setTimeout((e) => {
+          errorCantidad.classList.add('hide');
+        }, 1900);
+      }
+      else {
+        total.innerHTML = '$' + cantidad.value * 900;
+        precioTotal.innerHTML = 'ARS $' + cantidad.value * 900;
+      }
+    });
+
+    email1.addEventListener('keyup', function () {
+      correo.innerHTML = email1.value;
+    });
+
+    // RETIRO - VALIDACIÓN
+    var inputUno = document.getElementById("inputUno");
+    var inputDos = document.getElementById("inputDos");
+    var inputTres = document.getElementById("inputTres");
+    var inputCuatro = document.getElementById("inputCuatro");
+    var txtRetiro = document.getElementById("txtRetiro");
+
+    inputUno.addEventListener('click', function () {
+      txtRetiro.innerHTML = "Paraguay 5099, Palermo";
+    });
+
+    inputDos.addEventListener('click', function () {
+      txtRetiro.innerHTML = "San Martín 3861, Belgrano";
+    });
+
+    inputTres.addEventListener('click', function () {
+      txtRetiro.innerHTML = "Scalabrini Ortíz 2602, CABA";
+    });
+
+    inputCuatro.addEventListener('click', function () {
+      txtRetiro.innerHTML = "Av. Santa Fe 4000, Palermo";
+    });
+
+    // MEDIO DE PAGO
+    var retiroSeparador = document.getElementById("retiroSeparador");
+    var pagoSeparador = document.getElementById("pagoSeparador");
+    var pagoContent = document.getElementById("pagoContent");
+    var retiroContent = document.getElementById('retiroContent');
+    var flechas = document.getElementById("flechas");
+    var anterior = document.getElementById("anterior");
+    var continuar = document.getElementById("continuar");
+
+    function retiro() {
+      pagoContent.classList.remove('show');
+      pagoContent.classList.add('hide');
+      retiroContent.classList.add('show');
+      retiroContent.classList.remove('hide');
+      flechas.style.marginTop = "10rem";
+      anterior.classList.add('hide');
+      continuar.classList.remove('hide');
+    }
+
+    function pago() {
+      retiroContent.classList.remove('show');
+      retiroContent.classList.add('hide');
+      pagoContent.classList.add('show');
+      pagoContent.classList.remove('hide');
+      flechas.style.marginTop = "0.9rem";
+      continuar.classList.add('hide');
+      anterior.classList.remove('hide');
+    }
+
+    function habilitar() {
+      if (numeroTarjeta.value !== "" && fechaVencimiento.value !== "" && codigoSeguridad.value !== "" && dni.value != "" && email1.value != "" && email2.value != "" && nombreApellido.value != "") {
+        confirmar.classList.remove("disabled");
+      }
+      else {
+        confirmar.classList.add("disabled");
+      }
+    }
+
+    function prevent(e) {
+      e.preventDefault();
+    }
+
+    // MODAL
+    var correoIngresado = document.getElementById("correoIngresado");
+
+    email1.addEventListener('keyup', function () {
+      correoIngresado.innerHTML = email1.value;
+      correoIngresado.style.fontWeight = "bold";
+    });
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.modal');
+
+      var instances = M.Modal.init(elems, {
+      });
+    });
+
+// HEADER
+
+document.getElementById('inicio').addEventListener('mouseover', function () {
+      document.getElementById('ribbonInicio').style.borderLeft = '1.5rem solid #00897b';
+      document.getElementById('ribbonInicio').style.borderRight = '1.5rem solid #00897b';
+      document.getElementById('txtInicio').classList.remove('hide');
+
+    });
+
+    document.getElementById('inicio').addEventListener('mouseout', function () {
+      document.getElementById('ribbonInicio').style.borderLeft = '1.5rem solid #4db6ac';
+      document.getElementById('ribbonInicio').style.borderRight = '1.5rem solid #4db6ac';
+      setTimeout(function () { document.getElementById('txtInicio').classList.add('hide'); }, 2000);
+    });
+
+    document.getElementById('personalizar').addEventListener('mouseover', function () {
+      document.getElementById('ribbonPersonalizar').style.borderLeft = '1.5rem solid #00897b';
+      document.getElementById('ribbonPersonalizar').style.borderRight = '1.5rem solid #00897b';
+      document.getElementById('txtPersonalizar').classList.remove('hide');
+    });
+
+    document.getElementById('personalizar').addEventListener('mouseout', function () {
+      document.getElementById('ribbonPersonalizar').style.borderLeft = '1.5rem solid #4db6ac';
+      document.getElementById('ribbonPersonalizar').style.borderRight = '1.5rem solid #4db6ac';
+      setTimeout(function () { document.getElementById('txtPersonalizar').classList.add('hide'); }, 2000);
+    });
+
+    document.getElementById('comprar').addEventListener('mouseover', function () {
+      document.getElementById('ribbonComprar').style.borderLeft = '1.5rem solid #00897b';
+      document.getElementById('ribbonComprar').style.borderRight = '1.5rem solid #00897b';
+    });
+
+    document.getElementById('contactar').addEventListener('mouseover', function () {
+      document.getElementById('ribbonContactar').style.borderLeft = '1.5rem solid #00897b';
+      document.getElementById('ribbonContactar').style.borderRight = '1.5rem solid #00897b';
+      document.getElementById('txtContactar').classList.remove('hide');
+    });
+
+    document.getElementById('contactar').addEventListener('mouseout', function () {
+      document.getElementById('ribbonContactar').style.borderLeft = '1.5rem solid #4db6ac';
+      document.getElementById('ribbonContactar').style.borderRight = '1.5rem solid #4db6ac';
+      setTimeout(function () { document.getElementById('txtContactar').classList.add('hide'); }, 2000);
+    });
+  </script>
+</body>
+
+</html>

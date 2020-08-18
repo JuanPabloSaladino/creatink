@@ -45,10 +45,5 @@ function cambiarCorazon(){
   
 }
 
-var instance = M.Tabs.init(el, {
-    
-});
-
-
 
   

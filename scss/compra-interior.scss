@@ -37,38 +37,58 @@ body {
       width: 100%;
       .left li {
         width: 6.9rem;
-        margin-top: 0.375rem;
-      }
-      .right li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
         margin: 0;
-        a {
-          width: 6.2rem;
-          margin-top: 0.375rem;
-          img {
+      }
+      .right {
+        display: flex;
+        flex-direction: row;
+
+        li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin: 0;
+          &.seccion {
             width: 100%;
-            height: auto;
-            position: relative;
+            height: 100%;
+          }
+          a {
+            width: 6.2rem;
+            margin-top: 0.375rem;
+            img {
+              width: 100%;
+              height: auto;
+              position: relative;
+            }
+          }
+          .ribbon {
+            width: 0rem;
+            height: 3.125rem;
+            border-left: 1.5rem solid #4db6ac;
+            border-right: 1.5rem solid #4db6ac;
+            border-bottom: 1.5rem solid transparent;
+            margin-top: -2.375rem;
+            &:hover {
+              border-left: 1.5rem solid #00897b;
+              border-right: 1.5rem solid #00897b;
+            }
+          }
+          .active {
+            border-left: 1.5rem solid #00897b;
+            border-right: 1.5rem solid #00897b;
           }
         }
-        .ribbon {
-          width: 0rem;
-          height: 3.125rem;
-          border-left: 1.5rem solid #4db6ac;
-          border-right: 1.5rem solid #4db6ac;
-          border-bottom: 1.5rem solid transparent;
-          margin-top: -2.375rem;
-          &:hover {
-            height: 4.25rem;
-          }
-        }
-        .active {
-          border-left: 1.5rem solid #00897b;
-          border-right: 1.5rem solid #00897b;
-          height: 4.25rem;
+
+        .nombre-seccion {
+          font-size: 1.2rem;
+          font-weight: 600;
+          padding: 0;
+          margin: 0;
+          margin-top: 0.3rem;
+          margin-left: -0.6rem;
+          margin-right: 0.6rem;
+          height: 0rem;
         }
       }
     }
@@ -79,11 +99,7 @@ body {
     margin-bottom: 5em;
 
     .row {
-      .banner .responsive-img {
-        width: 55%;
-        margin-bottom: 4rem;
-      }
-
+      // IZQUIERDA - LIBRO
       .col {
         .personalizar-imagen {
           display: flex;
@@ -117,112 +133,187 @@ body {
         }
       }
 
-      .personalizar-container-botones {
-        background-color: #f7f0e6;
-        padding-bottom: 4rem;
-        border-radius: 0.5rem;
+      // DERECHA - SEPARADORES
+      .contenedor-separadores {
+        .separadores {
+          width: 100%;
+          margin-bottom: 0;
 
-        h5 {
-          font-weight: bold;
-          margin-top: 3rem;
-          margin-bottom: 2rem;
-          margin-left: 3.5rem;
-          text-align: left;
-        }
-
-        .cantidad {
-          form p {
-            display: flex;
-            align-items: center;
-            width: 80%;
-
-            #cantidad {
-              margin-left: 2rem;
+          .separador {
+            text-align: center;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            margin-bottom: 0;
+            border-top-left-radius: 1.7rem;
+            border-top-right-radius: 1.7rem;
+            background-color: #f7f0e6;
+            border-bottom: 0.1rem solid #eaddc4;
+            &:hover {
+              background-color: #ffca28;
+            }
+            a {
+              font-weight: 600;
+              font-size: 1.27rem;
+              text-transform: uppercase;
             }
           }
         }
+      }
+
+      // DERECHA - INFO
+      .personalizar-container-botones {
+        background-color: #f7f0e6;
+        border-radius: 0.5rem;
+        height: 38.5rem;
+
+        // DETALLE Y UBICACIÓN - SEPARADOR
         .row {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-end;
-
+          padding: 1rem;
           .col {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            width: 100%;
-
-            .row {
-              margin-left: 2rem;
-
-              .col {
-                margin-top: 1rem;
-                width: 100%;
+            table {
+              width: 100%;
+              tbody tr td {
+                font-size: 1.18rem;
+                &.negrita {
+                  font-weight: bold;
+                }
               }
-              .input-field {
-                input,
-                label,
-                span {
-                  font-size: 1.15rem;
-                  width: 100%;
+            }
+
+            .info-aclaracion {
+              margin-top: 5rem;
+              width: 100%;
+
+              p,
+              a {
+                font-size: 1.2rem;
+                font-weight: 400;
+              }
+              .redes {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                a {
+                  margin-left: 1.5rem;
+                  font-weight: bold;
+                  border-bottom: 0.1rem solid #4db6ac;
                 }
               }
             }
           }
-
-          form {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            width: 100%;
-
-            p {
-              margin-left: 3rem;
-              span {
-                font-size: 1.15rem;
-              }
-            }
-
-            .col h4 {
-              font-weight: bold;
-              margin-left: 2.6rem;
-            }
-          }
         }
 
-        .titulo {
-          margin-top: 3rem;
-        }
-
-        .btn-comprar {
-          display: flex;
-          justify-content: center;
-
-          .btn-large {
-            margin-top: 1rem;
-            padding: 2rem 6rem;
-            font-weight: bold;
-            font-size: 1.5rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
+        // TÍTULOS
+        h5 {
+          font-weight: bold;
+          margin-top: 0rem;
+          margin-bottom: 1rem;
+          margin-left: 1rem;
         }
       }
-    }
 
-    .contenedor-comprar {
-      display: flex;
-      justify-content: center;
-
-      .btn-large {
-        margin-top: 1rem;
-        padding: 2rem 6rem;
-        font-weight: bold;
-        font-size: 1.5rem;
+      .comprar {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        .btn-large {
+          padding: 2rem 6rem;
+          font-weight: bold;
+          font-size: 1.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 15rem;
+          margin-top: -5rem;
+          i {
+            margin-right: 1rem;
+          }
+        }
+        .agregar,
+        .comprar {
+          margin-right: 2rem;
+        }
+      }
+
+      // CARRITO DE COMPRAS
+      .carrito {
+        width: 78.59%;
+        padding-left: 8rem;
+        .banner {
+          width: 100%;
+          .responsive-img {
+            width: 70%;
+            margin-bottom: 2.5rem;
+            margin-top: 4rem;
+          }
+        }
+        .col {
+          .header {
+            text-transform: uppercase;
+            font-weight: 500;
+          }
+          .card {
+            padding: 0.3rem;
+            .card-image {
+              width: 11rem;
+              height: auto;
+              a img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .card-stacked {
+              .card-content {
+                padding-top: 0.88rem;
+                margin-bottom: 0rem;
+                .eliminar {
+                  display: flex;
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  cursor: pointer;
+                  p {
+                    margin-right: 0.4rem;
+                  }
+                }
+                p {
+                  font-size: 1.18rem;
+                }
+              }
+              .card-action {
+                display: flex;
+                padding-top: 0;
+                padding-bottom: 0;
+                width: 100%;
+                p {
+                  display: flex;
+                  font-size: 1.18rem;
+                }
+                input {
+                  margin-top: 0.5rem;
+                  margin-left: 1rem;
+                  width: 5rem;
+                }
+                h6 {
+                  font-size: 1.8rem;
+                  font-weight: bold;
+                  position: absolute;
+                  top: -0.9rem;
+                  right: 1rem;
+                }
+              }
+            }
+          }
+        }
+        .error {
+          margin: 0;
+          margin-left: -11rem;
+          width: 100%;
+          font-weight: bold;
+          font-size: 1.04rem;
+        }
       }
     }
   }
@@ -279,64 +370,6 @@ body {
       .pagos img {
         width: 3.5rem;
         margin-top: 1rem;
-      }
-    }
-  }
-
-  .archivo {
-    margin: 5rem auto;
-
-    .tabs {
-      background-color: #eaddc4;
-
-      .tab {
-        width: 40%;
-        border-top-left-radius: 1rem;
-        border-top-right-radius: 1rem;
-
-        i {
-          margin-right: 1rem;
-          margin-top: 0.9rem;
-        }
-
-        a {
-          color: #000;
-
-          &.active {
-            background-color: #f7f0e6;
-            color: #000;
-            border-top-left-radius: 0.5rem;
-            border-top-right-radius: 0.5rem;
-          }
-        }
-      }
-
-      .indicator {
-        background-color: #000;
-      }
-    }
-
-    .col {
-      background-color: #f7f0e6;
-      height: 32rem;
-      border-top-right-radius: 1rem;
-      border-bottom-left-radius: 1rem;
-      border-bottom-right-radius: 1rem;
-
-      table {
-        tbody {
-          font-size: 1.15rem;
-          td {
-            padding-left: 1rem;
-
-            &.negrita {
-              font-weight: bold;
-            }
-          }
-          .sin-borde {
-            border-bottom: none;
-          }
-        }
       }
     }
   }

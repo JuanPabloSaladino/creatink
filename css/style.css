@@ -34,12 +34,20 @@ body nav .sidenav .arriba {
 body nav .nav-wrapper {
   width: 100%;
 }
+body nav .nav-wrapper .right {
+  display: flex;
+  flex-direction: row;
+}
 body nav .nav-wrapper .right li {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 0;
+}
+body nav .nav-wrapper .right li.seccion {
+  width: 100%;
+  height: 100%;
 }
 body nav .nav-wrapper .right li a {
   width: 6.2rem;
@@ -59,12 +67,22 @@ body nav .nav-wrapper .right li .ribbon {
   margin-top: -2.375rem;
 }
 body nav .nav-wrapper .right li .ribbon:hover {
-  height: 4.25rem;
+  border-left: 1.5rem solid #00897b;
+  border-right: 1.5rem solid #00897b;
 }
 body nav .nav-wrapper .right li .active {
   border-left: 1.5rem solid #00897b;
   border-right: 1.5rem solid #00897b;
-  height: 4.25rem;
+}
+body nav .nav-wrapper .right .nombre-seccion {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.3rem;
+  margin-left: -0.6rem;
+  margin-right: 0.6rem;
+  height: 0rem;
 }
 body section .contenedor-slide {
   background-image: url(../img/slide.jpg);
@@ -116,10 +134,10 @@ body section .contenedor-slide .container .texto-personalizar .parrafo {
 }
 body section .contenedor-slide .container .texto-personalizar a {
   margin-top: 3.125rem;
-  padding: 1.5rem;
+  padding: 1.8rem;
   width: 100%;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,17 +148,24 @@ body main {
   padding: 1.125rem;
 }
 body main .banner .responsive-img {
-  width: 50em;
+  width: 45em;
 }
 body main .tarjetas .contenedor .col .row .col .card .card-image {
   padding: 0.5rem;
+  max-width: 2668.81px;
+  max-height: 2668.81px;
 }
 body main .tarjetas .contenedor .col .row .col .card .card-image img {
   border-radius: 0;
+  max-width: 2668.81px;
+  max-height: 2668.81px;
 }
 body main .tarjetas .contenedor .col .row .col .card .precio {
   margin-right: 2.35rem;
   font-size: 0.98rem;
+}
+body main .tarjetas .contenedor .col .row .col .card .precio.false {
+  font-weight: bold;
 }
 body main .tarjetas .contenedor .col .row .col .card .card-action {
   display: flex;
@@ -161,23 +186,33 @@ body main .tarjetas .contenedor .col .row .col .card .card-action .hilos .boton 
   width: 1.5rem;
   height: 1.5rem;
 }
-body main .info-materiales .container .row .parent .child .contenedor {
+body main .ver-mas {
+  margin-bottom: 5rem;
   display: flex;
-  justify-content: space-between;
-  padding-top: 4rem;
+  justify-content: center;
+  width: 100%;
 }
-body main .info-materiales .container .row .parent .child .contenedor .contenedor-icon i {
-  font-size: 3.5rem;
-}
-body main .info-materiales .container .row .parent .child .contenedor .contenedor-icon p {
+body main .ver-mas a {
+  width: 20rem;
+  padding: 2rem 4.2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
   font-size: 1.2rem;
 }
-body main .container .carousel {
-  padding-bottom: 57rem;
+body main .carousel {
+  padding-bottom: 58rem;
   margin-top: -19rem;
 }
-body main .container .carousel .carousel-item .col {
+body main .carousel .carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 24rem;
+}
+body main .carousel .carousel-item .col {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,32 +222,32 @@ body main .container .carousel .carousel-item .col {
   width: 29rem;
   border-radius: 0.313rem;
 }
-body main .container .carousel .carousel-item .col img {
+body main .carousel .carousel-item .col img {
   width: 5.625rem;
 }
-body main .container .carousel .carousel-item .col h6 {
+body main .carousel .carousel-item .col h6 {
   font-weight: 800;
   font-size: 1.25rem;
 }
-body main .container .carousel .carousel-item .col p {
+body main .carousel .carousel-item .col p {
   margin-top: 0;
 }
-body main .container .carousel .carousel-item .col .puntuacion {
+body main .carousel .carousel-item .col .puntuacion {
   width: 100%;
   text-align: center;
   padding: 0.125rem 0;
 }
-body main .container .carousel .carousel-item .col .collapsible {
+body main .carousel .carousel-item .col .collapsible {
   box-shadow: none;
   border: 0;
 }
-body main .container .carousel .carousel-item .col .collapsible li .collapsible-header {
+body main .carousel .carousel-item .col .collapsible li .collapsible-header {
   padding: 0;
   background-color: transparent;
   border: 0;
   box-shadow: none;
 }
-body main .container .carousel .carousel-item .col .collapsible .collapsible-body {
+body main .carousel .carousel-item .col .collapsible .collapsible-body {
   border-bottom: none;
   padding-bottom: 0;
 }
@@ -221,9 +256,61 @@ body main .container .carousel .carousel-item .col .collapsible .collapsible-bod
   padding-top: 6rem;
 }
 
-.banner-bordados,
-.banner-opiniones {
-  padding-top: 4rem;
+.info-materiales .container .row .parent .child .contenedor, .info-compartir .container .row .parent .child .contenedor {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3rem;
+}
+.info-materiales .container .row .parent .child .contenedor .contenedor-icon i, .info-compartir .container .row .parent .child .contenedor .contenedor-icon i {
+  font-size: 3.5rem;
+}
+.info-materiales .container .row .parent .child .contenedor .contenedor-icon p, .info-materiales .container .row .parent .child .contenedor .contenedor-icon a, .info-compartir .container .row .parent .child .contenedor .contenedor-icon p, .info-compartir .container .row .parent .child .contenedor .contenedor-icon a {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.info-compartir .container .row .parent .child .contenedor .contenedor-icon {
+  display: flex;
+  flex-direction: column;
+}
+.info-compartir .container .row .parent .child .contenedor .contenedor-icon a i {
+  font-size: 3.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.info-empezar-diseño {
+  margin: 5rem 0;
+}
+.info-empezar-diseño .row .txt {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.info-empezar-diseño .row .txt h4 {
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+.info-empezar-diseño .row .parent .child {
+  text-align: center;
+}
+.info-empezar-diseño .row .parent .child h5 {
+  font-size: 1.5rem;
+}
+.info-empezar-diseño .botones-empezar-diseño {
+  display: flex;
+  justify-content: center !important;
+}
+.info-empezar-diseño .botones-empezar-diseño .btn {
+  padding: 2rem 4.2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 3rem 5rem;
+  margin-bottom: 0rem;
 }
 
 .info {
@@ -235,8 +322,6 @@ body main .container .carousel .carousel-item .col .collapsible .collapsible-bod
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 6rem;
-  margin-bottom: 5rem;
   background-color: #160b0b;
   padding: 3rem;
 }
@@ -255,24 +340,17 @@ body main .container .carousel .carousel-item .col .collapsible .collapsible-bod
 .info .row .parent .child h5 {
   font-size: 1.5rem;
 }
-.info .row .parent .child .botones {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-.info .row .parent .child .botones a {
-  padding: 2rem 4.2rem;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
 
-.info-empezar-diseño {
-  margin: 0;
+footer .container {
+  width: 80%;
+}
+footer .container .row {
+  margin-bottom: 0;
+  padding-bottom: 0.5rem;
+}
+footer .container .row .redes-sociales img,
+footer .container .row .medios-pago img {
+  width: 3.8rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -307,21 +385,30 @@ body main .container .carousel .carousel-item .col .collapsible .collapsible-bod
     padding-top: 1rem;
   }
 }
-footer .container {
-  width: 80%;
+@media screen and (max-width: 750px) {
+  footer .container {
+    display: flex;
+  }
+  footer .container .row {
+    padding: 0rem;
+  }
+  footer .container .row .right {
+    float: none !important;
+    width: 100%;
+  }
 }
-footer .container .row {
-  margin-bottom: 0;
-  padding-bottom: 0.5rem;
-}
-footer .container .row .redes-sociales img,
-footer .container .row .medios-pago img {
-  width: 3.8rem;
-}
-
 @media screen and (max-width: 600px) {
+  body section .contenedor-slide {
+    height: 65vh;
+  }
   body section .contenedor-slide .container {
     width: 100%;
+  }
+  body section .contenedor-slide .container .texto-personalizar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 40%;
   }
   body footer .container {
     width: 100%;
@@ -337,27 +424,30 @@ body footer .container .row .medios-pago {
     margin-bottom: 1.5rem;
   }
 
-  body main .info-materiales .container .row .parent .child .contenedor {
+  .info-materiales .container .row .parent .child .contenedor, .info-compartir .container .row .parent .child .contenedor {
     flex-direction: column;
   }
-  body main .info-materiales .container .row .parent .child .contenedor .contenedor-icon {
+  .info-materiales .container .row .parent .child .contenedor .contenedor-icon, .info-compartir .container .row .parent .child .contenedor .contenedor-icon {
     padding-bottom: 3rem;
   }
 
   body main .banner .responsive-img {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .info-empezar-diseño {
+    width: 90%;
+    margin: 5rem auto;
+  }
+  .info-empezar-diseño .row .parent .child .botones-empezar-diseño {
+    height: auto;
+    flex-direction: column;
+    margin-top: 2.5rem;
+  }
+  .info-empezar-diseño .row .parent .child .botones-empezar-diseño a {
+    margin: 0;
+    margin-top: 1.5rem;
     width: 100%;
-  }
-}
-@media screen and (max-width: 500px) {
-  footer .container {
-    display: flex;
-  }
-  footer .container .row .right {
-    float: none !important;
-  }
-}
-@media screen and (max-width: 328px) {
-  .info .row .parent .child .botones a {
-    padding: 4rem;
   }
 }
