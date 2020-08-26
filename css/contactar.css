@@ -34,7 +34,11 @@ body nav .nav-wrapper {
 }
 body nav .nav-wrapper .left li {
   width: 6.9rem;
-  margin-top: 0.375rem;
+  margin: 0;
+}
+body nav .nav-wrapper .right {
+  display: flex;
+  flex-direction: row;
 }
 body nav .nav-wrapper .right li {
   display: flex;
@@ -42,6 +46,10 @@ body nav .nav-wrapper .right li {
   align-items: center;
   flex-direction: column;
   margin: 0;
+}
+body nav .nav-wrapper .right li.seccion {
+  width: 100%;
+  height: 100%;
 }
 body nav .nav-wrapper .right li a {
   width: 6.2rem;
@@ -61,12 +69,22 @@ body nav .nav-wrapper .right li .ribbon {
   margin-top: -2.375rem;
 }
 body nav .nav-wrapper .right li .ribbon:hover {
-  height: 4.25rem;
+  border-left: 1.5rem solid #00897b;
+  border-right: 1.5rem solid #00897b;
 }
 body nav .nav-wrapper .right li .active {
   border-left: 1.5rem solid #00897b;
   border-right: 1.5rem solid #00897b;
-  height: 4.25rem;
+}
+body nav .nav-wrapper .right .nombre-seccion {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.3rem;
+  margin-left: -0.6rem;
+  margin-right: 0.6rem;
+  height: 0rem;
 }
 body .contenedor {
   display: flex;
@@ -218,6 +236,86 @@ body .info-materiales .container .row .parent .child .contenedor1 .contenedor-ic
 }
 body .info-materiales .container .row .parent .child .contenedor1 .contenedor-icon p {
   font-weight: bold;
+  font-size: 1.2rem;
+}
+body .info-sub .container .row .parent .child {
+  margin: 0;
+}
+body .info-sub .container .row .parent .child .contenedor {
+  margin-top: 5rem;
+}
+body .info-sub .container .row .parent .child .contenedor .row .col {
+  margin: 0;
+  padding: 1rem;
+}
+body .info-sub .container .row .parent .child .contenedor .row .col .row .input-field {
+  display: flex;
+}
+body .info-sub .container .row .parent .child .contenedor .row .col .row .input-field input {
+  width: 60rem;
+  font-size: 2rem;
+}
+body .info-sub .container .row .parent .child .contenedor .row .col .row .input-field button {
+  width: 18rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+body .mapa h3 {
+  font-size: 2.28rem;
+  font-weight: 600;
+}
+body .mapa .info-redes .container .row .parent1 .child .contenedor {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  margin-top: 6rem;
+  margin-bottom: 0rem;
+}
+body .mapa .info-redes .container .row .parent1 .child .contenedor .contenedor-icon i {
+  font-size: 3.5rem;
+}
+body .mapa .info-redes .container .row .parent1 .child .contenedor .contenedor-icon p,
+body .mapa .info-redes .container .row .parent1 .child .contenedor .contenedor-icon a {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+body .mapa .info-redes .container .row .parent1 .child .contenedor .contenedor-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+body .mapa .info-redes .container .row .parent1 .child .contenedor .contenedor-icon a i {
+  font-size: 3.5rem;
+  margin-bottom: 0.6rem;
+}
+body .modal .modal-content {
+  text-align: center;
+}
+body .modal .modal-content h4 {
+  font-size: 2.3rem;
+}
+body .modal .modal-content h4.section {
+  font-size: 3rem;
+  font-weight: bold;
+}
+body .modal .modal-content p {
+  font-size: 1.2rem;
+  width: 100%;
+}
+body .modal .modal-content p.section {
+  margin-top: 3rem;
+}
+body .modal .modal-content p b {
+  font-size: 1.6rem;
+}
+body .modal-footer a {
   font-size: 1.2rem;
 }
 

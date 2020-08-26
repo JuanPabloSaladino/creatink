@@ -34,7 +34,11 @@ body nav .nav-wrapper {
 }
 body nav .nav-wrapper .left li {
   width: 6.9rem;
-  margin-top: 0.375rem;
+  margin: 0;
+}
+body nav .nav-wrapper .right {
+  display: flex;
+  flex-direction: row;
 }
 body nav .nav-wrapper .right li {
   display: flex;
@@ -42,6 +46,10 @@ body nav .nav-wrapper .right li {
   align-items: center;
   flex-direction: column;
   margin: 0;
+}
+body nav .nav-wrapper .right li.seccion {
+  width: 100%;
+  height: 100%;
 }
 body nav .nav-wrapper .right li a {
   width: 6.2rem;
@@ -61,12 +69,22 @@ body nav .nav-wrapper .right li .ribbon {
   margin-top: -2.375rem;
 }
 body nav .nav-wrapper .right li .ribbon:hover {
-  height: 4.25rem;
+  border-left: 1.5rem solid #00897b;
+  border-right: 1.5rem solid #00897b;
 }
 body nav .nav-wrapper .right li .active {
   border-left: 1.5rem solid #00897b;
   border-right: 1.5rem solid #00897b;
-  height: 4.25rem;
+}
+body nav .nav-wrapper .right .nombre-seccion {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.3rem;
+  margin-left: -0.6rem;
+  margin-right: 0.6rem;
+  height: 0rem;
 }
 body .contenedor-libro-colores {
   margin-top: 8em;
@@ -107,11 +125,12 @@ body .contenedor-libro-colores .row .personalizar-container-botones {
   background-color: #f7f0e6;
   padding-bottom: 4rem;
   border-radius: 0.5rem;
+  height: 44.5rem;
 }
 body .contenedor-libro-colores .row .personalizar-container-botones h5 {
   font-weight: bold;
-  margin-top: 6rem;
-  margin-bottom: 5.55rem;
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
   margin-left: 3.5rem;
   text-align: left;
 }
@@ -122,7 +141,7 @@ body .contenedor-libro-colores .row .personalizar-container-botones .colores .se
 body .contenedor-libro-colores .row .personalizar-container-botones .flechas {
   display: flex;
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 6rem;
   text-align: center;
 }
 body .contenedor-libro-colores .row .personalizar-container-botones .flechas .anterior {
@@ -153,7 +172,62 @@ body .contenedor-libro-colores .boton-color {
   width: 23.2em;
 }
 body .descarga-botones .row {
-  margin-top: -4.6rem;
+  margin-top: 0.4rem;
+}
+body .descarga-botones .row .col i {
+  font-size: 3.5rem;
+  cursor: pointer;
+}
+body .info {
+  background-image: url(../img/hoja-arrugada.png);
+  overflow: auto;
+  background-size: contain;
+  margin-top: 0;
+  z-index: 10;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #160b0b;
+  padding: 3rem;
+}
+body .info .row .txt {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+body .info .row .txt h4 {
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+body .info .row .parent .child {
+  text-align: center;
+}
+body .info .row .parent .child h5 {
+  font-size: 1.5rem;
+}
+body .info-compartir .container .row .parent .child .contenedor {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+body .info-compartir .container .row .parent .child .contenedor .contenedor-icon i {
+  font-size: 4.5rem;
+}
+body .info-compartir .container .row .parent .child .contenedor .contenedor-icon p,
+body .info-compartir .container .row .parent .child .contenedor .contenedor-icon a {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+body .info-compartir .container .row .parent .child .contenedor .contenedor-icon.margin {
+  margin-right: 16rem;
+}
+body .info-compartir .container .row .parent .child .contenedor .contenedor-icon {
+  display: flex;
+  flex-direction: column;
+}
+body .info-compartir .container .row .parent .child .contenedor .contenedor-icon a i {
+  font-size: 3.5rem;
+  margin-bottom: 0.6rem;
 }
 body .video {
   margin: 3.8rem auto;

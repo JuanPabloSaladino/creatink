@@ -220,7 +220,8 @@
       <div class="btn-comprar comprar">
         <a class="waves-effect waves-light btn-large agregar true" id="agregar"><i class="material-icons"
             id="agregarIcon">add</i>AGREGAR</a>
-        <a class="waves-effect waves-light btn-large comprar" href="compra-interior2.html"><i class="material-icons">shopping_cart</i>COMPRAR</a>
+        <a class="waves-effect waves-light btn-large comprar" href="compra-interior2.html"><i
+            class="material-icons">shopping_cart</i>COMPRAR</a>
       </div>
 
       <!-- AGREGAR AL CARRITO -->
@@ -250,7 +251,8 @@
               </div>
               <div class="card-action">
                 <p>Cantidad:</p>
-                <input type="text" id="cantidad" value="1" onkeypress="return solonumeros(event)" onpaste="return false"/>
+                <input type="text" id="cantidad" value="1" onkeypress="return solonumeros(event)"
+                  onpaste="return false" />
                 <h6 class="center section" id="total">$900</h6>
               </div>
             </div>
@@ -418,9 +420,9 @@
       e.preventDefault();
     }
 
-// HEADER
+    // HEADER
 
-document.getElementById('inicio').addEventListener('mouseover', function () {
+    document.getElementById('inicio').addEventListener('mouseover', function () {
       document.getElementById('ribbonInicio').style.borderLeft = '1.5rem solid #00897b';
       document.getElementById('ribbonInicio').style.borderRight = '1.5rem solid #00897b';
       document.getElementById('txtInicio').classList.remove('hide');

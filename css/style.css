@@ -256,15 +256,20 @@ body main .carousel .carousel-item .col .collapsible .collapsible-body {
   padding-top: 6rem;
 }
 
-.info-materiales .container .row .parent .child .contenedor, .info-compartir .container .row .parent .child .contenedor {
+.info-materiales .container .row .parent .child .contenedor,
+.info-compartir .container .row .parent .child .contenedor {
   display: flex;
   justify-content: space-around;
   padding-top: 3rem;
 }
-.info-materiales .container .row .parent .child .contenedor .contenedor-icon i, .info-compartir .container .row .parent .child .contenedor .contenedor-icon i {
+.info-materiales .container .row .parent .child .contenedor .contenedor-icon i,
+.info-compartir .container .row .parent .child .contenedor .contenedor-icon i {
   font-size: 3.5rem;
 }
-.info-materiales .container .row .parent .child .contenedor .contenedor-icon p, .info-materiales .container .row .parent .child .contenedor .contenedor-icon a, .info-compartir .container .row .parent .child .contenedor .contenedor-icon p, .info-compartir .container .row .parent .child .contenedor .contenedor-icon a {
+.info-materiales .container .row .parent .child .contenedor .contenedor-icon p,
+.info-materiales .container .row .parent .child .contenedor .contenedor-icon a,
+.info-compartir .container .row .parent .child .contenedor .contenedor-icon p,
+.info-compartir .container .row .parent .child .contenedor .contenedor-icon a {
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -424,10 +429,12 @@ body footer .container .row .medios-pago {
     margin-bottom: 1.5rem;
   }
 
-  .info-materiales .container .row .parent .child .contenedor, .info-compartir .container .row .parent .child .contenedor {
+  .info-materiales .container .row .parent .child .contenedor,
+.info-compartir .container .row .parent .child .contenedor {
     flex-direction: column;
   }
-  .info-materiales .container .row .parent .child .contenedor .contenedor-icon, .info-compartir .container .row .parent .child .contenedor .contenedor-icon {
+  .info-materiales .container .row .parent .child .contenedor .contenedor-icon,
+.info-compartir .container .row .parent .child .contenedor .contenedor-icon {
     padding-bottom: 3rem;
   }
 

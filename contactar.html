@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -64,22 +64,28 @@
           </li>
         </ul>
         <ul class="right">
-          <li>
+          <li class="seccion" id="inicio">
             <a href="index.html"><img src="img/home.png" alt="Home" /></a>
-            <div class="ribbon"></div>
+            <div class="ribbon" id="ribbonInicio"></div>
           </li>
-          <li>
+          <a href="index.html" class="nombre-seccion grey-text text-darken-3 hide" id="txtInicio">Inicio</a>
+          <li class="seccion" id="personalizar">
             <a href="personalizar1.html"><img src="img/personalizar.png" alt="Personalizar" /></a>
-            <div class="ribbon"></div>
+            <div class="ribbon" id="ribbonPersonalizar"></div>
           </li>
-          <li>
-            <a href="compra.html"><img src="img/comprar.png" alt="Comprar" /></a>
-            <div class="ribbon"></div>
+          <a href="personalizar1.html" class="nombre-seccion grey-text text-darken-3 hide"
+            id="txtPersonalizar">Personalizar</a>
+          <li class="seccion" id="comprar">
+            <a href="compra.html" id="comprar"><img src="img/comprar.png" alt="Comprar" /></a>
+            <div class="ribbon" id="ribbonComprar"></div>
           </li>
-          <li>
-            <a href="contactar.html"><img src="img/contactar.png" alt="Contacto" /></a>
-            <div class="ribbon active"></div>
+          <a href="compra.html" class="nombre-seccion grey-text text-darken-3 hide" id="txtComprar">Comprar</a>
+          <li class="seccion" id="contactar">
+            <a href="contactar.html" id="contactar"><img src="img/contactar.png" alt="Contacto" /></a>
+            <div class="ribbon active" id="ribbonContactar"></div>
           </li>
+          <a href="contactar.html" class="nombre-seccion grey-text text-darken-3 hide-on-med-and-down"
+            id="txtContactar">Contactar</a>
         </ul>
       </div>
     </nav>
@@ -142,8 +148,121 @@
       </div>
     </section>
 
-    <div id="myMap" style="height: 600px;"></div>
   </main>
+
+  <section>
+
+    <!-- SUB - INFO  -->
+    <div class="info-materiales info-sub info section">
+      <div class="container">
+        <div class="row">
+          <div class="txt col-lg-12">
+            <h4>Sé el primero en enterarte de todas las novedades, ferias y promociones</h4>
+          </div>
+          <div class="parent">
+            <div class="child">
+              <h5 class="grey-text text-darken-3">Suscríbite ingresando tu correo electrónico para enviarte nuestras
+                novedades</h5>
+              <div class="contenedor section">
+                <div class="row">
+                  <form class="col s12">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input id="emailSub" type="email" class="validate" placeholder="Correo electrónico">
+                        <label for="emailSub"></label>
+                        <div class="btn-comprar">
+                          <button data-target="modal1" class="btn-large modal-trigger disabled" id="btnSub"
+                            onclick="return prevent(event)">
+                            <i class="material-icons left">email</i>SUSCRÍBETE
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mapa">
+      <h3 class="section">Encuentra nuestros puestos más cercanos a tí</h3>
+      <div id="myMap" style="height: 600px;" class="section"></div>
+      <div class="mapa-info section">
+        <h5 class="section">Navegá por el mapa y conocé nuestro local y puntos de retiro de productos</h5>
+        <h5 class="section"><b>*Los horarios y días pueden verse modificados</b> por clima desfavorable o eventos
+          festivos, te recomendamos seguirnos en nuestras redes sociales para más información y actualizaciones</h5>
+
+        <!-- INFO COMPARTIR -->
+        <div class="info-redes">
+          <div class="container">
+            <div class="row">
+              <div class="parent1">
+                <div class="child">
+                  <div class="contenedor">
+                    <div class="contenedor-icon">
+                      <a href="https://ctt.ac/0csQF" target="_blank" class="black-text"><i
+                          class="fab fa-twitter"></i></a>
+                      <a href="https://ctt.ac/0csQF" target="_blank" class="black-text">Twitter</a>
+                    </div>
+
+                    <div class="contenedor-icon">
+                      <a href="https://api.whatsapp.com/send?phone=+541152198873&text=&source=&data=&app_absent="
+                        target="_blank" class="black-text"><i class="fab fa-whatsapp"></i></a>
+                      <a href="https://api.whatsapp.com/send?phone=+541152198873&text=&source=&data=&app_absent="
+                        target="_blank" class="black-text">WhatsApp</a>
+                    </div>
+
+                    <div class="contenedor-icon">
+                      <a href="https://www.instagram.com/" target="_blank" class="black-text"><i
+                          class="fab fa-instagram"></i></a>
+                      <a href="https://www.instagram.com/" target="_blank" class="black-text">Instagram</a>
+                    </div>
+
+                    <div class="contenedor-icon">
+                      <a href="https://www.facebook.com/sharer/sharer.php?u=www.creatink.surge.sh" target="_blank"
+                        class="black-text"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://www.facebook.com/sharer/sharer.php?u=www.creatink.surge.sh" target="_blank"
+                        class="black-text">Facebook</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large amber darken-1">
+        <i class="large material-icons">message</i>
+      </a>
+      <ul>
+        <li><a class="btn-floating green accent-4"><i class="fab fa-whatsapp"></i></a></li>
+        <li><a class="btn-floating light-blue accent-4"><i class="fab fa-twitter"></i></a></li>
+        <li><a class="btn-floating blue darken-4"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a class="btn-floating pink"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+    <!-- MODAL -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4 class="section">¡Felicidades!</h4>
+        <h4>Tu suscripción se ha realizado con éxito</h4>
+        <p class="section">
+          Te enviamos un correo de confirmación a <b id="correoIngresado"></b>. Si no lo has recibido dirígite a
+          "Spam" o "Promociones".
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">ACEPTAR</a>
+      </div>
+    </div>
+
+  </section>
 
   <section>
     <!-- INFO  -->
@@ -280,6 +399,7 @@
       </div>
     </div>
   </footer>
+
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
     integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
     crossorigin=""></script>
@@ -297,21 +417,21 @@
     });
 
     let marker1 = L.marker([-34.580020, -58.429762], { icon: iconMarker1 })
-    .bindPopup("Taller Creatink - Paraguay 5099, Palermo")
-    .addTo(myMap);
+      .bindPopup("Taller Creatink - Paraguay 5099, Palermo")
+      .addTo(myMap);
 
     let marker2 = L.marker([-34.559433, -58.455870], { icon: iconMarker1 })
-    .bindPopup("San Martín 3861, Belgrano")
-    .addTo(myMap);
+      .bindPopup("San Martín 3861, Belgrano")
+      .addTo(myMap);
 
     let marker3 = L.marker([-34.577915, -58.408985], { icon: iconMarker1 })
-    .bindPopup("Scalabrini Ortíz 2602, CABA")
-    .addTo(myMap);
+      .bindPopup("Scalabrini Ortíz 2602, CABA")
+      .addTo(myMap);
 
     let marker4 = L.marker([-34.582360, -58.420152], { icon: iconMarker1 })
-    .bindPopup("Av. Santa Fe 4000, Palermo")
-    .addTo(myMap);
-    
+      .bindPopup("Av. Santa Fe 4000, Palermo")
+      .addTo(myMap);
+
     myMap.doubleClickZoom.disable();
 
     myMap.on('dblclick', e => {
@@ -331,39 +451,88 @@
     var email1 = document.getElementById("email1");
     var email2 = document.getElementById("email2");
     var errorEmail = document.getElementById("errorEmail");
+    var emailSub = document.getElementById("emailSub");
+    var btnSub = document.getElementById("btnSub");
 
-    email2.addEventListener('keyup', function () {
-      if (!email2.value == email1.value) {
-        errorEmail.className = 'show';
-        errorEmail.style.color = 'red';
-        errorEmail.style.marginLeft = '3rem';
+    emailSub.addEventListener("keyup", function () {
+      if (emailSub.value !== "") {
+        btnSub.classList.remove("disabled");
+      }
+      else {
+        btnSub.classList.add("disabled");
       }
     });
-    cantidad.addEventListener('keyup', function () {
-      total.innerHTML = 'TOTAL: $' + cantidad.value * 900;
+
+    // MODAL
+    var correoIngresado = document.getElementById("correoIngresado");
+
+    emailSub.addEventListener('keyup', function () {
+      correoIngresado.innerHTML = emailSub.value;
+      correoIngresado.style.fontWeight = "bold";
     });
-    comprar.addEventListener("click", function () {
-      if (!cantidad.value || cantidad.value < 1 || cantidad.value > 50) {
-        error.style.color = "red";
-        error.className = "show";
-      } else {
-        error.className = "hide";
-        document.getElementById('paso1Elm1').className = 'hide';
-        document.getElementById('paso1Elm2').className = 'hide';
-        document.getElementById('paso1Elm3').className = 'hide';
-        document.getElementById('paso1Elm4').className = 'hide';
-        document.getElementById('paso1Elm5').className = 'hide';
-        document.getElementById('paso2Elm1').className = 'show';
-        document.getElementById('paso2Elm2').className = 'show';
-        document.getElementById('paso2Elm3').className = 'show';
-      }
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.modal');
+
+      var instances = M.Modal.init(elems, {
+      });
     });
+
+    function prevent(e) {
+      e.preventDefault();
+    }
 
     document.addEventListener('DOMContentLoaded', function () {
       var elems = document.querySelectorAll('.modal');
       var instances = M.Modal.init(elems, {
 
       });
+    });
+
+    // HEADER
+
+    document.getElementById('inicio').addEventListener('mouseover', function () {
+      document.getElementById('ribbonInicio').style.borderLeft = '1.5rem solid #00897b';
+      document.getElementById('ribbonInicio').style.borderRight = '1.5rem solid #00897b';
+      document.getElementById('txtInicio').classList.remove('hide');
+
+    });
+
+    document.getElementById('inicio').addEventListener('mouseout', function () {
+      document.getElementById('ribbonInicio').style.borderLeft = '1.5rem solid #4db6ac';
+      document.getElementById('ribbonInicio').style.borderRight = '1.5rem solid #4db6ac';
+      setTimeout(function () { document.getElementById('txtInicio').classList.add('hide'); }, 2000);
+    });
+
+    document.getElementById('contactar').addEventListener('mouseover', function () {
+      document.getElementById('ribbonContactar').style.borderLeft = '1.5rem solid #00897b';
+      document.getElementById('ribbonContactar').style.borderRight = '1.5rem solid #00897b';
+    });
+
+    document.getElementById('comprar').addEventListener('mouseover', function () {
+      document.getElementById('ribbonComprar').style.borderLeft = '1.5rem solid #00897b';
+      document.getElementById('ribbonComprar').style.borderRight = '1.5rem solid #00897b';
+      document.getElementById('txtComprar').classList.remove('hide');
+    });
+
+    document.getElementById('comprar').addEventListener('mouseover', function () {
+      document.getElementById('ribbonComprar').style.borderLeft = '1.5rem solid #00897b';
+      document.getElementById('ribbonComprar').style.borderRight = '1.5rem solid #00897b';
+      setTimeout(function () { document.getElementById('txtComprar').classList.add('hide'); }, 2000);
+    });
+
+
+    document.getElementById('personalizar').addEventListener('mouseover', function () {
+      document.getElementById('ribbonPersonalizar').style.borderLeft = '1.5rem solid #00897b';
+      document.getElementById('ribbonPersonalizar').style.borderRight = '1.5rem solid #00897b';
+      document.getElementById('txtPersonalizar').classList.remove('hide');
+    });
+
+    document.getElementById('personalizar').addEventListener('mouseout', function () {
+      document.getElementById('ribbonPersonalizar').style.borderLeft = '1.5rem solid #4db6ac';
+      document.getElementById('ribbonPersonalizar').style.borderRight = '1.5rem solid #4db6ac';
+      setTimeout(function () { document.getElementById('txtPersonalizar').classList.add('hide'); }, 2000);
     });
   </script>
 </body>

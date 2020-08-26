@@ -1,385 +1,368 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personalización - Paso 2</title>
-    <link rel="icon" type="image/png" href="img/iso.png" />
-    <script
-      src="https://kit.fontawesome.com/222a3ac483.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Open+Sans:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <link rel="stylesheet" href="css/personalizar2.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="amber lighten-1">
-        <ul id="slide-out" class="sidenav">
-          <li>
-            <div class="user-view">
-              <div class="background">
-                <img src="img/slide.jpg" />
-              </div>
-              <a href="index.html"
-                ><img class="circle" src="img/iso.png" alt="Logo Creatink"
-              /></a>
-              <a href="#name"><h2 class="white-text name">Creatink</h2></a>
-            </div>
-          </li>
-          <li>
-            <a href="personalizar1.html"
-              ><i class="material-icons">mode_edit</i>Crear propio cuaderno</a
-            >
-          </li>
-          <li><div class="divider"></div></li>
-          <li class="menu-movil arriba">
-            <img class="responsive-img" src="img/home.png" alt="Home" />
-            <a class="waves-effect" href="index.html">Inicio</a>
-          </li>
-          <li class="menu-movil">
-            <img
-              class="responsive-img"
-              src="img/personalizar.png"
-              alt="Personalizar"
-            />
-            <a class="waves-effect" href="personalizar1.html">Personalizar</a>
-          </li>
-          <li class="menu-movil">
-            <img class="responsive-img" src="img/comprar.png" alt="Comprar" />
-            <a class="waves-effect" href="compra-interior.html">Comprar</a>
-          </li>
-          <li class="menu-movil">
-            <img
-              class="responsive-img"
-              src="img/contactar.png"
-              alt="Contactar"
-            />
-            <a class="waves-effect" href="contactar.html">Contactar</a>
-          </li>
-        </ul>
-        <a href="#" data-target="slide-out" class="sidenav-trigger"
-          ><i class="material-icons">menu</i></a
-        >
 
-        <div class="nav-wrapper container">
-          <ul class="left">
-            <li>
-              <img
-                class="responsive-img"
-                src="img/iso.png"
-                alt="Isologo Creatink"
-              />
-            </li>
-          </ul>
-          <ul class="right">
-            <li>
-              <a href="index.html"><img src="img/home.png" alt="Home" /></a>
-              <div class="ribbon"></div>
-            </li>
-            <li>
-              <a href="personalizar1.html"
-                ><img src="img/personalizar.png" alt="Personalizar"
-              /></a>
-              <div class="ribbon active"></div>
-            </li>
-            <li>
-              <a href="compra.html"
-                ><img src="img/comprar.png" alt="Comprar"
-              /></a>
-              <div class="ribbon"></div>
-            </li>
-            <li>
-              <a href="contactar.html"
-                ><img src="img/contactar.png" alt="Contacto"
-              /></a>
-              <div class="ribbon"></div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personalización - Paso 2</title>
+  <link rel="icon" type="image/png" href="img/iso.png" />
+  <script src="https://kit.fontawesome.com/222a3ac483.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Open+Sans:wght@300;400;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link rel="stylesheet" href="css/personalizar2.css" />
+</head>
 
-    <div class="container contenedor-libro-colores">
-      <div class="row cosas">
-        <section class="banner banner-animales center section">
-          <img
-            class="responsive-img"
-            src="img/banner-personaliza.png"
-            alt="Personalizá tu cuaderno"
-          />
-        </section>
-        <div
-          class="col s7 m7 xl7 l7 personalizar-container-imagen"
-          id="personalizar-container-imagen"
-        >
-          <nav>
-            <div class="nav-wrapper">
-              <div class="col s12 teal lighten-2">
-                <a href="personalizar1.html" class="breadcrumb">Hoja</a>
-                <a href="personalizar2.html" class="breadcrumb">Tapa</a>
-              </div>
-            </div>
-          </nav>
-          <div class="personalizar-imagen" id="cuaderno">
-            <button
-              class="btn waves-effect waves-light boton-color"
-              id="borde"
-            ></button>
-          </div>
-          <div class="ribbon" id="ribbon"></div>
-        </div>
-        <div
-          class="col s5 m5 xl5 l5 center-align personalizar-container-botones"
-        >
-          <h5 class="teal-text text-lighten-1 colores">ENCUADRE DEL BORDADO</h5>
-
-          <div class="row colores">
-            <div class="col s4">
-              <a
-                onclick="cambiarTapaCuadrada()"
-                class="grey-text text-darken-4"
-              >
-                <div><i id="cuadrado" class="far fa-square"></i></div>
-                <h6 class="personalizar-descripcion">Cuadrado</h6>
-              </a>
-            </div>
-            <div class="col s4">
-              <a onclick="cambiarTapaCirculo()" class="grey-text text-darken-4">
-                <div><i id="circulo" class="far fa-circle"></i></div>
-                <h6 class="personalizar-descripcion">Círculo</h6>
-              </a>
-            </div>
-          </div>
-
-          <h5 class="teal-text text-lighten-1 colores">SEPARADOR</h5>
-
-          <div class="row colores">
-            <div class="col s4">
-              <div>
-                <i
-                  id="conSeparador"
-                  class="fas fa-bookmark"
-                  onclick="seleccionarConSeparador()"
-                ></i>
-              </div>
-              <h6 class="personalizar-descripcion separador">Con separador</h6>
-            </div>
-            <div class="col s4">
-              <div>
-                <i
-                  id="sinSeparador"
-                  class="far fa-bookmark"
-                  onclick="seleccionarSinSeparador()"
-                ></i>
-              </div>
-              <h6 class="personalizar-descripcion separador">Sin separador</h6>
-            </div>
-          </div>
-
-          <div class="col s5 m5 l5 xl5 flechas">
-            <a
-              href="personalizar1.html"
-              class="col s4 m1 l1 xl1 anterior grey-text text-darken-4"
-            >
-              <i class="large material-icons">keyboard_arrow_left</i>
-              <h6>Anterior</h6>
-            </a>
-            <a
-              href="personalizar3.html"
-              class="col s4 m1 l1 xl1 siguiente grey-text text-darken-4"
-            >
-              <h6>Siguiente</h6>
-              <i class="large material-icons">keyboard_arrow_right</i>
-            </a>
-          </div>
-        </div>
-
-        <div class="row descarga-botones">
-          <div class="col m7">
-            <div class="row">
-              <div class="col m3"></div>
-              <div class="col m3 center">
-                <i
-                  class="large material-icons tooltipped"
-                  data-position="bottom"
-                  data-tooltip="Subir diseño"
-                  >attach_file</i
-                >
-              </div>
-              <div class="col m3">
-                <i
-                  class="large material-icons tooltipped"
-                  data-position="bottom"
-                  data-tooltip="Guardar diseño"
-                  onclick="M.toast({html: 'Se guardó tu diseño'})"
-                  >cloud_download</i
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container descarga">
-      <div class="row">
-        <div class="col s4 m4 l4 xl4">
-          <img src="img/guarda.png" alt="" />
-        </div>
-        <div class="col s4 m4 l4 xl4">
-          <img src="img/descarga.png" alt="" />
-        </div>
-        <div class="col s4 m4 l4 xl4">
-          <img src="img/continua.png" alt="" />
-        </div>
-      </div>
-    </div>
-
-    <div class="fixed-action-btn hide-on-med-and-up">
-      <a class="btn-floating btn-large teal lighten-1">
-        <i class="large material-icons">mode_edit</i>
-      </a>
-      <ul>
+<body>
+  <header>
+    <nav class="amber lighten-1">
+      <ul id="slide-out" class="sidenav">
         <li>
-          <a class="btn-floating amber"
-            ><i class="material-icons">cloud_download</i></a
-          >
+          <div class="user-view">
+            <div class="background">
+              <img src="img/slide.jpg" />
+            </div>
+            <a href="index.html"><img class="circle" src="img/iso.png" alt="Logo Creatink" /></a>
+            <a href="#name">
+              <h2 class="white-text name">Creatink</h2>
+            </a>
+          </div>
         </li>
         <li>
-          <a
-            class="btn-floating amber"
-            onclick="M.toast({html: 'Se guardó tu diseño'})"
-            ><i class="material-icons">attach_file</i></a
-          >
+          <a href="personalizar1.html"><i class="material-icons">mode_edit</i>Crear propio cuaderno</a>
+        </li>
+        <li>
+          <div class="divider"></div>
+        </li>
+        <li class="menu-movil arriba">
+          <img class="responsive-img" src="img/home.png" alt="Home" />
+          <a class="waves-effect" href="index.html">Inicio</a>
+        </li>
+        <li class="menu-movil">
+          <img class="responsive-img" src="img/personalizar.png" alt="Personalizar" />
+          <a class="waves-effect" href="personalizar1.html">Personalizar</a>
+        </li>
+        <li class="menu-movil">
+          <img class="responsive-img" src="img/comprar.png" alt="Comprar" />
+          <a class="waves-effect" href="compra-interior.html">Comprar</a>
+        </li>
+        <li class="menu-movil">
+          <img class="responsive-img" src="img/contactar.png" alt="Contactar" />
+          <a class="waves-effect" href="contactar.html">Contactar</a>
         </li>
       </ul>
-    </div>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
-    <div class="container video section">
-      <div class="video-container responsive-video">
-        <iframe
-          src="http://www.youtube.com/embed/cOWyJw_fBJo"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
+      <div class="nav-wrapper container">
+        <ul class="left">
+          <li>
+            <img class="responsive-img" src="img/iso.png" alt="Isologo Creatink" />
+          </li>
+        </ul>
+        <ul class="right">
+          <li class="seccion" id="inicio">
+            <a href="index.html"><img src="img/home.png" alt="Home" /></a>
+            <div class="ribbon" id="ribbonInicio"></div>
+          </li>
+          <a href="index.html" class="nombre-seccion grey-text text-darken-3 hide" id="txtInicio">Inicio</a>
+          <li class="seccion" id="personalizar">
+            <a href="personalizar1.html"><img src="img/personalizar.png" alt="Personalizar" /></a>
+            <div class="ribbon active" id="ribbonPersonalizar"></div>
+          </li>
+          <a href="personalizar1.html" class="nombre-seccion grey-text text-darken-3 hide-on-med-and-down"
+            id="txtPersonalizar">Personalizar</a>
+          <li class="seccion" id="comprar">
+            <a href="compra.html" id="comprar"><img src="img/comprar.png" alt="Comprar" /></a>
+            <div class="ribbon" id="ribbonComprar"></div>
+          </li>
+          <a href="compra.html" class="nombre-seccion grey-text text-darken-3 hide" id="txtComprar">Comprar</a>
+          <li class="seccion" id="contactar">
+            <a href="contactar.html" id="contactar"><img src="img/contactar.png" alt="Contacto" /></a>
+            <div class="ribbon" id="ribbonContactar"></div>
+          </li>
+          <a href="contactar.html" class="nombre-seccion grey-text text-darken-3 hide" id="txtContactar">Contactar</a>
+        </ul>
       </div>
-    </div>
+    </nav>
+  </header>
 
-    <footer class="page-footer amber lighten-1">
-      <div class="container center">
-        <div class="row">
-          <div class="redes-sociales left">
-            <div class="col">
-              <a href="https://www.facebook.com"
-                ><img clas src="img/Facebook.png" alt="Facebook"
-              /></a>
-            </div>
-            <div class="col">
-              <a href="https://www.instagram.com"
-                ><img clas src="img/Instagram.png" alt="Instagram"
-              /></a>
-            </div>
-            <div class="col">
-              <a href="https://www.twitter.com"
-                ><img clas src="img/Twitter.png" alt="Twitter"
-              /></a>
-            </div>
-            <div class="col">
-              <a href="https://www.youtube.com"
-                ><img clas src="img/Youtube.png" alt="Youtube"
-              /></a>
+  <div class="container contenedor-libro-colores">
+    <div class="row cosas">
+      <div class="col s7 m7 xl7 l7 personalizar-container-imagen" id="personalizar-container-imagen">
+        <nav>
+          <div class="nav-wrapper">
+            <div class="col s12 teal lighten-2">
+              <a href="personalizar1.html" class="breadcrumb">Hoja</a>
+              <a href="personalizar2.html" class="breadcrumb">Tapa</a>
             </div>
           </div>
+        </nav>
+        <div class="personalizar-imagen" id="cuaderno">
+          <button class="btn waves-effect waves-light boton-color" id="borde"></button>
+        </div>
+        <div class="ribbon" id="ribbon"></div>
+      </div>
+      <div class="col s5 m5 xl5 l5 center-align personalizar-container-botones">
 
-          <div class="medios-pago right">
-            <div class="col">
-              <a href="https://www.mercadopago.com.ar"
-                ><img clas src="img/Mercado-Pago.png" alt="Mercado Pago"
-              /></a>
+        <!-- ENCUADRE -->
+        <h5 class="teal-text text-lighten-1 colores">ENCUADRE DEL BORDADO</h5>
+        <div class="row colores">
+          <div class="col s4">
+            <a onclick="cambiarTapaCuadrada()" class="grey-text text-darken-4">
+              <div><i id="cuadrado" class="far fa-square"></i></div>
+              <h6 class="personalizar-descripcion">Cuadrado</h6>
+            </a>
+          </div>
+          <div class="col s4">
+            <a onclick="cambiarTapaCirculo()" class="grey-text text-darken-4">
+              <div><i id="circulo" class="far fa-circle"></i></div>
+              <h6 class="personalizar-descripcion">Círculo</h6>
+            </a>
+          </div>
+        </div>
+
+        <!-- SEPARADOR -->
+        <h5 class="teal-text text-lighten-1 colores subtitulo">SEPARADOR</h5>
+        <div class="row colores">
+          <div class="col s4">
+            <div>
+              <i id="conSeparador" class="fas fa-bookmark" onclick="seleccionarConSeparador()"></i>
             </div>
-            <div class="col">
-              <a href="https://www.mastercard.com.ar"
-                ><img clas src="img/MasterCard.png" alt="Mastercard"
-              /></a>
+            <h6 class="personalizar-descripcion separador">Con separador</h6>
+          </div>
+          <div class="col s4">
+            <div>
+              <i id="sinSeparador" class="far fa-bookmark" onclick="seleccionarSinSeparador()"></i>
             </div>
-            <div class="col">
-              <a href="https://www.paypal.com"
-                ><img clas src="img/PayPal.png" alt="Paypal"
-              /></a>
+            <h6 class="personalizar-descripcion separador">Sin separador</h6>
+          </div>
+        </div>
+
+        <!-- FLECHAS -->
+        <div class="col s5 m5 l5 xl5 flechas">
+          <a href="personalizar1.html" class="col s4 m1 l1 xl1 anterior grey-text text-darken-4">
+            <i class="large material-icons">keyboard_arrow_left</i>
+            <h6>Anterior</h6>
+          </a>
+          <a href="personalizar3.html" class="col s4 m1 l1 xl1 siguiente grey-text text-darken-4">
+            <h6>Siguiente</h6>
+            <i class="large material-icons">keyboard_arrow_right</i>
+          </a>
+        </div>
+      </div>
+
+      <!-- DESCARGAR - BOTONES -->
+      <div class="row descarga-botones">
+        <div class="col m7">
+          <div class="row">
+            <div class="col m3"></div>
+            <div class="col m3 center">
+              <i class="large material-icons tooltipped" data-position="bottom"
+                data-tooltip="Añadir diseño">file_upload</i>
             </div>
-            <div class="col">
-              <a href="https://www.naranja.com"
-                ><img clas src="img/Naranja.png" alt="Tarjeta Naranja"
-              /></a>
+            <div class="col m3">
+              <i class="large material-icons tooltipped" data-position="bottom" data-tooltip="Descargar diseño"
+                onclick="M.toast({html: 'Se guardó tu diseño'})">save</i>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </div>
 
-    <script src="js/materialize.min.js"></script>
-    <script>
-      //personalizar 2
-      function cambiarTapaCuadrada() {
-        document.getElementById("borde").style.borderRadius = "3%";
-        document.getElementById("borde").style.marginLeft = "1.8em";
-        document.getElementById("borde").style.marginBottom = "0em";
-        document.getElementById("borde").style.height = "18.7em";
-        document.getElementById("borde").style.width = "19em";
-        document.getElementById("cuaderno").style.backgroundImage =
-          "url('img/tapa2.jpg')";
-        document.getElementById("cuadrado").style.color = "#ffc107";
-        document.getElementById("circulo").style.color = "#212121 ";
-      }
-      function cambiarTapaCirculo() {
-        document.getElementById("cuaderno").style.backgroundImage =
-          "url('img/visualizacion-tapa.png')";
-        document.getElementById("borde").style.borderRadius = "50%";
-        document.getElementById("borde").style.marginLeft = "2.2em";
-        document.getElementById("borde").style.marginBottom = "0.9em";
-        document.getElementById("borde").style.height = "22.7em";
-        document.getElementById("borde").style.width = "23.2em";
-        document.getElementById("circulo").style.color = "#ffc107";
-        document.getElementById("cuadrado").style.color = "#212121 ";
-      }
+  <!-- INFO COMPARTIR -->
+  <div class="info-compartir info section">
+    <div class="container">
+      <div class="row">
+        <div class="txt col-lg-12">
+          <h4>
+            Descargá tu diseño y continúa cuando quieras
+          </h4>
+        </div>
+        <div class="parent">
+          <div class="child">
+            <h5 class="grey-text text-darken-3">
+              Podés descargar, compartir y subir tu diseño con un solo click
+            </h5>
+            <div class="contenedor section">
+              <div class="contenedor-icon margin">
+                <i class="large material-icons">file_upload</i>
+                <a class="black-text">Subí tu progreso<br> para continuarlo</a>
+              </div>
 
-      function seleccionarConSeparador() {
-        document.getElementById("conSeparador").style.color = "#ffc107";
-        document.getElementById("sinSeparador").style.color = "#212121 ";
-        document.getElementById("ribbon").style.transition = "all 0.1s linear";
-        document.getElementById("ribbon").style.height = "5rem";
-        document.getElementById("ribbon").style.borderLeft =
-          "1.5rem solid #212121";
-        document.getElementById("ribbon").style.borderRight =
-          "1.5rem solid #212121";
-        document.getElementById("ribbon").style.borderBottom =
-          "1.5rem solid transparent";
-      }
+              <div class="contenedor-icon">
+                <i class="large material-icons">save</i>
+                <a class="black-text">Descargá tu progreso<br> para guardarlo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-      function seleccionarSinSeparador() {
-        document.getElementById("conSeparador").style.color = "#212121 ";
-        document.getElementById("sinSeparador").style.color = "#ffc107";
-        document.getElementById("ribbon").style.transition = "all 0.1s linear";
-        document.getElementById("ribbon").style.height = "0rem";
-        document.getElementById("ribbon").style.borderLeft =
-          "0rem solid #212121";
-        document.getElementById("ribbon").style.borderRight =
-          "0rem solid #212121";
-        document.getElementById("ribbon").style.borderBottom =
-          "0rem solid transparent";
-      }
-    </script>
-  </body>
+  <!-- EDITAR - BOTÓN FLOTANTE -->
+  <div class="fixed-action-btn hide-on-med-and-up">
+    <a class="btn-floating btn-large teal lighten-1">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li>
+        <a class="btn-floating amber"><i class="material-icons">cloud_download</i></a>
+      </li>
+      <li>
+        <a class="btn-floating amber" onclick="M.toast({html: 'Se guardó tu diseño'})"><i
+            class="material-icons">attach_file</i></a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- VIDEO -->
+  <div class="container video section">
+    <div class="video-container responsive-video">
+      <video src="video/video.mp4" controls poster="img/preview.jpeg"></video>
+    </div>
+  </div>
+
+  <footer class="page-footer amber lighten-1">
+    <div class="container center">
+      <div class="row">
+        <div class="redes-sociales left">
+          <div class="col">
+            <a href="https://www.facebook.com"><img clas src="img/Facebook.png" alt="Facebook" /></a>
+          </div>
+          <div class="col">
+            <a href="https://www.instagram.com"><img clas src="img/Instagram.png" alt="Instagram" /></a>
+          </div>
+          <div class="col">
+            <a href="https://www.twitter.com"><img clas src="img/Twitter.png" alt="Twitter" /></a>
+          </div>
+          <div class="col">
+            <a href="https://www.youtube.com"><img clas src="img/Youtube.png" alt="Youtube" /></a>
+          </div>
+        </div>
+
+        <div class="medios-pago right">
+          <div class="col">
+            <a href="https://www.mercadopago.com.ar"><img clas src="img/Mercado-Pago.png" alt="Mercado Pago" /></a>
+          </div>
+          <div class="col">
+            <a href="https://www.mastercard.com.ar"><img clas src="img/MasterCard.png" alt="Mastercard" /></a>
+          </div>
+          <div class="col">
+            <a href="https://www.paypal.com"><img clas src="img/PayPal.png" alt="Paypal" /></a>
+          </div>
+          <div class="col">
+            <a href="https://www.naranja.com"><img clas src="img/Naranja.png" alt="Tarjeta Naranja" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/materialize.min.js"></script>
+  <script>
+    //personalizar 2
+    function cambiarTapaCuadrada() {
+      document.getElementById("borde").style.borderRadius = "3%";
+      document.getElementById("borde").style.marginLeft = "1.8em";
+      document.getElementById("borde").style.marginBottom = "0em";
+      document.getElementById("borde").style.height = "18.7em";
+      document.getElementById("borde").style.width = "19em";
+      document.getElementById("cuaderno").style.backgroundImage =
+        "url('img/tapa2.jpg')";
+      document.getElementById("cuadrado").style.color = "#ffc107";
+      document.getElementById("circulo").style.color = "#212121 ";
+    }
+    function cambiarTapaCirculo() {
+      document.getElementById("cuaderno").style.backgroundImage =
+        "url('img/visualizacion-tapa.png')";
+      document.getElementById("borde").style.borderRadius = "50%";
+      document.getElementById("borde").style.marginLeft = "2.2em";
+      document.getElementById("borde").style.marginBottom = "0.9em";
+      document.getElementById("borde").style.height = "22.7em";
+      document.getElementById("borde").style.width = "23.2em";
+      document.getElementById("circulo").style.color = "#ffc107";
+      document.getElementById("cuadrado").style.color = "#212121 ";
+    }
+
+    function seleccionarConSeparador() {
+      document.getElementById("conSeparador").style.color = "#ffc107";
+      document.getElementById("sinSeparador").style.color = "#212121 ";
+      document.getElementById("ribbon").style.transition = "all 0.1s linear";
+      document.getElementById("ribbon").style.height = "5rem";
+      document.getElementById("ribbon").style.borderLeft =
+        "1.5rem solid #212121";
+      document.getElementById("ribbon").style.borderRight =
+        "1.5rem solid #212121";
+      document.getElementById("ribbon").style.borderBottom =
+        "1.5rem solid transparent";
+    }
+
+    function seleccionarSinSeparador() {
+      document.getElementById("conSeparador").style.color = "#212121 ";
+      document.getElementById("sinSeparador").style.color = "#ffc107";
+      document.getElementById("ribbon").style.transition = "all 0.1s linear";
+      document.getElementById("ribbon").style.height = "0rem";
+      document.getElementById("ribbon").style.borderLeft =
+        "0rem solid #212121";
+      document.getElementById("ribbon").style.borderRight =
+        "0rem solid #212121";
+      document.getElementById("ribbon").style.borderBottom =
+        "0rem solid transparent";
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.tooltipped');
+      var instances = M.Tooltip.init(elems, {});
+    });
+
+    // HEADER
+
+    document.getElementById('inicio').addEventListener('mouseover', function () {
+      document.getElementById('ribbonInicio').style.borderLeft = '1.5rem solid #00897b';
+      document.getElementById('ribbonInicio').style.borderRight = '1.5rem solid #00897b';
+      document.getElementById('txtInicio').classList.remove('hide');
+
+    });
+
+    document.getElementById('inicio').addEventListener('mouseout', function () {
+      document.getElementById('ribbonInicio').style.borderLeft = '1.5rem solid #4db6ac';
+      document.getElementById('ribbonInicio').style.borderRight = '1.5rem solid #4db6ac';
+      setTimeout(function () { document.getElementById('txtInicio').classList.add('hide'); }, 2000);
+    });
+
+    document.getElementById('personalizar').addEventListener('mouseover', function () {
+      document.getElementById('ribbonPersonalizar').style.borderLeft = '1.5rem solid #00897b';
+      document.getElementById('ribbonPersonalizar').style.borderRight = '1.5rem solid #00897b';
+    });
+
+    document.getElementById('comprar').addEventListener('mouseover', function () {
+      document.getElementById('ribbonComprar').style.borderLeft = '1.5rem solid #00897b';
+      document.getElementById('ribbonComprar').style.borderRight = '1.5rem solid #00897b';
+      document.getElementById('txtComprar').classList.remove('hide');
+    });
+
+    document.getElementById('comprar').addEventListener('mouseover', function () {
+      document.getElementById('ribbonComprar').style.borderLeft = '1.5rem solid #00897b';
+      document.getElementById('ribbonComprar').style.borderRight = '1.5rem solid #00897b';
+      setTimeout(function () { document.getElementById('txtComprar').classList.add('hide'); }, 2000);
+    });
+
+
+    document.getElementById('contactar').addEventListener('mouseover', function () {
+      document.getElementById('ribbonContactar').style.borderLeft = '1.5rem solid #00897b';
+      document.getElementById('ribbonContactar').style.borderRight = '1.5rem solid #00897b';
+      document.getElementById('txtContactar').classList.remove('hide');
+    });
+
+    document.getElementById('contactar').addEventListener('mouseout', function () {
+      document.getElementById('ribbonContactar').style.borderLeft = '1.5rem solid #4db6ac';
+      document.getElementById('ribbonContactar').style.borderRight = '1.5rem solid #4db6ac';
+      setTimeout(function () { document.getElementById('txtContactar').classList.add('hide'); }, 2000);
+    });
+  </script>
+</body>
+
 </html>

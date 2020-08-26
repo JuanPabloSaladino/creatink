@@ -1,50 +1,58 @@
 body {
-    background-color: #eaddc4;
-  
-    /* NAV */
-    nav {
-      .sidenav {
-        li .user-view a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+  background-color: #eaddc4;
+
+  /* NAV */
+  nav {
+    .sidenav {
+      li .user-view a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Caveat Brush", cursive;
+        font-size: 20rem;
+
+        .name {
           font-family: "Caveat Brush", cursive;
-          font-size: 20rem;
-  
-          .name {
-            font-family: "Caveat Brush", cursive;
-            font-size: 2rem;
-          }
-        }
-        .menu-movil {
-          display: flex;
-          justify-content: start;
-          align-items: center;
-          padding: 0 1rem;
-          img {
-            width: 2rem;
-            height: 2rem;
-          }
-          a {
-            padding-left: 1rem;
-          }
-        }
-        .arriba {
-          padding-top: 2rem;
+          font-size: 2rem;
         }
       }
-      .nav-wrapper {
-        width: 100%;
-        .left li {
-          width: 6.9rem;
-          margin-top: 0.375rem;
+      .menu-movil {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 0 1rem;
+        img {
+          width: 2rem;
+          height: 2rem;
         }
-        .right li {
+        a {
+          padding-left: 1rem;
+        }
+      }
+      .arriba {
+        padding-top: 2rem;
+      }
+    }
+    .nav-wrapper {
+      width: 100%;
+      .left li {
+        width: 6.9rem;
+        margin: 0;
+      }
+      .right {
+        display: flex;
+        flex-direction: row;
+
+        li {
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
           margin: 0;
+          &.seccion {
+            width: 100%;
+            height: 100%;
+          }
           a {
             width: 6.2rem;
             margin-top: 0.375rem;
@@ -62,225 +70,309 @@ body {
             border-bottom: 1.5rem solid transparent;
             margin-top: -2.375rem;
             &:hover {
-              height: 4.25rem;
+              border-left: 1.5rem solid #00897b;
+              border-right: 1.5rem solid #00897b;
             }
-
-            
           }
           .active {
             border-left: 1.5rem solid #00897b;
             border-right: 1.5rem solid #00897b;
-            height: 4.25rem;
           }
+        }
+
+        .nombre-seccion {
+          font-size: 1.2rem;
+          font-weight: 600;
+          padding: 0;
+          margin: 0;
+          margin-top: 0.3rem;
+          margin-left: -0.6rem;
+          margin-right: 0.6rem;
+          height: 0rem;
         }
       }
     }
-  
-    .contenedor-libro-colores {
-      margin-top: 8em;
-      margin-bottom: 5em;
-  
-      .row {
-        .banner .responsive-img {
-          width: 55%;
-          margin-bottom: 4rem;
-        }
-  
-        .col {
-          nav {
-            width: 30.2rem;
-            margin-left: 8rem;
-            margin-bottom: 2rem;
-          }
-  
-          .personalizar-imagen {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-left: 8em;
-            background-image: url("../img/visualizacion-tapa.png");
-            height: 38rem;
-            width: 30rem;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-          }
-        }
-  
-        .personalizar-container-botones {
-          background-color: #f7f0e6;
-          padding-bottom: 4rem;
-          border-radius: 0.5rem;
-  
-          h5 {
-            font-weight: bold;
-            margin-top: 6rem;
-            margin-bottom: 5.55rem;
-            margin-left: 3.5rem;
-            text-align: left;
-          }
-  
-          .colores .col {
-           display: flex;
-           margin-left: 3.6rem;
-           margin-bottom: 1.2rem;
-            align-items: center;
+  }
 
-           i, a, img, .boton{
-            font-size: 3.5rem;
+  .contenedor-libro-colores {
+    margin-top: 8em;
+    margin-bottom: 5em;
+
+    .row {
+      .col {
+        nav {
+          width: 30.2rem;
+          margin-left: 8rem;
+          margin-bottom: 2rem;
+        }
+
+        // VISUALIZACIÓN - IZQUIERDA
+        .personalizar-imagen {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: 8em;
+          background-image: url("../img/visualizacion-tapa.png");
+          height: 38rem;
+          width: 30rem;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+
+      // RESÚMEN - DERECHA
+      .personalizar-container-botones {
+        background-color: #f7f0e6;
+        padding-bottom: 4rem;
+        border-radius: 0.5rem;
+        height: 44.5rem;
+
+        // TÍTULOS
+        h5 {
+          font-weight: bold;
+          margin-top: 3rem;
+          margin-bottom: 2.5rem;
+          margin-left: 3.5rem;
+          text-align: left;
+        }
+
+        // ÍCONOS
+        .colores .col {
+          display: flex;
+          margin-left: 3.6rem;
+          margin-bottom: 1.2rem;
+          align-items: center;
+
+          i,
+          a,
+          img,
+          .boton {
+            font-size: 2.5rem;
             margin-right: 1.7rem;
-           }
-
-           
-
-           .hoja-lisa{
-            font-size: 3.9rem;
-           }
-
-           .separador{
-             margin-left: 0.3rem;
-             font-size: 3.8rem;
-           }
-
-           .boton, img{
-             border: 0.2rem solid #ffca28 ;
-             margin-left: 0.2rem;
-             width: 3.4rem;
-             height: 3.4rem;
-           }
-
-           img{
-             height: auto;
-             width: 3.5rem;
-           }
-
-           a{
-             width: 3.4rem;
-             font-weight: bold;
-             font-size: 1.4rem;
-             padding: 0;
-           }
-
-           h4{
-             font-weight: bold;
-           }
-
           }
-  
-          .flechas {
+
+          .hoja-lisa {
+            font-size: 2.5rem;
+          }
+
+          .separador {
+            margin-left: 0.3rem;
+            font-size: 2.5rem;
+          }
+
+          .boton,
+          img {
+            margin-left: 0.2rem;
+            width: 2.5rem;
+            height: 2.5rem;
+          }
+
+          img {
+            height: auto;
+            width: 2.5rem;
+          }
+
+          a {
+            width: 2.5rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 0;
+          }
+
+          h4 {
+            font-weight: bold;
+            font-size: 2rem;
+          }
+        }
+
+        // FLECHAS
+        .flechas {
+          display: flex;
+          width: 100%;
+          margin-top: 1rem;
+          text-align: center;
+
+          .anterior {
+            margin: 0;
+          }
+
+          .siguiente {
+            margin-right: 7rem;
+          }
+          .col {
             display: flex;
-            width: 100%;
-            margin-top: 1rem;
-            text-align: center;
-  
-            .anterior {
-              margin: 0;
-            }
-  
-            .siguiente {
-              margin-right: 7rem;
-            }
-            .col {
-              display: flex;
-              align-items: center;
-              i {
-                font-size: 3.5rem;
-                cursor: pointer;
-                &:hover{
-                  color: #ffc107 ;
-                }
+            align-items: center;
+            i {
+              font-size: 3.5rem;
+              cursor: pointer;
+              &:hover {
+                color: #ffc107;
               }
-              h6 {
-                cursor: pointer;
-              }
+            }
+            h6 {
+              cursor: pointer;
             }
           }
         }
       }
-  
-      .row .col i {
-        font-size: 3.5rem;
-        cursor: pointer;
+    }
+
+    // ÍCONOS
+    .row .col i {
+      font-size: 3.5rem;
+      cursor: pointer;
+    }
+  }
+
+  // DESCARGA - BOTONES
+  .descarga-botones .row {
+    margin-top: 0.5rem;
+
+    .col i {
+      font-size: 3.5rem;
+      cursor: pointer;
+    }
+  }
+
+  // HOJA DE PAPEL
+  .info {
+    background-image: url(../img/hoja-arrugada.png);
+    overflow: auto;
+    background-size: contain;
+    margin-top: 0;
+    z-index: 10;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #160b0b;
+    padding: 3rem;
+
+    .row {
+      .txt {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        h4 {
+          font-weight: 600;
+          padding-bottom: 1rem;
+        }
       }
-    }
-  
-    .descarga-botones .row {
-      margin-top: -12rem;
-    }
-  
-    .video {
-      margin: 3.8rem auto;
-    }
-  
-    footer .container {
-      width: 80%;
-  
-      .row {
-        margin-bottom: 0;
-        padding-bottom: 0.5rem;
-  
-        .redes-sociales img,
-        .medios-pago img {
-          width: 3.8rem;
+      .parent .child {
+        text-align: center;
+        h5 {
+          font-size: 1.5rem;
         }
       }
     }
   }
-  
-  @media screen and (max-width: 1400px) {
-    .container {
-      width: 100%;
-    }
-  
-    .descarga {
-      display: none;
-    }
-  }
-  
-  @media screen and (max-width: 992px) {
-    .container {
+
+  .info-compartir {
+    .container .row .parent .child .contenedor {
       display: flex;
       justify-content: center;
-      align-items: center;
-      width: 100%;
-    }
-    nav .nav-wrapper .right {
-      display: none;
-    }
-  
-    .contenedor-libro-colores .cosas {
-      display: flex;
-      flex-direction: column;
-  
-      .flechas {
-        display: flex;
-        width: 100%;
-        margin: 0;
-        margin-top: 5rem;
-        margin-right: 1rem;
+      padding-top: 3rem;
+
+      .contenedor-icon {
+        i {
+          font-size: 4.5rem;
+        }
+
+        p,
+        a {
+          font-weight: bold;
+          font-size: 1.2rem;
+        }
+
+        &.margin {
+          margin-right: 16rem;
+        }
       }
-      .colores .col div,
-      .colores .col h6 {
-        margin-left: 5rem;
-      }
-      .personalizar-container-botones,
-      .personalizar-container-imagen {
-        margin: 0;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-      }
-    }
-  
-    body .contenedor-libro-colores .row .col h5 {
-      width: 100%;
-      margin-left: 17rem;
-      margin-top: 5rem;
-    }
-    .descarga,
-    .descarga-botones {
-      display: none;
     }
   }
-      
+
+  .info-compartir .container .row .parent .child .contenedor .contenedor-icon {
+    display: flex;
+    flex-direction: column;
+
+    a i {
+      font-size: 3.5rem;
+      margin-bottom: 0.6rem;
+    }
+  }
+
+  .video {
+    margin: 3.8rem auto;
+  }
+
+  footer .container {
+    width: 80%;
+
+    .row {
+      margin-bottom: 0;
+      padding-bottom: 0.5rem;
+
+      .redes-sociales img,
+      .medios-pago img {
+        width: 3.8rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    width: 100%;
+  }
+
+  .descarga {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  nav .nav-wrapper .right {
+    display: none;
+  }
+
+  .contenedor-libro-colores .cosas {
+    display: flex;
+    flex-direction: column;
+
+    .flechas {
+      display: flex;
+      width: 100%;
+      margin: 0;
+      margin-top: 5rem;
+      margin-right: 1rem;
+    }
+    .colores .col div,
+    .colores .col h6 {
+      margin-left: 5rem;
+    }
+    .personalizar-container-botones,
+    .personalizar-container-imagen {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  body .contenedor-libro-colores .row .col h5 {
+    width: 100%;
+    margin-left: 17rem;
+    margin-top: 5rem;
+  }
+  .descarga,
+  .descarga-botones {
+    display: none;
+  }
+}
