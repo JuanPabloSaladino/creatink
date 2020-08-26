@@ -1,165 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contactar</title>
-    <link rel="icon" type="image/png" href="img/iso.png" />
-    <script
-      src="https://kit.fontawesome.com/222a3ac483.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Open+Sans:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <link rel="stylesheet" href="css/contactar.css" />
-  </head>
-  <body>
-    <header>
-        <nav class="amber lighten-1">
-          <ul id="slide-out" class="sidenav">
-            <li>
-              <div class="user-view">
-                <div class="background">
-                  <img src="img/slide.jpg" />
-                </div>
-                <a href="index.html"
-                  ><img class="circle" src="img/iso.png" alt="Logo Creatink"
-                /></a>
-                <a href="#name"><h2 class="white-text name">Creatink</h2></a>
-              </div>
-            </li>
-            <li>
-              <a href="personalizar1.html"
-                ><i class="material-icons">mode_edit</i>Crear propio cuaderno</a
-              >
-            </li>
-            <li><div class="divider"></div></li>
-            <li class="menu-movil arriba">
-              <img class="responsive-img" src="img/home.png" alt="Home" />
-              <a class="waves-effect" href="index.html">Inicio</a>
-            </li>
-            <li class="menu-movil">
-              <img class="responsive-img" src="img/personalizar.png" alt="Personalizar" />
-              <a class="waves-effect" href="personalizar1.html">Personalizar</a>
-            </li>
-            <li class="menu-movil">
-              <img class="responsive-img" src="img/comprar.png" alt="Comprar" />
-              <a class="waves-effect" href="compra-interior.html">Comprar</a>
-            </li>
-            <li class="menu-movil">
-              <img class="responsive-img" src="img/contactar.png" alt="Contactar" />
-              <a class="waves-effect" href="contactar.html">Contactar</a>
-            </li>
-          </ul>
-          <a href="#" data-target="slide-out" class="sidenav-trigger"
-            ><i class="material-icons">menu</i></a
-          >
-  
-          <div class="nav-wrapper container">
-            <ul class="left">
-              <li>
-                <img 
-                  class="responsive-img"
-                  src="img/iso.png"
-                  alt="Isologo Creatink"
-                />
-              </li>
-            </ul>
-            <ul class="right">
-              <li>
-                <a href="index.html"><img src="img/home.png" alt="Home" /></a>
-                <div class="ribbon"></div>
-              </li>
-              <li>
-                <a href="personalizar1.html"
-                  ><img src="img/personalizar.png" alt="Personalizar"
-                /></a>
-                <div class="ribbon"></div>
-              </li>
-              <li>
-                <a href="compra.html"><img src="img/comprar.png" alt="Comprar" /></a>
-                <div class="ribbon"></div>
-              </li>
-              <li>
-                <a href="contactar.html"><img src="img/contactar.png" alt="Contacto" /></a>
-                <div class="ribbon active"></div>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
 
-    <main class="container">
-      <section class="contenedor ">
-        <div class="row informacion">
-          <div class="col s6">
-            <div class="taller">
-              <h4 class="teal-text">TALLER CREATINK</h4>
-              <div class="location">
-                <i class="material-icons">location_on</i>
-                <p>Paraguay 5099, Palermo</p>
-              </div>
-              <div class="calendar">
-                <i class="material-icons">today</i>
-                <p>De lunes a viernes de 8 a 20hs</p>
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contactar</title>
+  <link rel="icon" type="image/png" href="img/iso.png" />
+  <script src="https://kit.fontawesome.com/222a3ac483.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Open+Sans:wght@300;400;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link rel="stylesheet" href="css/contactar.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+</head>
+
+<body>
+  <header>
+    <nav class="amber lighten-1">
+      <ul id="slide-out" class="sidenav">
+        <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="img/slide.jpg" />
             </div>
+            <a href="index.html"><img class="circle" src="img/iso.png" alt="Logo Creatink" /></a>
+            <a href="#name">
+              <h2 class="white-text name">Creatink</h2>
+            </a>
           </div>
+        </li>
+        <li>
+          <a href="personalizar1.html"><i class="material-icons">mode_edit</i>Crear propio cuaderno</a>
+        </li>
+        <li>
+          <div class="divider"></div>
+        </li>
+        <li class="menu-movil arriba">
+          <img class="responsive-img" src="img/home.png" alt="Home" />
+          <a class="waves-effect" href="index.html">Inicio</a>
+        </li>
+        <li class="menu-movil">
+          <img class="responsive-img" src="img/personalizar.png" alt="Personalizar" />
+          <a class="waves-effect" href="personalizar1.html">Personalizar</a>
+        </li>
+        <li class="menu-movil">
+          <img class="responsive-img" src="img/comprar.png" alt="Comprar" />
+          <a class="waves-effect" href="compra-interior.html">Comprar</a>
+        </li>
+        <li class="menu-movil">
+          <img class="responsive-img" src="img/contactar.png" alt="Contactar" />
+          <a class="waves-effect" href="contactar.html">Contactar</a>
+        </li>
+      </ul>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
-          <div class="col s6">
-            <div class="taller plaza">
-              <h4 class="teal-text">FERIAS EN PLAZAS</h4>
-              <div class="location ">
-                <i class="material-icons">location_on</i>
-                <p>San Martín 3861, Belgrano</p>
-              </div>
-              <div class="calendar">
-                <i class="material-icons">today</i>
-                <p>Viernes de 9 a 15hs</p>
-              </div>
+      <div class="nav-wrapper container">
+        <ul class="left">
+          <li>
+            <img class="responsive-img" src="img/iso.png" alt="Isologo Creatink" />
+          </li>
+        </ul>
+        <ul class="right">
+          <li>
+            <a href="index.html"><img src="img/home.png" alt="Home" /></a>
+            <div class="ribbon"></div>
+          </li>
+          <li>
+            <a href="personalizar1.html"><img src="img/personalizar.png" alt="Personalizar" /></a>
+            <div class="ribbon"></div>
+          </li>
+          <li>
+            <a href="compra.html"><img src="img/comprar.png" alt="Comprar" /></a>
+            <div class="ribbon"></div>
+          </li>
+          <li>
+            <a href="contactar.html"><img src="img/contactar.png" alt="Contacto" /></a>
+            <div class="ribbon active"></div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-              <div class="location border">
-                <i class="material-icons">location_on</i>
-                <p>Scalabrini Ortíz 2602, CABA</p>
-              </div>
-              <div class="calendar">
-                <i class="material-icons">today</i>
-                <p>Sábados de 8 a 14hs</p>
-              </div>
-
-              <div class="location border">
-                <i class="material-icons">location_on</i>
-                <p>Av. Santa Fe 4000, Palermo</p>
-              </div>
-              <div class="calendar">
-                <i class="material-icons">today</i>
-                <p>Domingos de 13 a 19hs</p>
-              </div>
+  <main class="container">
+    <section class="contenedor ">
+      <div class="row informacion">
+        <div class="col s6">
+          <div class="taller">
+            <h4 class="teal-text">TALLER CREATINK</h4>
+            <div class="location">
+              <i class="material-icons">location_on</i>
+              <p>Paraguay 5099, Palermo</p>
+            </div>
+            <div class="calendar">
+              <i class="material-icons">today</i>
+              <p>De lunes a viernes de 8 a 20hs</p>
             </div>
           </div>
         </div>
 
-        <div class="row imagen">
-            <div class="col s6">
-                <img src="img/puesto.png" alt="Puesto">
+        <div class="col s6">
+          <div class="taller plaza">
+            <h4 class="teal-text">FERIAS EN PLAZAS</h4>
+            <div class="location ">
+              <i class="material-icons">location_on</i>
+              <p>San Martín 3861, Belgrano</p>
             </div>
-        </div>
-      </section>
-    </main>
+            <div class="calendar">
+              <i class="material-icons">today</i>
+              <p>Viernes de 9 a 15hs</p>
+            </div>
 
-    <section>
-        <!-- INFO  -->
-  <div class="info-materiales info section">
+            <div class="location border">
+              <i class="material-icons">location_on</i>
+              <p>Scalabrini Ortíz 2602, CABA</p>
+            </div>
+            <div class="calendar">
+              <i class="material-icons">today</i>
+              <p>Sábados de 8 a 14hs</p>
+            </div>
+
+            <div class="location border">
+              <i class="material-icons">location_on</i>
+              <p>Av. Santa Fe 4000, Palermo</p>
+            </div>
+            <div class="calendar">
+              <i class="material-icons">today</i>
+              <p>Domingos de 13 a 19hs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row imagen">
+        <div class="col s6">
+          <img src="img/puesto.png" alt="Puesto">
+        </div>
+      </div>
+    </section>
+
+    <div id="myMap" style="height: 600px;"></div>
+  </main>
+
+  <section>
+    <!-- INFO  -->
+    <div class="info-materiales info section">
       <div class="container">
         <div class="row">
           <div class="txt col-lg-12">
@@ -177,8 +165,8 @@
                 </div>
 
                 <div class="contenedor-icon">
-                    <h2>11 a 50</h2>
-                    <p>Mínimo 20 días</p>
+                  <h2>11 a 50</h2>
+                  <p>Mínimo 20 días</p>
                 </div>
 
               </div>
@@ -187,185 +175,197 @@
         </div>
       </div>
     </div>
-    </section>
+  </section>
 
-    <section class="contenedor container info-contacto">
+  <section class="contenedor container info-contacto">
 
-        <div class="row imagen">
-            <div class="col s6">
-                <img src="img/contacto-cuaderno.png" alt="Cuaderno">
+    <div class="row imagen">
+      <div class="col s6">
+        <img src="img/contacto-cuaderno.png" alt="Cuaderno">
+      </div>
+    </div>
+
+    <div class="row informacion2">
+      <div class="col s6">
+        <div class="row" id="paso2Elm2">
+          <form class="col s12">
+            <div class="row">
+              <h5 class="teal-text section">CONTACTATE CON NOSOTROS</h5>
+              <div class="input-field col s12">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="icon_prefix" type="text" class="validate" required />
+                <label for="icon_prefix">Nombre y apellido</label>
+                <span class="helper-text" data-error="Se debe incluir solo letras"></span>
+              </div>
+              <div class="input-field input col s12">
+                <i class="material-icons prefix">phone</i>
+                <input id="icon_telephone" type="number" class="validate" required />
+                <label for="icon_telephone">Celular</label>
+                <span class="helper-text" data-error="Celular inválido, solo incluir números"></span>
+              </div>
+
+              <div class="input-field input col s12">
+                <i class="material-icons prefix">email</i>
+                <input id="email1" type="email" class="validate" required />
+                <label for="email1">Correo electrónico</label>
+                <span class="helper-text" data-error="Email inválido">ejemplo@gmail.com</span>
+              </div>
+              <div class="input-field input col s12">
+                <i class="material-icons prefix">email</i>
+                <input id="email2" type="email" class="validate" required />
+                <label for="email2">Repetir correo</label>
+                <span class="helper-text hide" data-error="No coinciden los correos" id="errorEmail">No coinciden los
+                  correos</span>
+              </div>
             </div>
+          </form>
+          <div class="contenedor-comprar col s12">
+            <div class="btn-comprar" id="paso2Elm3">
+              <button class="btn-large center section modal-trigger center" href="#modal1" type="submit" id="comprar">
+                Enviar
+              </button>
+            </div>
+          </div>
+
         </div>
 
-        <div class="row informacion2">
-          <div class="col s6">
-            <div class="row" id="paso2Elm2">
-                <form class="col s12">
-                  <div class="row">
-                      <h5 class="teal-text section">CONTACTATE CON NOSOTROS</h5>
-                      <div class="input-field col s12">
-                        <i class="material-icons prefix">account_circle</i>
-                        <input
-                          id="icon_prefix"
-                          type="text"
-                          class="validate"
-                          required
-                        />
-                        <label for="icon_prefix">Nombre y apellido</label>
-                        <span
-                          class="helper-text"
-                          data-error="Se debe incluir solo letras"
-                        ></span>
-                      </div>
-                      <div class="input-field input col s12">
-                        <i class="material-icons prefix">phone</i>
-                        <input
-                          id="icon_telephone"
-                          type="number"
-                          class="validate"
-                          required
-                        />
-                        <label for="icon_telephone">Celular</label>
-                        <span
-                          class="helper-text"
-                          data-error="Celular inválido, solo incluir números"
-                        ></span>
-                      </div>
-    
-                      <div class="input-field input col s12">
-                        <i class="material-icons prefix">email</i>
-                        <input id="email1" type="email" class="validate" required/>
-                        <label for="email1">Correo electrónico</label>
-                        <span class="helper-text" data-error="Email inválido"
-                          >ejemplo@gmail.com</span
-                        >
-                      </div>
-                      <div class="input-field input col s12">
-                        <i class="material-icons prefix">email</i>
-                        <input id="email2" type="email" class="validate" required />
-                        <label for="email2">Repetir correo</label>
-                        <span class="helper-text hide" data-error="No coinciden los correos" id="errorEmail"
-                          >No coinciden los correos</span
-                        >
-                      </div>
-                  </div>
-                </form>
-                <div class="contenedor-comprar col s12">
-                  <div class="btn-comprar" id="paso2Elm3">
-                  <button
-                    class="btn-large center section modal-trigger center"
-                    href="#modal1"
-                    type="submit"
-                    id="comprar"
-                  >
-                    Enviar
-                  </button>
-                </div>
-                </div>
-                
-              </div>
-    
-              <div id="modal1" class="modal">
-                <div class="modal-content">
-                  <h4 class="section">Mensaje enviado correctamente</h4>
-                  <p class="section">
-                    Hemos recibido tu mensaje, dentro de 24hs estaremos contactándonos contigo.
-                  </p>
-                </div>
-                <div class="modal-footer">
-                  <a href="#!" class="modal-close waves-effect waves-green btn-flat"
-                    >ACEPTAR</a
-                  >
-                </div>
-              </div>
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4 class="section">Mensaje enviado correctamente</h4>
+            <p class="section">
+              Hemos recibido tu mensaje, dentro de 24hs estaremos contactándonos contigo.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">ACEPTAR</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="page-footer amber lighten-1">
+    <div class="container center">
+      <div class="row">
+        <div class="redes-sociales left">
+          <div class="col">
+            <a href="https://www.facebook.com"><img clas src="img/Facebook.png" alt="Facebook" /></a>
+          </div>
+          <div class="col">
+            <a href="https://www.instagram.com"><img clas src="img/Instagram.png" alt="Instagram" /></a>
+          </div>
+          <div class="col">
+            <a href="https://www.twitter.com"><img clas src="img/Twitter.png" alt="Twitter" /></a>
+          </div>
+          <div class="col">
+            <a href="https://www.youtube.com"><img clas src="img/Youtube.png" alt="Youtube" /></a>
           </div>
         </div>
 
-      </section>
-
-    <footer class="page-footer amber lighten-1">
-        <div class="container center">
-          <div class="row">
-            <div class="redes-sociales left">
-              <div class="col">
-                <a href="https://www.facebook.com"><img clas src="img/Facebook.png" alt="Facebook" /></a>
-              </div>
-              <div class="col">
-                <a href="https://www.instagram.com"
-                  ><img clas src="img/Instagram.png" alt="Instagram"
-                /></a>
-              </div>
-              <div class="col">
-                <a href="https://www.twitter.com"><img clas src="img/Twitter.png" alt="Twitter" /></a>
-              </div>
-              <div class="col">
-                <a href="https://www.youtube.com"><img clas src="img/Youtube.png" alt="Youtube" /></a>
-              </div>
-            </div>
-  
-            <div class="medios-pago right">
-              <div class="col">
-                <a href="https://www.mercadopago.com.ar"><img clas src="img/Mercado-Pago.png" alt="Mercado Pago" /></a>
-              </div>
-              <div class="col">
-                <a href="https://www.mastercard.com.ar"><img clas src="img/MasterCard.png" alt="Mastercard" /></a>
-              </div>
-              <div class="col">
-                <a href="https://www.paypal.com"><img clas src="img/PayPal.png" alt="Paypal" /></a>
-              </div>
-              <div class="col">
-                <a href="https://www.naranja.com"><img clas src="img/Naranja.png" alt="Tarjeta Naranja" /></a>
-              </div>
-            </div>
+        <div class="medios-pago right">
+          <div class="col">
+            <a href="https://www.mercadopago.com.ar"><img clas src="img/Mercado-Pago.png" alt="Mercado Pago" /></a>
+          </div>
+          <div class="col">
+            <a href="https://www.mastercard.com.ar"><img clas src="img/MasterCard.png" alt="Mastercard" /></a>
+          </div>
+          <div class="col">
+            <a href="https://www.paypal.com"><img clas src="img/PayPal.png" alt="Paypal" /></a>
+          </div>
+          <div class="col">
+            <a href="https://www.naranja.com"><img clas src="img/Naranja.png" alt="Tarjeta Naranja" /></a>
           </div>
         </div>
-      </footer>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+  <script>const tilesProvider = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 
-      <script src="js/materialize.min.js"></script>
-    <script src="js/main.js"></script>
+    let myMap = L.map('myMap').setView([-34.576826, -58.433590], 14);
+    let coordenadas = document.getElementById('coordenadas');
 
-    <script>
-      var cantidad = document.getElementById("cantidad");
-      var error = document.getElementById("error");
-      var comprar = document.getElementById("confirmar");
-      var total = document.getElementById("total");
-      var email1 = document.getElementById("email1");
-      var email2 = document.getElementById("email2");
-      var errorEmail = document.getElementById("errorEmail");
+    L.tileLayer(tilesProvider, {
+      maxZoom: 18
+    }).addTo(myMap);
 
-      email2.addEventListener('keyup', function(){
-        if(!email2.value == email1.value){
-          errorEmail.className='show';
-          errorEmail.style.color='red';
-          errorEmail.style.marginLeft='3rem';
-        }
-      });
-      cantidad.addEventListener('keyup', function(){
-        total.innerHTML = 'TOTAL: $' +  cantidad.value * 900;
-      });
-      comprar.addEventListener("click", function () {
-        if (!cantidad.value || cantidad.value < 1 || cantidad.value > 50) {
-          error.style.color = "red";
-          error.className = "show";
-        } else {
-          error.className = "hide";
-          document.getElementById('paso1Elm1').className='hide';
-          document.getElementById('paso1Elm2').className='hide';
-          document.getElementById('paso1Elm3').className='hide';
-          document.getElementById('paso1Elm4').className='hide';
-          document.getElementById('paso1Elm5').className='hide';
-          document.getElementById('paso2Elm1').className='show';
-          document.getElementById('paso2Elm2').className='show';
-          document.getElementById('paso2Elm3').className='show';
-        }
-      });
-
-      document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems, {
-        
+    let iconMarker1 = L.icon({
+      iconUrl: 'img/placeholder.png',
     });
-  });
-    </script>
-  </body>
+
+    let marker1 = L.marker([-34.580020, -58.429762], { icon: iconMarker1 })
+    .bindPopup("Taller Creatink - Paraguay 5099, Palermo")
+    .addTo(myMap);
+
+    let marker2 = L.marker([-34.559433, -58.455870], { icon: iconMarker1 })
+    .bindPopup("San Martín 3861, Belgrano")
+    .addTo(myMap);
+
+    let marker3 = L.marker([-34.577915, -58.408985], { icon: iconMarker1 })
+    .bindPopup("Scalabrini Ortíz 2602, CABA")
+    .addTo(myMap);
+
+    let marker4 = L.marker([-34.582360, -58.420152], { icon: iconMarker1 })
+    .bindPopup("Av. Santa Fe 4000, Palermo")
+    .addTo(myMap);
+    
+    myMap.doubleClickZoom.disable();
+
+    myMap.on('dblclick', e => {
+      let latLng = myMap.mouseEventToLatLng(e.originalEvent);
+      L.marker([latLng.lat, latLng.lng], { icon: iconMarker }).addTo(myMap);
+    });
+
+  </script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    var cantidad = document.getElementById("cantidad");
+    var error = document.getElementById("error");
+    var comprar = document.getElementById("confirmar");
+    var total = document.getElementById("total");
+    var email1 = document.getElementById("email1");
+    var email2 = document.getElementById("email2");
+    var errorEmail = document.getElementById("errorEmail");
+
+    email2.addEventListener('keyup', function () {
+      if (!email2.value == email1.value) {
+        errorEmail.className = 'show';
+        errorEmail.style.color = 'red';
+        errorEmail.style.marginLeft = '3rem';
+      }
+    });
+    cantidad.addEventListener('keyup', function () {
+      total.innerHTML = 'TOTAL: $' + cantidad.value * 900;
+    });
+    comprar.addEventListener("click", function () {
+      if (!cantidad.value || cantidad.value < 1 || cantidad.value > 50) {
+        error.style.color = "red";
+        error.className = "show";
+      } else {
+        error.className = "hide";
+        document.getElementById('paso1Elm1').className = 'hide';
+        document.getElementById('paso1Elm2').className = 'hide';
+        document.getElementById('paso1Elm3').className = 'hide';
+        document.getElementById('paso1Elm4').className = 'hide';
+        document.getElementById('paso1Elm5').className = 'hide';
+        document.getElementById('paso2Elm1').className = 'show';
+        document.getElementById('paso2Elm2').className = 'show';
+        document.getElementById('paso2Elm3').className = 'show';
+      }
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elems, {
+
+      });
+    });
+  </script>
+</body>
+
 </html>
